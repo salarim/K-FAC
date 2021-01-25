@@ -132,7 +132,7 @@ class KFAC:
 
 def main():
     EPOCHS = 10
-    tasks_nb = 10
+    tasks_nb = 50
 
     train_datasets, test_datasets = get_datasets(random_seed=1,
                                                   task_number=50,
@@ -149,7 +149,8 @@ def main():
 
     models = []
     kfacs = []
-    model_task_loss = np.ones((tasks_nb,tasks_nb))
+    model_task_true_loss = np.ones((tasks_nb,tasks_nb))
+    model_task_approx_loss = np.ones((tasks_nb,tasks_nb))
 
     for task_id in range(tasks_nb):
         print('Task {}:'.format(task_id+1))
@@ -166,18 +167,27 @@ def main():
         kfacs.append(KFAC(model, train_datasets[task_id]))
         kfacs[-1].update_stats()
 
-        for prev_task in range(task_id):
-            true_loss = validate(model, train_datasets[prev_task], criterion, log=False)[1].avg
-            approx_loss = kfacs[prev_task].avg_loss +\
-                        kfacs[prev_task].get_taylor_second_order_element()
-            model_task_loss[task_id, prev_task] = true_loss - approx_loss
-            print('Cur_task {} Prev_task {} '
-                'True {:.4f} Approx {:.4f} Approx+1st {:.4f}'.format(task_id+1,
-                                                    prev_task+1,
+    for model_id in range(tasks_nb):
+        for task_id in range(tasks_nb):
+
+            true_loss = validate(models[model_id], train_datasets[task_id], criterion, log=False)[1].avg
+            model.load_state_dict(models[model_id].state_dict())
+            approx_loss = kfacs[task_id].avg_loss +\
+                          kfacs[task_id].get_taylor_second_order_element().item()
+
+            model_task_true_loss[model_id, task_id] = true_loss
+            model_task_approx_loss[model_id, task_id] = approx_loss
+
+            print('Model {} Task {} '
+                'True {:.4f} Approx {:.4f} Approx+1st {:.4f}'.format(model_id+1,
+                                                    task_id+1,
                                                     true_loss,
                                                     approx_loss,
-                                                    approx_loss+kfacs[prev_task].get_taylor_first_order_element()))
+                                                    approx_loss+kfacs[task_id].get_taylor_first_order_element()),
+                                                    flush=True)
 
+    np.save('true_loss', model_task_true_loss)
+    np.save('approx_loss', model_task_approx_loss)
 
 if __name__=='__main__':
     main()

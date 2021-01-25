@@ -5,7 +5,7 @@
 #SBATCH --job-name=KFAC
 #SBATCH --output=%x-%j.out
 #SBATCH --nodes=1
-#SBATCH --time=00:59:00
+#SBATCH --time=23:59:00
 #SBATCH --mem=10G
 #SBATCH --gres=gpu:1
 
@@ -20,3 +20,5 @@ pip install --no-index --upgrade pip
 pip install --no-index -r requirements.txt
 
 python main.py
+
+cp *.npy ~/scratch/K-FAC
