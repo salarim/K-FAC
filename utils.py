@@ -59,7 +59,7 @@ def accuracy(output, target, topk=(1,)):
         return res
 
 
-def train(model, dataloader, optimizer, criterion, epoch, kfacs):
+def train(model, dataloader, optimizer, criterion, epoch):
     losses = AverageMeter()
     top1 = AverageMeter()
 
@@ -72,9 +72,6 @@ def train(model, dataloader, optimizer, criterion, epoch, kfacs):
         optimizer.zero_grad()
         outputs = model(images)
         loss = criterion(outputs, targets)
-
-        for kfac_id, kfac in enumerate(kfacs):
-            loss += kfac.get_taylor_approximation()
 
         loss.backward()
         optimizer.step()

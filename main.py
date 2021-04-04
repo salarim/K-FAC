@@ -18,14 +18,19 @@ class KFAC:
         self.known_modules = {'Linear', 'Conv2d'}
         self.CovAHandler = ComputeCovA()
         self.CovGHandler = ComputeCovG()
-        self.m_aa, self.m_gg = {}, {}
-        self.weights = {}
-        self.modules = []
+
         self.hook_handlers = []
-        self.grads = {}
+        self.modules = []
+        self.module_to_id = {}
+
+        self.weights = []
         self.avg_loss = 0.0
 
         self._prepare_model()
+
+        self.m_aa = [None for i in range(len(self.modules))]
+        self.m_gg = [None for i in range(len(self.modules))]
+        self.grads = []
 
     def _prepare_model(self):
         count = 0
@@ -42,35 +47,38 @@ class KFAC:
                 weights = module.weight.data
                 if module.bias is not None:
                     weights = torch.cat([weights, module.bias.data.unsqueeze(1)], dim=1)
-                self.weights[module] = weights
+                self.weights.append(weights)
+                self.module_to_id[module] = count
 
                 count += 1
 
     def _save_input(self, module, input):
         aa = self.CovAHandler(input[0].data, module)
         # Initialize buffers
+        module_id = self.module_to_id[module]
         if self.data_size == 0:
-            self.m_aa[module] = torch.diag(aa.new(aa.size(0)).fill_(1))
-        self.m_aa[module] += input[0].size(0) * aa
+            self.m_aa[module_id] = torch.diag(aa.new(aa.size(0)).fill_(1))
+        self.m_aa[module_id] += input[0].size(0) * aa
 
     def _save_grad_output(self, module, grad_input, grad_output):
         # Accumulate statistics for Fisher matrices
         gg = self.CovGHandler(grad_output[0].data, module, self.batch_averaged)
         # Initialize buffers
+        module_id = self.module_to_id[module]
         if self.data_size == 0:
-            self.m_gg[module] = torch.diag(gg.new(gg.size(0)).fill_(1))
-        self.m_gg[module] += grad_output[0].size(0) * gg
+            self.m_gg[module_id] = torch.diag(gg.new(gg.size(0)).fill_(1))
+        self.m_gg[module_id] += grad_output[0].size(0) * gg
     
     def _save_grad_weight(self, batch_size):
-        for module in self.modules:
+        for module_id, module in enumerate(self.modules):
             grad = module.weight.grad.data
             if module.bias is not None:
                 grad = torch.cat([grad, module.bias.grad.unsqueeze(1)], dim=1)
             grad = batch_size * grad
-            if module not in self.grads:
-                self.grads[module] = grad
+            if module_id > len(self.grads)-1:
+                self.grads.append(grad)
             else:
-                self.grads[module] += grad
+                self.grads[module_id] += grad
 
     def update_stats(self):
         self.data_size = 0
@@ -90,104 +98,132 @@ class KFAC:
 
             self.data_size += batch_size
 
-        for module in self.modules:
-            self.m_aa[module] /= self.data_size
-            self.m_gg[module] /= self.data_size
-            self.grads[module] /= self.data_size
+        for module_id in range(len(self.modules)):
+            self.m_aa[module_id] /= self.data_size
+            self.m_gg[module_id] /= self.data_size
+            self.grads[module_id] /= self.data_size
         self.avg_loss /= self.data_size
         
         for handler in self.hook_handlers:
             handler.remove()
 
-    def get_taylor_second_order_element(self):
+    def get_taylor_second_order_element(self, model):
         res = 0.0
-        for module in self.modules:
-            module_weight = module.weight
-            if module.bias is not None:
-                module_weight = torch.cat([module_weight, module.bias.unsqueeze(1)], dim=1)
+        module_id = 0
+        for module in model.modules():
+            # print(module, self.modules, module_id)
+            classname = module.__class__.__name__
 
-            res += ((module_weight - self.weights[module]).view(1,-1) @ \
-                    (self.m_gg[module] @ \
-                     (module_weight - self.weights[module]) @ \
-                     self.m_aa[module]).view(-1,1)).squeeze()
+            if classname in self.known_modules:
+                module_weight = module.weight
+                if module.bias is not None:
+                    module_weight = torch.cat([module_weight, module.bias.unsqueeze(1)], dim=1)
+
+                res += ((module_weight - self.weights[module_id]).view(1,-1) @ \
+                        (self.m_gg[module_id] @ \
+                        (module_weight - self.weights[module_id]) @ \
+                        self.m_aa[module_id]).view(-1,1)).squeeze()
+                module_id += 1
+        
         return 0.5 * res
 
-    def get_taylor_first_order_element(self):
+    def get_taylor_first_order_element(self, model):
         res = 0.0
-        for module in self.modules:
-            module_weight = module.weight
-            if module.bias is not None:
-                module_weight = torch.cat([module_weight, module.bias.unsqueeze(1)], dim=1)
+        module_id = 0
+        for module in model.modules():
+            classname = module.__class__.__name__
             
-            res += (module_weight - self.weights[module]).view(-1).dot(
-                self.grads[module].view(-1)
-            )
+            if classname in self.known_modules:
+                module_weight = module.weight
+                if module.bias is not None:
+                    module_weight = torch.cat([module_weight, module.bias.unsqueeze(1)], dim=1)
+                
+                res += (module_weight - self.weights[module_id]).view(-1).dot(
+                    self.grads[module_id].view(-1)
+                )
+            
+                module_id += 1
 
         return res
 
-    def get_taylor_approximation(self):
-        return self.avg_loss +\
-               self.get_taylor_second_order_element()
+    def get_taylor_approximation(self, model):
+        return self.get_taylor_second_order_element(model)
+
+
+def create_loss_function(kfacs, model, accumulate_last_kfac):
+    cross_entorpy = torch.nn.CrossEntropyLoss()
+
+    def get_loss(outputs, targets):
+        loss = 0.0
+
+        loss += cross_entorpy(outputs, targets)
+
+        if len(kfacs) > 0:
+            if accumulate_last_kfac:
+                kfacs_in_use = [kfacs[-1]]
+            else:
+                kfacs_in_use = kfacs
+
+            for task_kfacs in kfacs_in_use:
+                task_kfac_loss = 100.0
+                for model_id, model_kfac in enumerate(task_kfacs):
+                    model_kfac_loss = model_kfac.get_taylor_approximation(model)
+                    if model_kfac_loss < task_kfac_loss:
+                        task_kfac_loss = model_kfac_loss
+                
+                loss += task_kfac_loss
+
+        return loss
+    
+    return get_loss
 
 
 def main():
     EPOCHS = 10
-    tasks_nb = 50
+    tasks_nb = 20
+    models_nb_per_task = 1
+    accumulate_last_kfac = True
 
     train_datasets, test_datasets = get_datasets(random_seed=1,
                                                   task_number=50,
                                                   batch_size_train=128,
                                                   batch_size_test=1024)
     
-    model = Net()
-    criterion = torch.nn.CrossEntropyLoss()
-    optimizer = optim.SGD(model.parameters(),
+    models = [Net().cuda() for i in range(models_nb_per_task)]
+    optimizers = [optim.SGD(model.parameters(),
                             lr=0.01,
                             momentum=0.9,
-                            weight_decay=1e-4)
-    model, criterion = model.cuda(), criterion.cuda()
+                            weight_decay=1e-4) for model in models]
 
-    models = []
     kfacs = []
-    model_task_true_loss = np.ones((tasks_nb,tasks_nb))
-    model_task_approx_loss = np.ones((tasks_nb,tasks_nb))
+    train_criterion = [create_loss_function(kfacs, model, accumulate_last_kfac) for model in models]
+    test_criterion = torch.nn.CrossEntropyLoss()
 
     for task_id in range(tasks_nb):
-        print('Task {}:'.format(task_id+1))
+        task_kfacs = []
 
-        for epoch in range(1, EPOCHS+1):
-            train(model, train_datasets[task_id], optimizer, criterion, epoch, kfacs)
+        for model_id, model in enumerate(models):
+            print('Task {} Model {}:'.format(task_id+1, model_id+1))
 
-            if epoch == EPOCHS:
-                for test_task_id in  range(task_id+1):
-                    print('Test on task {}'.format(test_task_id+1))
-                    validate(model, test_datasets[test_task_id], criterion)
+            for epoch in range(1, EPOCHS+1):
+                train(model, train_datasets[task_id], optimizers[model_id], train_criterion[model_id], epoch)
 
-        models.append(deepcopy(model))
-        kfacs.append(KFAC(model, train_datasets[task_id]))
-        kfacs[-1].update_stats()
+                if epoch == EPOCHS:
+                    for test_task_id in  range(task_id+1):
+                        print('Test model {} on task {}'.format(model_id+1, test_task_id+1), flush=True)
+                        validate(model, test_datasets[test_task_id], test_criterion)
 
-    for model_id in range(tasks_nb):
-        for task_id in range(tasks_nb):
+            task_kfacs.append(KFAC(model, train_datasets[task_id]))
+            task_kfacs[-1].update_stats()
+        
+        kfacs.append(task_kfacs)
 
-            true_loss = validate(models[model_id], train_datasets[task_id], criterion, log=False)[1].avg
-            model.load_state_dict(models[model_id].state_dict())
-            approx_loss = kfacs[task_id].avg_loss +\
-                          kfacs[task_id].get_taylor_second_order_element().item()
+        if accumulate_last_kfac and len(kfacs) > 1:
+            for model_kfac_id in range(len(kfacs[-1])):
+                for module_id in range(len(kfacs[-1][model_kfac_id].modules)):
+                    kfacs[-1][model_kfac_id].m_aa[module_id] += kfacs[-2][model_kfac_id].m_aa[module_id]
+                    kfacs[-1][model_kfac_id].m_gg[module_id] += kfacs[-2][model_kfac_id].m_gg[module_id]
 
-            model_task_true_loss[model_id, task_id] = true_loss
-            model_task_approx_loss[model_id, task_id] = approx_loss
-
-            print('Model {} Task {} '
-                'True {:.4f} Approx {:.4f} Approx+1st {:.4f}'.format(model_id+1,
-                                                    task_id+1,
-                                                    true_loss,
-                                                    approx_loss,
-                                                    approx_loss+kfacs[task_id].get_taylor_first_order_element()),
-                                                    flush=True)
-
-    np.save('true_loss', model_task_true_loss)
-    np.save('approx_loss', model_task_approx_loss)
 
 if __name__=='__main__':
     main()
