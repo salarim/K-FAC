@@ -120,7 +120,8 @@ def _get_dataset_MNIST(permutation, get_train=True, batch_size=64, root='./data'
               transforms.Lambda(lambda x: x.view(-1)[permutation].view(1, 28, 28))])
     
     dataset = datasets.MNIST(root=root, train=get_train, transform=trans_perm, download=True)
-    loader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True)
+    loader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True,
+                                         num_workers=4, pin_memory=True)
     return loader
 
 

@@ -179,7 +179,7 @@ def create_loss_function(kfacs, model, accumulate_last_kfac):
 
 
 def main():
-    EPOCHS = 10
+    EPOCHS = 1
     tasks_nb = 20
     models_nb_per_task = 1
     accumulate_last_kfac = True
@@ -187,7 +187,7 @@ def main():
     train_datasets, test_datasets = get_datasets(random_seed=1,
                                                   task_number=50,
                                                   batch_size_train=128,
-                                                  batch_size_test=1024)
+                                                  batch_size_test=4096)
     
     models = [Net().cuda() for i in range(models_nb_per_task)]
     optimizers = [optim.SGD(model.parameters(),
@@ -198,6 +198,7 @@ def main():
     kfacs = []
     train_criterion = [create_loss_function(kfacs, model, accumulate_last_kfac) for model in models]
     test_criterion = torch.nn.CrossEntropyLoss()
+    val_accs = [[0.0]*tasks_nb for _ in range(tasks_nb)]
 
     for task_id in range(tasks_nb):
         task_kfacs = []
@@ -211,7 +212,10 @@ def main():
                 if epoch == EPOCHS:
                     for test_task_id in  range(task_id+1):
                         print('Test model {} on task {}'.format(model_id+1, test_task_id+1), flush=True)
-                        validate(model, test_datasets[test_task_id], test_criterion)
+                        val_acc = validate(model, test_datasets[test_task_id], test_criterion)[0].avg.item()
+
+                        prev_acc = val_accs[task_id][test_task_id] * model_id
+                        val_accs[task_id][test_task_id] = (prev_acc + val_acc) / (model_id+1)
 
             task_kfacs.append(KFAC(model, train_datasets[task_id]))
             task_kfacs[-1].update_stats()
@@ -223,6 +227,8 @@ def main():
                 for module_id in range(len(kfacs[-1][model_kfac_id].modules)):
                     kfacs[-1][model_kfac_id].m_aa[module_id] += kfacs[-2][model_kfac_id].m_aa[module_id]
                     kfacs[-1][model_kfac_id].m_gg[module_id] += kfacs[-2][model_kfac_id].m_gg[module_id]
+
+        print('#'*60, 'Avg acc: {:.2f}'.format(np.sum(val_accs[task_id])/(task_id+1)))
 
 
 if __name__=='__main__':
