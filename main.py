@@ -28,8 +28,8 @@ class KFAC:
 
         self._prepare_model()
 
-        self.m_aa = [None for i in range(len(self.modules))]
-        self.m_gg = [None for i in range(len(self.modules))]
+        self.m_aa = [0.0 for i in range(len(self.modules))]
+        self.m_gg = [0.0 for i in range(len(self.modules))]
         self.grads = []
 
     def _prepare_model(self):
@@ -53,24 +53,29 @@ class KFAC:
                 count += 1
 
     def _save_input(self, module, input):
+        if module.__class__.__name__ not in self.known_modules:
+            return
+        
         aa = self.CovAHandler(input[0].data, module)
         # Initialize buffers
         module_id = self.module_to_id[module]
-        if self.data_size == 0:
-            self.m_aa[module_id] = torch.diag(aa.new(aa.size(0)).fill_(1))
         self.m_aa[module_id] += input[0].size(0) * aa
 
     def _save_grad_output(self, module, grad_input, grad_output):
+        if module.__class__.__name__ not in self.known_modules:
+            return
+        
         # Accumulate statistics for Fisher matrices
         gg = self.CovGHandler(grad_output[0].data, module, self.batch_averaged)
         # Initialize buffers
         module_id = self.module_to_id[module]
-        if self.data_size == 0:
-            self.m_gg[module_id] = torch.diag(gg.new(gg.size(0)).fill_(1))
         self.m_gg[module_id] += grad_output[0].size(0) * gg
     
     def _save_grad_weight(self, batch_size):
         for module_id, module in enumerate(self.modules):
+            if module.__class__.__name__ not in self.known_modules:
+                continue
+        
             grad = module.weight.grad.data
             if module.bias is not None:
                 grad = torch.cat([grad, module.bias.grad.unsqueeze(1)], dim=1)
@@ -182,7 +187,7 @@ def main():
     EPOCHS = 1
     tasks_nb = 20
     models_nb_per_task = 1
-    accumulate_last_kfac = True
+    accumulate_last_kfac = False
 
     train_datasets, test_datasets = get_datasets(random_seed=1,
                                                   task_number=50,

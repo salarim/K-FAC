@@ -12,14 +12,15 @@ class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
         self.fc1 = nn.Linear(28 * 28, 100)
+        self.relu1 = nn.ReLU(inplace=True)
         self.fc2 = nn.Linear(100, 100)
+        self.relu2 = nn.ReLU(inplace=True)
         self.fc3 = nn.Linear(100, 10)
-        self.relu = nn.ReLU(inplace=True)
 
     def forward(self, x):
         x = x.view(-1, 28 * 28)
-        x = self.relu(self.fc1(x))
-        x = self.relu(self.fc2(x))
+        x = self.relu1(self.fc1(x))
+        x = self.relu2(self.fc2(x))
         x = self.fc3(x)
         return x
 
