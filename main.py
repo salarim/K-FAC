@@ -1,11 +1,13 @@
+import os
 from copy import deepcopy
 
 import numpy as np
+import matplotlib.pyplot as plt
 import torch
 import torch.optim as optim
 
 from utils import Net, train,  validate, get_datasets
-from utils import ComputeCovA, ComputeCovG 
+from utils import ComputeCovA, ComputeCovG
 
 
 class KFAC:
@@ -152,16 +154,34 @@ class KFAC:
         return res
 
     def get_taylor_approximation(self, model):
-        return self.get_taylor_second_order_element(model)
+        return self.avg_loss + self.get_taylor_second_order_element(model)
+
+    def visualize_attr(self, path, kfac_id, attr):
+        im_dir = os.path.join(path, attr + '_' + str(kfac_id))
+        if not os.path.exists(im_dir):
+            os.mkdir(im_dir)
+
+        for module_id in range(len(self.modules)):
+            if attr == 'gg':
+                arr = self.m_gg[module_id]
+            elif attr == 'aa':
+                arr = self.m_aa[module_id]
+
+            arr = arr.cpu().numpy()
+            arr_min, arr_max = np.min(arr), np.max(arr)
+            # arr = arr - arr_min
+            # arr = arr / (arr_max - arr_min)
+            print("{} {}\tmin: {:.3f}\tmax: {:.3f}".format(attr, module_id, np.min(arr), np.max(arr)))
+            im_path = os.path.join(im_dir, 'm_' + str(module_id) + '.jpg')
+            plt.imsave(im_path, arr, cmap='Greys')
 
 
 def create_loss_function(kfacs, model, accumulate_last_kfac):
     cross_entorpy = torch.nn.CrossEntropyLoss()
 
-    def get_loss(outputs, targets):
+    def get_loss(outputs, targets, task_id):
+        loss_lst = []
         loss = 0.0
-
-        loss += cross_entorpy(outputs, targets)
 
         if len(kfacs) > 0:
             if accumulate_last_kfac:
@@ -170,28 +190,33 @@ def create_loss_function(kfacs, model, accumulate_last_kfac):
                 kfacs_in_use = kfacs
 
             for task_kfacs in kfacs_in_use:
-                task_kfac_loss = 100.0
+                task_kfac_loss = float('inf')
                 for model_id, model_kfac in enumerate(task_kfacs):
                     model_kfac_loss = model_kfac.get_taylor_approximation(model)
                     if model_kfac_loss < task_kfac_loss:
                         task_kfac_loss = model_kfac_loss
                 
+                loss_lst.append(task_kfac_loss)
                 loss += task_kfac_loss
 
-        return loss
+        last_loss = cross_entorpy(outputs, targets)
+        loss_lst.append(last_loss)
+        loss += last_loss
+
+        return loss / task_id, loss_lst
     
     return get_loss
 
 
 def main():
     EPOCHS = 1
-    tasks_nb = 20
-    models_nb_per_task = 1
+    tasks_nb = 50
+    models_nb_per_task = 5
     accumulate_last_kfac = False
 
     train_datasets, test_datasets = get_datasets(random_seed=1,
-                                                  task_number=50,
-                                                  batch_size_train=128,
+                                                  task_number=tasks_nb,
+                                                  batch_size_train=16,
                                                   batch_size_test=4096)
     
     models = [Net().cuda() for i in range(models_nb_per_task)]
@@ -212,7 +237,7 @@ def main():
             print('Task {} Model {}:'.format(task_id+1, model_id+1))
 
             for epoch in range(1, EPOCHS+1):
-                train(model, train_datasets[task_id], optimizers[model_id], train_criterion[model_id], epoch)
+                train(model, train_datasets[task_id], optimizers[model_id], train_criterion[model_id], epoch, task_id+1)
 
                 if epoch == EPOCHS:
                     for test_task_id in  range(task_id+1):
@@ -232,6 +257,9 @@ def main():
                 for module_id in range(len(kfacs[-1][model_kfac_id].modules)):
                     kfacs[-1][model_kfac_id].m_aa[module_id] += kfacs[-2][model_kfac_id].m_aa[module_id]
                     kfacs[-1][model_kfac_id].m_gg[module_id] += kfacs[-2][model_kfac_id].m_gg[module_id]
+                    
+        # kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
+        # kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
 
         print('#'*60, 'Avg acc: {:.2f}'.format(np.sum(val_accs[task_id])/(task_id+1)))
 
