@@ -169,9 +169,11 @@ class KFAC:
 
             arr = arr.cpu().numpy()
             arr_min, arr_max = np.min(arr), np.max(arr)
+            
+            eigvals = np.linalg.eigvals(arr)
             # arr = arr - arr_min
             # arr = arr / (arr_max - arr_min)
-            print("{} {}\tmin: {:.3f}\tmax: {:.3f}".format(attr, module_id, np.min(arr), np.max(arr)))
+            print("{} {}\tmin: {:.3f}\tmax: {:.3f}\tmin_eigval: {:.3e}\tmax_eigval: {:.3e}".format(attr, module_id, np.min(arr), np.max(arr), np.min(eigvals), np.max(eigvals)))
             im_path = os.path.join(im_dir, 'm_' + str(module_id) + '.jpg')
             plt.imsave(im_path, arr, cmap='Greys')
 
@@ -211,12 +213,12 @@ def create_loss_function(kfacs, model, accumulate_last_kfac):
 def main():
     EPOCHS = 1
     tasks_nb = 50
-    models_nb_per_task = 5
-    accumulate_last_kfac = False
+    models_nb_per_task = 1
+    accumulate_last_kfac = True
 
     train_datasets, test_datasets = get_datasets(random_seed=1,
                                                   task_number=tasks_nb,
-                                                  batch_size_train=16,
+                                                  batch_size_train=128,
                                                   batch_size_test=4096)
     
     models = [Net().cuda() for i in range(models_nb_per_task)]
@@ -258,8 +260,8 @@ def main():
                     kfacs[-1][model_kfac_id].m_aa[module_id] += kfacs[-2][model_kfac_id].m_aa[module_id]
                     kfacs[-1][model_kfac_id].m_gg[module_id] += kfacs[-2][model_kfac_id].m_gg[module_id]
                     
-        # kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
-        # kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
+        kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
+        kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
 
         print('#'*60, 'Avg acc: {:.2f}'.format(np.sum(val_accs[task_id])/(task_id+1)))
 

@@ -81,8 +81,8 @@ def train(model, dataloader, optimizer, criterion, epoch, task_id):
         acc1, acc5 = accuracy(outputs, targets, topk=(1, 5))
         top1.update(acc1[0], bsz)
 
-        # if idx % 100 == 0:
-        #     print(idx, ["{:.3f}".format(x) for x in loss_lst])
+        if idx % 10 == 0:
+            print(idx, ["{:.3f}".format(x) for x in loss_lst])
 
         if idx == len(dataloader) - 1:
             print('Train: [{0}][{1}/{2}]\t'
