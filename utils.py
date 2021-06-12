@@ -60,6 +60,25 @@ def accuracy(output, target, topk=(1,)):
         return res
 
 
+def get_min_max_grad(model):
+    max_grad = float('-inf')
+    min_grad = float('inf')
+
+    for module in model.children():
+        classname = module.__class__.__name__
+        if classname in {'Linear', 'Conv2d'}:
+            grad = module.weight.grad.data
+            if module.bias is not None:
+                grad = torch.cat([grad, module.bias.grad.unsqueeze(1)], dim=1)
+            
+            if torch.max(grad) > max_grad:
+                max_grad = torch.max(grad)
+            if torch.min(grad) < min_grad:
+                min_grad = torch.min(grad)
+        
+    return min_grad, max_grad
+
+
 def train(model, dataloader, optimizer, criterion, epoch, task_id):
     losses = AverageMeter()
     top1 = AverageMeter()
@@ -83,6 +102,8 @@ def train(model, dataloader, optimizer, criterion, epoch, task_id):
 
         if idx % 10 == 0:
             print(idx, ["{:.3f}".format(x) for x in loss_lst])
+            # min_grad, max_grad = get_min_max_grad(model)
+            # print('MIN GRAD: {:.3f}\tMAX GRAD: {:.3f}'.format(min_grad, max_grad))
 
         if idx == len(dataloader) - 1:
             print('Train: [{0}][{1}/{2}]\t'

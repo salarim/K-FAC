@@ -12,7 +12,7 @@ from utils import ComputeCovA, ComputeCovG
 
 class KFAC:
 
-    def __init__(self, model, dataloader, batch_averaged=True):
+    def __init__(self, model, dataloader, batch_averaged=False):
         self.model = model
         self.dataloader = dataloader
         self.batch_averaged = batch_averaged
@@ -154,7 +154,7 @@ class KFAC:
         return res
 
     def get_taylor_approximation(self, model):
-        return self.avg_loss + self.get_taylor_second_order_element(model)
+        return self.get_taylor_second_order_element(model)
 
     def visualize_attr(self, path, kfac_id, attr):
         im_dir = os.path.join(path, attr + '_' + str(kfac_id))
@@ -184,6 +184,7 @@ def create_loss_function(kfacs, model, accumulate_last_kfac):
     def get_loss(outputs, targets, task_id):
         loss_lst = []
         loss = 0.0
+        lmbd = 100.0
 
         if len(kfacs) > 0:
             if accumulate_last_kfac:
@@ -198,6 +199,7 @@ def create_loss_function(kfacs, model, accumulate_last_kfac):
                     if model_kfac_loss < task_kfac_loss:
                         task_kfac_loss = model_kfac_loss
                 
+                task_kfac_loss *= lmbd
                 loss_lst.append(task_kfac_loss)
                 loss += task_kfac_loss
 
@@ -205,14 +207,14 @@ def create_loss_function(kfacs, model, accumulate_last_kfac):
         loss_lst.append(last_loss)
         loss += last_loss
 
-        return loss / task_id, loss_lst
+        return loss, loss_lst
     
     return get_loss
 
 
 def main():
     EPOCHS = 1
-    tasks_nb = 50
+    tasks_nb = 100
     models_nb_per_task = 1
     accumulate_last_kfac = True
 
@@ -259,7 +261,7 @@ def main():
                 for module_id in range(len(kfacs[-1][model_kfac_id].modules)):
                     kfacs[-1][model_kfac_id].m_aa[module_id] += kfacs[-2][model_kfac_id].m_aa[module_id]
                     kfacs[-1][model_kfac_id].m_gg[module_id] += kfacs[-2][model_kfac_id].m_gg[module_id]
-                    
+
         kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
         kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
 
