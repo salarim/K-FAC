@@ -1,4 +1,5 @@
 import os
+import random
 
 import numpy as np
 import torch
@@ -140,6 +141,16 @@ def validate(model, dataloader, criterion, log=True):
     return top1, losses
 
 
+def set_seed(seed):
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    np.random.seed(seed)
+    random.seed(seed)
+    os.environ['PYTHONHASHSEED'] = str(seed)
+
+
 def _get_dataset_MNIST(permutation, get_train=True, batch_size=64, root='./data'):
     trans_perm = transforms.Compose([transforms.ToTensor(),
               transforms.Lambda(lambda x: x.view(-1)[permutation].view(1, 28, 28))])
@@ -150,7 +161,7 @@ def _get_dataset_MNIST(permutation, get_train=True, batch_size=64, root='./data'
     return loader
 
 
-def get_datasets(dataset_name="pMNIST", random_seed=42, task_number=10,
+def get_datasets(dataset_name="pMNIST", task_number=10,
                  batch_size_train=64, batch_size_test=100):
     
     if dataset_name == "pMNIST":
@@ -159,7 +170,6 @@ def get_datasets(dataset_name="pMNIST", random_seed=42, task_number=10,
         if not os.path.exists(root):
             os.mkdir(root)
 
-        np.random.seed(random_seed)
         permutations = [
             np.random.permutation(28 * 28) for
             _ in range(task_number)

@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import torch
 import torch.optim as optim
 
+from utils import set_seed
 from utils import Net, train,  validate, get_datasets
 from utils import ComputeCovA, ComputeCovG
 
@@ -177,14 +178,28 @@ class KFAC:
             im_path = os.path.join(im_dir, 'm_' + str(module_id) + '.jpg')
             plt.imsave(im_path, arr, cmap='Greys')
 
+    def get_weights_distance(self, model):
+        dis = 0.0
+        module_id = 0
+        for module in model.modules():
+            classname = module.__class__.__name__
 
-def create_loss_function(kfacs, model, accumulate_last_kfac):
+            if classname in self.known_modules:
+                module_weight = module.weight
+                if module.bias is not None:
+                    module_weight = torch.cat([module_weight, module.bias.unsqueeze(1)], dim=1)
+
+                dis += torch.norm(module_weight - self.weights[module_id])
+                module_id += 1
+
+        return dis
+
+def create_loss_function(kfacs, model, accumulate_last_kfac, lmbd):
     cross_entorpy = torch.nn.CrossEntropyLoss()
 
     def get_loss(outputs, targets, task_id):
         loss_lst = []
         loss = 0.0
-        lmbd = 100.0
 
         if len(kfacs) > 0:
             if accumulate_last_kfac:
@@ -193,11 +208,16 @@ def create_loss_function(kfacs, model, accumulate_last_kfac):
                 kfacs_in_use = kfacs
 
             for task_kfacs in kfacs_in_use:
-                task_kfac_loss = float('inf')
+                closest_kfac = None
+                closest_kfac_dis = float('inf')
+
                 for model_id, model_kfac in enumerate(task_kfacs):
-                    model_kfac_loss = model_kfac.get_taylor_approximation(model)
-                    if model_kfac_loss < task_kfac_loss:
-                        task_kfac_loss = model_kfac_loss
+                    dis = model_kfac.get_weights_distance(model)
+                    if dis <  closest_kfac_dis:
+                        closest_kfac_dis = dis
+                        closest_kfac = model_kfac
+
+                task_kfac_loss = closest_kfac.get_taylor_approximation(model)
                 
                 task_kfac_loss *= lmbd
                 loss_lst.append(task_kfac_loss)
@@ -214,12 +234,14 @@ def create_loss_function(kfacs, model, accumulate_last_kfac):
 
 def main():
     EPOCHS = 1
-    tasks_nb = 100
+    tasks_nb = 50
     models_nb_per_task = 1
-    accumulate_last_kfac = True
+    accumulate_last_kfac = False
+    lmbd = 10**4
+    seed = 1234
 
-    train_datasets, test_datasets = get_datasets(random_seed=1,
-                                                  task_number=tasks_nb,
+    set_seed(seed)
+    train_datasets, test_datasets = get_datasets(task_number=tasks_nb,
                                                   batch_size_train=128,
                                                   batch_size_test=4096)
     
@@ -230,7 +252,7 @@ def main():
                             weight_decay=1e-4) for model in models]
 
     kfacs = []
-    train_criterion = [create_loss_function(kfacs, model, accumulate_last_kfac) for model in models]
+    train_criterion = [create_loss_function(kfacs, model, accumulate_last_kfac, lmbd) for model in models]
     test_criterion = torch.nn.CrossEntropyLoss()
     val_accs = [[0.0]*tasks_nb for _ in range(tasks_nb)]
 
@@ -243,13 +265,12 @@ def main():
             for epoch in range(1, EPOCHS+1):
                 train(model, train_datasets[task_id], optimizers[model_id], train_criterion[model_id], epoch, task_id+1)
 
-                if epoch == EPOCHS:
-                    for test_task_id in  range(task_id+1):
-                        print('Test model {} on task {}'.format(model_id+1, test_task_id+1), flush=True)
-                        val_acc = validate(model, test_datasets[test_task_id], test_criterion)[0].avg.item()
+            for test_task_id in  range(tasks_nb):
+                print('Test model {} on task {}'.format(model_id+1, test_task_id+1), flush=True)
+                val_acc = validate(model, test_datasets[test_task_id], test_criterion)[0].avg.item()
 
-                        prev_acc = val_accs[task_id][test_task_id] * model_id
-                        val_accs[task_id][test_task_id] = (prev_acc + val_acc) / (model_id+1)
+                prev_acc = val_accs[task_id][test_task_id] * model_id
+                val_accs[task_id][test_task_id] = (prev_acc + val_acc) / (model_id+1)
 
             task_kfacs.append(KFAC(model, train_datasets[task_id]))
             task_kfacs[-1].update_stats()
