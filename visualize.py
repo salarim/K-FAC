@@ -97,9 +97,9 @@ def plot_fwt(filename, test_accs_dict, initial_accs):
                 fwt[i] += (avg_test_accs[j-1,j] - initial_accs[0, j])
             fwt[i] /= i
 
-        if legend == '1 model for all previous tasks':
-            plt.plot(range(2,task_nb+1), fwt[1:])
-            legends.append(legend)
+        # if legend == '1 model for all previous tasks':
+        plt.plot(range(2,task_nb+1), fwt[1:])
+        legends.append(legend)
 
     plt.legend(legends)
 
