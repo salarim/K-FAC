@@ -39,9 +39,13 @@ def plot_avg_test_acc(filename, test_accs_dict):
     legends = []
     for legend, test_accs in test_accs_dict.items():
         task_nb, model_nb, _ = test_accs.shape
-        sum_test_accs = test_accs.sum(axis=(1,2))
-        prev_task_nb = model_nb * np.arange(1, task_nb+1)
-        avg_test_accs = sum_test_accs / prev_task_nb
+        test_accs = test_accs.mean(axis=1)
+
+        avg_test_accs = np.zeros(task_nb)
+        for i in range(task_nb):
+            for j in range(i+1):
+                avg_test_accs[i] += test_accs[i,j]
+            avg_test_accs[i] /= (i+1)
 
         plt.plot(range(1,task_nb+1), avg_test_accs)
         legends.append(legend)
@@ -108,18 +112,21 @@ def plot_fwt(filename, test_accs_dict, initial_accs):
 
 
 def main():
-    input_files = ['acc_False_e_1_m_5_tnb_50_lambda_10000.txt',
-                    'acc_False_e_1_tnb_50_lambda_10000.txt',
-                    'acc_True_e_1_m_1_tnb_50_lambda_100.txt',
-                    'acc_True_e_1_m_5_tnb_50_lambda_100.txt']
+    input_files = ['acc_false_e_1_tnb_50_mnb_5_lmbd_1e4',
+                    'acc_false_e_1_tnb_50_mnb_1_lmbd_1e4',
+                    'acc_true_e_1_tnb_50_mnb_1_lmbd_1e2',
+                    'acc_true_e_1_tnb_50_mnb_5_lmbd_1e2',
+                    'acc_false_e_1_tnb_50_mnb_1_lmbd_1e-1_ewc']
     legends = ['5 models per task',
                 '1 model per task',
                 '1 model for all previous tasks',
-                '5 models for all previous tasks']
+                '5 models for all previous tasks',
+                'EWC',]
     model_nbs = [5,
                  1,
                  1,
-                 5]
+                 5,
+                 1]
     task_nb = 50
     ###############################################################################################
 

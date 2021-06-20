@@ -13,9 +13,10 @@ from utils import ComputeCovA, ComputeCovG
 
 class KFAC:
 
-    def __init__(self, model, dataloader, batch_averaged=False):
+    def __init__(self, model, dataloader, ewc, batch_averaged=False):
         self.model = model
         self.dataloader = dataloader
+        self.ewc = ewc
         self.batch_averaged = batch_averaged
 
         self.known_modules = {'Linear', 'Conv2d'}
@@ -34,6 +35,7 @@ class KFAC:
         self.m_aa = [0.0 for i in range(len(self.modules))]
         self.m_gg = [0.0 for i in range(len(self.modules))]
         self.grads = []
+        self.grads_p2 = []
 
     def _prepare_model(self):
         count = 0
@@ -85,8 +87,10 @@ class KFAC:
             grad = batch_size * grad
             if module_id > len(self.grads)-1:
                 self.grads.append(grad)
+                self.grads_p2.append(grad**2)
             else:
                 self.grads[module_id] += grad
+                self.grads_p2[module_id] += (grad**2)
 
     def update_stats(self):
         self.data_size = 0
@@ -110,6 +114,7 @@ class KFAC:
             self.m_aa[module_id] /= self.data_size
             self.m_gg[module_id] /= self.data_size
             self.grads[module_id] /= self.data_size
+            self.grads_p2[module_id] /= self.data_size
         self.avg_loss /= self.data_size
         
         for handler in self.hook_handlers:
@@ -154,7 +159,26 @@ class KFAC:
 
         return res
 
+    def get_ewc_loss(self, model):
+        res = 0.0
+        module_id = 0
+        for module in model.modules():
+            # print(module, self.modules, module_id)
+            classname = module.__class__.__name__
+
+            if classname in self.known_modules:
+                module_weight = module.weight
+                if module.bias is not None:
+                    module_weight = torch.cat([module_weight, module.bias.unsqueeze(1)], dim=1)
+
+                res += (self.grads_p2[module_id] * (module_weight - self.weights[module_id]) ** 2).sum()
+                module_id += 1
+        
+        return 0.5 * res
+
     def get_taylor_approximation(self, model):
+        if self.ewc:
+            return self.get_ewc_loss(model)
         return self.get_taylor_second_order_element(model)
 
     def visualize_attr(self, path, kfac_id, attr):
@@ -238,6 +262,7 @@ def main():
     models_nb_per_task = 1
     accumulate_last_kfac = False
     lmbd = 10**4
+    ewc = False
     seed = 1234
 
     set_seed(seed)
@@ -272,7 +297,7 @@ def main():
                 prev_acc = val_accs[task_id][test_task_id] * model_id
                 val_accs[task_id][test_task_id] = (prev_acc + val_acc) / (model_id+1)
 
-            task_kfacs.append(KFAC(model, train_datasets[task_id]))
+            task_kfacs.append(KFAC(model, train_datasets[task_id], ewc))
             task_kfacs[-1].update_stats()
         
         kfacs.append(task_kfacs)
@@ -286,7 +311,7 @@ def main():
         kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
         kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
 
-        print('#'*60, 'Avg acc: {:.2f}'.format(np.sum(val_accs[task_id])/(task_id+1)))
+        print('#'*60, 'Avg acc: {:.2f}'.format(np.sum(val_accs[task_id][:task_id+1])/(task_id+1)))
 
 
 if __name__=='__main__':
