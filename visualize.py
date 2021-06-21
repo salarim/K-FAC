@@ -55,7 +55,7 @@ def plot_avg_test_acc(filename, test_accs_dict):
     plt.ylim(0,100)
     plt.xlabel("# Task")
     plt.ylabel("Test Accuracy")
-    plt.title("Average test accuracy of a kfac-approximate continual learner")
+    # plt.title("Average test accuracy of a kfac-approximate continual learner")
     plt.savefig(filename)
     plt.close()
 
@@ -80,7 +80,7 @@ def plot_bwt(filename, test_accs_dict):
     # plt.ylim(0,100)
     plt.xlabel("# Task")
     plt.ylabel("Backward Transfer")
-    plt.title("Backward transfer of a kfac-approximate continual learner")
+    # plt.title("Backward transfer of a kfac-approximate continual learner")
     plt.savefig(filename)
     plt.close()
 
@@ -106,27 +106,25 @@ def plot_fwt(filename, test_accs_dict, initial_accs):
     # plt.ylim(0,100)
     plt.xlabel("# Task")
     plt.ylabel("Forward Transfer")
-    plt.title("Forward transfer of a kfac-approximate continual learner")
+    # plt.title("Forward transfer of a kfac-approximate continual learner")
     plt.savefig(filename)
     plt.close()
 
 
 def main():
-    input_files = ['acc_false_e_1_tnb_50_mnb_5_lmbd_1e4',
-                    'acc_false_e_1_tnb_50_mnb_1_lmbd_1e4',
-                    'acc_true_e_1_tnb_50_mnb_1_lmbd_1e2',
-                    'acc_true_e_1_tnb_50_mnb_5_lmbd_1e2',
-                    'acc_false_e_1_tnb_50_mnb_1_lmbd_1e-1_ewc']
-    legends = ['5 models per task',
-                '1 model per task',
-                '1 model for all previous tasks',
-                '5 models for all previous tasks',
-                'EWC',]
-    model_nbs = [5,
-                 1,
-                 1,
-                 5,
-                 1]
+    input_files = ['acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e2.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e3.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e4.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_2e4.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_tid*1e2.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_tid*1e3.txt']
+    legends = ['1e2',
+                '1e3',
+                '1e4',
+                '2e4',
+                'tid*1e2',
+                'tid*1e3']
+    model_nbs = [1]*6
     task_nb = 50
     ###############################################################################################
 
@@ -137,12 +135,12 @@ def main():
         train_accs, test_accs = read_file(input_file, task_nb, model_nbs[i])
         test_accs_dict[legends[i]] = test_accs
 
-    plot_avg_test_acc('avg_test_acc',
+    plot_avg_test_acc('lambda_avg_acc',
                      test_accs_dict)
 
-    plot_bwt('bwt', test_accs_dict)
+    # plot_bwt('bwt', test_accs_dict)
 
-    plot_fwt('fwt', test_accs_dict, initial_accs)
+    # plot_fwt('fwt', test_accs_dict, initial_accs)
 
 if __name__ == '__main__':
     main()

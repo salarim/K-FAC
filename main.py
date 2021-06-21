@@ -237,13 +237,13 @@ def create_loss_function(kfacs, model, accumulate_last_kfac, lmbd):
 
                 for model_id, model_kfac in enumerate(task_kfacs):
                     dis = model_kfac.get_weights_distance(model)
-                    if dis <  closest_kfac_dis:
+                    if closest_kfac is None or dis <  closest_kfac_dis:
                         closest_kfac_dis = dis
                         closest_kfac = model_kfac
 
                 task_kfac_loss = closest_kfac.get_taylor_approximation(model)
                 
-                task_kfac_loss *= lmbd
+                task_kfac_loss *= (lmbd * task_id)
                 loss_lst.append(task_kfac_loss)
                 loss += task_kfac_loss
 
