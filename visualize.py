@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def read_file(filename, task_nb, model_nb):
     train_accs = np.zeros((task_nb, model_nb))
-    test_accs = np.zeros((task_nb, model_nb, task_nb))
+    test_accs = 10.0 * np.ones((task_nb, model_nb, task_nb))
 
     model_id, task_id, test_task_id = -1, -1, -1
     with open(filename, 'r') as f:
@@ -115,16 +115,18 @@ def main():
     input_files = ['acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e2.txt',
                     'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e3.txt',
                     'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e4.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_2e4.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_4e4.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_5e4.txt',
                     'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_tid*1e2.txt',
                     'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_tid*1e3.txt']
     legends = ['1e2',
                 '1e3',
                 '1e4',
-                '2e4',
+                '4e4',
+                '5e4',
                 'tid*1e2',
                 'tid*1e3']
-    model_nbs = [1]*6
+    model_nbs = [1]*7
     task_nb = 50
     ###############################################################################################
 
