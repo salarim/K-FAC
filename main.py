@@ -264,10 +264,12 @@ def main():
     accumulate_last_kfac = False
     lmbd = 10**4
     ewc = False
+    seed = 1234
+
+    loss_space_vis = False
     max_dis = 20
     steps = 10 + 1
     loss_vis_mod = 10
-    seed = 1234
 
     set_seed(seed)
     train_datasets, test_datasets = get_datasets(task_number=tasks_nb,
@@ -303,17 +305,18 @@ def main():
                 val_accs[task_id][test_task_id] = (prev_acc + val_acc) / (model_id+1)
 
                 # Loss Space Visualization
-                if (task_id == 0 or (task_id+1) % loss_vis_mod == 0) and \
-                    (test_task_id == 0 or (test_task_id+1) % loss_vis_mod == 0):
-                    print('### Loss Space Visualization Starts ###')
-                    file_name = 'heatmaps/s{:d}_d{:d}'.format(task_id+1, test_task_id+1)
-                    loss_func = get_vis_loss_func(test_datasets[test_task_id], test_criterion)
-                    loss_vis.set_model(model)
-                    loss_vis.set_loss_func(loss_func)
+                if loss_space_vis:
+                    if (task_id == 0 or (task_id+1) % loss_vis_mod == 0) and \
+                        (test_task_id == 0 or (test_task_id+1) % loss_vis_mod == 0):
+                        print('### Loss Space Visualization Starts ###')
+                        file_name = 'heatmaps/s{:d}_d{:d}'.format(task_id+1, test_task_id+1)
+                        loss_func = get_vis_loss_func(test_datasets[test_task_id], test_criterion)
+                        loss_vis.set_model(model)
+                        loss_vis.set_loss_func(loss_func)
 
-                    rand_dirs_lst = loss_vis.get_rand_dirs()
-                    loss_vis.add_losses(rand_dirs_lst, file_name)
-                    print('### Loss Space Visualization Ends ###')
+                        rand_dirs_lst = loss_vis.get_rand_dirs()
+                        loss_vis.add_losses(rand_dirs_lst, file_name)
+                        print('### Loss Space Visualization Ends ###')
 
             task_kfacs.append(KFAC(model, train_datasets[task_id], ewc))
             task_kfacs[-1].update_stats()
@@ -326,20 +329,22 @@ def main():
                     kfacs[-1][model_kfac_id].m_aa[module_id] += kfacs[-2][model_kfac_id].m_aa[module_id]
                     kfacs[-1][model_kfac_id].m_gg[module_id] += kfacs[-2][model_kfac_id].m_gg[module_id]
 
-        for test_task_id in range(len(kfacs)):
-            if (task_id == 0 or (task_id+1) % loss_vis_mod == 0) and \
-                (test_task_id == 0 or (test_task_id+1) % loss_vis_mod == 0):
-                loss_vis.set_loss_func(kfacs[test_task_id][-1].get_taylor_approximation)
-                rand_dirs_lst = loss_vis.get_rand_dirs()
-                file_name = 'heatmaps/kfac_s{:d}_d{:d}'.format(test_task_id+1, task_id+1)
-                loss_vis.add_losses(rand_dirs_lst, file_name)
+        if loss_space_vis:
+            for test_task_id in range(len(kfacs)):
+                if (task_id == 0 or (task_id+1) % loss_vis_mod == 0) and \
+                    (test_task_id == 0 or (test_task_id+1) % loss_vis_mod == 0):
+                    loss_vis.set_loss_func(kfacs[test_task_id][-1].get_taylor_approximation)
+                    rand_dirs_lst = loss_vis.get_rand_dirs()
+                    file_name = 'heatmaps/kfac_s{:d}_d{:d}'.format(test_task_id+1, task_id+1)
+                    loss_vis.add_losses(rand_dirs_lst, file_name)
 
         # kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
         # kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
 
         print('#'*60, 'Avg acc: {:.2f}'.format(np.sum(val_accs[task_id][:task_id+1])/(task_id+1)))
 
-    loss_vis.visualize()
+    if loss_space_vis:
+        loss_vis.visualize()
 
 
 if __name__=='__main__':
