@@ -9,6 +9,7 @@ import torch.optim as optim
 from utils import set_seed
 from utils import Net, train,  validate, get_datasets
 from utils import ComputeCovA, ComputeCovG
+from loss_space import LossVisualizer, get_vis_loss_func
 
 
 class KFAC:
@@ -243,7 +244,7 @@ def create_loss_function(kfacs, model, accumulate_last_kfac, lmbd):
 
                 task_kfac_loss = closest_kfac.get_taylor_approximation(model)
                 
-                task_kfac_loss *= (lmbd * task_id)
+                task_kfac_loss *= lmbd
                 loss_lst.append(task_kfac_loss)
                 loss += task_kfac_loss
 
@@ -263,6 +264,9 @@ def main():
     accumulate_last_kfac = False
     lmbd = 10**4
     ewc = False
+    max_dis = 20
+    steps = 10 + 1
+    loss_vis_mod = 10
     seed = 1234
 
     set_seed(seed)
@@ -280,6 +284,7 @@ def main():
     train_criterion = [create_loss_function(kfacs, model, accumulate_last_kfac, lmbd) for model in models]
     test_criterion = torch.nn.CrossEntropyLoss()
     val_accs = [[0.0]*tasks_nb for _ in range(tasks_nb)]
+    loss_vis = LossVisualizer(max_dis, steps)
 
     for task_id in range(tasks_nb):
         task_kfacs = []
@@ -297,6 +302,19 @@ def main():
                 prev_acc = val_accs[task_id][test_task_id] * model_id
                 val_accs[task_id][test_task_id] = (prev_acc + val_acc) / (model_id+1)
 
+                # Loss Space Visualization
+                if (task_id == 0 or (task_id+1) % loss_vis_mod == 0) and \
+                    (test_task_id == 0 or (test_task_id+1) % loss_vis_mod == 0):
+                    print('### Loss Space Visualization Starts ###')
+                    file_name = 'heatmaps/s{:d}_d{:d}'.format(task_id+1, test_task_id+1)
+                    loss_func = get_vis_loss_func(test_datasets[test_task_id], test_criterion)
+                    loss_vis.set_model(model)
+                    loss_vis.set_loss_func(loss_func)
+
+                    rand_dirs_lst = loss_vis.get_rand_dirs()
+                    loss_vis.add_losses(rand_dirs_lst, file_name)
+                    print('### Loss Space Visualization Ends ###')
+
             task_kfacs.append(KFAC(model, train_datasets[task_id], ewc))
             task_kfacs[-1].update_stats()
         
@@ -308,10 +326,20 @@ def main():
                     kfacs[-1][model_kfac_id].m_aa[module_id] += kfacs[-2][model_kfac_id].m_aa[module_id]
                     kfacs[-1][model_kfac_id].m_gg[module_id] += kfacs[-2][model_kfac_id].m_gg[module_id]
 
-        kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
-        kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
+        for test_task_id in range(len(kfacs)):
+            if (task_id == 0 or (task_id+1) % loss_vis_mod == 0) and \
+                (test_task_id == 0 or (test_task_id+1) % loss_vis_mod == 0):
+                loss_vis.set_loss_func(kfacs[test_task_id][-1].get_taylor_approximation)
+                rand_dirs_lst = loss_vis.get_rand_dirs()
+                file_name = 'heatmaps/kfac_s{:d}_d{:d}'.format(test_task_id+1, task_id+1)
+                loss_vis.add_losses(rand_dirs_lst, file_name)
+
+        # kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
+        # kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
 
         print('#'*60, 'Avg acc: {:.2f}'.format(np.sum(val_accs[task_id][:task_id+1])/(task_id+1)))
+
+    loss_vis.visualize()
 
 
 if __name__=='__main__':

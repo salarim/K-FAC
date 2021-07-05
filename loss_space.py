@@ -12,18 +12,23 @@ from utils import Net, train, validate, get_datasets
 
 class LossVisualizer:
 
-    def __init__(self, model, loss_func):
-        self.model = model
-        self.loss_func = loss_func
+    def __init__(self, max_dis, steps):
+        self.model = None
+        self.loss_func = None
         self.weights = {}
-        max_dis = 100
-        steps = 50 + 1
+        self.losses_dict = {}
 
         self.coefs = np.meshgrid(np.linspace(-max_dis, max_dis, steps), np.linspace(-max_dis, max_dis, steps))
+
+    def set_model(self, model):
+        self.model = deepcopy(model)
         with torch.no_grad():
             for name, param in self.model.named_parameters():
                 if param.requires_grad:
                     self.weights[name] = param.data
+
+    def set_loss_func(self, loss_func):
+        self.loss_func = loss_func
 
     def get_rand_dirs(self):
         rand_dirs_lst = []
@@ -45,7 +50,7 @@ class LossVisualizer:
 
         return rand_dirs_lst
 
-    def get_losses(self, rand_dirs_lst):
+    def add_losses(self, rand_dirs_lst, filename):
         losses = np.zeros(self.coefs[0].shape)
 
         for i in range(self.coefs[0].shape[0]):
@@ -60,26 +65,42 @@ class LossVisualizer:
                     losses[i,j] = self.loss_func(self.model)
                     print("{:.3f}\t{:.3f}\t{:.3f}".format(self.coefs[0][i,j], self.coefs[1][i,j], losses[i,j]))
 
-        return losses
+        self.losses_dict[filename] = losses
 
-    def visualize(self, losses):
+    def visualize(self):
+        max_loss = 0.0
+        for filename, losses in self.losses_dict.items():
+            max_loss = max(max_loss, np.abs(losses[:-1, :-1]).max())
         x,y = self.coefs
-        z = losses[:-1, :-1]
-        z_min, z_max = -np.abs(z).max(), np.abs(z).max()
 
-        fig, ax = plt.subplots()
+        for filename, losses in self.losses_dict.items():
+            z = losses[:-1, :-1]
 
-        c = ax.pcolormesh(x, y, z, cmap='RdBu', vmin=0.0, vmax=z_max)
-        ax.set_title('pcolormesh')
-        # set the limits of the plot to the limits of the data
-        ax.axis([x.min(), x.max(), y.min(), y.max()])
-        fig.colorbar(c, ax=ax)
+            fig, ax = plt.subplots()
 
-        plt.savefig('heatmap')
-        plt.close()
+            c = ax.pcolormesh(x, y, z, cmap='OrRd', vmin=0.0, vmax=max_loss)
+            # set the limits of the plot to the limits of the data
+            ax.axis([x.min(), x.max(), y.min(), y.max()])
+            ax.set_xlabel("coef 1")
+            ax.set_ylabel("coef 2")
+
+            fig.colorbar(c, ax=ax)
+
+            plt.savefig(filename)
+            plt.close()
+
+
+def get_vis_loss_func(dataset, criterion):
+    def loss_func(model):
+        return validate(model, dataset, criterion)[1].avg
+
+    return loss_func
+
 
 if __name__ == '__main__':
-    tasks_nb = 1
+    tasks_nb = 2
+    max_dis = 10
+    steps = 10 + 1
     seed = 1234
 
     # set_seed(seed)
@@ -87,9 +108,6 @@ if __name__ == '__main__':
                                                   batch_size_train=128,
                                                   batch_size_test=4096)
     test_criterion = torch.nn.CrossEntropyLoss()
-
-    def loss_func(model):
-        return validate(model, test_datasets[0], test_criterion)[1].avg
 
     def train_criterion(outputs, targets, task_id):
         loss = test_criterion(outputs, targets)
@@ -102,12 +120,16 @@ if __name__ == '__main__':
                         weight_decay=1e-4)
 
     train(model, train_datasets[0], optimizer, train_criterion, 1, 1)
-    print("original loss:", loss_func(model))
-    loss_vis = LossVisualizer(model, loss_func)
+
+    loss_func = get_vis_loss_func(test_datasets[0], test_criterion)
+    print("original loss: {:.3f}".format(loss_func(model)))
+    loss_vis = LossVisualizer(max_dis, steps)
+    loss_vis.set_model(model)
+    loss_vis.set_loss_func(loss_func)
 
     rand_dirs_lst = loss_vis.get_rand_dirs()
-    losses = loss_vis.get_losses(rand_dirs_lst)
-    loss_vis.visualize(losses)
+    loss_vis.add_losses(rand_dirs_lst, 'heatmap')
+    loss_vis.visualize()
 
 
     
