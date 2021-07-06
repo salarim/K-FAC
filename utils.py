@@ -151,18 +151,16 @@ def set_seed(seed):
     os.environ['PYTHONHASHSEED'] = str(seed)
 
 
-def _get_dataset_MNIST(permutation, get_train=True, batch_size=64, root='./data'):
+def _get_dataset_MNIST(permutation, get_train=True, root='./data'):
     trans_perm = transforms.Compose([transforms.ToTensor(),
               transforms.Lambda(lambda x: x.view(-1)[permutation].view(1, 28, 28))])
     
     dataset = datasets.MNIST(root=root, train=get_train, transform=trans_perm, download=True)
-    loader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True,
-                                         num_workers=4, pin_memory=True)
-    return loader
+    return dataset
 
 
 def get_datasets(dataset_name="pMNIST", task_number=10,
-                 batch_size_train=64, batch_size_test=100):
+                 batch_size_train=64, batch_size_test=100, include_prev=False):
     
     if dataset_name == "pMNIST":
         
@@ -176,12 +174,35 @@ def get_datasets(dataset_name="pMNIST", task_number=10,
         ]
 
         train_datasets = [
-            _get_dataset_MNIST(p, True, batch_size_train, root) for p in permutations
+            _get_dataset_MNIST(p, True, root) for p in permutations
         ]
         test_datasets = [
-            _get_dataset_MNIST(p, False, batch_size_test, root) for p in permutations
+            _get_dataset_MNIST(p, False, root) for p in permutations
         ]
-    return train_datasets, test_datasets
+
+        if include_prev:
+            new_train_datasets = []
+            new_test_datasets = []
+
+            for i in range(len(train_datasets)):
+                new_train_datasets.append(torch.utils.data.ConcatDataset(train_datasets[:i+1]))
+                new_test_datasets.append(torch.utils.data.ConcatDataset(test_datasets[:i+1]))
+
+            train_datasets = new_train_datasets
+            test_datasets = new_test_datasets
+        
+        train_loaders, test_loaders = [], []
+        for train_dataset in train_datasets:
+            loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size_train, shuffle=True,
+                                         num_workers=4, pin_memory=True)
+            train_loaders.append(loader)
+
+        for test_dataset in test_datasets:
+            loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size_test, shuffle=True,
+                                         num_workers=4, pin_memory=True)
+            test_loaders.append(loader)
+            
+    return train_loaders, test_loaders
 
 
 def try_contiguous(x):
