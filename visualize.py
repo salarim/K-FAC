@@ -3,6 +3,56 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+def get_lmbd_config():
+    input_files = ['acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e2.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e3.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e4.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_4e4.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_5e4.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_tid*1e2.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_tid*1e3.txt']
+    input_files = ['outputs/'+x for x in input_files]
+
+    legends = ['1e2',
+                '1e3',
+                '1e4',
+                '4e4',
+                '5e4',
+                'tid*1e2',
+                'tid*1e3']
+    model_nbs = [1]*7
+
+    return input_files, legends, model_nbs
+
+
+def get_models_config():
+    input_files = ['acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e4.txt',
+                    'acc_false_e_1_tnb_50_mnb_5/acc_false_e_1_tnb_50_mnb_5_lmbd_1e4.txt',
+                    'acc_true_e_1_tnb_50_mnb_1/acc_true_e_1_tnb_50_mnb_1_lmbd_1e2.txt',
+                    'acc_true_e_1_tnb_50_mnb_5/acc_true_e_1_tnb_50_mnb_5_lmbd_1e2.txt',
+                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1_ewc.txt',
+                    'finetune.txt',
+                    'multi-task.txt']
+    input_files = ['outputs/'+x for x in input_files]
+
+    legends = ['1 model per task',
+                '5 models per task',
+                '1 model for all previous tasks',
+                '5 models for all previous tasks',
+                'EWC',
+                'Finetune',
+                'Multi-task']
+    model_nbs = [1,
+                 5,
+                 1,
+                 5,
+                 1,
+                 1,
+                 1]
+    
+    return input_files, legends, model_nbs
+
+
 def read_file(filename, task_nb, model_nb):
     train_accs = np.zeros((task_nb, model_nb))
     test_accs = 10.0 * np.ones((task_nb, model_nb, task_nb))
@@ -132,39 +182,29 @@ def plot_test_acc(filename, test_accs):
 
 
 def main():
-    input_files = ['acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e2.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e3.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e4.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_4e4.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_5e4.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_tid*1e2.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_tid*1e3.txt']
-    legends = ['1e2',
-                '1e3',
-                '1e4',
-                '4e4',
-                '5e4',
-                'tid*1e2',
-                'tid*1e3']
-    model_nbs = [1]*7
+    prefixes = ['lambda_', 'models_']
+    config_func = [get_lmbd_config, get_models_config]
+
+    prefix = prefixes[1]
+    input_files, legends, model_nbs = config_func[1]()
     task_nb = 50
     ###############################################################################################
 
-    initial_accs = read_file('initialization_test_accuracy.txt', task_nb, 1)[1][task_nb-1]
+    initial_accs = read_file('outputs/initialization_test_accuracy.txt', task_nb, 1)[1][task_nb-1]
 
     test_accs_dict = {}
     for i, input_file in enumerate(input_files):
         train_accs, test_accs = read_file(input_file, task_nb, model_nbs[i])
         test_accs_dict[legends[i]] = test_accs
 
-    # plot_avg_test_acc('lambda_avg_acc',
-    #                  test_accs_dict)
+    plot_avg_test_acc(prefix + 'avg_acc',
+                     test_accs_dict)
 
-    # plot_bwt('bwt', test_accs_dict)
+    plot_bwt(prefix + 'bwt', test_accs_dict)
 
-    # plot_fwt('fwt', test_accs_dict, initial_accs)
+    plot_fwt(prefix + 'fwt', test_accs_dict, initial_accs)
 
-    plot_test_acc('acc_per_task' + 'acc_false_e_1_tnb_50_mnb_1_lmbd_1e4', test_accs_dict['1e4'])
+    # plot_test_acc('acc_per_task_' + 'acc_false_e_1_tnb_50_mnb_1_lmbd_1e4', test_accs_dict['1e4'])
 
 if __name__ == '__main__':
     main()
