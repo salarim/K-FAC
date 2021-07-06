@@ -9,7 +9,7 @@ import torch.optim as optim
 from utils import set_seed
 from utils import Net, train,  validate, get_datasets
 from utils import ComputeCovA, ComputeCovG
-from loss_space import LossVisualizer, get_vis_loss_func
+from loss_space import LossVisualizer, get_vis_loss_func, get_vis_loss_func_for_kfac
 
 
 class KFAC:
@@ -219,14 +219,14 @@ class KFAC:
 
         return dis
 
-def create_loss_function(kfacs, model, accumulate_last_kfac, lmbd):
+def create_loss_function(kfacs, model, accumulate_last_kfac, lmbd, use_kfac):
     cross_entorpy = torch.nn.CrossEntropyLoss()
 
     def get_loss(outputs, targets, task_id):
         loss_lst = []
         loss = 0.0
 
-        if len(kfacs) > 0:
+        if use_kfac and len(kfacs) > 0:
             if accumulate_last_kfac:
                 kfacs_in_use = [kfacs[-1]]
             else:
@@ -261,20 +261,23 @@ def main():
     EPOCHS = 1
     tasks_nb = 50
     models_nb_per_task = 1
+    multi_task_dataset = False
+    use_kfac = True
     accumulate_last_kfac = False
-    lmbd = 10**4
     ewc = False
+    lmbd = 10**4
     seed = 1234
 
-    loss_space_vis = False
-    max_dis = 20
+    loss_space_vis = True
+    max_dis = 10
     steps = 10 + 1
     loss_vis_mod = 10
 
     set_seed(seed)
     train_datasets, test_datasets = get_datasets(task_number=tasks_nb,
                                                   batch_size_train=128,
-                                                  batch_size_test=4096)
+                                                  batch_size_test=4096,
+                                                  include_prev=multi_task_dataset)
     
     models = [Net().cuda() for i in range(models_nb_per_task)]
     optimizers = [optim.SGD(model.parameters(),
@@ -283,10 +286,11 @@ def main():
                             weight_decay=1e-4) for model in models]
 
     kfacs = []
-    train_criterion = [create_loss_function(kfacs, model, accumulate_last_kfac, lmbd) for model in models]
+    train_criterion = [create_loss_function(kfacs, model, accumulate_last_kfac, lmbd, use_kfac) for model in models]
     test_criterion = torch.nn.CrossEntropyLoss()
     val_accs = [[0.0]*tasks_nb for _ in range(tasks_nb)]
     loss_vis = LossVisualizer(max_dis, steps)
+    loss_vis_kfac = LossVisualizer(max_dis, steps)
 
     for task_id in range(tasks_nb):
         task_kfacs = []
@@ -312,6 +316,7 @@ def main():
                         file_name = 'heatmaps/s{:d}_d{:d}'.format(task_id+1, test_task_id+1)
                         loss_func = get_vis_loss_func(test_datasets[test_task_id], test_criterion)
                         loss_vis.set_model(model)
+                        loss_vis_kfac.set_model(model)
                         loss_vis.set_loss_func(loss_func)
 
                         rand_dirs_lst = loss_vis.get_rand_dirs()
@@ -333,10 +338,12 @@ def main():
             for test_task_id in range(len(kfacs)):
                 if (task_id == 0 or (task_id+1) % loss_vis_mod == 0) and \
                     (test_task_id == 0 or (test_task_id+1) % loss_vis_mod == 0):
-                    loss_vis.set_loss_func(kfacs[test_task_id][-1].get_taylor_approximation)
-                    rand_dirs_lst = loss_vis.get_rand_dirs()
+                    print('### Loss Space Visualization For Kfac Starts ###')
+                    loss_vis_kfac.set_loss_func(get_vis_loss_func_for_kfac(kfacs[test_task_id][-1], lmbd))
+                    rand_dirs_lst = loss_vis_kfac.get_rand_dirs()
                     file_name = 'heatmaps/kfac_s{:d}_d{:d}'.format(test_task_id+1, task_id+1)
-                    loss_vis.add_losses(rand_dirs_lst, file_name)
+                    loss_vis_kfac.add_losses(rand_dirs_lst, file_name)
+                    print('### Loss Space Visualization For Kfac Ends ###')
 
         # kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
         # kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
@@ -345,6 +352,7 @@ def main():
 
     if loss_space_vis:
         loss_vis.visualize()
+        loss_vis_kfac.visualize()
 
 
 if __name__=='__main__':

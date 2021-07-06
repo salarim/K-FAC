@@ -97,6 +97,13 @@ def get_vis_loss_func(dataset, criterion):
     return loss_func
 
 
+def get_vis_loss_func_for_kfac(kfac, lmbd):
+    def loss_func(model):
+        return lmbd * kfac.get_taylor_approximation(model)
+
+    return loss_func
+
+
 if __name__ == '__main__':
     tasks_nb = 2
     max_dis = 10
