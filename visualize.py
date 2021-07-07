@@ -18,8 +18,8 @@ def get_lmbd_config():
                 '1e4',
                 '4e4',
                 '5e4',
-                'tid*1e2',
-                'tid*1e3']
+                'task_id*1e2',
+                'task_id*1e3']
     model_nbs = [1]*7
 
     return input_files, legends, model_nbs
@@ -185,8 +185,8 @@ def main():
     prefixes = ['lambda_', 'models_']
     config_func = [get_lmbd_config, get_models_config]
 
-    prefix = prefixes[1]
-    input_files, legends, model_nbs = config_func[1]()
+    prefix = prefixes[0]
+    input_files, legends, model_nbs = config_func[0]()
     task_nb = 50
     ###############################################################################################
 
