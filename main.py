@@ -9,7 +9,7 @@ import torch.optim as optim
 from utils import set_seed
 from utils import Net, train,  validate, get_datasets
 from utils import ComputeCovA, ComputeCovG
-from loss_space import LossVisualizer, get_vis_loss_func, get_vis_loss_func_for_kfac
+from loss_space import visualize_loss_space
 
 
 class KFAC:
@@ -269,7 +269,7 @@ def main():
     seed = 1234
 
     loss_space_vis = True
-    max_dis = 10
+    max_dis = 1
     steps = 10 + 1
     loss_vis_mod = 10
 
@@ -279,6 +279,7 @@ def main():
                                                   batch_size_test=4096,
                                                   include_prev=multi_task_dataset)
     
+    all_models = {}
     models = [Net().cuda() for i in range(models_nb_per_task)]
     optimizers = [optim.SGD(model.parameters(),
                             lr=0.01,
@@ -289,8 +290,6 @@ def main():
     train_criterion = [create_loss_function(kfacs, model, accumulate_last_kfac, lmbd, use_kfac) for model in models]
     test_criterion = torch.nn.CrossEntropyLoss()
     val_accs = [[0.0]*tasks_nb for _ in range(tasks_nb)]
-    loss_vis = LossVisualizer(max_dis, steps)
-    loss_vis_kfac = LossVisualizer(max_dis, steps)
 
     for task_id in range(tasks_nb):
         task_kfacs = []
@@ -300,6 +299,7 @@ def main():
 
             for epoch in range(1, EPOCHS+1):
                 train(model, train_datasets[task_id], optimizers[model_id], train_criterion[model_id], epoch, task_id+1)
+                all_models['{:d}-{:d}'.format(task_id, model_id)] = deepcopy(model)
 
             for test_task_id in  range(tasks_nb):
                 print('Test model {} on task {}'.format(model_id+1, test_task_id+1), flush=True)
@@ -307,21 +307,6 @@ def main():
 
                 prev_acc = val_accs[task_id][test_task_id] * model_id
                 val_accs[task_id][test_task_id] = (prev_acc + val_acc) / (model_id+1)
-
-                # Loss Space Visualization
-                if loss_space_vis:
-                    if (task_id == 0 or (task_id+1) % loss_vis_mod == 0) and \
-                        (test_task_id == 0 or (test_task_id+1) % loss_vis_mod == 0):
-                        print('### Loss Space Visualization Starts ###')
-                        file_name = 'heatmaps/s{:d}_d{:d}'.format(task_id+1, test_task_id+1)
-                        loss_func = get_vis_loss_func(test_datasets[test_task_id], test_criterion)
-                        loss_vis.set_model(model)
-                        loss_vis_kfac.set_model(model)
-                        loss_vis.set_loss_func(loss_func)
-
-                        rand_dirs_lst = loss_vis.get_rand_dirs()
-                        loss_vis.add_losses(rand_dirs_lst, file_name)
-                        print('### Loss Space Visualization Ends ###')
 
             task_kfacs.append(KFAC(model, train_datasets[task_id], ewc))
             task_kfacs[-1].update_stats()
@@ -334,25 +319,13 @@ def main():
                     kfacs[-1][model_kfac_id].m_aa[module_id] += kfacs[-2][model_kfac_id].m_aa[module_id]
                     kfacs[-1][model_kfac_id].m_gg[module_id] += kfacs[-2][model_kfac_id].m_gg[module_id]
 
-        if loss_space_vis:
-            for test_task_id in range(len(kfacs)):
-                if (task_id == 0 or (task_id+1) % loss_vis_mod == 0) and \
-                    (test_task_id == 0 or (test_task_id+1) % loss_vis_mod == 0):
-                    print('### Loss Space Visualization For Kfac Starts ###')
-                    loss_vis_kfac.set_loss_func(get_vis_loss_func_for_kfac(kfacs[test_task_id][-1], lmbd))
-                    rand_dirs_lst = loss_vis_kfac.get_rand_dirs()
-                    file_name = 'heatmaps/kfac_s{:d}_d{:d}'.format(test_task_id+1, task_id+1)
-                    loss_vis_kfac.add_losses(rand_dirs_lst, file_name)
-                    print('### Loss Space Visualization For Kfac Ends ###')
-
         # kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
         # kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
 
         print('#'*60, 'Avg acc: {:.2f}'.format(np.sum(val_accs[task_id][:task_id+1])/(task_id+1)))
 
     if loss_space_vis:
-        loss_vis.visualize()
-        loss_vis_kfac.visualize()
+        visualize_loss_space(test_datasets, all_models, kfacs, max_dis, steps, lmbd, loss_vis_mod)
 
 
 if __name__=='__main__':
