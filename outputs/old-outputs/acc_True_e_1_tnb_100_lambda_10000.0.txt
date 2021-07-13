@@ -1,0 +1,2202 @@
+Task 1 Model 1:
+0 ['2.323']
+MIN GRAD: -0.054	MAX GRAD: 0.046
+10 ['2.286']
+MIN GRAD: -0.057	MAX GRAD: 0.030
+20 ['2.269']
+MIN GRAD: -0.036	MAX GRAD: 0.085
+30 ['2.252']
+MIN GRAD: -0.050	MAX GRAD: 0.040
+40 ['2.205']
+MIN GRAD: -0.040	MAX GRAD: 0.045
+50 ['2.133']
+MIN GRAD: -0.033	MAX GRAD: 0.029
+60 ['2.023']
+MIN GRAD: -0.067	MAX GRAD: 0.045
+70 ['1.925']
+MIN GRAD: -0.069	MAX GRAD: 0.055
+80 ['1.746']
+MIN GRAD: -0.055	MAX GRAD: 0.040
+90 ['1.520']
+MIN GRAD: -0.087	MAX GRAD: 0.063
+100 ['1.249']
+MIN GRAD: -0.086	MAX GRAD: 0.032
+110 ['1.054']
+MIN GRAD: -0.159	MAX GRAD: 0.088
+120 ['1.033']
+MIN GRAD: -0.082	MAX GRAD: 0.084
+130 ['0.778']
+MIN GRAD: -0.127	MAX GRAD: 0.108
+140 ['0.618']
+MIN GRAD: -0.061	MAX GRAD: 0.070
+150 ['0.575']
+MIN GRAD: -0.088	MAX GRAD: 0.076
+160 ['0.479']
+MIN GRAD: -0.054	MAX GRAD: 0.115
+170 ['0.742']
+MIN GRAD: -0.151	MAX GRAD: 0.186
+180 ['0.580']
+MIN GRAD: -0.098	MAX GRAD: 0.097
+190 ['0.631']
+MIN GRAD: -0.116	MAX GRAD: 0.131
+200 ['0.507']
+MIN GRAD: -0.062	MAX GRAD: 0.096
+210 ['0.457']
+MIN GRAD: -0.063	MAX GRAD: 0.118
+220 ['0.521']
+MIN GRAD: -0.071	MAX GRAD: 0.048
+230 ['0.356']
+MIN GRAD: -0.125	MAX GRAD: 0.056
+240 ['0.371']
+MIN GRAD: -0.097	MAX GRAD: 0.052
+250 ['0.361']
+MIN GRAD: -0.060	MAX GRAD: 0.056
+260 ['0.393']
+MIN GRAD: -0.059	MAX GRAD: 0.066
+270 ['0.522']
+MIN GRAD: -0.086	MAX GRAD: 0.157
+280 ['0.436']
+MIN GRAD: -0.106	MAX GRAD: 0.131
+290 ['0.347']
+MIN GRAD: -0.100	MAX GRAD: 0.104
+300 ['0.420']
+MIN GRAD: -0.042	MAX GRAD: 0.062
+310 ['0.464']
+MIN GRAD: -0.099	MAX GRAD: 0.070
+320 ['0.372']
+MIN GRAD: -0.064	MAX GRAD: 0.061
+330 ['0.408']
+MIN GRAD: -0.095	MAX GRAD: 0.085
+340 ['0.544']
+MIN GRAD: -0.089	MAX GRAD: 0.085
+350 ['0.284']
+MIN GRAD: -0.059	MAX GRAD: 0.115
+360 ['0.438']
+MIN GRAD: -0.078	MAX GRAD: 0.119
+370 ['0.310']
+MIN GRAD: -0.083	MAX GRAD: 0.054
+380 ['0.420']
+MIN GRAD: -0.091	MAX GRAD: 0.084
+390 ['0.500']
+MIN GRAD: -0.105	MAX GRAD: 0.069
+400 ['0.243']
+MIN GRAD: -0.088	MAX GRAD: 0.063
+410 ['0.403']
+MIN GRAD: -0.085	MAX GRAD: 0.068
+420 ['0.300']
+MIN GRAD: -0.051	MAX GRAD: 0.053
+430 ['0.255']
+MIN GRAD: -0.081	MAX GRAD: 0.066
+440 ['0.261']
+MIN GRAD: -0.046	MAX GRAD: 0.036
+450 ['0.449']
+MIN GRAD: -0.104	MAX GRAD: 0.070
+460 ['0.323']
+MIN GRAD: -0.081	MAX GRAD: 0.075
+Train: [1][469/469]	loss 0.187 (0.796)	Acc@1 95.833 (77.158)
+Test model 1 on task 1
+Test: [3/3]	loss 0.309 (0.313)	Acc@1 90.985 (90.890)
+gg 0	min: -0.000	max: 0.000	min_eigval: 2.028e-10	max_eigval: 6.776e-06
+gg 1	min: -0.000	max: 0.000	min_eigval: 0.000e+00	max_eigval: 2.622e-06
+gg 2	min: -0.000	max: 0.000	min_eigval: -1.398e-13	max_eigval: 1.609e-06
+aa 0	min: 0.000	max: 1.000	min_eigval: -1.681e-14	max_eigval: 3.901e+01
+aa 1	min: 0.000	max: 6.494	min_eigval: 1.369e-05	max_eigval: 7.951e+01
+aa 2	min: 0.000	max: 8.690	min_eigval: 0.000e+00	max_eigval: 1.304e+02
+############################################################ Avg acc: 90.89
+Task 2 Model 1:
+0 ['0.000', '3.032']
+MIN GRAD: -0.111	MAX GRAD: 0.240
+10 ['0.015', '1.234']
+MIN GRAD: -0.071	MAX GRAD: 0.041
+20 ['0.014', '0.802']
+MIN GRAD: -0.098	MAX GRAD: 0.105
+30 ['0.011', '0.649']
+MIN GRAD: -0.132	MAX GRAD: 0.069
+40 ['0.011', '0.454']
+MIN GRAD: -0.080	MAX GRAD: 0.045
+50 ['0.012', '0.484']
+MIN GRAD: -0.038	MAX GRAD: 0.055
+60 ['0.012', '0.554']
+MIN GRAD: -0.088	MAX GRAD: 0.056
+70 ['0.011', '0.480']
+MIN GRAD: -0.070	MAX GRAD: 0.104
+80 ['0.011', '0.392']
+MIN GRAD: -0.089	MAX GRAD: 0.089
+90 ['0.013', '0.514']
+MIN GRAD: -0.043	MAX GRAD: 0.123
+100 ['0.012', '0.433']
+MIN GRAD: -0.052	MAX GRAD: 0.042
+110 ['0.012', '0.299']
+MIN GRAD: -0.048	MAX GRAD: 0.049
+120 ['0.011', '0.444']
+MIN GRAD: -0.061	MAX GRAD: 0.062
+130 ['0.012', '0.344']
+MIN GRAD: -0.078	MAX GRAD: 0.061
+140 ['0.013', '0.440']
+MIN GRAD: -0.091	MAX GRAD: 0.087
+150 ['0.011', '0.337']
+MIN GRAD: -0.099	MAX GRAD: 0.062
+160 ['0.011', '0.285']
+MIN GRAD: -0.063	MAX GRAD: 0.038
+170 ['0.012', '0.291']
+MIN GRAD: -0.087	MAX GRAD: 0.086
+180 ['0.012', '0.363']
+MIN GRAD: -0.060	MAX GRAD: 0.075
+190 ['0.011', '0.291']
+MIN GRAD: -0.057	MAX GRAD: 0.087
+200 ['0.012', '0.316']
+MIN GRAD: -0.071	MAX GRAD: 0.075
+210 ['0.013', '0.258']
+MIN GRAD: -0.094	MAX GRAD: 0.043
+220 ['0.012', '0.262']
+MIN GRAD: -0.047	MAX GRAD: 0.038
+230 ['0.012', '0.358']
+MIN GRAD: -0.097	MAX GRAD: 0.093
+240 ['0.012', '0.393']
+MIN GRAD: -0.094	MAX GRAD: 0.072
+250 ['0.011', '0.415']
+MIN GRAD: -0.037	MAX GRAD: 0.073
+260 ['0.012', '0.474']
+MIN GRAD: -0.059	MAX GRAD: 0.111
+270 ['0.012', '0.266']
+MIN GRAD: -0.074	MAX GRAD: 0.063
+280 ['0.011', '0.234']
+MIN GRAD: -0.054	MAX GRAD: 0.041
+290 ['0.011', '0.466']
+MIN GRAD: -0.058	MAX GRAD: 0.043
+300 ['0.014', '0.500']
+MIN GRAD: -0.070	MAX GRAD: 0.077
+310 ['0.012', '0.425']
+MIN GRAD: -0.073	MAX GRAD: 0.062
+320 ['0.012', '0.199']
+MIN GRAD: -0.071	MAX GRAD: 0.083
+330 ['0.011', '0.256']
+MIN GRAD: -0.105	MAX GRAD: 0.053
+340 ['0.011', '0.335']
+MIN GRAD: -0.042	MAX GRAD: 0.081
+350 ['0.011', '0.273']
+MIN GRAD: -0.044	MAX GRAD: 0.045
+360 ['0.011', '0.369']
+MIN GRAD: -0.060	MAX GRAD: 0.049
+370 ['0.012', '0.378']
+MIN GRAD: -0.081	MAX GRAD: 0.048
+380 ['0.011', '0.258']
+MIN GRAD: -0.087	MAX GRAD: 0.084
+390 ['0.012', '0.287']
+MIN GRAD: -0.072	MAX GRAD: 0.057
+400 ['0.013', '0.221']
+MIN GRAD: -0.051	MAX GRAD: 0.071
+410 ['0.013', '0.353']
+MIN GRAD: -0.057	MAX GRAD: 0.128
+420 ['0.012', '0.274']
+MIN GRAD: -0.031	MAX GRAD: 0.031
+430 ['0.012', '0.328']
+MIN GRAD: -0.081	MAX GRAD: 0.057
+440 ['0.012', '0.268']
+MIN GRAD: -0.047	MAX GRAD: 0.056
+450 ['0.013', '0.374']
+MIN GRAD: -0.062	MAX GRAD: 0.071
+460 ['0.014', '0.238']
+MIN GRAD: -0.078	MAX GRAD: 0.047
+Train: [1][469/469]	loss 0.175 (0.411)	Acc@1 95.833 (88.265)
+Test model 1 on task 1
+Test: [3/3]	loss 0.300 (0.304)	Acc@1 90.487 (90.900)
+Test model 1 on task 2
+Test: [3/3]	loss 0.251 (0.253)	Acc@1 92.920 (92.840)
+gg 0	min: -0.000	max: 0.000	min_eigval: 1.203e-09	max_eigval: 1.262e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 0.000e+00	max_eigval: 5.039e-06
+gg 2	min: -0.000	max: 0.000	min_eigval: -8.824e-14	max_eigval: 2.824e-06
+aa 0	min: 0.000	max: 2.000	min_eigval: 0.000e+00	max_eigval: 5.443e+01
+aa 1	min: 0.000	max: 11.740	min_eigval: 1.169e-04	max_eigval: 1.277e+02
+aa 2	min: 0.000	max: 15.852	min_eigval: 0.000e+00	max_eigval: 2.288e+02
+############################################################ Avg acc: 91.87
+Task 3 Model 1:
+0 ['0.000', '2.933']
+MIN GRAD: -0.181	MAX GRAD: 0.182
+10 ['0.025', '1.164']
+MIN GRAD: -0.071	MAX GRAD: 0.081
+20 ['0.040', '0.773']
+MIN GRAD: -0.107	MAX GRAD: 0.089
+30 ['0.033', '0.531']
+MIN GRAD: -0.045	MAX GRAD: 0.054
+40 ['0.030', '0.367']
+MIN GRAD: -0.047	MAX GRAD: 0.062
+50 ['0.029', '0.377']
+MIN GRAD: -0.062	MAX GRAD: 0.066
+60 ['0.026', '0.364']
+MIN GRAD: -0.055	MAX GRAD: 0.055
+70 ['0.026', '0.441']
+MIN GRAD: -0.096	MAX GRAD: 0.070
+80 ['0.022', '0.408']
+MIN GRAD: -0.062	MAX GRAD: 0.088
+90 ['0.023', '0.377']
+MIN GRAD: -0.059	MAX GRAD: 0.073
+100 ['0.023', '0.344']
+MIN GRAD: -0.044	MAX GRAD: 0.078
+110 ['0.023', '0.405']
+MIN GRAD: -0.094	MAX GRAD: 0.083
+120 ['0.024', '0.343']
+MIN GRAD: -0.096	MAX GRAD: 0.149
+130 ['0.020', '0.341']
+MIN GRAD: -0.076	MAX GRAD: 0.051
+140 ['0.022', '0.237']
+MIN GRAD: -0.044	MAX GRAD: 0.064
+150 ['0.021', '0.416']
+MIN GRAD: -0.052	MAX GRAD: 0.076
+160 ['0.021', '0.289']
+MIN GRAD: -0.060	MAX GRAD: 0.028
+170 ['0.020', '0.309']
+MIN GRAD: -0.037	MAX GRAD: 0.051
+180 ['0.019', '0.368']
+MIN GRAD: -0.035	MAX GRAD: 0.057
+190 ['0.020', '0.411']
+MIN GRAD: -0.087	MAX GRAD: 0.056
+200 ['0.022', '0.294']
+MIN GRAD: -0.038	MAX GRAD: 0.045
+210 ['0.019', '0.333']
+MIN GRAD: -0.089	MAX GRAD: 0.053
+220 ['0.021', '0.332']
+MIN GRAD: -0.047	MAX GRAD: 0.085
+230 ['0.022', '0.252']
+MIN GRAD: -0.036	MAX GRAD: 0.033
+240 ['0.021', '0.489']
+MIN GRAD: -0.086	MAX GRAD: 0.104
+250 ['0.020', '0.260']
+MIN GRAD: -0.096	MAX GRAD: 0.053
+260 ['0.021', '0.207']
+MIN GRAD: -0.055	MAX GRAD: 0.082
+270 ['0.021', '0.531']
+MIN GRAD: -0.038	MAX GRAD: 0.063
+280 ['0.023', '0.255']
+MIN GRAD: -0.079	MAX GRAD: 0.073
+290 ['0.023', '0.197']
+MIN GRAD: -0.029	MAX GRAD: 0.030
+300 ['0.022', '0.308']
+MIN GRAD: -0.077	MAX GRAD: 0.080
+310 ['0.021', '0.191']
+MIN GRAD: -0.045	MAX GRAD: 0.037
+320 ['0.022', '0.255']
+MIN GRAD: -0.112	MAX GRAD: 0.137
+330 ['0.020', '0.254']
+MIN GRAD: -0.049	MAX GRAD: 0.062
+340 ['0.021', '0.249']
+MIN GRAD: -0.027	MAX GRAD: 0.031
+350 ['0.020', '0.167']
+MIN GRAD: -0.040	MAX GRAD: 0.039
+360 ['0.019', '0.307']
+MIN GRAD: -0.050	MAX GRAD: 0.054
+370 ['0.020', '0.138']
+MIN GRAD: -0.061	MAX GRAD: 0.032
+380 ['0.019', '0.313']
+MIN GRAD: -0.046	MAX GRAD: 0.046
+390 ['0.021', '0.316']
+MIN GRAD: -0.045	MAX GRAD: 0.034
+400 ['0.019', '0.297']
+MIN GRAD: -0.083	MAX GRAD: 0.048
+410 ['0.020', '0.309']
+MIN GRAD: -0.078	MAX GRAD: 0.080
+420 ['0.021', '0.214']
+MIN GRAD: -0.037	MAX GRAD: 0.054
+430 ['0.019', '0.131']
+MIN GRAD: -0.038	MAX GRAD: 0.064
+440 ['0.018', '0.320']
+MIN GRAD: -0.064	MAX GRAD: 0.066
+450 ['0.020', '0.302']
+MIN GRAD: -0.054	MAX GRAD: 0.065
+460 ['0.019', '0.202']
+MIN GRAD: -0.044	MAX GRAD: 0.040
+Train: [1][469/469]	loss 0.298 (0.395)	Acc@1 92.708 (88.778)
+Test model 1 on task 1
+Test: [3/3]	loss 0.314 (0.310)	Acc@1 90.044 (90.790)
+Test model 1 on task 2
+Test: [3/3]	loss 0.260 (0.253)	Acc@1 92.588 (92.580)
+Test model 1 on task 3
+Test: [3/3]	loss 0.251 (0.239)	Acc@1 93.418 (93.190)
+gg 0	min: -0.000	max: 0.000	min_eigval: 1.082e-08	max_eigval: 1.755e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 0.000e+00	max_eigval: 7.485e-06
+gg 2	min: -0.000	max: 0.000	min_eigval: -9.210e-14	max_eigval: 3.977e-06
+aa 0	min: 0.000	max: 3.000	min_eigval: 1.098e-05	max_eigval: 7.055e+01
+aa 1	min: 0.000	max: 16.603	min_eigval: 2.773e-03	max_eigval: 1.706e+02
+aa 2	min: 0.000	max: 22.198	min_eigval: 0.000e+00	max_eigval: 3.168e+02
+############################################################ Avg acc: 92.19
+Task 4 Model 1:
+0 ['0.000', '3.583']
+MIN GRAD: -0.287	MAX GRAD: 0.671
+10 ['0.104', '1.193']
+MIN GRAD: -0.123	MAX GRAD: 0.106
+20 ['0.093', '0.810']
+MIN GRAD: -0.104	MAX GRAD: 0.124
+30 ['0.072', '0.512']
+MIN GRAD: -0.163	MAX GRAD: 0.102
+40 ['0.057', '0.436']
+MIN GRAD: -0.070	MAX GRAD: 0.078
+50 ['0.055', '0.355']
+MIN GRAD: -0.068	MAX GRAD: 0.056
+60 ['0.052', '0.372']
+MIN GRAD: -0.052	MAX GRAD: 0.046
+70 ['0.044', '0.363']
+MIN GRAD: -0.104	MAX GRAD: 0.072
+80 ['0.040', '0.346']
+MIN GRAD: -0.042	MAX GRAD: 0.040
+90 ['0.041', '0.487']
+MIN GRAD: -0.078	MAX GRAD: 0.080
+100 ['0.037', '0.433']
+MIN GRAD: -0.124	MAX GRAD: 0.071
+110 ['0.043', '0.462']
+MIN GRAD: -0.068	MAX GRAD: 0.053
+120 ['0.039', '0.471']
+MIN GRAD: -0.061	MAX GRAD: 0.113
+130 ['0.034', '0.376']
+MIN GRAD: -0.045	MAX GRAD: 0.043
+140 ['0.036', '0.418']
+MIN GRAD: -0.032	MAX GRAD: 0.059
+150 ['0.037', '0.416']
+MIN GRAD: -0.099	MAX GRAD: 0.097
+160 ['0.034', '0.311']
+MIN GRAD: -0.055	MAX GRAD: 0.069
+170 ['0.039', '0.287']
+MIN GRAD: -0.050	MAX GRAD: 0.047
+180 ['0.036', '0.268']
+MIN GRAD: -0.052	MAX GRAD: 0.063
+190 ['0.035', '0.221']
+MIN GRAD: -0.034	MAX GRAD: 0.053
+200 ['0.033', '0.215']
+MIN GRAD: -0.050	MAX GRAD: 0.043
+210 ['0.038', '0.304']
+MIN GRAD: -0.057	MAX GRAD: 0.049
+220 ['0.032', '0.286']
+MIN GRAD: -0.057	MAX GRAD: 0.034
+230 ['0.036', '0.232']
+MIN GRAD: -0.098	MAX GRAD: 0.088
+240 ['0.034', '0.260']
+MIN GRAD: -0.050	MAX GRAD: 0.074
+250 ['0.035', '0.225']
+MIN GRAD: -0.033	MAX GRAD: 0.033
+260 ['0.037', '0.230']
+MIN GRAD: -0.085	MAX GRAD: 0.073
+270 ['0.033', '0.261']
+MIN GRAD: -0.053	MAX GRAD: 0.054
+280 ['0.035', '0.328']
+MIN GRAD: -0.065	MAX GRAD: 0.074
+290 ['0.035', '0.158']
+MIN GRAD: -0.040	MAX GRAD: 0.037
+300 ['0.033', '0.229']
+MIN GRAD: -0.061	MAX GRAD: 0.071
+310 ['0.034', '0.219']
+MIN GRAD: -0.074	MAX GRAD: 0.067
+320 ['0.032', '0.271']
+MIN GRAD: -0.052	MAX GRAD: 0.031
+330 ['0.034', '0.248']
+MIN GRAD: -0.040	MAX GRAD: 0.050
+340 ['0.034', '0.165']
+MIN GRAD: -0.027	MAX GRAD: 0.030
+350 ['0.033', '0.238']
+MIN GRAD: -0.038	MAX GRAD: 0.039
+360 ['0.033', '0.201']
+MIN GRAD: -0.055	MAX GRAD: 0.045
+370 ['0.033', '0.173']
+MIN GRAD: -0.040	MAX GRAD: 0.036
+380 ['0.033', '0.290']
+MIN GRAD: -0.034	MAX GRAD: 0.036
+390 ['0.032', '0.321']
+MIN GRAD: -0.059	MAX GRAD: 0.059
+400 ['0.036', '0.166']
+MIN GRAD: -0.054	MAX GRAD: 0.088
+410 ['0.032', '0.270']
+MIN GRAD: -0.035	MAX GRAD: 0.054
+420 ['0.033', '0.176']
+MIN GRAD: -0.040	MAX GRAD: 0.038
+430 ['0.032', '0.342']
+MIN GRAD: -0.069	MAX GRAD: 0.047
+440 ['0.031', '0.288']
+MIN GRAD: -0.083	MAX GRAD: 0.070
+450 ['0.034', '0.325']
+MIN GRAD: -0.078	MAX GRAD: 0.062
+460 ['0.033', '0.337']
+MIN GRAD: -0.086	MAX GRAD: 0.071
+Train: [1][469/469]	loss 0.300 (0.409)	Acc@1 92.708 (89.160)
+Test model 1 on task 1
+Test: [3/3]	loss 0.306 (0.319)	Acc@1 91.538 (90.470)
+Test model 1 on task 2
+Test: [3/3]	loss 0.208 (0.255)	Acc@1 93.584 (92.430)
+Test model 1 on task 3
+Test: [3/3]	loss 0.246 (0.235)	Acc@1 92.588 (93.290)
+Test model 1 on task 4
+Test: [3/3]	loss 0.218 (0.225)	Acc@1 94.192 (93.500)
+gg 0	min: -0.000	max: 0.000	min_eigval: 2.169e-08	max_eigval: 2.190e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 0.000e+00	max_eigval: 9.999e-06
+gg 2	min: -0.000	max: 0.000	min_eigval: -9.619e-14	max_eigval: 5.067e-06
+aa 0	min: 0.000	max: 4.000	min_eigval: 2.379e-05	max_eigval: 8.573e+01
+aa 1	min: 0.000	max: 21.866	min_eigval: 4.205e-03	max_eigval: 2.123e+02
+aa 2	min: 0.000	max: 27.422	min_eigval: 0.000e+00	max_eigval: 3.989e+02
+############################################################ Avg acc: 92.42
+Task 5 Model 1:
+0 ['0.000', '4.020']
+MIN GRAD: -0.414	MAX GRAD: 0.557
+10 ['0.264', '1.157']
+MIN GRAD: -0.237	MAX GRAD: 0.212
+20 ['0.129', '0.925']
+MIN GRAD: -0.147	MAX GRAD: 0.105
+30 ['0.113', '0.562']
+MIN GRAD: -0.075	MAX GRAD: 0.103
+40 ['0.088', '0.411']
+MIN GRAD: -0.096	MAX GRAD: 0.100
+50 ['0.075', '0.359']
+MIN GRAD: -0.075	MAX GRAD: 0.062
+60 ['0.066', '0.472']
+MIN GRAD: -0.066	MAX GRAD: 0.053
+70 ['0.061', '0.421']
+MIN GRAD: -0.072	MAX GRAD: 0.045
+80 ['0.057', '0.236']
+MIN GRAD: -0.054	MAX GRAD: 0.061
+90 ['0.054', '0.224']
+MIN GRAD: -0.049	MAX GRAD: 0.045
+100 ['0.052', '0.408']
+MIN GRAD: -0.058	MAX GRAD: 0.050
+110 ['0.054', '0.312']
+MIN GRAD: -0.050	MAX GRAD: 0.040
+120 ['0.054', '0.400']
+MIN GRAD: -0.073	MAX GRAD: 0.064
+130 ['0.055', '0.524']
+MIN GRAD: -0.051	MAX GRAD: 0.079
+140 ['0.049', '0.316']
+MIN GRAD: -0.087	MAX GRAD: 0.076
+150 ['0.047', '0.371']
+MIN GRAD: -0.116	MAX GRAD: 0.075
+160 ['0.047', '0.438']
+MIN GRAD: -0.055	MAX GRAD: 0.071
+170 ['0.049', '0.304']
+MIN GRAD: -0.051	MAX GRAD: 0.076
+180 ['0.052', '0.260']
+MIN GRAD: -0.083	MAX GRAD: 0.078
+190 ['0.046', '0.267']
+MIN GRAD: -0.025	MAX GRAD: 0.027
+200 ['0.046', '0.450']
+MIN GRAD: -0.091	MAX GRAD: 0.087
+210 ['0.047', '0.368']
+MIN GRAD: -0.071	MAX GRAD: 0.082
+220 ['0.048', '0.217']
+MIN GRAD: -0.065	MAX GRAD: 0.037
+230 ['0.049', '0.241']
+MIN GRAD: -0.114	MAX GRAD: 0.081
+240 ['0.052', '0.294']
+MIN GRAD: -0.089	MAX GRAD: 0.098
+250 ['0.049', '0.365']
+MIN GRAD: -0.073	MAX GRAD: 0.045
+260 ['0.043', '0.291']
+MIN GRAD: -0.065	MAX GRAD: 0.042
+270 ['0.047', '0.195']
+MIN GRAD: -0.038	MAX GRAD: 0.031
+280 ['0.049', '0.230']
+MIN GRAD: -0.068	MAX GRAD: 0.077
+290 ['0.051', '0.390']
+MIN GRAD: -0.073	MAX GRAD: 0.123
+300 ['0.048', '0.278']
+MIN GRAD: -0.078	MAX GRAD: 0.077
+310 ['0.043', '0.295']
+MIN GRAD: -0.044	MAX GRAD: 0.037
+320 ['0.048', '0.361']
+MIN GRAD: -0.127	MAX GRAD: 0.090
+330 ['0.049', '0.175']
+MIN GRAD: -0.044	MAX GRAD: 0.060
+340 ['0.045', '0.248']
+MIN GRAD: -0.055	MAX GRAD: 0.050
+350 ['0.045', '0.364']
+MIN GRAD: -0.052	MAX GRAD: 0.056
+360 ['0.047', '0.249']
+MIN GRAD: -0.047	MAX GRAD: 0.095
+370 ['0.043', '0.202']
+MIN GRAD: -0.033	MAX GRAD: 0.037
+380 ['0.045', '0.263']
+MIN GRAD: -0.039	MAX GRAD: 0.064
+390 ['0.044', '0.292']
+MIN GRAD: -0.045	MAX GRAD: 0.064
+400 ['0.049', '0.237']
+MIN GRAD: -0.054	MAX GRAD: 0.067
+410 ['0.043', '0.252']
+MIN GRAD: -0.057	MAX GRAD: 0.039
+420 ['0.046', '0.184']
+MIN GRAD: -0.052	MAX GRAD: 0.076
+430 ['0.041', '0.285']
+MIN GRAD: -0.042	MAX GRAD: 0.031
+440 ['0.042', '0.200']
+MIN GRAD: -0.039	MAX GRAD: 0.061
+450 ['0.048', '0.247']
+MIN GRAD: -0.061	MAX GRAD: 0.062
+460 ['0.047', '0.258']
+MIN GRAD: -0.101	MAX GRAD: 0.075
+Train: [1][469/469]	loss 0.249 (0.436)	Acc@1 92.708 (88.788)
+Test model 1 on task 1
+Test: [3/3]	loss 0.314 (0.338)	Acc@1 90.376 (89.590)
+Test model 1 on task 2
+Test: [3/3]	loss 0.255 (0.263)	Acc@1 91.759 (91.880)
+Test model 1 on task 3
+Test: [3/3]	loss 0.256 (0.238)	Acc@1 92.588 (93.180)
+Test model 1 on task 4
+Test: [3/3]	loss 0.237 (0.225)	Acc@1 93.031 (93.300)
+Test model 1 on task 5
+Test: [3/3]	loss 0.252 (0.236)	Acc@1 92.644 (93.220)
+gg 0	min: -0.000	max: 0.000	min_eigval: 3.835e-08	max_eigval: 2.628e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 0.000e+00	max_eigval: 1.284e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: -1.464e-13	max_eigval: 6.244e-06
+aa 0	min: 0.000	max: 5.000	min_eigval: 2.224e-04	max_eigval: 1.012e+02
+aa 1	min: 0.000	max: 26.233	min_eigval: 1.131e-02	max_eigval: 2.511e+02
+aa 2	min: 0.000	max: 33.992	min_eigval: 0.000e+00	max_eigval: 4.785e+02
+############################################################ Avg acc: 92.23
+Task 6 Model 1:
+0 ['0.000', '4.975']
+MIN GRAD: -0.291	MAX GRAD: 0.492
+10 ['0.364', '1.351']
+MIN GRAD: -0.195	MAX GRAD: 0.217
+20 ['0.187', '0.834']
+MIN GRAD: -0.180	MAX GRAD: 0.179
+30 ['0.133', '0.532']
+MIN GRAD: -0.109	MAX GRAD: 0.088
+40 ['0.109', '0.446']
+MIN GRAD: -0.056	MAX GRAD: 0.085
+50 ['0.101', '0.517']
+MIN GRAD: -0.163	MAX GRAD: 0.130
+60 ['0.087', '0.473']
+MIN GRAD: -0.075	MAX GRAD: 0.091
+70 ['0.080', '0.319']
+MIN GRAD: -0.068	MAX GRAD: 0.067
+80 ['0.075', '0.306']
+MIN GRAD: -0.083	MAX GRAD: 0.044
+90 ['0.077', '0.382']
+MIN GRAD: -0.057	MAX GRAD: 0.054
+100 ['0.071', '0.369']
+MIN GRAD: -0.052	MAX GRAD: 0.070
+110 ['0.073', '0.460']
+MIN GRAD: -0.079	MAX GRAD: 0.060
+120 ['0.069', '0.325']
+MIN GRAD: -0.065	MAX GRAD: 0.074
+130 ['0.068', '0.315']
+MIN GRAD: -0.101	MAX GRAD: 0.073
+140 ['0.068', '0.255']
+MIN GRAD: -0.066	MAX GRAD: 0.087
+150 ['0.071', '0.338']
+MIN GRAD: -0.066	MAX GRAD: 0.064
+160 ['0.064', '0.300']
+MIN GRAD: -0.067	MAX GRAD: 0.051
+170 ['0.062', '0.272']
+MIN GRAD: -0.045	MAX GRAD: 0.068
+180 ['0.061', '0.215']
+MIN GRAD: -0.067	MAX GRAD: 0.060
+190 ['0.059', '0.328']
+MIN GRAD: -0.032	MAX GRAD: 0.027
+200 ['0.065', '0.299']
+MIN GRAD: -0.071	MAX GRAD: 0.049
+210 ['0.067', '0.330']
+MIN GRAD: -0.115	MAX GRAD: 0.075
+220 ['0.079', '0.348']
+MIN GRAD: -0.096	MAX GRAD: 0.112
+230 ['0.073', '0.252']
+MIN GRAD: -0.096	MAX GRAD: 0.113
+240 ['0.067', '0.209']
+MIN GRAD: -0.087	MAX GRAD: 0.100
+250 ['0.062', '0.283']
+MIN GRAD: -0.078	MAX GRAD: 0.091
+260 ['0.059', '0.226']
+MIN GRAD: -0.051	MAX GRAD: 0.061
+270 ['0.059', '0.225']
+MIN GRAD: -0.072	MAX GRAD: 0.052
+280 ['0.061', '0.311']
+MIN GRAD: -0.083	MAX GRAD: 0.110
+290 ['0.064', '0.184']
+MIN GRAD: -0.054	MAX GRAD: 0.066
+300 ['0.059', '0.232']
+MIN GRAD: -0.035	MAX GRAD: 0.080
+310 ['0.062', '0.285']
+MIN GRAD: -0.092	MAX GRAD: 0.069
+320 ['0.060', '0.274']
+MIN GRAD: -0.062	MAX GRAD: 0.065
+330 ['0.059', '0.310']
+MIN GRAD: -0.045	MAX GRAD: 0.051
+340 ['0.056', '0.498']
+MIN GRAD: -0.080	MAX GRAD: 0.069
+350 ['0.059', '0.249']
+MIN GRAD: -0.064	MAX GRAD: 0.042
+360 ['0.058', '0.148']
+MIN GRAD: -0.041	MAX GRAD: 0.051
+370 ['0.063', '0.177']
+MIN GRAD: -0.065	MAX GRAD: 0.057
+380 ['0.059', '0.176']
+MIN GRAD: -0.047	MAX GRAD: 0.053
+390 ['0.057', '0.376']
+MIN GRAD: -0.066	MAX GRAD: 0.064
+400 ['0.057', '0.210']
+MIN GRAD: -0.051	MAX GRAD: 0.076
+410 ['0.055', '0.265']
+MIN GRAD: -0.053	MAX GRAD: 0.063
+420 ['0.058', '0.252']
+MIN GRAD: -0.041	MAX GRAD: 0.060
+430 ['0.058', '0.416']
+MIN GRAD: -0.045	MAX GRAD: 0.066
+440 ['0.060', '0.195']
+MIN GRAD: -0.066	MAX GRAD: 0.051
+450 ['0.056', '0.295']
+MIN GRAD: -0.054	MAX GRAD: 0.093
+460 ['0.056', '0.400']
+MIN GRAD: -0.084	MAX GRAD: 0.050
+Train: [1][469/469]	loss 0.440 (0.464)	Acc@1 87.500 (88.553)
+Test model 1 on task 1
+Test: [3/3]	loss 0.342 (0.350)	Acc@1 89.215 (88.980)
+Test model 1 on task 2
+Test: [3/3]	loss 0.280 (0.273)	Acc@1 90.985 (91.470)
+Test model 1 on task 3
+Test: [3/3]	loss 0.252 (0.247)	Acc@1 92.312 (92.870)
+Test model 1 on task 4
+Test: [3/3]	loss 0.232 (0.231)	Acc@1 93.529 (93.290)
+Test model 1 on task 5
+Test: [3/3]	loss 0.230 (0.239)	Acc@1 93.584 (92.890)
+Test model 1 on task 6
+Test: [3/3]	loss 0.248 (0.232)	Acc@1 92.478 (93.280)
+gg 0	min: -0.000	max: 0.000	min_eigval: 4.977e-08	max_eigval: 2.976e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 0.000e+00	max_eigval: 1.569e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: -1.787e-13	max_eigval: 7.373e-06
+aa 0	min: 0.000	max: 6.000	min_eigval: 5.381e-04	max_eigval: 1.163e+02
+aa 1	min: 0.001	max: 32.128	min_eigval: 1.843e-02	max_eigval: 2.899e+02
+aa 2	min: 0.000	max: 39.774	min_eigval: 0.000e+00	max_eigval: 5.575e+02
+############################################################ Avg acc: 92.13
+Task 7 Model 1:
+0 ['0.000', '2.997']
+MIN GRAD: -0.124	MAX GRAD: 0.320
+10 ['0.138', '1.125']
+MIN GRAD: -0.173	MAX GRAD: 0.147
+20 ['0.171', '0.618']
+MIN GRAD: -0.123	MAX GRAD: 0.159
+30 ['0.142', '0.430']
+MIN GRAD: -0.106	MAX GRAD: 0.092
+40 ['0.128', '0.458']
+MIN GRAD: -0.146	MAX GRAD: 0.097
+50 ['0.101', '0.505']
+MIN GRAD: -0.042	MAX GRAD: 0.047
+60 ['0.092', '0.447']
+MIN GRAD: -0.084	MAX GRAD: 0.088
+70 ['0.084', '0.446']
+MIN GRAD: -0.069	MAX GRAD: 0.101
+80 ['0.086', '0.438']
+MIN GRAD: -0.086	MAX GRAD: 0.086
+90 ['0.085', '0.344']
+MIN GRAD: -0.070	MAX GRAD: 0.081
+100 ['0.077', '0.270']
+MIN GRAD: -0.054	MAX GRAD: 0.045
+110 ['0.075', '0.300']
+MIN GRAD: -0.068	MAX GRAD: 0.075
+120 ['0.074', '0.231']
+MIN GRAD: -0.038	MAX GRAD: 0.048
+130 ['0.070', '0.240']
+MIN GRAD: -0.058	MAX GRAD: 0.056
+140 ['0.077', '0.184']
+MIN GRAD: -0.078	MAX GRAD: 0.080
+150 ['0.074', '0.248']
+MIN GRAD: -0.117	MAX GRAD: 0.075
+160 ['0.070', '0.325']
+MIN GRAD: -0.059	MAX GRAD: 0.044
+170 ['0.068', '0.314']
+MIN GRAD: -0.047	MAX GRAD: 0.036
+180 ['0.071', '0.227']
+MIN GRAD: -0.053	MAX GRAD: 0.072
+190 ['0.072', '0.334']
+MIN GRAD: -0.075	MAX GRAD: 0.092
+200 ['0.067', '0.359']
+MIN GRAD: -0.053	MAX GRAD: 0.069
+210 ['0.072', '0.259']
+MIN GRAD: -0.074	MAX GRAD: 0.072
+220 ['0.069', '0.321']
+MIN GRAD: -0.066	MAX GRAD: 0.073
+230 ['0.065', '0.378']
+MIN GRAD: -0.048	MAX GRAD: 0.057
+240 ['0.073', '0.251']
+MIN GRAD: -0.070	MAX GRAD: 0.074
+250 ['0.068', '0.349']
+MIN GRAD: -0.075	MAX GRAD: 0.109
+260 ['0.067', '0.258']
+MIN GRAD: -0.054	MAX GRAD: 0.051
+270 ['0.080', '0.181']
+MIN GRAD: -0.095	MAX GRAD: 0.133
+280 ['0.070', '0.295']
+MIN GRAD: -0.092	MAX GRAD: 0.090
+290 ['0.070', '0.371']
+MIN GRAD: -0.128	MAX GRAD: 0.065
+300 ['0.067', '0.303']
+MIN GRAD: -0.063	MAX GRAD: 0.065
+310 ['0.068', '0.254']
+MIN GRAD: -0.070	MAX GRAD: 0.045
+320 ['0.069', '0.256']
+MIN GRAD: -0.071	MAX GRAD: 0.058
+330 ['0.065', '0.273']
+MIN GRAD: -0.065	MAX GRAD: 0.071
+340 ['0.064', '0.155']
+MIN GRAD: -0.068	MAX GRAD: 0.046
+350 ['0.063', '0.176']
+MIN GRAD: -0.091	MAX GRAD: 0.065
+360 ['0.061', '0.368']
+MIN GRAD: -0.103	MAX GRAD: 0.057
+370 ['0.066', '0.281']
+MIN GRAD: -0.079	MAX GRAD: 0.049
+380 ['0.065', '0.344']
+MIN GRAD: -0.072	MAX GRAD: 0.077
+390 ['0.062', '0.229']
+MIN GRAD: -0.079	MAX GRAD: 0.075
+400 ['0.060', '0.393']
+MIN GRAD: -0.059	MAX GRAD: 0.086
+410 ['0.063', '0.171']
+MIN GRAD: -0.062	MAX GRAD: 0.129
+420 ['0.061', '0.215']
+MIN GRAD: -0.075	MAX GRAD: 0.106
+430 ['0.062', '0.170']
+MIN GRAD: -0.060	MAX GRAD: 0.073
+440 ['0.064', '0.289']
+MIN GRAD: -0.082	MAX GRAD: 0.091
+450 ['0.065', '0.347']
+MIN GRAD: -0.103	MAX GRAD: 0.113
+460 ['0.064', '0.312']
+MIN GRAD: -0.067	MAX GRAD: 0.078
+Train: [1][469/469]	loss 0.258 (0.435)	Acc@1 95.833 (89.245)
+Test model 1 on task 1
+Test: [3/3]	loss 0.370 (0.367)	Acc@1 88.772 (88.340)
+Test model 1 on task 2
+Test: [3/3]	loss 0.294 (0.284)	Acc@1 90.929 (91.240)
+Test model 1 on task 3
+Test: [3/3]	loss 0.256 (0.252)	Acc@1 92.754 (92.620)
+Test model 1 on task 4
+Test: [3/3]	loss 0.214 (0.236)	Acc@1 93.418 (92.810)
+Test model 1 on task 5
+Test: [3/3]	loss 0.234 (0.243)	Acc@1 92.699 (92.610)
+Test model 1 on task 6
+Test: [3/3]	loss 0.277 (0.232)	Acc@1 90.985 (93.100)
+Test model 1 on task 7
+Test: [3/3]	loss 0.226 (0.225)	Acc@1 94.248 (93.570)
+gg 0	min: -0.000	max: 0.000	min_eigval: 7.456e-08	max_eigval: 3.456e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 0.000e+00	max_eigval: 1.858e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: -9.948e-14	max_eigval: 8.514e-06
+aa 0	min: 0.000	max: 7.000	min_eigval: 5.423e-04	max_eigval: 1.319e+02
+aa 1	min: 0.002	max: 36.868	min_eigval: 4.056e-02	max_eigval: 3.308e+02
+aa 2	min: 0.000	max: 44.952	min_eigval: 0.000e+00	max_eigval: 6.386e+02
+############################################################ Avg acc: 92.04
+Task 8 Model 1:
+0 ['0.000', '3.794']
+MIN GRAD: -0.225	MAX GRAD: 0.312
+10 ['0.218', '0.981']
+MIN GRAD: -0.134	MAX GRAD: 0.133
+20 ['0.218', '0.699']
+MIN GRAD: -0.118	MAX GRAD: 0.147
+30 ['0.177', '0.574']
+MIN GRAD: -0.146	MAX GRAD: 0.128
+40 ['0.143', '0.467']
+MIN GRAD: -0.110	MAX GRAD: 0.108
+50 ['0.122', '0.429']
+MIN GRAD: -0.068	MAX GRAD: 0.059
+60 ['0.110', '0.321']
+MIN GRAD: -0.075	MAX GRAD: 0.098
+70 ['0.104', '0.331']
+MIN GRAD: -0.146	MAX GRAD: 0.092
+80 ['0.097', '0.389']
+MIN GRAD: -0.077	MAX GRAD: 0.056
+90 ['0.095', '0.425']
+MIN GRAD: -0.056	MAX GRAD: 0.109
+100 ['0.088', '0.233']
+MIN GRAD: -0.063	MAX GRAD: 0.062
+110 ['0.090', '0.329']
+MIN GRAD: -0.107	MAX GRAD: 0.073
+120 ['0.089', '0.354']
+MIN GRAD: -0.101	MAX GRAD: 0.051
+130 ['0.085', '0.241']
+MIN GRAD: -0.056	MAX GRAD: 0.062
+140 ['0.085', '0.301']
+MIN GRAD: -0.118	MAX GRAD: 0.109
+150 ['0.085', '0.327']
+MIN GRAD: -0.092	MAX GRAD: 0.062
+160 ['0.084', '0.340']
+MIN GRAD: -0.069	MAX GRAD: 0.073
+170 ['0.084', '0.213']
+MIN GRAD: -0.076	MAX GRAD: 0.162
+180 ['0.081', '0.307']
+MIN GRAD: -0.119	MAX GRAD: 0.077
+190 ['0.081', '0.317']
+MIN GRAD: -0.067	MAX GRAD: 0.071
+200 ['0.088', '0.278']
+MIN GRAD: -0.106	MAX GRAD: 0.109
+210 ['0.079', '0.441']
+MIN GRAD: -0.051	MAX GRAD: 0.086
+220 ['0.079', '0.386']
+MIN GRAD: -0.084	MAX GRAD: 0.123
+230 ['0.077', '0.317']
+MIN GRAD: -0.070	MAX GRAD: 0.078
+240 ['0.077', '0.300']
+MIN GRAD: -0.076	MAX GRAD: 0.072
+250 ['0.077', '0.325']
+MIN GRAD: -0.058	MAX GRAD: 0.106
+260 ['0.076', '0.307']
+MIN GRAD: -0.054	MAX GRAD: 0.059
+270 ['0.084', '0.421']
+MIN GRAD: -0.069	MAX GRAD: 0.114
+280 ['0.074', '0.233']
+MIN GRAD: -0.051	MAX GRAD: 0.045
+290 ['0.077', '0.323']
+MIN GRAD: -0.071	MAX GRAD: 0.125
+300 ['0.076', '0.235']
+MIN GRAD: -0.070	MAX GRAD: 0.050
+310 ['0.077', '0.237']
+MIN GRAD: -0.123	MAX GRAD: 0.116
+320 ['0.073', '0.234']
+MIN GRAD: -0.131	MAX GRAD: 0.055
+330 ['0.075', '0.179']
+MIN GRAD: -0.057	MAX GRAD: 0.074
+340 ['0.070', '0.349']
+MIN GRAD: -0.046	MAX GRAD: 0.057
+350 ['0.071', '0.337']
+MIN GRAD: -0.081	MAX GRAD: 0.081
+360 ['0.073', '0.335']
+MIN GRAD: -0.113	MAX GRAD: 0.125
+370 ['0.076', '0.228']
+MIN GRAD: -0.113	MAX GRAD: 0.076
+380 ['0.070', '0.226']
+MIN GRAD: -0.054	MAX GRAD: 0.059
+390 ['0.076', '0.327']
+MIN GRAD: -0.097	MAX GRAD: 0.104
+400 ['0.070', '0.361']
+MIN GRAD: -0.077	MAX GRAD: 0.079
+410 ['0.070', '0.363']
+MIN GRAD: -0.069	MAX GRAD: 0.079
+420 ['0.071', '0.260']
+MIN GRAD: -0.047	MAX GRAD: 0.050
+430 ['0.069', '0.324']
+MIN GRAD: -0.137	MAX GRAD: 0.084
+440 ['0.074', '0.311']
+MIN GRAD: -0.105	MAX GRAD: 0.056
+450 ['0.077', '0.287']
+MIN GRAD: -0.069	MAX GRAD: 0.078
+460 ['0.068', '0.202']
+MIN GRAD: -0.046	MAX GRAD: 0.041
+Train: [1][469/469]	loss 0.318 (0.458)	Acc@1 90.625 (89.127)
+Test model 1 on task 1
+Test: [3/3]	loss 0.363 (0.376)	Acc@1 88.385 (87.930)
+Test model 1 on task 2
+Test: [3/3]	loss 0.274 (0.296)	Acc@1 91.869 (90.780)
+Test model 1 on task 3
+Test: [3/3]	loss 0.254 (0.262)	Acc@1 92.201 (92.250)
+Test model 1 on task 4
+Test: [3/3]	loss 0.253 (0.247)	Acc@1 92.201 (92.530)
+Test model 1 on task 5
+Test: [3/3]	loss 0.234 (0.247)	Acc@1 93.308 (92.680)
+Test model 1 on task 6
+Test: [3/3]	loss 0.227 (0.232)	Acc@1 93.363 (93.000)
+Test model 1 on task 7
+Test: [3/3]	loss 0.208 (0.224)	Acc@1 94.082 (93.420)
+Test model 1 on task 8
+Test: [3/3]	loss 0.260 (0.228)	Acc@1 92.699 (93.640)
+gg 0	min: -0.000	max: 0.000	min_eigval: 8.791e-08	max_eigval: 4.037e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 0.000e+00	max_eigval: 2.168e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: 3.340e-14	max_eigval: 9.714e-06
+aa 0	min: 0.000	max: 8.000	min_eigval: 3.873e-03	max_eigval: 1.479e+02
+aa 1	min: 0.007	max: 41.130	min_eigval: 5.105e-02	max_eigval: 3.701e+02
+aa 2	min: 0.000	max: 49.692	min_eigval: 0.000e+00	max_eigval: 7.129e+02
+############################################################ Avg acc: 92.03
+Task 9 Model 1:
+0 ['0.000', '3.594']
+MIN GRAD: -0.225	MAX GRAD: 0.444
+10 ['0.202', '1.179']
+MIN GRAD: -0.175	MAX GRAD: 0.129
+20 ['0.220', '0.704']
+MIN GRAD: -0.122	MAX GRAD: 0.080
+30 ['0.188', '0.552']
+MIN GRAD: -0.091	MAX GRAD: 0.104
+40 ['0.167', '0.373']
+MIN GRAD: -0.104	MAX GRAD: 0.153
+50 ['0.147', '0.403']
+MIN GRAD: -0.155	MAX GRAD: 0.098
+60 ['0.123', '0.301']
+MIN GRAD: -0.052	MAX GRAD: 0.072
+70 ['0.119', '0.399']
+MIN GRAD: -0.153	MAX GRAD: 0.108
+80 ['0.110', '0.452']
+MIN GRAD: -0.088	MAX GRAD: 0.074
+90 ['0.103', '0.357']
+MIN GRAD: -0.095	MAX GRAD: 0.063
+100 ['0.105', '0.372']
+MIN GRAD: -0.102	MAX GRAD: 0.105
+110 ['0.103', '0.327']
+MIN GRAD: -0.070	MAX GRAD: 0.110
+120 ['0.104', '0.288']
+MIN GRAD: -0.088	MAX GRAD: 0.168
+130 ['0.101', '0.276']
+MIN GRAD: -0.093	MAX GRAD: 0.079
+140 ['0.098', '0.303']
+MIN GRAD: -0.110	MAX GRAD: 0.104
+150 ['0.098', '0.493']
+MIN GRAD: -0.128	MAX GRAD: 0.095
+160 ['0.096', '0.333']
+MIN GRAD: -0.094	MAX GRAD: 0.079
+170 ['0.096', '0.191']
+MIN GRAD: -0.143	MAX GRAD: 0.129
+180 ['0.092', '0.314']
+MIN GRAD: -0.083	MAX GRAD: 0.081
+190 ['0.092', '0.231']
+MIN GRAD: -0.066	MAX GRAD: 0.073
+200 ['0.093', '0.307']
+MIN GRAD: -0.090	MAX GRAD: 0.101
+210 ['0.093', '0.335']
+MIN GRAD: -0.068	MAX GRAD: 0.126
+220 ['0.086', '0.352']
+MIN GRAD: -0.062	MAX GRAD: 0.082
+230 ['0.086', '0.277']
+MIN GRAD: -0.086	MAX GRAD: 0.090
+240 ['0.088', '0.239']
+MIN GRAD: -0.095	MAX GRAD: 0.099
+250 ['0.084', '0.341']
+MIN GRAD: -0.087	MAX GRAD: 0.093
+260 ['0.085', '0.337']
+MIN GRAD: -0.149	MAX GRAD: 0.096
+270 ['0.085', '0.251']
+MIN GRAD: -0.072	MAX GRAD: 0.064
+280 ['0.084', '0.321']
+MIN GRAD: -0.083	MAX GRAD: 0.089
+290 ['0.081', '0.254']
+MIN GRAD: -0.075	MAX GRAD: 0.082
+300 ['0.084', '0.357']
+MIN GRAD: -0.119	MAX GRAD: 0.094
+310 ['0.082', '0.178']
+MIN GRAD: -0.044	MAX GRAD: 0.071
+320 ['0.082', '0.242']
+MIN GRAD: -0.059	MAX GRAD: 0.063
+330 ['0.079', '0.260']
+MIN GRAD: -0.075	MAX GRAD: 0.088
+340 ['0.083', '0.272']
+MIN GRAD: -0.085	MAX GRAD: 0.092
+350 ['0.085', '0.325']
+MIN GRAD: -0.099	MAX GRAD: 0.087
+360 ['0.081', '0.285']
+MIN GRAD: -0.081	MAX GRAD: 0.061
+370 ['0.080', '0.235']
+MIN GRAD: -0.060	MAX GRAD: 0.097
+380 ['0.079', '0.206']
+MIN GRAD: -0.039	MAX GRAD: 0.047
+390 ['0.081', '0.388']
+MIN GRAD: -0.084	MAX GRAD: 0.083
+400 ['0.081', '0.263']
+MIN GRAD: -0.152	MAX GRAD: 0.097
+410 ['0.080', '0.213']
+MIN GRAD: -0.101	MAX GRAD: 0.091
+420 ['0.080', '0.142']
+MIN GRAD: -0.042	MAX GRAD: 0.060
+430 ['0.081', '0.241']
+MIN GRAD: -0.111	MAX GRAD: 0.119
+440 ['0.078', '0.266']
+MIN GRAD: -0.052	MAX GRAD: 0.066
+450 ['0.077', '0.222']
+MIN GRAD: -0.057	MAX GRAD: 0.058
+460 ['0.074', '0.265']
+MIN GRAD: -0.053	MAX GRAD: 0.080
+Train: [1][469/469]	loss 0.234 (0.469)	Acc@1 95.833 (89.213)
+Test model 1 on task 1
+Test: [3/3]	loss 0.388 (0.385)	Acc@1 88.330 (87.660)
+Test model 1 on task 2
+Test: [3/3]	loss 0.332 (0.307)	Acc@1 89.270 (90.400)
+Test model 1 on task 3
+Test: [3/3]	loss 0.261 (0.271)	Acc@1 92.035 (91.960)
+Test model 1 on task 4
+Test: [3/3]	loss 0.243 (0.258)	Acc@1 92.478 (92.260)
+Test model 1 on task 5
+Test: [3/3]	loss 0.246 (0.252)	Acc@1 93.142 (92.570)
+Test model 1 on task 6
+Test: [3/3]	loss 0.233 (0.238)	Acc@1 93.031 (92.950)
+Test model 1 on task 7
+Test: [3/3]	loss 0.246 (0.230)	Acc@1 93.529 (93.300)
+Test model 1 on task 8
+Test: [3/3]	loss 0.241 (0.227)	Acc@1 93.418 (93.640)
+Test model 1 on task 9
+Test: [3/3]	loss 0.256 (0.232)	Acc@1 92.312 (93.340)
+gg 0	min: -0.000	max: 0.000	min_eigval: 1.154e-07	max_eigval: 4.531e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 0.000e+00	max_eigval: 2.507e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: 2.466e-13	max_eigval: 1.088e-05
+aa 0	min: 0.000	max: 9.000	min_eigval: 1.648e-02	max_eigval: 1.639e+02
+aa 1	min: 0.007	max: 45.820	min_eigval: 5.705e-02	max_eigval: 4.080e+02
+aa 2	min: 0.000	max: 54.475	min_eigval: 0.000e+00	max_eigval: 7.850e+02
+############################################################ Avg acc: 92.01
+Task 10 Model 1:
+0 ['0.000', '5.167']
+MIN GRAD: -0.362	MAX GRAD: 0.640
+10 ['0.368', '1.397']
+MIN GRAD: -0.462	MAX GRAD: 0.293
+20 ['0.319', '0.866']
+MIN GRAD: -0.309	MAX GRAD: 0.297
+30 ['0.270', '0.610']
+MIN GRAD: -0.153	MAX GRAD: 0.146
+40 ['0.209', '0.519']
+MIN GRAD: -0.220	MAX GRAD: 0.156
+50 ['0.180', '0.440']
+MIN GRAD: -0.090	MAX GRAD: 0.155
+60 ['0.152', '0.375']
+MIN GRAD: -0.082	MAX GRAD: 0.088
+70 ['0.148', '0.483']
+MIN GRAD: -0.099	MAX GRAD: 0.098
+80 ['0.136', '0.373']
+MIN GRAD: -0.102	MAX GRAD: 0.101
+90 ['0.134', '0.248']
+MIN GRAD: -0.201	MAX GRAD: 0.149
+100 ['0.126', '0.365']
+MIN GRAD: -0.120	MAX GRAD: 0.112
+110 ['0.119', '0.350']
+MIN GRAD: -0.068	MAX GRAD: 0.079
+120 ['0.117', '0.323']
+MIN GRAD: -0.108	MAX GRAD: 0.056
+130 ['0.118', '0.306']
+MIN GRAD: -0.128	MAX GRAD: 0.084
+140 ['0.114', '0.273']
+MIN GRAD: -0.068	MAX GRAD: 0.090
+150 ['0.111', '0.310']
+MIN GRAD: -0.088	MAX GRAD: 0.079
+160 ['0.111', '0.317']
+MIN GRAD: -0.092	MAX GRAD: 0.088
+170 ['0.107', '0.323']
+MIN GRAD: -0.064	MAX GRAD: 0.143
+180 ['0.106', '0.368']
+MIN GRAD: -0.083	MAX GRAD: 0.107
+190 ['0.106', '0.391']
+MIN GRAD: -0.120	MAX GRAD: 0.122
+200 ['0.109', '0.240']
+MIN GRAD: -0.075	MAX GRAD: 0.114
+210 ['0.105', '0.350']
+MIN GRAD: -0.145	MAX GRAD: 0.142
+220 ['0.105', '0.175']
+MIN GRAD: -0.056	MAX GRAD: 0.090
+230 ['0.101', '0.241']
+MIN GRAD: -0.081	MAX GRAD: 0.099
+240 ['0.100', '0.347']
+MIN GRAD: -0.123	MAX GRAD: 0.098
+250 ['0.102', '0.321']
+MIN GRAD: -0.098	MAX GRAD: 0.092
+260 ['0.099', '0.302']
+MIN GRAD: -0.074	MAX GRAD: 0.088
+270 ['0.096', '0.302']
+MIN GRAD: -0.083	MAX GRAD: 0.091
+280 ['0.095', '0.340']
+MIN GRAD: -0.081	MAX GRAD: 0.094
+290 ['0.095', '0.339']
+MIN GRAD: -0.096	MAX GRAD: 0.134
+300 ['0.096', '0.268']
+MIN GRAD: -0.138	MAX GRAD: 0.119
+310 ['0.100', '0.290']
+MIN GRAD: -0.133	MAX GRAD: 0.114
+320 ['0.096', '0.225']
+MIN GRAD: -0.117	MAX GRAD: 0.092
+330 ['0.091', '0.208']
+MIN GRAD: -0.063	MAX GRAD: 0.053
+340 ['0.091', '0.230']
+MIN GRAD: -0.096	MAX GRAD: 0.096
+350 ['0.093', '0.228']
+MIN GRAD: -0.080	MAX GRAD: 0.084
+360 ['0.090', '0.260']
+MIN GRAD: -0.087	MAX GRAD: 0.132
+370 ['0.090', '0.316']
+MIN GRAD: -0.092	MAX GRAD: 0.113
+380 ['0.095', '0.265']
+MIN GRAD: -0.065	MAX GRAD: 0.144
+390 ['0.094', '0.316']
+MIN GRAD: -0.139	MAX GRAD: 0.200
+400 ['0.103', '0.516']
+MIN GRAD: -0.187	MAX GRAD: 0.277
+410 ['0.091', '0.205']
+MIN GRAD: -0.109	MAX GRAD: 0.136
+420 ['0.091', '0.217']
+MIN GRAD: -0.115	MAX GRAD: 0.094
+430 ['0.086', '0.221']
+MIN GRAD: -0.098	MAX GRAD: 0.094
+440 ['0.090', '0.247']
+MIN GRAD: -0.108	MAX GRAD: 0.139
+450 ['0.088', '0.222']
+MIN GRAD: -0.090	MAX GRAD: 0.086
+460 ['0.087', '0.293']
+MIN GRAD: -0.081	MAX GRAD: 0.081
+Train: [1][469/469]	loss 0.278 (0.508)	Acc@1 92.708 (88.962)
+Test model 1 on task 1
+Test: [3/3]	loss 0.375 (0.407)	Acc@1 87.500 (86.930)
+Test model 1 on task 2
+Test: [3/3]	loss 0.337 (0.325)	Acc@1 89.436 (89.860)
+Test model 1 on task 3
+Test: [3/3]	loss 0.280 (0.279)	Acc@1 92.201 (91.720)
+Test model 1 on task 4
+Test: [3/3]	loss 0.261 (0.266)	Acc@1 92.257 (92.090)
+Test model 1 on task 5
+Test: [3/3]	loss 0.278 (0.259)	Acc@1 91.869 (92.300)
+Test model 1 on task 6
+Test: [3/3]	loss 0.237 (0.242)	Acc@1 93.252 (92.770)
+Test model 1 on task 7
+Test: [3/3]	loss 0.249 (0.235)	Acc@1 92.146 (92.820)
+Test model 1 on task 8
+Test: [3/3]	loss 0.252 (0.233)	Acc@1 93.031 (93.270)
+Test model 1 on task 9
+Test: [3/3]	loss 0.240 (0.236)	Acc@1 92.367 (93.110)
+Test model 1 on task 10
+Test: [3/3]	loss 0.235 (0.227)	Acc@1 93.861 (93.340)
+gg 0	min: -0.000	max: 0.000	min_eigval: 1.356e-07	max_eigval: 4.978e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 2.470e-13	max_eigval: 2.855e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: 1.901e-13	max_eigval: 1.213e-05
+aa 0	min: 0.000	max: 10.000	min_eigval: 1.848e-02	max_eigval: 1.799e+02
+aa 1	min: 0.026	max: 52.319	min_eigval: 6.704e-02	max_eigval: 4.487e+02
+aa 2	min: 0.000	max: 59.866	min_eigval: 7.540e-08	max_eigval: 8.596e+02
+############################################################ Avg acc: 91.82
+Task 11 Model 1:
+0 ['0.000', '3.858']
+MIN GRAD: -0.333	MAX GRAD: 0.473
+10 ['0.293', '1.208']
+MIN GRAD: -0.276	MAX GRAD: 0.221
+20 ['0.304', '0.727']
+MIN GRAD: -0.224	MAX GRAD: 0.158
+30 ['0.259', '0.640']
+MIN GRAD: -0.207	MAX GRAD: 0.126
+40 ['0.205', '0.535']
+MIN GRAD: -0.168	MAX GRAD: 0.084
+50 ['0.170', '0.338']
+MIN GRAD: -0.102	MAX GRAD: 0.075
+60 ['0.149', '0.456']
+MIN GRAD: -0.101	MAX GRAD: 0.083
+70 ['0.140', '0.392']
+MIN GRAD: -0.106	MAX GRAD: 0.122
+80 ['0.139', '0.342']
+MIN GRAD: -0.128	MAX GRAD: 0.150
+90 ['0.131', '0.213']
+MIN GRAD: -0.103	MAX GRAD: 0.136
+100 ['0.130', '0.432']
+MIN GRAD: -0.107	MAX GRAD: 0.105
+110 ['0.131', '0.269']
+MIN GRAD: -0.145	MAX GRAD: 0.133
+120 ['0.120', '0.371']
+MIN GRAD: -0.103	MAX GRAD: 0.180
+130 ['0.129', '0.322']
+MIN GRAD: -0.134	MAX GRAD: 0.168
+140 ['0.116', '0.309']
+MIN GRAD: -0.077	MAX GRAD: 0.086
+150 ['0.118', '0.445']
+MIN GRAD: -0.163	MAX GRAD: 0.077
+160 ['0.112', '0.379']
+MIN GRAD: -0.152	MAX GRAD: 0.090
+170 ['0.116', '0.259']
+MIN GRAD: -0.119	MAX GRAD: 0.091
+180 ['0.113', '0.378']
+MIN GRAD: -0.094	MAX GRAD: 0.108
+190 ['0.107', '0.330']
+MIN GRAD: -0.099	MAX GRAD: 0.097
+200 ['0.107', '0.340']
+MIN GRAD: -0.126	MAX GRAD: 0.064
+210 ['0.104', '0.359']
+MIN GRAD: -0.056	MAX GRAD: 0.042
+220 ['0.109', '0.380']
+MIN GRAD: -0.103	MAX GRAD: 0.104
+230 ['0.107', '0.287']
+MIN GRAD: -0.106	MAX GRAD: 0.139
+240 ['0.109', '0.285']
+MIN GRAD: -0.098	MAX GRAD: 0.105
+250 ['0.103', '0.238']
+MIN GRAD: -0.117	MAX GRAD: 0.122
+260 ['0.109', '0.315']
+MIN GRAD: -0.137	MAX GRAD: 0.120
+270 ['0.107', '0.306']
+MIN GRAD: -0.162	MAX GRAD: 0.089
+280 ['0.099', '0.390']
+MIN GRAD: -0.050	MAX GRAD: 0.081
+290 ['0.100', '0.246']
+MIN GRAD: -0.113	MAX GRAD: 0.100
+300 ['0.099', '0.350']
+MIN GRAD: -0.071	MAX GRAD: 0.093
+310 ['0.105', '0.232']
+MIN GRAD: -0.132	MAX GRAD: 0.104
+320 ['0.104', '0.358']
+MIN GRAD: -0.123	MAX GRAD: 0.099
+330 ['0.099', '0.312']
+MIN GRAD: -0.108	MAX GRAD: 0.082
+340 ['0.097', '0.303']
+MIN GRAD: -0.079	MAX GRAD: 0.071
+350 ['0.095', '0.204']
+MIN GRAD: -0.053	MAX GRAD: 0.099
+360 ['0.097', '0.356']
+MIN GRAD: -0.099	MAX GRAD: 0.096
+370 ['0.094', '0.342']
+MIN GRAD: -0.083	MAX GRAD: 0.084
+380 ['0.093', '0.360']
+MIN GRAD: -0.102	MAX GRAD: 0.106
+390 ['0.094', '0.206']
+MIN GRAD: -0.090	MAX GRAD: 0.096
+400 ['0.093', '0.199']
+MIN GRAD: -0.085	MAX GRAD: 0.084
+410 ['0.093', '0.368']
+MIN GRAD: -0.098	MAX GRAD: 0.078
+420 ['0.095', '0.265']
+MIN GRAD: -0.096	MAX GRAD: 0.099
+430 ['0.092', '0.232']
+MIN GRAD: -0.076	MAX GRAD: 0.073
+440 ['0.089', '0.232']
+MIN GRAD: -0.061	MAX GRAD: 0.045
+450 ['0.093', '0.416']
+MIN GRAD: -0.141	MAX GRAD: 0.106
+460 ['0.094', '0.277']
+MIN GRAD: -0.111	MAX GRAD: 0.140
+Train: [1][469/469]	loss 0.326 (0.508)	Acc@1 91.667 (88.762)
+Test model 1 on task 1
+Test: [3/3]	loss 0.415 (0.419)	Acc@1 87.058 (86.600)
+Test model 1 on task 2
+Test: [3/3]	loss 0.296 (0.337)	Acc@1 90.653 (89.490)
+Test model 1 on task 3
+Test: [3/3]	loss 0.308 (0.290)	Acc@1 90.376 (91.250)
+Test model 1 on task 4
+Test: [3/3]	loss 0.277 (0.280)	Acc@1 91.316 (91.560)
+Test model 1 on task 5
+Test: [3/3]	loss 0.239 (0.268)	Acc@1 92.588 (91.930)
+Test model 1 on task 6
+Test: [3/3]	loss 0.249 (0.248)	Acc@1 92.810 (92.660)
+Test model 1 on task 7
+Test: [3/3]	loss 0.247 (0.241)	Acc@1 92.478 (92.720)
+Test model 1 on task 8
+Test: [3/3]	loss 0.232 (0.235)	Acc@1 92.810 (93.160)
+Test model 1 on task 9
+Test: [3/3]	loss 0.247 (0.236)	Acc@1 93.031 (93.130)
+Test model 1 on task 10
+Test: [3/3]	loss 0.237 (0.227)	Acc@1 92.810 (93.280)
+Test model 1 on task 11
+Test: [3/3]	loss 0.240 (0.238)	Acc@1 92.976 (93.350)
+gg 0	min: -0.000	max: 0.000	min_eigval: 1.718e-07	max_eigval: 5.497e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 2.713e-12	max_eigval: 3.213e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: 2.052e-13	max_eigval: 1.336e-05
+aa 0	min: 0.000	max: 11.000	min_eigval: 2.519e-02	max_eigval: 1.954e+02
+aa 1	min: 0.026	max: 57.895	min_eigval: 8.565e-02	max_eigval: 4.918e+02
+aa 2	min: 0.000	max: 64.970	min_eigval: 2.269e-07	max_eigval: 9.430e+02
+############################################################ Avg acc: 91.74
+Task 12 Model 1:
+0 ['0.000', '3.672']
+MIN GRAD: -0.340	MAX GRAD: 0.644
+10 ['0.335', '1.170']
+MIN GRAD: -0.273	MAX GRAD: 0.282
+20 ['0.321', '0.741']
+MIN GRAD: -0.248	MAX GRAD: 0.220
+30 ['0.254', '0.527']
+MIN GRAD: -0.121	MAX GRAD: 0.140
+40 ['0.213', '0.539']
+MIN GRAD: -0.095	MAX GRAD: 0.134
+50 ['0.191', '0.534']
+MIN GRAD: -0.123	MAX GRAD: 0.176
+60 ['0.166', '0.364']
+MIN GRAD: -0.105	MAX GRAD: 0.121
+70 ['0.151', '0.428']
+MIN GRAD: -0.123	MAX GRAD: 0.073
+80 ['0.146', '0.408']
+MIN GRAD: -0.125	MAX GRAD: 0.100
+90 ['0.140', '0.360']
+MIN GRAD: -0.086	MAX GRAD: 0.166
+100 ['0.138', '0.290']
+MIN GRAD: -0.143	MAX GRAD: 0.106
+110 ['0.135', '0.415']
+MIN GRAD: -0.104	MAX GRAD: 0.083
+120 ['0.130', '0.339']
+MIN GRAD: -0.119	MAX GRAD: 0.104
+130 ['0.135', '0.286']
+MIN GRAD: -0.157	MAX GRAD: 0.145
+140 ['0.136', '0.311']
+MIN GRAD: -0.180	MAX GRAD: 0.214
+150 ['0.135', '0.337']
+MIN GRAD: -0.181	MAX GRAD: 0.189
+160 ['0.127', '0.373']
+MIN GRAD: -0.110	MAX GRAD: 0.183
+170 ['0.126', '0.311']
+MIN GRAD: -0.087	MAX GRAD: 0.148
+180 ['0.122', '0.317']
+MIN GRAD: -0.125	MAX GRAD: 0.104
+190 ['0.122', '0.354']
+MIN GRAD: -0.176	MAX GRAD: 0.164
+200 ['0.118', '0.471']
+MIN GRAD: -0.144	MAX GRAD: 0.125
+210 ['0.116', '0.332']
+MIN GRAD: -0.086	MAX GRAD: 0.116
+220 ['0.121', '0.224']
+MIN GRAD: -0.130	MAX GRAD: 0.096
+230 ['0.122', '0.283']
+MIN GRAD: -0.118	MAX GRAD: 0.135
+240 ['0.118', '0.334']
+MIN GRAD: -0.139	MAX GRAD: 0.145
+250 ['0.115', '0.225']
+MIN GRAD: -0.161	MAX GRAD: 0.141
+260 ['0.121', '0.265']
+MIN GRAD: -0.145	MAX GRAD: 0.162
+270 ['0.116', '0.283']
+MIN GRAD: -0.120	MAX GRAD: 0.118
+280 ['0.107', '0.247']
+MIN GRAD: -0.112	MAX GRAD: 0.070
+290 ['0.110', '0.267']
+MIN GRAD: -0.120	MAX GRAD: 0.112
+300 ['0.109', '0.165']
+MIN GRAD: -0.136	MAX GRAD: 0.084
+310 ['0.121', '0.230']
+MIN GRAD: -0.220	MAX GRAD: 0.164
+320 ['0.112', '0.215']
+MIN GRAD: -0.184	MAX GRAD: 0.164
+330 ['0.117', '0.329']
+MIN GRAD: -0.165	MAX GRAD: 0.208
+340 ['0.109', '0.256']
+MIN GRAD: -0.082	MAX GRAD: 0.100
+350 ['0.109', '0.256']
+MIN GRAD: -0.131	MAX GRAD: 0.152
+360 ['0.103', '0.227']
+MIN GRAD: -0.106	MAX GRAD: 0.080
+370 ['0.100', '0.324']
+MIN GRAD: -0.093	MAX GRAD: 0.117
+380 ['0.102', '0.290']
+MIN GRAD: -0.135	MAX GRAD: 0.124
+390 ['0.103', '0.324']
+MIN GRAD: -0.123	MAX GRAD: 0.120
+400 ['0.099', '0.260']
+MIN GRAD: -0.080	MAX GRAD: 0.066
+410 ['0.103', '0.198']
+MIN GRAD: -0.117	MAX GRAD: 0.122
+420 ['0.102', '0.185']
+MIN GRAD: -0.074	MAX GRAD: 0.069
+430 ['0.103', '0.206']
+MIN GRAD: -0.141	MAX GRAD: 0.092
+440 ['0.098', '0.241']
+MIN GRAD: -0.085	MAX GRAD: 0.086
+450 ['0.102', '0.373']
+MIN GRAD: -0.108	MAX GRAD: 0.116
+460 ['0.101', '0.286']
+MIN GRAD: -0.112	MAX GRAD: 0.154
+Train: [1][469/469]	loss 0.383 (0.510)	Acc@1 90.625 (88.848)
+Test model 1 on task 1
+Test: [3/3]	loss 0.421 (0.432)	Acc@1 85.841 (85.930)
+Test model 1 on task 2
+Test: [3/3]	loss 0.331 (0.353)	Acc@1 89.491 (88.820)
+Test model 1 on task 3
+Test: [3/3]	loss 0.297 (0.302)	Acc@1 91.040 (90.900)
+Test model 1 on task 4
+Test: [3/3]	loss 0.284 (0.293)	Acc@1 91.316 (91.090)
+Test model 1 on task 5
+Test: [3/3]	loss 0.281 (0.278)	Acc@1 91.316 (91.660)
+Test model 1 on task 6
+Test: [3/3]	loss 0.246 (0.249)	Acc@1 93.031 (92.700)
+Test model 1 on task 7
+Test: [3/3]	loss 0.264 (0.247)	Acc@1 91.704 (92.490)
+Test model 1 on task 8
+Test: [3/3]	loss 0.243 (0.241)	Acc@1 93.529 (93.100)
+Test model 1 on task 9
+Test: [3/3]	loss 0.263 (0.242)	Acc@1 92.533 (93.010)
+Test model 1 on task 10
+Test: [3/3]	loss 0.236 (0.227)	Acc@1 93.418 (93.170)
+Test model 1 on task 11
+Test: [3/3]	loss 0.237 (0.238)	Acc@1 92.588 (93.170)
+Test model 1 on task 12
+Test: [3/3]	loss 0.221 (0.240)	Acc@1 93.750 (93.030)
+gg 0	min: -0.000	max: 0.000	min_eigval: 2.198e-07	max_eigval: 6.091e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 2.713e-12	max_eigval: 3.586e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: 1.322e-13	max_eigval: 1.460e-05
+aa 0	min: 0.000	max: 12.000	min_eigval: 5.399e-02	max_eigval: 2.108e+02
+aa 1	min: 0.031	max: 65.131	min_eigval: 1.469e-01	max_eigval: 5.348e+02
+aa 2	min: 0.000	max: 69.193	min_eigval: 2.269e-07	max_eigval: 1.026e+03
+############################################################ Avg acc: 91.59
+Task 13 Model 1:
+0 ['0.000', '3.605']
+MIN GRAD: -0.242	MAX GRAD: 0.428
+10 ['0.308', '1.171']
+MIN GRAD: -0.280	MAX GRAD: 0.268
+20 ['0.329', '0.703']
+MIN GRAD: -0.195	MAX GRAD: 0.276
+30 ['0.284', '0.489']
+MIN GRAD: -0.158	MAX GRAD: 0.189
+40 ['0.233', '0.593']
+MIN GRAD: -0.122	MAX GRAD: 0.116
+50 ['0.190', '0.603']
+MIN GRAD: -0.095	MAX GRAD: 0.090
+60 ['0.179', '0.359']
+MIN GRAD: -0.175	MAX GRAD: 0.171
+70 ['0.163', '0.454']
+MIN GRAD: -0.127	MAX GRAD: 0.128
+80 ['0.168', '0.410']
+MIN GRAD: -0.146	MAX GRAD: 0.140
+90 ['0.159', '0.435']
+MIN GRAD: -0.222	MAX GRAD: 0.204
+100 ['0.152', '0.428']
+MIN GRAD: -0.179	MAX GRAD: 0.145
+110 ['0.148', '0.464']
+MIN GRAD: -0.132	MAX GRAD: 0.158
+120 ['0.151', '0.432']
+MIN GRAD: -0.161	MAX GRAD: 0.179
+130 ['0.145', '0.432']
+MIN GRAD: -0.159	MAX GRAD: 0.101
+140 ['0.137', '0.247']
+MIN GRAD: -0.074	MAX GRAD: 0.096
+150 ['0.144', '0.300']
+MIN GRAD: -0.148	MAX GRAD: 0.180
+160 ['0.136', '0.355']
+MIN GRAD: -0.108	MAX GRAD: 0.120
+170 ['0.135', '0.427']
+MIN GRAD: -0.168	MAX GRAD: 0.111
+180 ['0.128', '0.442']
+MIN GRAD: -0.095	MAX GRAD: 0.143
+190 ['0.134', '0.277']
+MIN GRAD: -0.169	MAX GRAD: 0.157
+200 ['0.127', '0.338']
+MIN GRAD: -0.141	MAX GRAD: 0.124
+210 ['0.126', '0.253']
+MIN GRAD: -0.151	MAX GRAD: 0.132
+220 ['0.131', '0.334']
+MIN GRAD: -0.148	MAX GRAD: 0.127
+230 ['0.132', '0.281']
+MIN GRAD: -0.138	MAX GRAD: 0.156
+240 ['0.137', '0.308']
+MIN GRAD: -0.180	MAX GRAD: 0.336
+250 ['0.130', '0.247']
+MIN GRAD: -0.122	MAX GRAD: 0.194
+260 ['0.138', '0.438']
+MIN GRAD: -0.187	MAX GRAD: 0.252
+270 ['0.126', '0.264']
+MIN GRAD: -0.165	MAX GRAD: 0.185
+280 ['0.130', '0.322']
+MIN GRAD: -0.149	MAX GRAD: 0.178
+290 ['0.121', '0.223']
+MIN GRAD: -0.065	MAX GRAD: 0.121
+300 ['0.117', '0.276']
+MIN GRAD: -0.078	MAX GRAD: 0.111
+310 ['0.118', '0.235']
+MIN GRAD: -0.096	MAX GRAD: 0.128
+320 ['0.117', '0.229']
+MIN GRAD: -0.104	MAX GRAD: 0.112
+330 ['0.121', '0.326']
+MIN GRAD: -0.162	MAX GRAD: 0.153
+340 ['0.118', '0.189']
+MIN GRAD: -0.106	MAX GRAD: 0.147
+350 ['0.119', '0.286']
+MIN GRAD: -0.145	MAX GRAD: 0.117
+360 ['0.121', '0.337']
+MIN GRAD: -0.187	MAX GRAD: 0.208
+370 ['0.110', '0.321']
+MIN GRAD: -0.105	MAX GRAD: 0.076
+380 ['0.111', '0.202']
+MIN GRAD: -0.066	MAX GRAD: 0.066
+390 ['0.113', '0.233']
+MIN GRAD: -0.098	MAX GRAD: 0.083
+400 ['0.120', '0.266']
+MIN GRAD: -0.140	MAX GRAD: 0.157
+410 ['0.134', '0.343']
+MIN GRAD: -0.199	MAX GRAD: 0.248
+420 ['0.114', '0.248']
+MIN GRAD: -0.117	MAX GRAD: 0.139
+430 ['0.121', '0.286']
+MIN GRAD: -0.160	MAX GRAD: 0.177
+440 ['0.117', '0.186']
+MIN GRAD: -0.128	MAX GRAD: 0.132
+450 ['0.110', '0.277']
+MIN GRAD: -0.079	MAX GRAD: 0.097
+460 ['0.110', '0.331']
+MIN GRAD: -0.076	MAX GRAD: 0.102
+Train: [1][469/469]	loss 0.321 (0.522)	Acc@1 92.708 (88.932)
+Test model 1 on task 1
+Test: [3/3]	loss 0.430 (0.443)	Acc@1 85.564 (85.480)
+Test model 1 on task 2
+Test: [3/3]	loss 0.369 (0.370)	Acc@1 88.606 (88.320)
+Test model 1 on task 3
+Test: [3/3]	loss 0.289 (0.318)	Acc@1 91.095 (90.310)
+Test model 1 on task 4
+Test: [3/3]	loss 0.270 (0.307)	Acc@1 92.035 (90.810)
+Test model 1 on task 5
+Test: [3/3]	loss 0.284 (0.289)	Acc@1 91.206 (91.370)
+Test model 1 on task 6
+Test: [3/3]	loss 0.261 (0.257)	Acc@1 92.035 (92.420)
+Test model 1 on task 7
+Test: [3/3]	loss 0.268 (0.253)	Acc@1 91.704 (92.440)
+Test model 1 on task 8
+Test: [3/3]	loss 0.274 (0.247)	Acc@1 92.257 (92.760)
+Test model 1 on task 9
+Test: [3/3]	loss 0.236 (0.243)	Acc@1 92.976 (92.940)
+Test model 1 on task 10
+Test: [3/3]	loss 0.241 (0.232)	Acc@1 93.086 (93.040)
+Test model 1 on task 11
+Test: [3/3]	loss 0.247 (0.240)	Acc@1 93.363 (93.210)
+Test model 1 on task 12
+Test: [3/3]	loss 0.203 (0.238)	Acc@1 94.635 (93.140)
+Test model 1 on task 13
+Test: [3/3]	loss 0.237 (0.240)	Acc@1 92.976 (93.220)
+gg 0	min: -0.000	max: 0.000	min_eigval: 3.000e-07	max_eigval: 6.766e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 2.713e-12	max_eigval: 3.987e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: 1.840e-13	max_eigval: 1.591e-05
+aa 0	min: 0.000	max: 13.000	min_eigval: 6.047e-02	max_eigval: 2.264e+02
+aa 1	min: 0.044	max: 71.196	min_eigval: 1.840e-01	max_eigval: 5.806e+02
+aa 2	min: 0.000	max: 74.597	min_eigval: 2.270e-07	max_eigval: 1.113e+03
+############################################################ Avg acc: 91.50
+Task 14 Model 1:
+0 ['0.000', '4.011']
+MIN GRAD: -0.411	MAX GRAD: 0.463
+10 ['0.349', '1.273']
+MIN GRAD: -0.635	MAX GRAD: 0.326
+20 ['0.355', '0.679']
+MIN GRAD: -0.201	MAX GRAD: 0.163
+30 ['0.284', '0.478']
+MIN GRAD: -0.204	MAX GRAD: 0.209
+40 ['0.230', '0.540']
+MIN GRAD: -0.158	MAX GRAD: 0.124
+50 ['0.191', '0.432']
+MIN GRAD: -0.152	MAX GRAD: 0.152
+60 ['0.170', '0.515']
+MIN GRAD: -0.107	MAX GRAD: 0.101
+70 ['0.160', '0.454']
+MIN GRAD: -0.212	MAX GRAD: 0.114
+80 ['0.149', '0.376']
+MIN GRAD: -0.112	MAX GRAD: 0.121
+90 ['0.157', '0.370']
+MIN GRAD: -0.240	MAX GRAD: 0.232
+100 ['0.158', '0.376']
+MIN GRAD: -0.274	MAX GRAD: 0.277
+110 ['0.142', '0.421']
+MIN GRAD: -0.134	MAX GRAD: 0.176
+120 ['0.141', '0.410']
+MIN GRAD: -0.159	MAX GRAD: 0.126
+130 ['0.133', '0.452']
+MIN GRAD: -0.148	MAX GRAD: 0.142
+140 ['0.132', '0.284']
+MIN GRAD: -0.153	MAX GRAD: 0.170
+150 ['0.133', '0.212']
+MIN GRAD: -0.182	MAX GRAD: 0.204
+160 ['0.132', '0.293']
+MIN GRAD: -0.158	MAX GRAD: 0.137
+170 ['0.129', '0.258']
+MIN GRAD: -0.136	MAX GRAD: 0.143
+180 ['0.132', '0.270']
+MIN GRAD: -0.183	MAX GRAD: 0.200
+190 ['0.128', '0.342']
+MIN GRAD: -0.149	MAX GRAD: 0.166
+200 ['0.122', '0.285']
+MIN GRAD: -0.148	MAX GRAD: 0.137
+210 ['0.127', '0.317']
+MIN GRAD: -0.117	MAX GRAD: 0.151
+220 ['0.124', '0.222']
+MIN GRAD: -0.112	MAX GRAD: 0.153
+230 ['0.123', '0.255']
+MIN GRAD: -0.147	MAX GRAD: 0.163
+240 ['0.115', '0.419']
+MIN GRAD: -0.113	MAX GRAD: 0.103
+250 ['0.123', '0.342']
+MIN GRAD: -0.234	MAX GRAD: 0.183
+260 ['0.119', '0.262']
+MIN GRAD: -0.137	MAX GRAD: 0.138
+270 ['0.119', '0.273']
+MIN GRAD: -0.108	MAX GRAD: 0.160
+280 ['0.113', '0.343']
+MIN GRAD: -0.160	MAX GRAD: 0.182
+290 ['0.117', '0.311']
+MIN GRAD: -0.186	MAX GRAD: 0.148
+300 ['0.109', '0.354']
+MIN GRAD: -0.091	MAX GRAD: 0.082
+310 ['0.107', '0.398']
+MIN GRAD: -0.078	MAX GRAD: 0.122
+320 ['0.110', '0.283']
+MIN GRAD: -0.157	MAX GRAD: 0.122
+330 ['0.111', '0.243']
+MIN GRAD: -0.165	MAX GRAD: 0.125
+340 ['0.107', '0.297']
+MIN GRAD: -0.084	MAX GRAD: 0.091
+350 ['0.112', '0.376']
+MIN GRAD: -0.158	MAX GRAD: 0.152
+360 ['0.114', '0.244']
+MIN GRAD: -0.318	MAX GRAD: 0.153
+370 ['0.105', '0.244']
+MIN GRAD: -0.096	MAX GRAD: 0.089
+380 ['0.113', '0.232']
+MIN GRAD: -0.134	MAX GRAD: 0.200
+390 ['0.109', '0.183']
+MIN GRAD: -0.160	MAX GRAD: 0.123
+400 ['0.116', '0.215']
+MIN GRAD: -0.181	MAX GRAD: 0.202
+410 ['0.105', '0.190']
+MIN GRAD: -0.076	MAX GRAD: 0.062
+420 ['0.103', '0.231']
+MIN GRAD: -0.097	MAX GRAD: 0.082
+430 ['0.115', '0.243']
+MIN GRAD: -0.214	MAX GRAD: 0.167
+440 ['0.107', '0.226']
+MIN GRAD: -0.109	MAX GRAD: 0.128
+450 ['0.114', '0.165']
+MIN GRAD: -0.231	MAX GRAD: 0.133
+460 ['0.115', '0.280']
+MIN GRAD: -0.147	MAX GRAD: 0.245
+Train: [1][469/469]	loss 0.369 (0.517)	Acc@1 92.708 (89.118)
+Test model 1 on task 1
+Test: [3/3]	loss 0.444 (0.445)	Acc@1 85.896 (85.530)
+Test model 1 on task 2
+Test: [3/3]	loss 0.383 (0.378)	Acc@1 87.223 (87.990)
+Test model 1 on task 3
+Test: [3/3]	loss 0.302 (0.323)	Acc@1 90.044 (89.980)
+Test model 1 on task 4
+Test: [3/3]	loss 0.330 (0.320)	Acc@1 90.100 (90.220)
+Test model 1 on task 5
+Test: [3/3]	loss 0.281 (0.303)	Acc@1 92.035 (90.870)
+Test model 1 on task 6
+Test: [3/3]	loss 0.278 (0.266)	Acc@1 91.869 (92.070)
+Test model 1 on task 7
+Test: [3/3]	loss 0.259 (0.261)	Acc@1 92.257 (92.250)
+Test model 1 on task 8
+Test: [3/3]	loss 0.248 (0.253)	Acc@1 92.865 (92.440)
+Test model 1 on task 9
+Test: [3/3]	loss 0.247 (0.248)	Acc@1 92.478 (92.650)
+Test model 1 on task 10
+Test: [3/3]	loss 0.223 (0.235)	Acc@1 93.142 (92.990)
+Test model 1 on task 11
+Test: [3/3]	loss 0.247 (0.243)	Acc@1 92.754 (92.930)
+Test model 1 on task 12
+Test: [3/3]	loss 0.229 (0.239)	Acc@1 93.308 (93.120)
+Test model 1 on task 13
+Test: [3/3]	loss 0.215 (0.239)	Acc@1 92.865 (93.090)
+Test model 1 on task 14
+Test: [3/3]	loss 0.239 (0.243)	Acc@1 93.971 (93.230)
+gg 0	min: -0.000	max: 0.000	min_eigval: 3.626e-07	max_eigval: 7.473e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 4.499e-12	max_eigval: 4.408e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: -3.517e-14	max_eigval: 1.721e-05
+aa 0	min: 0.000	max: 14.000	min_eigval: 8.307e-02	max_eigval: 2.419e+02
+aa 1	min: 0.074	max: 74.597	min_eigval: 2.307e-01	max_eigval: 6.172e+02
+aa 2	min: 0.000	max: 79.003	min_eigval: 2.549e-07	max_eigval: 1.188e+03
+############################################################ Avg acc: 91.38
+Task 15 Model 1:
+0 ['0.000', '3.841']
+MIN GRAD: -0.273	MAX GRAD: 0.357
+10 ['0.443', '0.844']
+MIN GRAD: -0.567	MAX GRAD: 0.395
+20 ['0.384', '0.707']
+MIN GRAD: -0.224	MAX GRAD: 0.156
+30 ['0.308', '0.517']
+MIN GRAD: -0.182	MAX GRAD: 0.177
+40 ['0.248', '0.574']
+MIN GRAD: -0.184	MAX GRAD: 0.169
+50 ['0.210', '0.442']
+MIN GRAD: -0.218	MAX GRAD: 0.175
+60 ['0.193', '0.359']
+MIN GRAD: -0.218	MAX GRAD: 0.205
+70 ['0.173', '0.497']
+MIN GRAD: -0.109	MAX GRAD: 0.114
+80 ['0.179', '0.327']
+MIN GRAD: -0.257	MAX GRAD: 0.282
+90 ['0.165', '0.372']
+MIN GRAD: -0.129	MAX GRAD: 0.123
+100 ['0.166', '0.324']
+MIN GRAD: -0.147	MAX GRAD: 0.146
+110 ['0.156', '0.359']
+MIN GRAD: -0.158	MAX GRAD: 0.186
+120 ['0.161', '0.419']
+MIN GRAD: -0.210	MAX GRAD: 0.278
+130 ['0.179', '0.396']
+MIN GRAD: -0.471	MAX GRAD: 0.382
+140 ['0.155', '0.489']
+MIN GRAD: -0.219	MAX GRAD: 0.243
+150 ['0.155', '0.388']
+MIN GRAD: -0.196	MAX GRAD: 0.267
+160 ['0.142', '0.349']
+MIN GRAD: -0.110	MAX GRAD: 0.165
+170 ['0.153', '0.238']
+MIN GRAD: -0.222	MAX GRAD: 0.168
+180 ['0.145', '0.304']
+MIN GRAD: -0.151	MAX GRAD: 0.149
+190 ['0.138', '0.393']
+MIN GRAD: -0.187	MAX GRAD: 0.203
+200 ['0.140', '0.391']
+MIN GRAD: -0.172	MAX GRAD: 0.186
+210 ['0.144', '0.218']
+MIN GRAD: -0.202	MAX GRAD: 0.286
+220 ['0.145', '0.265']
+MIN GRAD: -0.248	MAX GRAD: 0.193
+230 ['0.147', '0.267']
+MIN GRAD: -0.177	MAX GRAD: 0.144
+240 ['0.149', '0.352']
+MIN GRAD: -0.254	MAX GRAD: 0.295
+250 ['0.139', '0.333']
+MIN GRAD: -0.151	MAX GRAD: 0.266
+260 ['0.136', '0.310']
+MIN GRAD: -0.178	MAX GRAD: 0.189
+270 ['0.133', '0.250']
+MIN GRAD: -0.193	MAX GRAD: 0.191
+280 ['0.148', '0.295']
+MIN GRAD: -0.171	MAX GRAD: 0.217
+290 ['0.143', '0.309']
+MIN GRAD: -0.272	MAX GRAD: 0.258
+300 ['0.139', '0.246']
+MIN GRAD: -0.177	MAX GRAD: 0.168
+310 ['0.141', '0.255']
+MIN GRAD: -0.223	MAX GRAD: 0.159
+320 ['0.136', '0.268']
+MIN GRAD: -0.288	MAX GRAD: 0.235
+330 ['0.129', '0.309']
+MIN GRAD: -0.162	MAX GRAD: 0.150
+340 ['0.127', '0.273']
+MIN GRAD: -0.155	MAX GRAD: 0.163
+350 ['0.129', '0.290']
+MIN GRAD: -0.140	MAX GRAD: 0.159
+360 ['0.140', '0.440']
+MIN GRAD: -0.307	MAX GRAD: 0.213
+370 ['0.126', '0.295']
+MIN GRAD: -0.109	MAX GRAD: 0.122
+380 ['0.126', '0.328']
+MIN GRAD: -0.197	MAX GRAD: 0.180
+390 ['0.134', '0.353']
+MIN GRAD: -0.247	MAX GRAD: 0.242
+400 ['0.145', '0.257']
+MIN GRAD: -0.201	MAX GRAD: 0.237
+410 ['0.144', '0.285']
+MIN GRAD: -0.261	MAX GRAD: 0.261
+420 ['0.145', '0.239']
+MIN GRAD: -0.220	MAX GRAD: 0.206
+430 ['0.139', '0.200']
+MIN GRAD: -0.226	MAX GRAD: 0.209
+440 ['0.138', '0.249']
+MIN GRAD: -0.153	MAX GRAD: 0.262
+450 ['0.132', '0.292']
+MIN GRAD: -0.153	MAX GRAD: 0.181
+460 ['0.130', '0.221']
+MIN GRAD: -0.193	MAX GRAD: 0.178
+Train: [1][469/469]	loss 0.449 (0.554)	Acc@1 89.583 (88.658)
+Test model 1 on task 1
+Test: [3/3]	loss 0.449 (0.460)	Acc@1 85.398 (84.940)
+Test model 1 on task 2
+Test: [3/3]	loss 0.401 (0.394)	Acc@1 87.058 (87.400)
+Test model 1 on task 3
+Test: [3/3]	loss 0.347 (0.329)	Acc@1 89.270 (89.610)
+Test model 1 on task 4
+Test: [3/3]	loss 0.331 (0.332)	Acc@1 89.436 (89.710)
+Test model 1 on task 5
+Test: [3/3]	loss 0.283 (0.311)	Acc@1 91.316 (90.650)
+Test model 1 on task 6
+Test: [3/3]	loss 0.291 (0.276)	Acc@1 91.704 (91.920)
+Test model 1 on task 7
+Test: [3/3]	loss 0.269 (0.271)	Acc@1 92.478 (91.890)
+Test model 1 on task 8
+Test: [3/3]	loss 0.259 (0.256)	Acc@1 92.367 (92.390)
+Test model 1 on task 9
+Test: [3/3]	loss 0.267 (0.255)	Acc@1 91.759 (92.550)
+Test model 1 on task 10
+Test: [3/3]	loss 0.240 (0.243)	Acc@1 92.533 (92.840)
+Test model 1 on task 11
+Test: [3/3]	loss 0.247 (0.249)	Acc@1 92.976 (92.770)
+Test model 1 on task 12
+Test: [3/3]	loss 0.245 (0.242)	Acc@1 93.363 (92.740)
+Test model 1 on task 13
+Test: [3/3]	loss 0.232 (0.240)	Acc@1 94.027 (93.340)
+Test model 1 on task 14
+Test: [3/3]	loss 0.233 (0.244)	Acc@1 94.082 (93.080)
+Test model 1 on task 15
+Test: [3/3]	loss 0.263 (0.262)	Acc@1 92.699 (92.550)
+gg 0	min: -0.000	max: 0.000	min_eigval: 4.104e-07	max_eigval: 8.272e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 8.260e-11	max_eigval: 4.859e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: -1.933e-13	max_eigval: 1.858e-05
+aa 0	min: 0.000	max: 15.000	min_eigval: 1.028e-01	max_eigval: 2.581e+02
+aa 1	min: 0.074	max: 81.727	min_eigval: 2.651e-01	max_eigval: 6.668e+02
+aa 2	min: 0.000	max: 86.411	min_eigval: 7.543e-06	max_eigval: 1.277e+03
+############################################################ Avg acc: 91.23
+Task 16 Model 1:
+0 ['0.000', '3.449']
+MIN GRAD: -0.282	MAX GRAD: 0.336
+10 ['0.399', '1.067']
+MIN GRAD: -0.518	MAX GRAD: 0.514
+20 ['0.458', '0.665']
+MIN GRAD: -0.450	MAX GRAD: 0.371
+30 ['0.364', '0.475']
+MIN GRAD: -0.315	MAX GRAD: 0.216
+40 ['0.296', '0.505']
+MIN GRAD: -0.209	MAX GRAD: 0.232
+50 ['0.262', '0.370']
+MIN GRAD: -0.232	MAX GRAD: 0.357
+60 ['0.218', '0.435']
+MIN GRAD: -0.104	MAX GRAD: 0.087
+70 ['0.221', '0.442']
+MIN GRAD: -0.226	MAX GRAD: 0.241
+80 ['0.226', '0.349']
+MIN GRAD: -0.297	MAX GRAD: 0.286
+90 ['0.201', '0.456']
+MIN GRAD: -0.206	MAX GRAD: 0.230
+100 ['0.196', '0.463']
+MIN GRAD: -0.384	MAX GRAD: 0.222
+110 ['0.178', '0.351']
+MIN GRAD: -0.203	MAX GRAD: 0.161
+120 ['0.181', '0.356']
+MIN GRAD: -0.181	MAX GRAD: 0.186
+130 ['0.182', '0.450']
+MIN GRAD: -0.257	MAX GRAD: 0.218
+140 ['0.177', '0.272']
+MIN GRAD: -0.151	MAX GRAD: 0.156
+150 ['0.171', '0.350']
+MIN GRAD: -0.145	MAX GRAD: 0.169
+160 ['0.166', '0.325']
+MIN GRAD: -0.177	MAX GRAD: 0.231
+170 ['0.164', '0.332']
+MIN GRAD: -0.103	MAX GRAD: 0.192
+180 ['0.160', '0.448']
+MIN GRAD: -0.158	MAX GRAD: 0.159
+190 ['0.180', '0.325']
+MIN GRAD: -0.276	MAX GRAD: 0.436
+200 ['0.172', '0.259']
+MIN GRAD: -0.312	MAX GRAD: 0.327
+210 ['0.161', '0.264']
+MIN GRAD: -0.185	MAX GRAD: 0.170
+220 ['0.185', '0.252']
+MIN GRAD: -0.361	MAX GRAD: 0.348
+230 ['0.202', '0.346']
+MIN GRAD: -0.408	MAX GRAD: 0.559
+240 ['0.160', '0.356']
+MIN GRAD: -0.228	MAX GRAD: 0.275
+250 ['0.160', '0.350']
+MIN GRAD: -0.147	MAX GRAD: 0.275
+260 ['0.160', '0.244']
+MIN GRAD: -0.252	MAX GRAD: 0.328
+270 ['0.180', '0.302']
+MIN GRAD: -0.445	MAX GRAD: 0.447
+280 ['0.164', '0.324']
+MIN GRAD: -0.291	MAX GRAD: 0.358
+290 ['0.167', '0.274']
+MIN GRAD: -0.468	MAX GRAD: 0.334
+300 ['0.150', '0.267']
+MIN GRAD: -0.174	MAX GRAD: 0.167
+310 ['0.149', '0.325']
+MIN GRAD: -0.170	MAX GRAD: 0.186
+320 ['0.152', '0.316']
+MIN GRAD: -0.165	MAX GRAD: 0.246
+330 ['0.155', '0.310']
+MIN GRAD: -0.236	MAX GRAD: 0.175
+340 ['0.145', '0.183']
+MIN GRAD: -0.280	MAX GRAD: 0.215
+350 ['0.149', '0.291']
+MIN GRAD: -0.182	MAX GRAD: 0.197
+360 ['0.151', '0.344']
+MIN GRAD: -0.250	MAX GRAD: 0.186
+370 ['0.154', '0.312']
+MIN GRAD: -0.346	MAX GRAD: 0.291
+380 ['0.152', '0.290']
+MIN GRAD: -0.186	MAX GRAD: 0.201
+390 ['0.138', '0.325']
+MIN GRAD: -0.129	MAX GRAD: 0.097
+400 ['0.148', '0.261']
+MIN GRAD: -0.214	MAX GRAD: 0.219
+410 ['0.153', '0.473']
+MIN GRAD: -0.277	MAX GRAD: 0.256
+420 ['0.137', '0.285']
+MIN GRAD: -0.145	MAX GRAD: 0.192
+430 ['0.139', '0.169']
+MIN GRAD: -0.201	MAX GRAD: 0.171
+440 ['0.150', '0.274']
+MIN GRAD: -0.259	MAX GRAD: 0.195
+450 ['0.146', '0.372']
+MIN GRAD: -0.291	MAX GRAD: 0.225
+460 ['0.165', '0.204']
+MIN GRAD: -0.274	MAX GRAD: 0.358
+Train: [1][469/469]	loss 0.424 (0.590)	Acc@1 91.667 (88.187)
+Test model 1 on task 1
+Test: [3/3]	loss 0.484 (0.465)	Acc@1 84.458 (84.660)
+Test model 1 on task 2
+Test: [3/3]	loss 0.440 (0.399)	Acc@1 85.951 (87.350)
+Test model 1 on task 3
+Test: [3/3]	loss 0.334 (0.337)	Acc@1 89.768 (89.580)
+Test model 1 on task 4
+Test: [3/3]	loss 0.337 (0.337)	Acc@1 89.712 (89.430)
+Test model 1 on task 5
+Test: [3/3]	loss 0.325 (0.322)	Acc@1 90.431 (90.360)
+Test model 1 on task 6
+Test: [3/3]	loss 0.279 (0.286)	Acc@1 91.206 (91.470)
+Test model 1 on task 7
+Test: [3/3]	loss 0.271 (0.278)	Acc@1 92.091 (91.760)
+Test model 1 on task 8
+Test: [3/3]	loss 0.275 (0.265)	Acc@1 91.648 (91.770)
+Test model 1 on task 9
+Test: [3/3]	loss 0.257 (0.258)	Acc@1 92.588 (92.570)
+Test model 1 on task 10
+Test: [3/3]	loss 0.252 (0.246)	Acc@1 92.644 (92.520)
+Test model 1 on task 11
+Test: [3/3]	loss 0.263 (0.253)	Acc@1 91.980 (92.550)
+Test model 1 on task 12
+Test: [3/3]	loss 0.256 (0.244)	Acc@1 92.423 (92.860)
+Test model 1 on task 13
+Test: [3/3]	loss 0.249 (0.244)	Acc@1 93.308 (92.980)
+Test model 1 on task 14
+Test: [3/3]	loss 0.227 (0.243)	Acc@1 94.082 (93.210)
+Test model 1 on task 15
+Test: [3/3]	loss 0.264 (0.263)	Acc@1 92.423 (92.440)
+Test model 1 on task 16
+Test: [3/3]	loss 0.259 (0.262)	Acc@1 92.146 (92.640)
+gg 0	min: -0.000	max: 0.000	min_eigval: 4.791e-07	max_eigval: 8.972e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 8.269e-11	max_eigval: 5.313e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: -2.597e-13	max_eigval: 1.986e-05
+aa 0	min: 0.000	max: 16.000	min_eigval: 1.132e-01	max_eigval: 2.737e+02
+aa 1	min: 0.079	max: 86.497	min_eigval: 2.939e-01	max_eigval: 7.040e+02
+aa 2	min: 0.000	max: 90.375	min_eigval: 1.253e-05	max_eigval: 1.346e+03
+############################################################ Avg acc: 91.13
+Task 17 Model 1:
+0 ['0.000', '4.636']
+MIN GRAD: -0.396	MAX GRAD: 0.663
+10 ['1.897', '1.236']
+MIN GRAD: -2.989	MAX GRAD: 2.808
+20 ['2.785', '0.526']
+MIN GRAD: -3.796	MAX GRAD: 3.461
+30 ['0.436', '0.546']
+MIN GRAD: -0.345	MAX GRAD: 0.384
+40 ['1.150', '0.594']
+MIN GRAD: -2.266	MAX GRAD: 2.540
+50 ['0.765', '0.499']
+MIN GRAD: -1.676	MAX GRAD: 1.821
+60 ['0.386', '0.360']
+MIN GRAD: -0.969	MAX GRAD: 0.886
+70 ['0.333', '0.407']
+MIN GRAD: -0.851	MAX GRAD: 0.741
+80 ['0.920', '0.344']
+MIN GRAD: -2.231	MAX GRAD: 2.073
+90 ['0.600', '0.283']
+MIN GRAD: -1.631	MAX GRAD: 1.503
+100 ['0.283', '0.579']
+MIN GRAD: -0.561	MAX GRAD: 0.558
+110 ['0.359', '0.322']
+MIN GRAD: -0.864	MAX GRAD: 0.912
+120 ['0.511', '0.383']
+MIN GRAD: -1.280	MAX GRAD: 1.543
+130 ['0.351', '0.379']
+MIN GRAD: -0.948	MAX GRAD: 0.926
+140 ['0.600', '0.297']
+MIN GRAD: -1.802	MAX GRAD: 1.555
+150 ['0.765', '0.543']
+MIN GRAD: -2.025	MAX GRAD: 1.934
+160 ['1.309', '0.364']
+MIN GRAD: -2.781	MAX GRAD: 2.556
+170 ['0.424', '0.528']
+MIN GRAD: -1.231	MAX GRAD: 1.155
+180 ['0.241', '0.423']
+MIN GRAD: -0.666	MAX GRAD: 0.622
+190 ['0.240', '0.363']
+MIN GRAD: -0.518	MAX GRAD: 0.665
+200 ['0.190', '0.420']
+MIN GRAD: -0.298	MAX GRAD: 0.282
+210 ['0.196', '0.341']
+MIN GRAD: -0.466	MAX GRAD: 0.355
+220 ['0.495', '0.307']
+MIN GRAD: -1.515	MAX GRAD: 1.351
+230 ['0.196', '0.391']
+MIN GRAD: -0.582	MAX GRAD: 0.491
+240 ['0.353', '0.302']
+MIN GRAD: -1.111	MAX GRAD: 1.038
+250 ['0.556', '0.327']
+MIN GRAD: -1.475	MAX GRAD: 1.640
+260 ['0.182', '0.229']
+MIN GRAD: -0.281	MAX GRAD: 0.360
+270 ['0.175', '0.343']
+MIN GRAD: -0.359	MAX GRAD: 0.347
+280 ['0.187', '0.253']
+MIN GRAD: -0.451	MAX GRAD: 0.423
+290 ['0.223', '0.373']
+MIN GRAD: -0.605	MAX GRAD: 0.662
+300 ['0.190', '0.429']
+MIN GRAD: -0.435	MAX GRAD: 0.406
+310 ['0.164', '0.326']
+MIN GRAD: -0.269	MAX GRAD: 0.304
+320 ['0.170', '0.330']
+MIN GRAD: -0.387	MAX GRAD: 0.299
+330 ['0.263', '0.305']
+MIN GRAD: -0.746	MAX GRAD: 0.781
+340 ['0.559', '0.307']
+MIN GRAD: -1.557	MAX GRAD: 1.666
+350 ['0.249', '0.400']
+MIN GRAD: -0.749	MAX GRAD: 0.820
+360 ['0.210', '0.320']
+MIN GRAD: -0.668	MAX GRAD: 0.622
+370 ['0.450', '0.312']
+MIN GRAD: -1.354	MAX GRAD: 1.248
+380 ['0.144', '0.282']
+MIN GRAD: -0.134	MAX GRAD: 0.119
+390 ['0.405', '0.322']
+MIN GRAD: -1.117	MAX GRAD: 1.294
+400 ['0.424', '0.249']
+MIN GRAD: -1.267	MAX GRAD: 1.439
+410 ['0.155', '0.254']
+MIN GRAD: -0.249	MAX GRAD: 0.256
+420 ['0.358', '0.398']
+MIN GRAD: -1.122	MAX GRAD: 1.091
+430 ['0.555', '0.369']
+MIN GRAD: -1.814	MAX GRAD: 1.556
+440 ['0.149', '0.288']
+MIN GRAD: -0.138	MAX GRAD: 0.180
+450 ['0.148', '0.249']
+MIN GRAD: -0.195	MAX GRAD: 0.149
+460 ['0.277', '0.342']
+MIN GRAD: -0.929	MAX GRAD: 0.902
+Train: [1][469/469]	loss 0.755 (0.895)	Acc@1 92.708 (87.770)
+Test model 1 on task 1
+Test: [3/3]	loss 0.473 (0.476)	Acc@1 84.569 (84.490)
+Test model 1 on task 2
+Test: [3/3]	loss 0.369 (0.406)	Acc@1 88.330 (87.040)
+Test model 1 on task 3
+Test: [3/3]	loss 0.318 (0.345)	Acc@1 90.542 (89.500)
+Test model 1 on task 4
+Test: [3/3]	loss 0.351 (0.350)	Acc@1 88.993 (88.980)
+Test model 1 on task 5
+Test: [3/3]	loss 0.331 (0.334)	Acc@1 89.712 (89.900)
+Test model 1 on task 6
+Test: [3/3]	loss 0.288 (0.291)	Acc@1 91.648 (91.350)
+Test model 1 on task 7
+Test: [3/3]	loss 0.285 (0.285)	Acc@1 91.261 (91.530)
+Test model 1 on task 8
+Test: [3/3]	loss 0.257 (0.269)	Acc@1 92.699 (91.900)
+Test model 1 on task 9
+Test: [3/3]	loss 0.267 (0.267)	Acc@1 91.759 (92.040)
+Test model 1 on task 10
+Test: [3/3]	loss 0.242 (0.247)	Acc@1 92.533 (92.510)
+Test model 1 on task 11
+Test: [3/3]	loss 0.255 (0.252)	Acc@1 92.754 (92.680)
+Test model 1 on task 12
+Test: [3/3]	loss 0.243 (0.250)	Acc@1 92.810 (92.570)
+Test model 1 on task 13
+Test: [3/3]	loss 0.239 (0.246)	Acc@1 92.699 (92.950)
+Test model 1 on task 14
+Test: [3/3]	loss 0.221 (0.250)	Acc@1 93.971 (92.700)
+Test model 1 on task 15
+Test: [3/3]	loss 0.261 (0.264)	Acc@1 92.146 (92.340)
+Test model 1 on task 16
+Test: [3/3]	loss 0.275 (0.265)	Acc@1 92.257 (92.460)
+Test model 1 on task 17
+Test: [3/3]	loss 0.277 (0.271)	Acc@1 91.759 (92.350)
+gg 0	min: -0.000	max: 0.000	min_eigval: 5.428e-07	max_eigval: 9.734e-05
+gg 1	min: -0.000	max: 0.000	min_eigval: 8.272e-11	max_eigval: 5.810e-05
+gg 2	min: -0.000	max: 0.000	min_eigval: -1.737e-13	max_eigval: 2.127e-05
+aa 0	min: 0.000	max: 17.000	min_eigval: 1.274e-01	max_eigval: 2.897e+02
+aa 1	min: 0.079	max: 89.723	min_eigval: 3.376e-01	max_eigval: 7.381e+02
+aa 2	min: 0.000	max: 95.586	min_eigval: 2.517e-05	max_eigval: 1.423e+03
+############################################################ Avg acc: 91.02
+Task 18 Model 1:
+0 ['0.000', '3.005']
+MIN GRAD: -0.285	MAX GRAD: 0.506
+10 ['320377.781', '6.940']
+MIN GRAD: -1533.418	MAX GRAD: 1419.934
+20 ['148443054080.000', '10135.855']
+MIN GRAD: -1043600.625	MAX GRAD: 966343.875
+30 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+40 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+50 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+60 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+70 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+80 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+90 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+100 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+110 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+120 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+130 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+140 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+150 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+160 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+170 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+180 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+190 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+200 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+210 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+220 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+230 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+240 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+250 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+260 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+270 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+280 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+290 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+300 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+310 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+320 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+330 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+340 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+350 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+360 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+370 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+380 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+390 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+400 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+410 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+420 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+430 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+440 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+450 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+460 ['inf', 'nan']
+MIN GRAD: inf	MAX GRAD: -inf
+Train: [1][469/469]	loss nan (nan)	Acc@1 12.500 (11.482)
+Test model 1 on task 1
+Test: [3/3]	loss nan (nan)	Acc@1 11.228 (11.350)
+Test model 1 on task 2
+Test: [3/3]	loss nan (nan)	Acc@1 10.785 (11.350)
+Test model 1 on task 3
+Test: [3/3]	loss nan (nan)	Acc@1 12.168 (11.350)
+Test model 1 on task 4
+Test: [3/3]	loss nan (nan)	Acc@1 10.564 (11.350)
+Test model 1 on task 5
+Test: [3/3]	loss nan (nan)	Acc@1 10.730 (11.350)
+Test model 1 on task 6
+Test: [3/3]	loss nan (nan)	Acc@1 11.560 (11.350)
+Test model 1 on task 7
+Test: [3/3]	loss nan (nan)	Acc@1 11.228 (11.350)
+Test model 1 on task 8
+Test: [3/3]	loss nan (nan)	Acc@1 12.389 (11.350)
+Test model 1 on task 9
+Test: [3/3]	loss nan (nan)	Acc@1 10.951 (11.350)
+Test model 1 on task 10
+Test: [3/3]	loss nan (nan)	Acc@1 11.892 (11.350)
+Test model 1 on task 11
+Test: [3/3]	loss nan (nan)	Acc@1 11.504 (11.350)
+Test model 1 on task 12
+Test: [3/3]	loss nan (nan)	Acc@1 12.168 (11.350)
+Test model 1 on task 13
+Test: [3/3]	loss nan (nan)	Acc@1 12.777 (11.350)
+Test model 1 on task 14
+Test: [3/3]	loss nan (nan)	Acc@1 11.615 (11.350)
+Test model 1 on task 15
+Test: [3/3]	loss nan (nan)	Acc@1 11.394 (11.350)
+Test model 1 on task 16
+Test: [3/3]	loss nan (nan)	Acc@1 12.500 (11.350)
+Test model 1 on task 17
+Test: [3/3]	loss nan (nan)	Acc@1 11.560 (11.350)
+Test model 1 on task 18
+Test: [3/3]	loss nan (nan)	Acc@1 10.066 (11.350)
+Traceback (most recent call last):
+  File "main.py", line 272, in <module>
+    main()
+  File "main.py", line 265, in main
+    kfacs[-1][-1].visualize_attr('images/', task_id, 'gg')
+  File "main.py", line 173, in visualize_attr
+    eigvals = np.linalg.eigvals(arr)
+  File "<__array_function__ internals>", line 5, in eigvals
+  File "/local-scratch/hadi/anaconda3/envs/venv/lib/python3.8/site-packages/numpy/linalg/linalg.py", line 1063, in eigvals
+    _assert_finite(a)
+  File "/local-scratch/hadi/anaconda3/envs/venv/lib/python3.8/site-packages/numpy/linalg/linalg.py", line 209, in _assert_finite
+    raise LinAlgError("Array must not contain infs or NaNs")
+numpy.linalg.LinAlgError: Array must not contain infs or NaNs

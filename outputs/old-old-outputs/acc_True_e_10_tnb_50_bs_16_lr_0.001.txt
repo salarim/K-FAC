@@ -1,0 +1,3150 @@
+Task 1 Model 1:
+Train: [1][3750/3750]	loss 0.213 (0.303)	Acc@1 87.500 (90.510)
+Train: [2][3750/3750]	loss 0.049 (0.118)	Acc@1 100.000 (96.295)
+Train: [3][3750/3750]	loss 0.383 (0.084)	Acc@1 93.750 (97.393)
+Train: [4][3750/3750]	loss 0.001 (0.068)	Acc@1 100.000 (97.810)
+Train: [5][3750/3750]	loss 0.001 (0.056)	Acc@1 100.000 (98.233)
+Train: [6][3750/3750]	loss 0.002 (0.048)	Acc@1 100.000 (98.438)
+Train: [7][3750/3750]	loss 0.003 (0.039)	Acc@1 100.000 (98.697)
+Train: [8][3750/3750]	loss 0.035 (0.034)	Acc@1 100.000 (98.882)
+Train: [9][3750/3750]	loss 0.144 (0.028)	Acc@1 93.750 (99.080)
+Train: [10][3750/3750]	loss 0.002 (0.025)	Acc@1 100.000 (99.152)
+Test model 1 on task 1
+Test: [3/3]	loss 0.100 (0.086)	Acc@1 97.511 (97.650)
+############################################################ Avg acc: 97.65
+Task 2 Model 1:
+Train: [1][3750/3750]	loss 0.190 (0.126)	Acc@1 81.250 (92.902)
+Train: [2][3750/3750]	loss 0.045 (0.067)	Acc@1 100.000 (96.643)
+Train: [3][3750/3750]	loss 0.101 (0.053)	Acc@1 93.750 (97.483)
+Train: [4][3750/3750]	loss 0.016 (0.046)	Acc@1 100.000 (97.993)
+Train: [5][3750/3750]	loss 0.111 (0.040)	Acc@1 87.500 (98.315)
+Train: [6][3750/3750]	loss 0.027 (0.037)	Acc@1 100.000 (98.493)
+Train: [7][3750/3750]	loss 0.026 (0.034)	Acc@1 100.000 (98.778)
+Train: [8][3750/3750]	loss 0.090 (0.032)	Acc@1 93.750 (98.908)
+Train: [9][3750/3750]	loss 0.022 (0.030)	Acc@1 100.000 (99.032)
+Train: [10][3750/3750]	loss 0.017 (0.028)	Acc@1 100.000 (99.153)
+Test model 1 on task 1
+Test: [3/3]	loss 0.152 (0.113)	Acc@1 96.018 (96.970)
+Test model 1 on task 2
+Test: [3/3]	loss 0.104 (0.081)	Acc@1 97.235 (97.620)
+############################################################ Avg acc: 97.29
+Task 3 Model 1:
+Train: [1][3750/3750]	loss 0.211 (0.092)	Acc@1 93.750 (92.733)
+Train: [2][3750/3750]	loss 0.052 (0.048)	Acc@1 93.750 (96.723)
+Train: [3][3750/3750]	loss 0.082 (0.039)	Acc@1 93.750 (97.557)
+Train: [4][3750/3750]	loss 0.021 (0.034)	Acc@1 100.000 (98.040)
+Train: [5][3750/3750]	loss 0.019 (0.031)	Acc@1 100.000 (98.303)
+Train: [6][3750/3750]	loss 0.099 (0.029)	Acc@1 93.750 (98.547)
+Train: [7][3750/3750]	loss 0.056 (0.027)	Acc@1 87.500 (98.700)
+Train: [8][3750/3750]	loss 0.013 (0.026)	Acc@1 100.000 (98.835)
+Train: [9][3750/3750]	loss 0.027 (0.025)	Acc@1 100.000 (98.970)
+Train: [10][3750/3750]	loss 0.014 (0.024)	Acc@1 100.000 (99.085)
+Test model 1 on task 1
+Test: [3/3]	loss 0.156 (0.135)	Acc@1 96.073 (96.080)
+Test model 1 on task 2
+Test: [3/3]	loss 0.090 (0.096)	Acc@1 97.456 (97.020)
+Test model 1 on task 3
+Test: [3/3]	loss 0.081 (0.080)	Acc@1 97.456 (97.460)
+############################################################ Avg acc: 96.85
+Task 4 Model 1:
+Train: [1][3750/3750]	loss 0.049 (0.075)	Acc@1 93.750 (92.185)
+Train: [2][3750/3750]	loss 0.047 (0.042)	Acc@1 93.750 (96.262)
+Train: [3][3750/3750]	loss 0.019 (0.035)	Acc@1 100.000 (97.183)
+Train: [4][3750/3750]	loss 0.021 (0.031)	Acc@1 100.000 (97.677)
+Train: [5][3750/3750]	loss 0.026 (0.029)	Acc@1 100.000 (97.977)
+Train: [6][3750/3750]	loss 0.014 (0.028)	Acc@1 100.000 (98.180)
+Train: [7][3750/3750]	loss 0.017 (0.026)	Acc@1 100.000 (98.408)
+Train: [8][3750/3750]	loss 0.013 (0.025)	Acc@1 100.000 (98.560)
+Train: [9][3750/3750]	loss 0.017 (0.025)	Acc@1 100.000 (98.640)
+Train: [10][3750/3750]	loss 0.025 (0.024)	Acc@1 100.000 (98.713)
+Test model 1 on task 1
+Test: [3/3]	loss 0.132 (0.160)	Acc@1 95.962 (95.290)
+Test model 1 on task 2
+Test: [3/3]	loss 0.121 (0.116)	Acc@1 95.852 (96.190)
+Test model 1 on task 3
+Test: [3/3]	loss 0.115 (0.091)	Acc@1 96.571 (97.010)
+Test model 1 on task 4
+Test: [3/3]	loss 0.068 (0.079)	Acc@1 97.954 (97.520)
+############################################################ Avg acc: 96.50
+Task 5 Model 1:
+Train: [1][3750/3750]	loss 0.082 (0.067)	Acc@1 87.500 (91.655)
+Train: [2][3750/3750]	loss 0.030 (0.039)	Acc@1 93.750 (96.037)
+Train: [3][3750/3750]	loss 0.013 (0.034)	Acc@1 100.000 (96.930)
+Train: [4][3750/3750]	loss 0.029 (0.031)	Acc@1 100.000 (97.387)
+Train: [5][3750/3750]	loss 0.018 (0.029)	Acc@1 100.000 (97.708)
+Train: [6][3750/3750]	loss 0.033 (0.027)	Acc@1 93.750 (97.928)
+Train: [7][3750/3750]	loss 0.030 (0.027)	Acc@1 93.750 (98.042)
+Train: [8][3750/3750]	loss 0.016 (0.026)	Acc@1 100.000 (98.278)
+Train: [9][3750/3750]	loss 0.016 (0.025)	Acc@1 100.000 (98.375)
+Train: [10][3750/3750]	loss 0.019 (0.025)	Acc@1 100.000 (98.443)
+Test model 1 on task 1
+Test: [3/3]	loss 0.183 (0.188)	Acc@1 94.801 (94.490)
+Test model 1 on task 2
+Test: [3/3]	loss 0.146 (0.144)	Acc@1 95.409 (95.330)
+Test model 1 on task 3
+Test: [3/3]	loss 0.110 (0.107)	Acc@1 96.571 (96.470)
+Test model 1 on task 4
+Test: [3/3]	loss 0.087 (0.091)	Acc@1 97.124 (97.150)
+Test model 1 on task 5
+Test: [3/3]	loss 0.079 (0.086)	Acc@1 97.345 (97.340)
+############################################################ Avg acc: 96.16
+Task 6 Model 1:
+Train: [1][3750/3750]	loss 0.017 (0.060)	Acc@1 100.000 (91.298)
+Train: [2][3750/3750]	loss 0.040 (0.037)	Acc@1 87.500 (95.833)
+Train: [3][3750/3750]	loss 0.022 (0.032)	Acc@1 100.000 (96.662)
+Train: [4][3750/3750]	loss 0.015 (0.030)	Acc@1 100.000 (97.138)
+Train: [5][3750/3750]	loss 0.037 (0.028)	Acc@1 93.750 (97.460)
+Train: [6][3750/3750]	loss 0.014 (0.027)	Acc@1 100.000 (97.668)
+Train: [7][3750/3750]	loss 0.033 (0.026)	Acc@1 100.000 (97.865)
+Train: [8][3750/3750]	loss 0.015 (0.026)	Acc@1 100.000 (97.915)
+Train: [9][3750/3750]	loss 0.016 (0.025)	Acc@1 100.000 (98.055)
+Train: [10][3750/3750]	loss 0.020 (0.025)	Acc@1 100.000 (98.152)
+Test model 1 on task 1
+Test: [3/3]	loss 0.216 (0.211)	Acc@1 93.916 (93.750)
+Test model 1 on task 2
+Test: [3/3]	loss 0.189 (0.167)	Acc@1 93.971 (94.690)
+Test model 1 on task 3
+Test: [3/3]	loss 0.119 (0.130)	Acc@1 96.515 (95.830)
+Test model 1 on task 4
+Test: [3/3]	loss 0.111 (0.103)	Acc@1 96.681 (96.860)
+Test model 1 on task 5
+Test: [3/3]	loss 0.094 (0.097)	Acc@1 97.124 (97.030)
+Test model 1 on task 6
+Test: [3/3]	loss 0.094 (0.093)	Acc@1 97.235 (97.240)
+############################################################ Avg acc: 95.90
+Task 7 Model 1:
+Train: [1][3750/3750]	loss 0.029 (0.056)	Acc@1 93.750 (91.035)
+Train: [2][3750/3750]	loss 0.017 (0.035)	Acc@1 100.000 (95.488)
+Train: [3][3750/3750]	loss 0.052 (0.032)	Acc@1 93.750 (96.432)
+Train: [4][3750/3750]	loss 0.022 (0.029)	Acc@1 100.000 (96.840)
+Train: [5][3750/3750]	loss 0.036 (0.028)	Acc@1 93.750 (97.182)
+Train: [6][3750/3750]	loss 0.022 (0.027)	Acc@1 100.000 (97.368)
+Train: [7][3750/3750]	loss 0.029 (0.026)	Acc@1 93.750 (97.597)
+Train: [8][3750/3750]	loss 0.027 (0.026)	Acc@1 100.000 (97.722)
+Train: [9][3750/3750]	loss 0.016 (0.025)	Acc@1 100.000 (97.768)
+Train: [10][3750/3750]	loss 0.020 (0.025)	Acc@1 100.000 (97.878)
+Test model 1 on task 1
+Test: [3/3]	loss 0.226 (0.240)	Acc@1 93.971 (92.870)
+Test model 1 on task 2
+Test: [3/3]	loss 0.177 (0.186)	Acc@1 94.303 (94.230)
+Test model 1 on task 3
+Test: [3/3]	loss 0.139 (0.148)	Acc@1 95.520 (95.140)
+Test model 1 on task 4
+Test: [3/3]	loss 0.123 (0.117)	Acc@1 96.018 (96.410)
+Test model 1 on task 5
+Test: [3/3]	loss 0.109 (0.107)	Acc@1 96.847 (96.730)
+Test model 1 on task 6
+Test: [3/3]	loss 0.096 (0.105)	Acc@1 96.792 (96.690)
+Test model 1 on task 7
+Test: [3/3]	loss 0.085 (0.092)	Acc@1 97.677 (96.980)
+############################################################ Avg acc: 95.58
+Task 8 Model 1:
+Train: [1][3750/3750]	loss 0.081 (0.055)	Acc@1 87.500 (90.250)
+Train: [2][3750/3750]	loss 0.024 (0.036)	Acc@1 100.000 (95.095)
+Train: [3][3750/3750]	loss 0.025 (0.032)	Acc@1 93.750 (95.903)
+Train: [4][3750/3750]	loss 0.020 (0.030)	Acc@1 100.000 (96.455)
+Train: [5][3750/3750]	loss 0.047 (0.029)	Acc@1 93.750 (96.725)
+Train: [6][3750/3750]	loss 0.021 (0.028)	Acc@1 100.000 (97.008)
+Train: [7][3750/3750]	loss 0.032 (0.027)	Acc@1 93.750 (97.177)
+Train: [8][3750/3750]	loss 0.022 (0.027)	Acc@1 100.000 (97.288)
+Train: [9][3750/3750]	loss 0.019 (0.026)	Acc@1 100.000 (97.435)
+Train: [10][3750/3750]	loss 0.017 (0.026)	Acc@1 100.000 (97.528)
+Test model 1 on task 1
+Test: [3/3]	loss 0.267 (0.269)	Acc@1 91.759 (91.700)
+Test model 1 on task 2
+Test: [3/3]	loss 0.199 (0.208)	Acc@1 93.639 (93.520)
+Test model 1 on task 3
+Test: [3/3]	loss 0.184 (0.166)	Acc@1 94.358 (94.440)
+Test model 1 on task 4
+Test: [3/3]	loss 0.128 (0.129)	Acc@1 95.852 (96.070)
+Test model 1 on task 5
+Test: [3/3]	loss 0.131 (0.122)	Acc@1 96.184 (96.130)
+Test model 1 on task 6
+Test: [3/3]	loss 0.122 (0.118)	Acc@1 96.184 (96.270)
+Test model 1 on task 7
+Test: [3/3]	loss 0.107 (0.105)	Acc@1 95.962 (96.660)
+Test model 1 on task 8
+Test: [3/3]	loss 0.095 (0.105)	Acc@1 97.069 (96.730)
+############################################################ Avg acc: 95.19
+Task 9 Model 1:
+Train: [1][3750/3750]	loss 0.058 (0.053)	Acc@1 87.500 (89.752)
+Train: [2][3750/3750]	loss 0.029 (0.036)	Acc@1 93.750 (94.702)
+Train: [3][3750/3750]	loss 0.020 (0.033)	Acc@1 100.000 (95.548)
+Train: [4][3750/3750]	loss 0.055 (0.031)	Acc@1 93.750 (96.135)
+Train: [5][3750/3750]	loss 0.067 (0.030)	Acc@1 93.750 (96.387)
+Train: [6][3750/3750]	loss 0.053 (0.029)	Acc@1 93.750 (96.600)
+Train: [7][3750/3750]	loss 0.021 (0.028)	Acc@1 100.000 (96.817)
+Train: [8][3750/3750]	loss 0.023 (0.028)	Acc@1 100.000 (96.973)
+Train: [9][3750/3750]	loss 0.022 (0.027)	Acc@1 100.000 (97.128)
+Train: [10][3750/3750]	loss 0.022 (0.027)	Acc@1 100.000 (97.140)
+Test model 1 on task 1
+Test: [3/3]	loss 0.295 (0.288)	Acc@1 90.431 (91.010)
+Test model 1 on task 2
+Test: [3/3]	loss 0.220 (0.226)	Acc@1 92.920 (92.910)
+Test model 1 on task 3
+Test: [3/3]	loss 0.207 (0.183)	Acc@1 92.920 (93.820)
+Test model 1 on task 4
+Test: [3/3]	loss 0.136 (0.145)	Acc@1 96.018 (95.670)
+Test model 1 on task 5
+Test: [3/3]	loss 0.127 (0.135)	Acc@1 96.128 (95.830)
+Test model 1 on task 6
+Test: [3/3]	loss 0.117 (0.127)	Acc@1 96.571 (95.950)
+Test model 1 on task 7
+Test: [3/3]	loss 0.116 (0.116)	Acc@1 96.350 (96.250)
+Test model 1 on task 8
+Test: [3/3]	loss 0.102 (0.117)	Acc@1 96.958 (96.390)
+Test model 1 on task 9
+Test: [3/3]	loss 0.119 (0.110)	Acc@1 96.294 (96.730)
+############################################################ Avg acc: 94.95
+Task 10 Model 1:
+Train: [1][3750/3750]	loss 0.045 (0.053)	Acc@1 93.750 (89.102)
+Train: [2][3750/3750]	loss 0.025 (0.036)	Acc@1 100.000 (94.332)
+Train: [3][3750/3750]	loss 0.029 (0.033)	Acc@1 100.000 (95.210)
+Train: [4][3750/3750]	loss 0.025 (0.032)	Acc@1 93.750 (95.628)
+Train: [5][3750/3750]	loss 0.029 (0.031)	Acc@1 93.750 (95.937)
+Train: [6][3750/3750]	loss 0.033 (0.031)	Acc@1 100.000 (96.090)
+Train: [7][3750/3750]	loss 0.025 (0.030)	Acc@1 100.000 (96.312)
+Train: [8][3750/3750]	loss 0.025 (0.030)	Acc@1 100.000 (96.443)
+Train: [9][3750/3750]	loss 0.030 (0.029)	Acc@1 100.000 (96.447)
+Train: [10][3750/3750]	loss 0.036 (0.029)	Acc@1 87.500 (96.510)
+Test model 1 on task 1
+Test: [3/3]	loss 0.307 (0.306)	Acc@1 90.265 (90.420)
+Test model 1 on task 2
+Test: [3/3]	loss 0.244 (0.243)	Acc@1 92.367 (92.260)
+Test model 1 on task 3
+Test: [3/3]	loss 0.179 (0.194)	Acc@1 93.584 (93.570)
+Test model 1 on task 4
+Test: [3/3]	loss 0.157 (0.156)	Acc@1 95.465 (95.250)
+Test model 1 on task 5
+Test: [3/3]	loss 0.138 (0.146)	Acc@1 95.631 (95.360)
+Test model 1 on task 6
+Test: [3/3]	loss 0.136 (0.135)	Acc@1 95.686 (95.630)
+Test model 1 on task 7
+Test: [3/3]	loss 0.118 (0.125)	Acc@1 95.741 (95.880)
+Test model 1 on task 8
+Test: [3/3]	loss 0.130 (0.127)	Acc@1 95.852 (96.000)
+Test model 1 on task 9
+Test: [3/3]	loss 0.116 (0.121)	Acc@1 96.073 (96.280)
+Test model 1 on task 10
+Test: [3/3]	loss 0.139 (0.132)	Acc@1 95.852 (96.100)
+############################################################ Avg acc: 94.67
+Task 11 Model 1:
+Train: [1][3750/3750]	loss 0.033 (0.051)	Acc@1 93.750 (89.450)
+Train: [2][3750/3750]	loss 0.039 (0.036)	Acc@1 87.500 (94.332)
+Train: [3][3750/3750]	loss 0.023 (0.033)	Acc@1 100.000 (95.155)
+Train: [4][3750/3750]	loss 0.041 (0.032)	Acc@1 93.750 (95.503)
+Train: [5][3750/3750]	loss 0.038 (0.031)	Acc@1 93.750 (95.813)
+Train: [6][3750/3750]	loss 0.093 (0.031)	Acc@1 87.500 (96.023)
+Train: [7][3750/3750]	loss 0.037 (0.031)	Acc@1 93.750 (96.077)
+Train: [8][3750/3750]	loss 0.040 (0.030)	Acc@1 87.500 (96.158)
+Train: [9][3750/3750]	loss 0.037 (0.030)	Acc@1 93.750 (96.285)
+Train: [10][3750/3750]	loss 0.019 (0.030)	Acc@1 100.000 (96.365)
+Test model 1 on task 1
+Test: [3/3]	loss 0.332 (0.320)	Acc@1 89.270 (89.850)
+Test model 1 on task 2
+Test: [3/3]	loss 0.262 (0.258)	Acc@1 91.869 (91.760)
+Test model 1 on task 3
+Test: [3/3]	loss 0.179 (0.207)	Acc@1 93.916 (93.080)
+Test model 1 on task 4
+Test: [3/3]	loss 0.170 (0.170)	Acc@1 95.077 (94.700)
+Test model 1 on task 5
+Test: [3/3]	loss 0.149 (0.158)	Acc@1 95.133 (94.790)
+Test model 1 on task 6
+Test: [3/3]	loss 0.123 (0.145)	Acc@1 95.852 (95.340)
+Test model 1 on task 7
+Test: [3/3]	loss 0.140 (0.137)	Acc@1 95.077 (95.450)
+Test model 1 on task 8
+Test: [3/3]	loss 0.118 (0.137)	Acc@1 96.681 (95.710)
+Test model 1 on task 9
+Test: [3/3]	loss 0.122 (0.129)	Acc@1 96.737 (96.010)
+Test model 1 on task 10
+Test: [3/3]	loss 0.136 (0.142)	Acc@1 96.184 (95.900)
+Test model 1 on task 11
+Test: [3/3]	loss 0.128 (0.137)	Acc@1 95.962 (95.680)
+############################################################ Avg acc: 94.39
+Task 12 Model 1:
+Train: [1][3750/3750]	loss 0.032 (0.050)	Acc@1 100.000 (88.655)
+Train: [2][3750/3750]	loss 0.046 (0.037)	Acc@1 93.750 (93.670)
+Train: [3][3750/3750]	loss 0.020 (0.035)	Acc@1 100.000 (94.453)
+Train: [4][3750/3750]	loss 0.022 (0.033)	Acc@1 100.000 (94.885)
+Train: [5][3750/3750]	loss 0.033 (0.033)	Acc@1 93.750 (95.137)
+Train: [6][3750/3750]	loss 0.044 (0.032)	Acc@1 81.250 (95.397)
+Train: [7][3750/3750]	loss 0.022 (0.032)	Acc@1 100.000 (95.553)
+Train: [8][3750/3750]	loss 0.033 (0.032)	Acc@1 93.750 (95.578)
+Train: [9][3750/3750]	loss 0.045 (0.031)	Acc@1 87.500 (95.688)
+Train: [10][3750/3750]	loss 0.031 (0.031)	Acc@1 93.750 (95.807)
+Test model 1 on task 1
+Test: [3/3]	loss 0.321 (0.341)	Acc@1 89.602 (88.980)
+Test model 1 on task 2
+Test: [3/3]	loss 0.293 (0.269)	Acc@1 90.155 (91.430)
+Test model 1 on task 3
+Test: [3/3]	loss 0.188 (0.220)	Acc@1 93.197 (92.720)
+Test model 1 on task 4
+Test: [3/3]	loss 0.183 (0.179)	Acc@1 94.303 (94.300)
+Test model 1 on task 5
+Test: [3/3]	loss 0.177 (0.169)	Acc@1 94.192 (94.410)
+Test model 1 on task 6
+Test: [3/3]	loss 0.152 (0.153)	Acc@1 95.188 (95.130)
+Test model 1 on task 7
+Test: [3/3]	loss 0.157 (0.148)	Acc@1 94.856 (95.050)
+Test model 1 on task 8
+Test: [3/3]	loss 0.155 (0.149)	Acc@1 95.243 (95.340)
+Test model 1 on task 9
+Test: [3/3]	loss 0.148 (0.140)	Acc@1 95.077 (95.820)
+Test model 1 on task 10
+Test: [3/3]	loss 0.159 (0.151)	Acc@1 95.188 (95.680)
+Test model 1 on task 11
+Test: [3/3]	loss 0.161 (0.146)	Acc@1 94.580 (95.440)
+Test model 1 on task 12
+Test: [3/3]	loss 0.158 (0.156)	Acc@1 95.188 (95.480)
+############################################################ Avg acc: 94.15
+Task 13 Model 1:
+Train: [1][3750/3750]	loss 0.028 (0.051)	Acc@1 100.000 (87.890)
+Train: [2][3750/3750]	loss 0.052 (0.038)	Acc@1 87.500 (93.152)
+Train: [3][3750/3750]	loss 0.062 (0.036)	Acc@1 81.250 (93.927)
+Train: [4][3750/3750]	loss 0.048 (0.035)	Acc@1 87.500 (94.400)
+Train: [5][3750/3750]	loss 0.034 (0.035)	Acc@1 93.750 (94.638)
+Train: [6][3750/3750]	loss 0.036 (0.034)	Acc@1 93.750 (94.857)
+Train: [7][3750/3750]	loss 0.025 (0.034)	Acc@1 100.000 (94.962)
+Train: [8][3750/3750]	loss 0.022 (0.034)	Acc@1 100.000 (95.085)
+Train: [9][3750/3750]	loss 0.024 (0.034)	Acc@1 100.000 (95.117)
+Train: [10][3750/3750]	loss 0.023 (0.033)	Acc@1 100.000 (95.130)
+Test model 1 on task 1
+Test: [3/3]	loss 0.357 (0.347)	Acc@1 88.108 (88.580)
+Test model 1 on task 2
+Test: [3/3]	loss 0.265 (0.280)	Acc@1 91.316 (91.100)
+Test model 1 on task 3
+Test: [3/3]	loss 0.214 (0.231)	Acc@1 92.865 (92.400)
+Test model 1 on task 4
+Test: [3/3]	loss 0.194 (0.189)	Acc@1 93.695 (93.970)
+Test model 1 on task 5
+Test: [3/3]	loss 0.157 (0.176)	Acc@1 94.912 (94.350)
+Test model 1 on task 6
+Test: [3/3]	loss 0.176 (0.161)	Acc@1 94.524 (94.960)
+Test model 1 on task 7
+Test: [3/3]	loss 0.166 (0.155)	Acc@1 94.469 (94.950)
+Test model 1 on task 8
+Test: [3/3]	loss 0.155 (0.159)	Acc@1 95.243 (94.930)
+Test model 1 on task 9
+Test: [3/3]	loss 0.129 (0.150)	Acc@1 95.907 (95.520)
+Test model 1 on task 10
+Test: [3/3]	loss 0.170 (0.159)	Acc@1 95.354 (95.380)
+Test model 1 on task 11
+Test: [3/3]	loss 0.147 (0.156)	Acc@1 95.520 (95.270)
+Test model 1 on task 12
+Test: [3/3]	loss 0.150 (0.164)	Acc@1 95.741 (95.290)
+Test model 1 on task 13
+Test: [3/3]	loss 0.151 (0.170)	Acc@1 95.796 (94.950)
+############################################################ Avg acc: 93.97
+Task 14 Model 1:
+Train: [1][3750/3750]	loss 0.026 (0.049)	Acc@1 100.000 (87.782)
+Train: [2][3750/3750]	loss 0.041 (0.038)	Acc@1 87.500 (92.798)
+Train: [3][3750/3750]	loss 0.025 (0.036)	Acc@1 100.000 (93.517)
+Train: [4][3750/3750]	loss 0.032 (0.035)	Acc@1 93.750 (93.963)
+Train: [5][3750/3750]	loss 0.028 (0.035)	Acc@1 100.000 (94.233)
+Train: [6][3750/3750]	loss 0.033 (0.034)	Acc@1 93.750 (94.335)
+Train: [7][3750/3750]	loss 0.026 (0.034)	Acc@1 100.000 (94.532)
+Train: [8][3750/3750]	loss 0.027 (0.034)	Acc@1 93.750 (94.575)
+Train: [9][3750/3750]	loss 0.059 (0.034)	Acc@1 87.500 (94.682)
+Train: [10][3750/3750]	loss 0.028 (0.034)	Acc@1 93.750 (94.747)
+Test model 1 on task 1
+Test: [3/3]	loss 0.337 (0.359)	Acc@1 88.440 (88.230)
+Test model 1 on task 2
+Test: [3/3]	loss 0.291 (0.291)	Acc@1 90.763 (90.790)
+Test model 1 on task 3
+Test: [3/3]	loss 0.238 (0.239)	Acc@1 91.980 (92.110)
+Test model 1 on task 4
+Test: [3/3]	loss 0.202 (0.195)	Acc@1 93.805 (93.750)
+Test model 1 on task 5
+Test: [3/3]	loss 0.189 (0.184)	Acc@1 94.137 (94.100)
+Test model 1 on task 6
+Test: [3/3]	loss 0.168 (0.168)	Acc@1 94.248 (94.630)
+Test model 1 on task 7
+Test: [3/3]	loss 0.152 (0.162)	Acc@1 94.801 (94.720)
+Test model 1 on task 8
+Test: [3/3]	loss 0.161 (0.166)	Acc@1 94.856 (94.690)
+Test model 1 on task 9
+Test: [3/3]	loss 0.151 (0.154)	Acc@1 95.465 (95.400)
+Test model 1 on task 10
+Test: [3/3]	loss 0.167 (0.165)	Acc@1 94.690 (95.160)
+Test model 1 on task 11
+Test: [3/3]	loss 0.172 (0.163)	Acc@1 94.856 (95.050)
+Test model 1 on task 12
+Test: [3/3]	loss 0.175 (0.175)	Acc@1 95.299 (95.000)
+Test model 1 on task 13
+Test: [3/3]	loss 0.175 (0.178)	Acc@1 95.354 (94.780)
+Test model 1 on task 14
+Test: [3/3]	loss 0.165 (0.181)	Acc@1 94.912 (94.550)
+############################################################ Avg acc: 93.78
+Task 15 Model 1:
+Train: [1][3750/3750]	loss 0.033 (0.050)	Acc@1 93.750 (86.895)
+Train: [2][3750/3750]	loss 0.048 (0.039)	Acc@1 87.500 (91.950)
+Train: [3][3750/3750]	loss 0.037 (0.038)	Acc@1 93.750 (92.740)
+Train: [4][3750/3750]	loss 0.043 (0.037)	Acc@1 93.750 (93.143)
+Train: [5][3750/3750]	loss 0.031 (0.037)	Acc@1 93.750 (93.293)
+Train: [6][3750/3750]	loss 0.038 (0.037)	Acc@1 93.750 (93.407)
+Train: [7][3750/3750]	loss 0.037 (0.037)	Acc@1 100.000 (93.595)
+Train: [8][3750/3750]	loss 0.036 (0.037)	Acc@1 93.750 (93.653)
+Train: [9][3750/3750]	loss 0.050 (0.036)	Acc@1 93.750 (93.672)
+Train: [10][3750/3750]	loss 0.034 (0.036)	Acc@1 87.500 (93.710)
+Test model 1 on task 1
+Test: [3/3]	loss 0.358 (0.369)	Acc@1 88.274 (87.700)
+Test model 1 on task 2
+Test: [3/3]	loss 0.332 (0.295)	Acc@1 89.823 (90.600)
+Test model 1 on task 3
+Test: [3/3]	loss 0.259 (0.247)	Acc@1 91.925 (91.990)
+Test model 1 on task 4
+Test: [3/3]	loss 0.198 (0.199)	Acc@1 93.971 (93.770)
+Test model 1 on task 5
+Test: [3/3]	loss 0.185 (0.193)	Acc@1 94.027 (93.800)
+Test model 1 on task 6
+Test: [3/3]	loss 0.185 (0.176)	Acc@1 93.971 (94.360)
+Test model 1 on task 7
+Test: [3/3]	loss 0.183 (0.169)	Acc@1 93.750 (94.400)
+Test model 1 on task 8
+Test: [3/3]	loss 0.189 (0.173)	Acc@1 93.916 (94.400)
+Test model 1 on task 9
+Test: [3/3]	loss 0.154 (0.162)	Acc@1 95.022 (95.040)
+Test model 1 on task 10
+Test: [3/3]	loss 0.158 (0.172)	Acc@1 95.465 (95.010)
+Test model 1 on task 11
+Test: [3/3]	loss 0.174 (0.169)	Acc@1 95.022 (94.940)
+Test model 1 on task 12
+Test: [3/3]	loss 0.181 (0.183)	Acc@1 94.137 (94.640)
+Test model 1 on task 13
+Test: [3/3]	loss 0.183 (0.184)	Acc@1 94.358 (94.600)
+Test model 1 on task 14
+Test: [3/3]	loss 0.180 (0.187)	Acc@1 94.580 (94.350)
+Test model 1 on task 15
+Test: [3/3]	loss 0.191 (0.206)	Acc@1 95.022 (94.210)
+############################################################ Avg acc: 93.59
+Task 16 Model 1:
+Train: [1][3750/3750]	loss 0.035 (0.052)	Acc@1 93.750 (86.075)
+Train: [2][3750/3750]	loss 0.040 (0.042)	Acc@1 87.500 (91.527)
+Train: [3][3750/3750]	loss 0.039 (0.040)	Acc@1 93.750 (92.365)
+Train: [4][3750/3750]	loss 0.037 (0.039)	Acc@1 93.750 (92.693)
+Train: [5][3750/3750]	loss 0.029 (0.039)	Acc@1 100.000 (92.987)
+Train: [6][3750/3750]	loss 0.031 (0.039)	Acc@1 100.000 (93.160)
+Train: [7][3750/3750]	loss 0.062 (0.039)	Acc@1 75.000 (93.287)
+Train: [8][3750/3750]	loss 0.029 (0.038)	Acc@1 100.000 (93.392)
+Train: [9][3750/3750]	loss 0.049 (0.038)	Acc@1 87.500 (93.392)
+Train: [10][3750/3750]	loss 0.053 (0.038)	Acc@1 87.500 (93.450)
+Test model 1 on task 1
+Test: [3/3]	loss 0.349 (0.382)	Acc@1 88.938 (87.170)
+Test model 1 on task 2
+Test: [3/3]	loss 0.296 (0.300)	Acc@1 90.874 (90.560)
+Test model 1 on task 3
+Test: [3/3]	loss 0.233 (0.250)	Acc@1 92.257 (91.880)
+Test model 1 on task 4
+Test: [3/3]	loss 0.186 (0.207)	Acc@1 93.584 (93.460)
+Test model 1 on task 5
+Test: [3/3]	loss 0.205 (0.197)	Acc@1 93.861 (93.680)
+Test model 1 on task 6
+Test: [3/3]	loss 0.182 (0.178)	Acc@1 93.805 (94.170)
+Test model 1 on task 7
+Test: [3/3]	loss 0.185 (0.177)	Acc@1 94.192 (94.150)
+Test model 1 on task 8
+Test: [3/3]	loss 0.186 (0.178)	Acc@1 94.414 (94.170)
+Test model 1 on task 9
+Test: [3/3]	loss 0.177 (0.170)	Acc@1 94.635 (94.790)
+Test model 1 on task 10
+Test: [3/3]	loss 0.190 (0.179)	Acc@1 94.137 (94.780)
+Test model 1 on task 11
+Test: [3/3]	loss 0.174 (0.177)	Acc@1 95.022 (94.650)
+Test model 1 on task 12
+Test: [3/3]	loss 0.192 (0.190)	Acc@1 94.248 (94.350)
+Test model 1 on task 13
+Test: [3/3]	loss 0.189 (0.191)	Acc@1 94.414 (94.450)
+Test model 1 on task 14
+Test: [3/3]	loss 0.199 (0.192)	Acc@1 94.027 (94.140)
+Test model 1 on task 15
+Test: [3/3]	loss 0.223 (0.213)	Acc@1 93.473 (94.000)
+Test model 1 on task 16
+Test: [3/3]	loss 0.212 (0.218)	Acc@1 93.363 (93.580)
+############################################################ Avg acc: 93.37
+Task 17 Model 1:
+Train: [1][3750/3750]	loss 0.040 (0.052)	Acc@1 93.750 (85.283)
+Train: [2][3750/3750]	loss 0.046 (0.043)	Acc@1 93.750 (90.708)
+Train: [3][3750/3750]	loss 0.038 (0.041)	Acc@1 93.750 (91.407)
+Train: [4][3750/3750]	loss 0.037 (0.041)	Acc@1 93.750 (91.890)
+Train: [5][3750/3750]	loss 0.044 (0.040)	Acc@1 87.500 (92.118)
+Train: [6][3750/3750]	loss 0.075 (0.040)	Acc@1 75.000 (92.163)
+Train: [7][3750/3750]	loss 0.034 (0.040)	Acc@1 93.750 (92.405)
+Train: [8][3750/3750]	loss 0.038 (0.040)	Acc@1 93.750 (92.370)
+Train: [9][3750/3750]	loss 0.075 (0.039)	Acc@1 87.500 (92.543)
+Train: [10][3750/3750]	loss 0.031 (0.039)	Acc@1 100.000 (92.585)
+Test model 1 on task 1
+Test: [3/3]	loss 0.405 (0.391)	Acc@1 87.113 (86.850)
+Test model 1 on task 2
+Test: [3/3]	loss 0.291 (0.300)	Acc@1 90.653 (90.500)
+Test model 1 on task 3
+Test: [3/3]	loss 0.255 (0.253)	Acc@1 91.980 (91.700)
+Test model 1 on task 4
+Test: [3/3]	loss 0.209 (0.209)	Acc@1 93.971 (93.400)
+Test model 1 on task 5
+Test: [3/3]	loss 0.210 (0.202)	Acc@1 93.418 (93.560)
+Test model 1 on task 6
+Test: [3/3]	loss 0.166 (0.183)	Acc@1 94.635 (94.030)
+Test model 1 on task 7
+Test: [3/3]	loss 0.182 (0.183)	Acc@1 93.197 (94.010)
+Test model 1 on task 8
+Test: [3/3]	loss 0.192 (0.184)	Acc@1 94.137 (94.170)
+Test model 1 on task 9
+Test: [3/3]	loss 0.156 (0.177)	Acc@1 95.022 (94.500)
+Test model 1 on task 10
+Test: [3/3]	loss 0.195 (0.185)	Acc@1 94.580 (94.520)
+Test model 1 on task 11
+Test: [3/3]	loss 0.188 (0.182)	Acc@1 94.469 (94.520)
+Test model 1 on task 12
+Test: [3/3]	loss 0.173 (0.196)	Acc@1 94.856 (94.210)
+Test model 1 on task 13
+Test: [3/3]	loss 0.185 (0.197)	Acc@1 94.358 (94.170)
+Test model 1 on task 14
+Test: [3/3]	loss 0.179 (0.199)	Acc@1 94.801 (93.950)
+Test model 1 on task 15
+Test: [3/3]	loss 0.203 (0.219)	Acc@1 94.358 (93.710)
+Test model 1 on task 16
+Test: [3/3]	loss 0.248 (0.224)	Acc@1 92.754 (93.510)
+Test model 1 on task 17
+Test: [3/3]	loss 0.239 (0.248)	Acc@1 92.201 (92.680)
+############################################################ Avg acc: 93.18
+Task 18 Model 1:
+Train: [1][3750/3750]	loss 0.051 (0.052)	Acc@1 87.500 (85.168)
+Train: [2][3750/3750]	loss 0.047 (0.044)	Acc@1 93.750 (90.345)
+Train: [3][3750/3750]	loss 0.040 (0.042)	Acc@1 93.750 (91.083)
+Train: [4][3750/3750]	loss 0.037 (0.042)	Acc@1 100.000 (91.438)
+Train: [5][3750/3750]	loss 0.045 (0.042)	Acc@1 87.500 (91.523)
+Train: [6][3750/3750]	loss 0.038 (0.042)	Acc@1 93.750 (91.642)
+Train: [7][3750/3750]	loss 0.035 (0.041)	Acc@1 100.000 (91.672)
+Train: [8][3750/3750]	loss 0.045 (0.041)	Acc@1 81.250 (91.752)
+Train: [9][3750/3750]	loss 0.035 (0.041)	Acc@1 100.000 (91.847)
+Train: [10][3750/3750]	loss 0.041 (0.041)	Acc@1 87.500 (91.872)
+Test model 1 on task 1
+Test: [3/3]	loss 0.410 (0.397)	Acc@1 86.173 (86.690)
+Test model 1 on task 2
+Test: [3/3]	loss 0.316 (0.307)	Acc@1 90.321 (90.250)
+Test model 1 on task 3
+Test: [3/3]	loss 0.227 (0.256)	Acc@1 92.035 (91.440)
+Test model 1 on task 4
+Test: [3/3]	loss 0.200 (0.214)	Acc@1 93.473 (93.330)
+Test model 1 on task 5
+Test: [3/3]	loss 0.174 (0.207)	Acc@1 94.414 (93.360)
+Test model 1 on task 6
+Test: [3/3]	loss 0.184 (0.186)	Acc@1 94.082 (93.920)
+Test model 1 on task 7
+Test: [3/3]	loss 0.197 (0.188)	Acc@1 93.639 (93.880)
+Test model 1 on task 8
+Test: [3/3]	loss 0.193 (0.191)	Acc@1 94.192 (94.020)
+Test model 1 on task 9
+Test: [3/3]	loss 0.168 (0.182)	Acc@1 94.635 (94.190)
+Test model 1 on task 10
+Test: [3/3]	loss 0.192 (0.189)	Acc@1 94.137 (94.370)
+Test model 1 on task 11
+Test: [3/3]	loss 0.177 (0.189)	Acc@1 94.414 (94.310)
+Test model 1 on task 12
+Test: [3/3]	loss 0.229 (0.202)	Acc@1 93.750 (94.090)
+Test model 1 on task 13
+Test: [3/3]	loss 0.196 (0.202)	Acc@1 93.971 (93.950)
+Test model 1 on task 14
+Test: [3/3]	loss 0.199 (0.204)	Acc@1 93.916 (93.830)
+Test model 1 on task 15
+Test: [3/3]	loss 0.222 (0.226)	Acc@1 93.861 (93.460)
+Test model 1 on task 16
+Test: [3/3]	loss 0.207 (0.230)	Acc@1 93.695 (93.270)
+Test model 1 on task 17
+Test: [3/3]	loss 0.282 (0.255)	Acc@1 90.874 (92.430)
+Test model 1 on task 18
+Test: [3/3]	loss 0.266 (0.272)	Acc@1 92.588 (92.280)
+############################################################ Avg acc: 92.95
+Task 19 Model 1:
+Train: [1][3750/3750]	loss 0.037 (0.054)	Acc@1 100.000 (83.558)
+Train: [2][3750/3750]	loss 0.060 (0.046)	Acc@1 87.500 (89.258)
+Train: [3][3750/3750]	loss 0.045 (0.044)	Acc@1 87.500 (90.065)
+Train: [4][3750/3750]	loss 0.032 (0.044)	Acc@1 100.000 (90.342)
+Train: [5][3750/3750]	loss 0.050 (0.043)	Acc@1 93.750 (90.625)
+Train: [6][3750/3750]	loss 0.064 (0.043)	Acc@1 75.000 (90.780)
+Train: [7][3750/3750]	loss 0.052 (0.043)	Acc@1 87.500 (90.853)
+Train: [8][3750/3750]	loss 0.037 (0.043)	Acc@1 93.750 (90.798)
+Train: [9][3750/3750]	loss 0.045 (0.043)	Acc@1 93.750 (90.980)
+Train: [10][3750/3750]	loss 0.036 (0.043)	Acc@1 93.750 (91.005)
+Test model 1 on task 1
+Test: [3/3]	loss 0.378 (0.404)	Acc@1 86.670 (86.520)
+Test model 1 on task 2
+Test: [3/3]	loss 0.302 (0.306)	Acc@1 90.376 (90.340)
+Test model 1 on task 3
+Test: [3/3]	loss 0.256 (0.262)	Acc@1 91.648 (91.280)
+Test model 1 on task 4
+Test: [3/3]	loss 0.219 (0.217)	Acc@1 93.363 (93.290)
+Test model 1 on task 5
+Test: [3/3]	loss 0.209 (0.212)	Acc@1 93.363 (93.250)
+Test model 1 on task 6
+Test: [3/3]	loss 0.182 (0.188)	Acc@1 93.805 (93.830)
+Test model 1 on task 7
+Test: [3/3]	loss 0.193 (0.193)	Acc@1 93.861 (93.700)
+Test model 1 on task 8
+Test: [3/3]	loss 0.188 (0.196)	Acc@1 93.473 (93.850)
+Test model 1 on task 9
+Test: [3/3]	loss 0.182 (0.186)	Acc@1 94.524 (94.060)
+Test model 1 on task 10
+Test: [3/3]	loss 0.200 (0.192)	Acc@1 94.358 (94.320)
+Test model 1 on task 11
+Test: [3/3]	loss 0.198 (0.193)	Acc@1 93.584 (94.210)
+Test model 1 on task 12
+Test: [3/3]	loss 0.232 (0.210)	Acc@1 93.197 (93.810)
+Test model 1 on task 13
+Test: [3/3]	loss 0.192 (0.206)	Acc@1 94.469 (93.890)
+Test model 1 on task 14
+Test: [3/3]	loss 0.225 (0.208)	Acc@1 92.865 (93.710)
+Test model 1 on task 15
+Test: [3/3]	loss 0.251 (0.230)	Acc@1 92.644 (93.320)
+Test model 1 on task 16
+Test: [3/3]	loss 0.245 (0.235)	Acc@1 92.754 (93.030)
+Test model 1 on task 17
+Test: [3/3]	loss 0.281 (0.262)	Acc@1 91.759 (92.250)
+Test model 1 on task 18
+Test: [3/3]	loss 0.289 (0.278)	Acc@1 91.427 (91.880)
+Test model 1 on task 19
+Test: [3/3]	loss 0.309 (0.296)	Acc@1 90.321 (91.090)
+############################################################ Avg acc: 92.72
+Task 20 Model 1:
+Train: [1][3750/3750]	loss 0.059 (0.056)	Acc@1 81.250 (83.018)
+Train: [2][3750/3750]	loss 0.079 (0.047)	Acc@1 81.250 (88.888)
+Train: [3][3750/3750]	loss 0.050 (0.047)	Acc@1 81.250 (89.638)
+Train: [4][3750/3750]	loss 0.037 (0.046)	Acc@1 100.000 (89.747)
+Train: [5][3750/3750]	loss 0.039 (0.046)	Acc@1 100.000 (89.917)
+Train: [6][3750/3750]	loss 0.055 (0.046)	Acc@1 87.500 (89.935)
+Train: [7][3750/3750]	loss 0.046 (0.046)	Acc@1 87.500 (90.088)
+Train: [8][3750/3750]	loss 0.044 (0.046)	Acc@1 87.500 (90.100)
+Train: [9][3750/3750]	loss 0.074 (0.045)	Acc@1 62.500 (90.172)
+Train: [10][3750/3750]	loss 0.033 (0.045)	Acc@1 100.000 (90.192)
+Test model 1 on task 1
+Test: [3/3]	loss 0.428 (0.404)	Acc@1 85.675 (86.580)
+Test model 1 on task 2
+Test: [3/3]	loss 0.283 (0.307)	Acc@1 91.040 (90.270)
+Test model 1 on task 3
+Test: [3/3]	loss 0.258 (0.261)	Acc@1 91.980 (91.450)
+Test model 1 on task 4
+Test: [3/3]	loss 0.224 (0.219)	Acc@1 92.920 (93.180)
+Test model 1 on task 5
+Test: [3/3]	loss 0.238 (0.216)	Acc@1 92.754 (92.960)
+Test model 1 on task 6
+Test: [3/3]	loss 0.187 (0.191)	Acc@1 93.529 (93.730)
+Test model 1 on task 7
+Test: [3/3]	loss 0.170 (0.196)	Acc@1 94.690 (93.640)
+Test model 1 on task 8
+Test: [3/3]	loss 0.178 (0.200)	Acc@1 94.690 (93.690)
+Test model 1 on task 9
+Test: [3/3]	loss 0.225 (0.191)	Acc@1 93.197 (93.950)
+Test model 1 on task 10
+Test: [3/3]	loss 0.197 (0.196)	Acc@1 94.192 (94.220)
+Test model 1 on task 11
+Test: [3/3]	loss 0.183 (0.197)	Acc@1 94.303 (93.990)
+Test model 1 on task 12
+Test: [3/3]	loss 0.219 (0.215)	Acc@1 93.639 (93.650)
+Test model 1 on task 13
+Test: [3/3]	loss 0.235 (0.209)	Acc@1 93.473 (93.910)
+Test model 1 on task 14
+Test: [3/3]	loss 0.231 (0.213)	Acc@1 93.695 (93.540)
+Test model 1 on task 15
+Test: [3/3]	loss 0.243 (0.235)	Acc@1 92.810 (93.160)
+Test model 1 on task 16
+Test: [3/3]	loss 0.250 (0.240)	Acc@1 92.257 (92.760)
+Test model 1 on task 17
+Test: [3/3]	loss 0.281 (0.267)	Acc@1 91.261 (92.150)
+Test model 1 on task 18
+Test: [3/3]	loss 0.286 (0.285)	Acc@1 91.427 (91.660)
+Test model 1 on task 19
+Test: [3/3]	loss 0.306 (0.305)	Acc@1 90.265 (90.800)
+Test model 1 on task 20
+Test: [3/3]	loss 0.325 (0.304)	Acc@1 90.321 (90.860)
+############################################################ Avg acc: 92.51
+Task 21 Model 1:
+Train: [1][3750/3750]	loss 0.044 (0.057)	Acc@1 87.500 (81.862)
+Train: [2][3750/3750]	loss 0.041 (0.049)	Acc@1 87.500 (87.692)
+Train: [3][3750/3750]	loss 0.059 (0.048)	Acc@1 87.500 (88.548)
+Train: [4][3750/3750]	loss 0.038 (0.048)	Acc@1 93.750 (88.755)
+Train: [5][3750/3750]	loss 0.051 (0.047)	Acc@1 93.750 (88.950)
+Train: [6][3750/3750]	loss 0.035 (0.047)	Acc@1 100.000 (89.037)
+Train: [7][3750/3750]	loss 0.037 (0.047)	Acc@1 100.000 (89.165)
+Train: [8][3750/3750]	loss 0.041 (0.047)	Acc@1 87.500 (89.160)
+Train: [9][3750/3750]	loss 0.046 (0.047)	Acc@1 93.750 (89.278)
+Train: [10][3750/3750]	loss 0.063 (0.047)	Acc@1 81.250 (89.252)
+Test model 1 on task 1
+Test: [3/3]	loss 0.412 (0.408)	Acc@1 86.504 (86.500)
+Test model 1 on task 2
+Test: [3/3]	loss 0.293 (0.309)	Acc@1 91.150 (90.210)
+Test model 1 on task 3
+Test: [3/3]	loss 0.236 (0.262)	Acc@1 91.648 (91.230)
+Test model 1 on task 4
+Test: [3/3]	loss 0.219 (0.223)	Acc@1 92.533 (92.990)
+Test model 1 on task 5
+Test: [3/3]	loss 0.201 (0.217)	Acc@1 93.252 (93.020)
+Test model 1 on task 6
+Test: [3/3]	loss 0.188 (0.194)	Acc@1 93.529 (93.670)
+Test model 1 on task 7
+Test: [3/3]	loss 0.200 (0.200)	Acc@1 93.142 (93.560)
+Test model 1 on task 8
+Test: [3/3]	loss 0.190 (0.199)	Acc@1 94.580 (93.670)
+Test model 1 on task 9
+Test: [3/3]	loss 0.181 (0.193)	Acc@1 93.971 (93.920)
+Test model 1 on task 10
+Test: [3/3]	loss 0.211 (0.198)	Acc@1 93.584 (94.120)
+Test model 1 on task 11
+Test: [3/3]	loss 0.196 (0.204)	Acc@1 94.192 (93.740)
+Test model 1 on task 12
+Test: [3/3]	loss 0.207 (0.219)	Acc@1 94.358 (93.620)
+Test model 1 on task 13
+Test: [3/3]	loss 0.225 (0.212)	Acc@1 93.529 (93.820)
+Test model 1 on task 14
+Test: [3/3]	loss 0.213 (0.217)	Acc@1 93.584 (93.400)
+Test model 1 on task 15
+Test: [3/3]	loss 0.240 (0.238)	Acc@1 93.086 (93.020)
+Test model 1 on task 16
+Test: [3/3]	loss 0.219 (0.245)	Acc@1 92.920 (92.560)
+Test model 1 on task 17
+Test: [3/3]	loss 0.279 (0.272)	Acc@1 92.146 (92.020)
+Test model 1 on task 18
+Test: [3/3]	loss 0.299 (0.291)	Acc@1 92.201 (91.540)
+Test model 1 on task 19
+Test: [3/3]	loss 0.327 (0.310)	Acc@1 89.712 (90.490)
+Test model 1 on task 20
+Test: [3/3]	loss 0.297 (0.309)	Acc@1 91.261 (90.770)
+Test model 1 on task 21
+Test: [3/3]	loss 0.347 (0.341)	Acc@1 89.768 (89.710)
+############################################################ Avg acc: 92.27
+Task 22 Model 1:
+Train: [1][3750/3750]	loss 0.044 (0.060)	Acc@1 93.750 (80.220)
+Train: [2][3750/3750]	loss 0.040 (0.053)	Acc@1 100.000 (86.075)
+Train: [3][3750/3750]	loss 0.064 (0.052)	Acc@1 81.250 (86.802)
+Train: [4][3750/3750]	loss 0.043 (0.052)	Acc@1 93.750 (87.063)
+Train: [5][3750/3750]	loss 0.043 (0.051)	Acc@1 93.750 (87.403)
+Train: [6][3750/3750]	loss 0.070 (0.051)	Acc@1 62.500 (87.425)
+Train: [7][3750/3750]	loss 0.046 (0.051)	Acc@1 93.750 (87.592)
+Train: [8][3750/3750]	loss 0.041 (0.051)	Acc@1 93.750 (87.613)
+Train: [9][3750/3750]	loss 0.046 (0.051)	Acc@1 87.500 (87.690)
+Train: [10][3750/3750]	loss 0.060 (0.051)	Acc@1 68.750 (87.647)
+Test model 1 on task 1
+Test: [3/3]	loss 0.444 (0.406)	Acc@1 85.232 (86.610)
+Test model 1 on task 2
+Test: [3/3]	loss 0.305 (0.311)	Acc@1 90.265 (90.150)
+Test model 1 on task 3
+Test: [3/3]	loss 0.254 (0.264)	Acc@1 91.648 (91.250)
+Test model 1 on task 4
+Test: [3/3]	loss 0.242 (0.226)	Acc@1 91.869 (92.850)
+Test model 1 on task 5
+Test: [3/3]	loss 0.208 (0.220)	Acc@1 92.865 (92.910)
+Test model 1 on task 6
+Test: [3/3]	loss 0.188 (0.197)	Acc@1 94.082 (93.620)
+Test model 1 on task 7
+Test: [3/3]	loss 0.201 (0.205)	Acc@1 93.418 (93.280)
+Test model 1 on task 8
+Test: [3/3]	loss 0.176 (0.202)	Acc@1 94.303 (93.460)
+Test model 1 on task 9
+Test: [3/3]	loss 0.213 (0.197)	Acc@1 93.639 (93.800)
+Test model 1 on task 10
+Test: [3/3]	loss 0.202 (0.203)	Acc@1 93.861 (94.130)
+Test model 1 on task 11
+Test: [3/3]	loss 0.219 (0.209)	Acc@1 93.363 (93.550)
+Test model 1 on task 12
+Test: [3/3]	loss 0.242 (0.224)	Acc@1 93.252 (93.350)
+Test model 1 on task 13
+Test: [3/3]	loss 0.238 (0.217)	Acc@1 92.865 (93.570)
+Test model 1 on task 14
+Test: [3/3]	loss 0.232 (0.221)	Acc@1 92.478 (93.140)
+Test model 1 on task 15
+Test: [3/3]	loss 0.256 (0.244)	Acc@1 92.091 (92.850)
+Test model 1 on task 16
+Test: [3/3]	loss 0.270 (0.249)	Acc@1 91.648 (92.410)
+Test model 1 on task 17
+Test: [3/3]	loss 0.248 (0.277)	Acc@1 92.588 (91.930)
+Test model 1 on task 18
+Test: [3/3]	loss 0.298 (0.296)	Acc@1 91.648 (91.200)
+Test model 1 on task 19
+Test: [3/3]	loss 0.334 (0.315)	Acc@1 90.321 (90.460)
+Test model 1 on task 20
+Test: [3/3]	loss 0.333 (0.315)	Acc@1 89.436 (90.650)
+Test model 1 on task 21
+Test: [3/3]	loss 0.345 (0.346)	Acc@1 89.436 (89.500)
+Test model 1 on task 22
+Test: [3/3]	loss 0.363 (0.382)	Acc@1 88.662 (88.390)
+############################################################ Avg acc: 91.96
+Task 23 Model 1:
+Train: [1][3750/3750]	loss 0.071 (0.060)	Acc@1 75.000 (79.618)
+Train: [2][3750/3750]	loss 0.058 (0.053)	Acc@1 81.250 (85.732)
+Train: [3][3750/3750]	loss 0.050 (0.053)	Acc@1 93.750 (86.373)
+Train: [4][3750/3750]	loss 0.045 (0.052)	Acc@1 93.750 (86.580)
+Train: [5][3750/3750]	loss 0.049 (0.052)	Acc@1 93.750 (86.792)
+Train: [6][3750/3750]	loss 0.041 (0.052)	Acc@1 100.000 (86.785)
+Train: [7][3750/3750]	loss 0.041 (0.052)	Acc@1 100.000 (86.905)
+Train: [8][3750/3750]	loss 0.047 (0.052)	Acc@1 93.750 (86.940)
+Train: [9][3750/3750]	loss 0.043 (0.052)	Acc@1 100.000 (86.868)
+Train: [10][3750/3750]	loss 0.055 (0.052)	Acc@1 81.250 (86.958)
+Test model 1 on task 1
+Test: [3/3]	loss 0.425 (0.411)	Acc@1 85.896 (86.460)
+Test model 1 on task 2
+Test: [3/3]	loss 0.305 (0.313)	Acc@1 89.823 (90.090)
+Test model 1 on task 3
+Test: [3/3]	loss 0.263 (0.264)	Acc@1 91.150 (91.300)
+Test model 1 on task 4
+Test: [3/3]	loss 0.230 (0.227)	Acc@1 93.197 (92.800)
+Test model 1 on task 5
+Test: [3/3]	loss 0.222 (0.222)	Acc@1 92.810 (92.990)
+Test model 1 on task 6
+Test: [3/3]	loss 0.207 (0.200)	Acc@1 93.308 (93.550)
+Test model 1 on task 7
+Test: [3/3]	loss 0.203 (0.211)	Acc@1 94.082 (93.120)
+Test model 1 on task 8
+Test: [3/3]	loss 0.207 (0.206)	Acc@1 93.695 (93.250)
+Test model 1 on task 9
+Test: [3/3]	loss 0.197 (0.201)	Acc@1 93.363 (93.550)
+Test model 1 on task 10
+Test: [3/3]	loss 0.244 (0.206)	Acc@1 92.754 (93.980)
+Test model 1 on task 11
+Test: [3/3]	loss 0.205 (0.213)	Acc@1 93.916 (93.460)
+Test model 1 on task 12
+Test: [3/3]	loss 0.227 (0.228)	Acc@1 93.086 (93.210)
+Test model 1 on task 13
+Test: [3/3]	loss 0.215 (0.223)	Acc@1 93.418 (93.270)
+Test model 1 on task 14
+Test: [3/3]	loss 0.224 (0.223)	Acc@1 92.588 (93.060)
+Test model 1 on task 15
+Test: [3/3]	loss 0.250 (0.248)	Acc@1 92.644 (92.560)
+Test model 1 on task 16
+Test: [3/3]	loss 0.219 (0.252)	Acc@1 93.695 (92.410)
+Test model 1 on task 17
+Test: [3/3]	loss 0.298 (0.283)	Acc@1 90.985 (91.670)
+Test model 1 on task 18
+Test: [3/3]	loss 0.305 (0.298)	Acc@1 90.321 (91.200)
+Test model 1 on task 19
+Test: [3/3]	loss 0.330 (0.319)	Acc@1 89.878 (90.290)
+Test model 1 on task 20
+Test: [3/3]	loss 0.341 (0.317)	Acc@1 89.878 (90.560)
+Test model 1 on task 21
+Test: [3/3]	loss 0.367 (0.351)	Acc@1 89.215 (89.450)
+Test model 1 on task 22
+Test: [3/3]	loss 0.393 (0.386)	Acc@1 88.274 (88.160)
+Test model 1 on task 23
+Test: [3/3]	loss 0.428 (0.427)	Acc@1 86.726 (87.140)
+############################################################ Avg acc: 91.63
+Task 24 Model 1:
+Train: [1][3750/3750]	loss 0.064 (0.060)	Acc@1 68.750 (79.327)
+Train: [2][3750/3750]	loss 0.050 (0.054)	Acc@1 87.500 (84.877)
+Train: [3][3750/3750]	loss 0.060 (0.053)	Acc@1 81.250 (85.427)
+Train: [4][3750/3750]	loss 0.070 (0.053)	Acc@1 75.000 (85.493)
+Train: [5][3750/3750]	loss 0.055 (0.053)	Acc@1 81.250 (85.717)
+Train: [6][3750/3750]	loss 0.055 (0.053)	Acc@1 81.250 (85.808)
+Train: [7][3750/3750]	loss 0.045 (0.053)	Acc@1 87.500 (85.908)
+Train: [8][3750/3750]	loss 0.060 (0.053)	Acc@1 75.000 (85.937)
+Train: [9][3750/3750]	loss 0.055 (0.053)	Acc@1 81.250 (85.837)
+Train: [10][3750/3750]	loss 0.064 (0.053)	Acc@1 87.500 (85.968)
+Test model 1 on task 1
+Test: [3/3]	loss 0.419 (0.413)	Acc@1 85.122 (86.250)
+Test model 1 on task 2
+Test: [3/3]	loss 0.264 (0.317)	Acc@1 90.874 (89.750)
+Test model 1 on task 3
+Test: [3/3]	loss 0.235 (0.267)	Acc@1 92.478 (91.250)
+Test model 1 on task 4
+Test: [3/3]	loss 0.246 (0.229)	Acc@1 92.091 (92.640)
+Test model 1 on task 5
+Test: [3/3]	loss 0.215 (0.225)	Acc@1 93.308 (92.810)
+Test model 1 on task 6
+Test: [3/3]	loss 0.218 (0.203)	Acc@1 93.086 (93.420)
+Test model 1 on task 7
+Test: [3/3]	loss 0.217 (0.214)	Acc@1 93.031 (93.070)
+Test model 1 on task 8
+Test: [3/3]	loss 0.218 (0.210)	Acc@1 92.533 (93.200)
+Test model 1 on task 9
+Test: [3/3]	loss 0.229 (0.206)	Acc@1 92.201 (93.360)
+Test model 1 on task 10
+Test: [3/3]	loss 0.208 (0.210)	Acc@1 93.418 (93.900)
+Test model 1 on task 11
+Test: [3/3]	loss 0.217 (0.216)	Acc@1 92.533 (93.280)
+Test model 1 on task 12
+Test: [3/3]	loss 0.259 (0.232)	Acc@1 92.588 (93.130)
+Test model 1 on task 13
+Test: [3/3]	loss 0.219 (0.227)	Acc@1 93.695 (93.170)
+Test model 1 on task 14
+Test: [3/3]	loss 0.216 (0.228)	Acc@1 93.418 (92.990)
+Test model 1 on task 15
+Test: [3/3]	loss 0.248 (0.252)	Acc@1 92.478 (92.460)
+Test model 1 on task 16
+Test: [3/3]	loss 0.249 (0.255)	Acc@1 92.312 (92.420)
+Test model 1 on task 17
+Test: [3/3]	loss 0.304 (0.287)	Acc@1 90.376 (91.380)
+Test model 1 on task 18
+Test: [3/3]	loss 0.272 (0.301)	Acc@1 92.257 (91.110)
+Test model 1 on task 19
+Test: [3/3]	loss 0.335 (0.323)	Acc@1 89.270 (90.180)
+Test model 1 on task 20
+Test: [3/3]	loss 0.331 (0.322)	Acc@1 90.487 (90.350)
+Test model 1 on task 21
+Test: [3/3]	loss 0.361 (0.356)	Acc@1 89.104 (89.270)
+Test model 1 on task 22
+Test: [3/3]	loss 0.412 (0.390)	Acc@1 87.666 (88.100)
+Test model 1 on task 23
+Test: [3/3]	loss 0.428 (0.431)	Acc@1 87.832 (87.030)
+Test model 1 on task 24
+Test: [3/3]	loss 0.448 (0.434)	Acc@1 85.398 (86.340)
+############################################################ Avg acc: 91.29
+Task 25 Model 1:
+Train: [1][3750/3750]	loss 0.058 (0.061)	Acc@1 75.000 (78.667)
+Train: [2][3750/3750]	loss 0.050 (0.055)	Acc@1 93.750 (84.407)
+Train: [3][3750/3750]	loss 0.060 (0.054)	Acc@1 81.250 (84.973)
+Train: [4][3750/3750]	loss 0.060 (0.054)	Acc@1 81.250 (85.215)
+Train: [5][3750/3750]	loss 0.053 (0.054)	Acc@1 87.500 (85.420)
+Train: [6][3750/3750]	loss 0.047 (0.054)	Acc@1 87.500 (85.437)
+Train: [7][3750/3750]	loss 0.058 (0.054)	Acc@1 87.500 (85.542)
+Train: [8][3750/3750]	loss 0.062 (0.053)	Acc@1 81.250 (85.577)
+Train: [9][3750/3750]	loss 0.046 (0.053)	Acc@1 93.750 (85.658)
+Train: [10][3750/3750]	loss 0.054 (0.053)	Acc@1 87.500 (85.672)
+Test model 1 on task 1
+Test: [3/3]	loss 0.403 (0.416)	Acc@1 86.726 (86.110)
+Test model 1 on task 2
+Test: [3/3]	loss 0.318 (0.318)	Acc@1 90.210 (89.780)
+Test model 1 on task 3
+Test: [3/3]	loss 0.311 (0.271)	Acc@1 89.989 (91.140)
+Test model 1 on task 4
+Test: [3/3]	loss 0.253 (0.232)	Acc@1 92.146 (92.680)
+Test model 1 on task 5
+Test: [3/3]	loss 0.228 (0.228)	Acc@1 93.086 (92.870)
+Test model 1 on task 6
+Test: [3/3]	loss 0.220 (0.206)	Acc@1 92.257 (93.350)
+Test model 1 on task 7
+Test: [3/3]	loss 0.229 (0.217)	Acc@1 92.367 (92.990)
+Test model 1 on task 8
+Test: [3/3]	loss 0.205 (0.212)	Acc@1 93.197 (93.190)
+Test model 1 on task 9
+Test: [3/3]	loss 0.229 (0.209)	Acc@1 92.754 (93.360)
+Test model 1 on task 10
+Test: [3/3]	loss 0.181 (0.212)	Acc@1 94.856 (93.830)
+Test model 1 on task 11
+Test: [3/3]	loss 0.233 (0.220)	Acc@1 92.423 (93.140)
+Test model 1 on task 12
+Test: [3/3]	loss 0.217 (0.235)	Acc@1 93.363 (93.020)
+Test model 1 on task 13
+Test: [3/3]	loss 0.225 (0.230)	Acc@1 92.976 (93.100)
+Test model 1 on task 14
+Test: [3/3]	loss 0.249 (0.230)	Acc@1 92.754 (92.940)
+Test model 1 on task 15
+Test: [3/3]	loss 0.239 (0.255)	Acc@1 93.639 (92.520)
+Test model 1 on task 16
+Test: [3/3]	loss 0.245 (0.258)	Acc@1 93.308 (92.380)
+Test model 1 on task 17
+Test: [3/3]	loss 0.283 (0.290)	Acc@1 91.648 (91.230)
+Test model 1 on task 18
+Test: [3/3]	loss 0.300 (0.302)	Acc@1 91.095 (91.050)
+Test model 1 on task 19
+Test: [3/3]	loss 0.317 (0.325)	Acc@1 90.708 (90.140)
+Test model 1 on task 20
+Test: [3/3]	loss 0.310 (0.326)	Acc@1 90.708 (90.330)
+Test model 1 on task 21
+Test: [3/3]	loss 0.360 (0.359)	Acc@1 88.883 (89.190)
+Test model 1 on task 22
+Test: [3/3]	loss 0.437 (0.394)	Acc@1 86.504 (87.930)
+Test model 1 on task 23
+Test: [3/3]	loss 0.419 (0.433)	Acc@1 87.279 (86.920)
+Test model 1 on task 24
+Test: [3/3]	loss 0.434 (0.436)	Acc@1 86.173 (86.260)
+Test model 1 on task 25
+Test: [3/3]	loss 0.456 (0.454)	Acc@1 86.449 (86.720)
+############################################################ Avg acc: 91.05
+Task 26 Model 1:
+Train: [1][3750/3750]	loss 0.052 (0.064)	Acc@1 87.500 (75.847)
+Train: [2][3750/3750]	loss 0.078 (0.058)	Acc@1 75.000 (82.125)
+Train: [3][3750/3750]	loss 0.068 (0.058)	Acc@1 68.750 (82.632)
+Train: [4][3750/3750]	loss 0.064 (0.057)	Acc@1 75.000 (82.883)
+Train: [5][3750/3750]	loss 0.060 (0.057)	Acc@1 81.250 (82.982)
+Train: [6][3750/3750]	loss 0.045 (0.057)	Acc@1 93.750 (83.163)
+Train: [7][3750/3750]	loss 0.061 (0.057)	Acc@1 81.250 (83.338)
+Train: [8][3750/3750]	loss 0.046 (0.056)	Acc@1 93.750 (83.485)
+Train: [9][3750/3750]	loss 0.056 (0.056)	Acc@1 75.000 (83.588)
+Train: [10][3750/3750]	loss 0.053 (0.056)	Acc@1 93.750 (83.573)
+Test model 1 on task 1
+Test: [3/3]	loss 0.394 (0.415)	Acc@1 86.615 (86.300)
+Test model 1 on task 2
+Test: [3/3]	loss 0.309 (0.318)	Acc@1 90.155 (89.840)
+Test model 1 on task 3
+Test: [3/3]	loss 0.255 (0.274)	Acc@1 91.593 (90.980)
+Test model 1 on task 4
+Test: [3/3]	loss 0.231 (0.233)	Acc@1 92.423 (92.690)
+Test model 1 on task 5
+Test: [3/3]	loss 0.253 (0.231)	Acc@1 91.316 (92.680)
+Test model 1 on task 6
+Test: [3/3]	loss 0.198 (0.208)	Acc@1 93.473 (93.260)
+Test model 1 on task 7
+Test: [3/3]	loss 0.222 (0.221)	Acc@1 92.423 (92.940)
+Test model 1 on task 8
+Test: [3/3]	loss 0.207 (0.214)	Acc@1 93.197 (93.140)
+Test model 1 on task 9
+Test: [3/3]	loss 0.193 (0.211)	Acc@1 93.418 (93.280)
+Test model 1 on task 10
+Test: [3/3]	loss 0.208 (0.216)	Acc@1 94.027 (93.670)
+Test model 1 on task 11
+Test: [3/3]	loss 0.213 (0.222)	Acc@1 94.027 (93.190)
+Test model 1 on task 12
+Test: [3/3]	loss 0.284 (0.237)	Acc@1 91.814 (92.930)
+Test model 1 on task 13
+Test: [3/3]	loss 0.247 (0.233)	Acc@1 92.367 (92.950)
+Test model 1 on task 14
+Test: [3/3]	loss 0.230 (0.233)	Acc@1 93.418 (92.660)
+Test model 1 on task 15
+Test: [3/3]	loss 0.268 (0.258)	Acc@1 92.091 (92.450)
+Test model 1 on task 16
+Test: [3/3]	loss 0.272 (0.260)	Acc@1 91.538 (92.320)
+Test model 1 on task 17
+Test: [3/3]	loss 0.291 (0.295)	Acc@1 90.874 (91.010)
+Test model 1 on task 18
+Test: [3/3]	loss 0.324 (0.305)	Acc@1 90.431 (91.080)
+Test model 1 on task 19
+Test: [3/3]	loss 0.319 (0.332)	Acc@1 90.210 (89.830)
+Test model 1 on task 20
+Test: [3/3]	loss 0.320 (0.333)	Acc@1 89.989 (90.290)
+Test model 1 on task 21
+Test: [3/3]	loss 0.330 (0.365)	Acc@1 90.044 (88.850)
+Test model 1 on task 22
+Test: [3/3]	loss 0.380 (0.398)	Acc@1 88.496 (87.870)
+Test model 1 on task 23
+Test: [3/3]	loss 0.442 (0.438)	Acc@1 87.002 (86.820)
+Test model 1 on task 24
+Test: [3/3]	loss 0.449 (0.440)	Acc@1 85.730 (86.030)
+Test model 1 on task 25
+Test: [3/3]	loss 0.434 (0.459)	Acc@1 88.108 (86.690)
+Test model 1 on task 26
+Test: [3/3]	loss 0.527 (0.516)	Acc@1 84.347 (84.510)
+############################################################ Avg acc: 90.70
+Task 27 Model 1:
+Train: [1][3750/3750]	loss 0.056 (0.066)	Acc@1 87.500 (73.788)
+Train: [2][3750/3750]	loss 0.057 (0.062)	Acc@1 87.500 (79.333)
+Train: [3][3750/3750]	loss 0.058 (0.061)	Acc@1 87.500 (79.870)
+Train: [4][3750/3750]	loss 0.082 (0.061)	Acc@1 62.500 (80.127)
+Train: [5][3750/3750]	loss 0.057 (0.061)	Acc@1 87.500 (80.127)
+Train: [6][3750/3750]	loss 0.057 (0.061)	Acc@1 81.250 (80.210)
+Train: [7][3750/3750]	loss 0.063 (0.061)	Acc@1 81.250 (80.233)
+Train: [8][3750/3750]	loss 0.080 (0.061)	Acc@1 81.250 (80.232)
+Train: [9][3750/3750]	loss 0.048 (0.061)	Acc@1 100.000 (80.298)
+Train: [10][3750/3750]	loss 0.058 (0.061)	Acc@1 75.000 (80.342)
+Test model 1 on task 1
+Test: [3/3]	loss 0.417 (0.418)	Acc@1 86.007 (86.170)
+Test model 1 on task 2
+Test: [3/3]	loss 0.341 (0.320)	Acc@1 88.717 (89.800)
+Test model 1 on task 3
+Test: [3/3]	loss 0.293 (0.278)	Acc@1 90.265 (90.940)
+Test model 1 on task 4
+Test: [3/3]	loss 0.263 (0.237)	Acc@1 92.091 (92.520)
+Test model 1 on task 5
+Test: [3/3]	loss 0.253 (0.234)	Acc@1 91.372 (92.400)
+Test model 1 on task 6
+Test: [3/3]	loss 0.208 (0.210)	Acc@1 93.252 (93.420)
+Test model 1 on task 7
+Test: [3/3]	loss 0.225 (0.223)	Acc@1 92.644 (92.780)
+Test model 1 on task 8
+Test: [3/3]	loss 0.225 (0.217)	Acc@1 93.363 (92.940)
+Test model 1 on task 9
+Test: [3/3]	loss 0.225 (0.215)	Acc@1 92.976 (93.000)
+Test model 1 on task 10
+Test: [3/3]	loss 0.214 (0.219)	Acc@1 93.584 (93.440)
+Test model 1 on task 11
+Test: [3/3]	loss 0.213 (0.224)	Acc@1 93.252 (93.100)
+Test model 1 on task 12
+Test: [3/3]	loss 0.233 (0.240)	Acc@1 93.418 (92.860)
+Test model 1 on task 13
+Test: [3/3]	loss 0.252 (0.236)	Acc@1 91.869 (92.890)
+Test model 1 on task 14
+Test: [3/3]	loss 0.246 (0.235)	Acc@1 92.976 (92.810)
+Test model 1 on task 15
+Test: [3/3]	loss 0.304 (0.261)	Acc@1 90.874 (92.180)
+Test model 1 on task 16
+Test: [3/3]	loss 0.268 (0.264)	Acc@1 92.201 (92.000)
+Test model 1 on task 17
+Test: [3/3]	loss 0.301 (0.298)	Acc@1 90.763 (90.830)
+Test model 1 on task 18
+Test: [3/3]	loss 0.312 (0.307)	Acc@1 90.044 (90.940)
+Test model 1 on task 19
+Test: [3/3]	loss 0.342 (0.335)	Acc@1 89.491 (89.770)
+Test model 1 on task 20
+Test: [3/3]	loss 0.332 (0.338)	Acc@1 90.155 (90.060)
+Test model 1 on task 21
+Test: [3/3]	loss 0.399 (0.370)	Acc@1 87.611 (88.780)
+Test model 1 on task 22
+Test: [3/3]	loss 0.410 (0.402)	Acc@1 86.560 (87.600)
+Test model 1 on task 23
+Test: [3/3]	loss 0.433 (0.443)	Acc@1 86.726 (86.610)
+Test model 1 on task 24
+Test: [3/3]	loss 0.457 (0.444)	Acc@1 84.790 (85.950)
+Test model 1 on task 25
+Test: [3/3]	loss 0.469 (0.464)	Acc@1 86.394 (86.530)
+Test model 1 on task 26
+Test: [3/3]	loss 0.528 (0.519)	Acc@1 83.960 (84.250)
+Test model 1 on task 27
+Test: [3/3]	loss 0.582 (0.591)	Acc@1 82.080 (81.740)
+############################################################ Avg acc: 90.23
+Task 28 Model 1:
+Train: [1][3750/3750]	loss 0.070 (0.070)	Acc@1 75.000 (72.500)
+Train: [2][3750/3750]	loss 0.070 (0.065)	Acc@1 81.250 (78.695)
+Train: [3][3750/3750]	loss 0.078 (0.063)	Acc@1 68.750 (79.948)
+Train: [4][3750/3750]	loss 0.065 (0.061)	Acc@1 75.000 (80.682)
+Train: [5][3750/3750]	loss 0.060 (0.061)	Acc@1 75.000 (80.967)
+Train: [6][3750/3750]	loss 0.079 (0.061)	Acc@1 62.500 (81.050)
+Train: [7][3750/3750]	loss 0.062 (0.061)	Acc@1 75.000 (81.137)
+Train: [8][3750/3750]	loss 0.048 (0.061)	Acc@1 100.000 (81.295)
+Train: [9][3750/3750]	loss 0.060 (0.060)	Acc@1 87.500 (81.367)
+Train: [10][3750/3750]	loss 0.061 (0.060)	Acc@1 68.750 (81.560)
+Test model 1 on task 1
+Test: [3/3]	loss 0.438 (0.422)	Acc@1 85.564 (86.100)
+Test model 1 on task 2
+Test: [3/3]	loss 0.321 (0.322)	Acc@1 89.768 (89.710)
+Test model 1 on task 3
+Test: [3/3]	loss 0.276 (0.279)	Acc@1 90.929 (90.930)
+Test model 1 on task 4
+Test: [3/3]	loss 0.207 (0.239)	Acc@1 93.971 (92.450)
+Test model 1 on task 5
+Test: [3/3]	loss 0.230 (0.235)	Acc@1 92.644 (92.350)
+Test model 1 on task 6
+Test: [3/3]	loss 0.204 (0.212)	Acc@1 93.584 (93.300)
+Test model 1 on task 7
+Test: [3/3]	loss 0.232 (0.226)	Acc@1 92.810 (92.750)
+Test model 1 on task 8
+Test: [3/3]	loss 0.219 (0.220)	Acc@1 93.252 (92.870)
+Test model 1 on task 9
+Test: [3/3]	loss 0.196 (0.218)	Acc@1 93.861 (92.960)
+Test model 1 on task 10
+Test: [3/3]	loss 0.217 (0.221)	Acc@1 93.142 (93.390)
+Test model 1 on task 11
+Test: [3/3]	loss 0.220 (0.230)	Acc@1 93.473 (93.040)
+Test model 1 on task 12
+Test: [3/3]	loss 0.239 (0.241)	Acc@1 92.699 (92.810)
+Test model 1 on task 13
+Test: [3/3]	loss 0.236 (0.240)	Acc@1 93.086 (92.770)
+Test model 1 on task 14
+Test: [3/3]	loss 0.234 (0.238)	Acc@1 92.588 (92.760)
+Test model 1 on task 15
+Test: [3/3]	loss 0.243 (0.263)	Acc@1 92.533 (91.970)
+Test model 1 on task 16
+Test: [3/3]	loss 0.270 (0.267)	Acc@1 91.759 (91.890)
+Test model 1 on task 17
+Test: [3/3]	loss 0.315 (0.300)	Acc@1 90.155 (90.880)
+Test model 1 on task 18
+Test: [3/3]	loss 0.318 (0.310)	Acc@1 90.431 (90.890)
+Test model 1 on task 19
+Test: [3/3]	loss 0.344 (0.341)	Acc@1 89.934 (89.540)
+Test model 1 on task 20
+Test: [3/3]	loss 0.364 (0.344)	Acc@1 89.436 (89.900)
+Test model 1 on task 21
+Test: [3/3]	loss 0.366 (0.374)	Acc@1 88.772 (88.620)
+Test model 1 on task 22
+Test: [3/3]	loss 0.428 (0.404)	Acc@1 86.670 (87.650)
+Test model 1 on task 23
+Test: [3/3]	loss 0.468 (0.447)	Acc@1 86.394 (86.350)
+Test model 1 on task 24
+Test: [3/3]	loss 0.443 (0.442)	Acc@1 86.504 (85.950)
+Test model 1 on task 25
+Test: [3/3]	loss 0.456 (0.464)	Acc@1 86.062 (86.550)
+Test model 1 on task 26
+Test: [3/3]	loss 0.495 (0.521)	Acc@1 84.845 (84.330)
+Test model 1 on task 27
+Test: [3/3]	loss 0.548 (0.594)	Acc@1 83.075 (81.750)
+Test model 1 on task 28
+Test: [3/3]	loss 0.573 (0.575)	Acc@1 82.412 (82.500)
+############################################################ Avg acc: 89.89
+Task 29 Model 1:
+Train: [1][3750/3750]	loss 0.069 (0.064)	Acc@1 68.750 (73.837)
+Train: [2][3750/3750]	loss 0.052 (0.060)	Acc@1 81.250 (79.635)
+Train: [3][3750/3750]	loss 0.056 (0.060)	Acc@1 81.250 (79.817)
+Train: [4][3750/3750]	loss 0.056 (0.059)	Acc@1 75.000 (80.097)
+Train: [5][3750/3750]	loss 0.059 (0.059)	Acc@1 75.000 (80.200)
+Train: [6][3750/3750]	loss 0.058 (0.059)	Acc@1 87.500 (80.397)
+Train: [7][3750/3750]	loss 0.069 (0.059)	Acc@1 75.000 (80.510)
+Train: [8][3750/3750]	loss 0.054 (0.059)	Acc@1 81.250 (80.583)
+Train: [9][3750/3750]	loss 0.055 (0.059)	Acc@1 81.250 (80.520)
+Train: [10][3750/3750]	loss 0.047 (0.059)	Acc@1 93.750 (80.577)
+Test model 1 on task 1
+Test: [3/3]	loss 0.418 (0.426)	Acc@1 85.730 (85.940)
+Test model 1 on task 2
+Test: [3/3]	loss 0.318 (0.325)	Acc@1 90.044 (89.610)
+Test model 1 on task 3
+Test: [3/3]	loss 0.275 (0.280)	Acc@1 91.040 (90.890)
+Test model 1 on task 4
+Test: [3/3]	loss 0.226 (0.242)	Acc@1 92.201 (92.370)
+Test model 1 on task 5
+Test: [3/3]	loss 0.238 (0.236)	Acc@1 92.699 (92.340)
+Test model 1 on task 6
+Test: [3/3]	loss 0.212 (0.214)	Acc@1 93.363 (93.220)
+Test model 1 on task 7
+Test: [3/3]	loss 0.224 (0.228)	Acc@1 92.423 (92.760)
+Test model 1 on task 8
+Test: [3/3]	loss 0.213 (0.223)	Acc@1 93.363 (92.850)
+Test model 1 on task 9
+Test: [3/3]	loss 0.217 (0.219)	Acc@1 92.478 (92.810)
+Test model 1 on task 10
+Test: [3/3]	loss 0.228 (0.225)	Acc@1 93.418 (93.320)
+Test model 1 on task 11
+Test: [3/3]	loss 0.239 (0.232)	Acc@1 93.086 (92.890)
+Test model 1 on task 12
+Test: [3/3]	loss 0.263 (0.245)	Acc@1 92.367 (92.670)
+Test model 1 on task 13
+Test: [3/3]	loss 0.256 (0.241)	Acc@1 92.588 (92.860)
+Test model 1 on task 14
+Test: [3/3]	loss 0.234 (0.241)	Acc@1 93.197 (92.770)
+Test model 1 on task 15
+Test: [3/3]	loss 0.276 (0.266)	Acc@1 91.150 (92.010)
+Test model 1 on task 16
+Test: [3/3]	loss 0.282 (0.270)	Acc@1 91.648 (92.000)
+Test model 1 on task 17
+Test: [3/3]	loss 0.277 (0.304)	Acc@1 91.759 (90.930)
+Test model 1 on task 18
+Test: [3/3]	loss 0.301 (0.310)	Acc@1 91.150 (90.860)
+Test model 1 on task 19
+Test: [3/3]	loss 0.356 (0.344)	Acc@1 88.662 (89.410)
+Test model 1 on task 20
+Test: [3/3]	loss 0.357 (0.347)	Acc@1 88.717 (89.760)
+Test model 1 on task 21
+Test: [3/3]	loss 0.370 (0.377)	Acc@1 88.717 (88.480)
+Test model 1 on task 22
+Test: [3/3]	loss 0.417 (0.408)	Acc@1 87.500 (87.620)
+Test model 1 on task 23
+Test: [3/3]	loss 0.474 (0.450)	Acc@1 85.454 (86.180)
+Test model 1 on task 24
+Test: [3/3]	loss 0.453 (0.446)	Acc@1 85.232 (85.920)
+Test model 1 on task 25
+Test: [3/3]	loss 0.495 (0.468)	Acc@1 85.288 (86.270)
+Test model 1 on task 26
+Test: [3/3]	loss 0.535 (0.523)	Acc@1 83.684 (84.280)
+Test model 1 on task 27
+Test: [3/3]	loss 0.626 (0.596)	Acc@1 79.757 (81.640)
+Test model 1 on task 28
+Test: [3/3]	loss 0.598 (0.579)	Acc@1 82.246 (82.260)
+Test model 1 on task 29
+Test: [3/3]	loss 0.602 (0.590)	Acc@1 80.697 (81.640)
+############################################################ Avg acc: 89.54
+Task 30 Model 1:
+Train: [1][3750/3750]	loss 0.059 (0.066)	Acc@1 68.750 (70.968)
+Train: [2][3750/3750]	loss 0.056 (0.062)	Acc@1 87.500 (76.550)
+Train: [3][3750/3750]	loss 0.075 (0.061)	Acc@1 75.000 (77.233)
+Train: [4][3750/3750]	loss 0.059 (0.060)	Acc@1 68.750 (77.713)
+Train: [5][3750/3750]	loss 0.057 (0.060)	Acc@1 81.250 (77.940)
+Train: [6][3750/3750]	loss 0.060 (0.060)	Acc@1 87.500 (77.992)
+Train: [7][3750/3750]	loss 0.052 (0.060)	Acc@1 81.250 (78.058)
+Train: [8][3750/3750]	loss 0.063 (0.060)	Acc@1 81.250 (78.037)
+Train: [9][3750/3750]	loss 0.069 (0.060)	Acc@1 68.750 (78.063)
+Train: [10][3750/3750]	loss 0.048 (0.060)	Acc@1 93.750 (78.060)
+Test model 1 on task 1
+Test: [3/3]	loss 0.413 (0.424)	Acc@1 86.338 (86.140)
+Test model 1 on task 2
+Test: [3/3]	loss 0.345 (0.325)	Acc@1 89.602 (89.580)
+Test model 1 on task 3
+Test: [3/3]	loss 0.279 (0.280)	Acc@1 91.206 (90.700)
+Test model 1 on task 4
+Test: [3/3]	loss 0.236 (0.243)	Acc@1 92.367 (92.290)
+Test model 1 on task 5
+Test: [3/3]	loss 0.208 (0.237)	Acc@1 93.252 (92.230)
+Test model 1 on task 6
+Test: [3/3]	loss 0.224 (0.214)	Acc@1 92.976 (93.200)
+Test model 1 on task 7
+Test: [3/3]	loss 0.233 (0.229)	Acc@1 93.031 (92.770)
+Test model 1 on task 8
+Test: [3/3]	loss 0.216 (0.223)	Acc@1 92.920 (92.760)
+Test model 1 on task 9
+Test: [3/3]	loss 0.210 (0.221)	Acc@1 93.086 (92.700)
+Test model 1 on task 10
+Test: [3/3]	loss 0.238 (0.227)	Acc@1 92.810 (93.270)
+Test model 1 on task 11
+Test: [3/3]	loss 0.239 (0.235)	Acc@1 92.865 (92.830)
+Test model 1 on task 12
+Test: [3/3]	loss 0.239 (0.247)	Acc@1 93.086 (92.580)
+Test model 1 on task 13
+Test: [3/3]	loss 0.227 (0.243)	Acc@1 92.423 (92.730)
+Test model 1 on task 14
+Test: [3/3]	loss 0.243 (0.244)	Acc@1 92.257 (92.700)
+Test model 1 on task 15
+Test: [3/3]	loss 0.284 (0.268)	Acc@1 90.985 (91.850)
+Test model 1 on task 16
+Test: [3/3]	loss 0.262 (0.272)	Acc@1 91.814 (91.960)
+Test model 1 on task 17
+Test: [3/3]	loss 0.298 (0.306)	Acc@1 90.597 (90.860)
+Test model 1 on task 18
+Test: [3/3]	loss 0.277 (0.312)	Acc@1 92.644 (90.730)
+Test model 1 on task 19
+Test: [3/3]	loss 0.359 (0.347)	Acc@1 88.385 (89.370)
+Test model 1 on task 20
+Test: [3/3]	loss 0.354 (0.349)	Acc@1 89.491 (89.720)
+Test model 1 on task 21
+Test: [3/3]	loss 0.374 (0.380)	Acc@1 88.164 (88.170)
+Test model 1 on task 22
+Test: [3/3]	loss 0.405 (0.413)	Acc@1 87.223 (87.470)
+Test model 1 on task 23
+Test: [3/3]	loss 0.459 (0.453)	Acc@1 85.896 (86.150)
+Test model 1 on task 24
+Test: [3/3]	loss 0.444 (0.451)	Acc@1 86.173 (85.670)
+Test model 1 on task 25
+Test: [3/3]	loss 0.461 (0.471)	Acc@1 86.726 (86.190)
+Test model 1 on task 26
+Test: [3/3]	loss 0.542 (0.526)	Acc@1 82.909 (84.270)
+Test model 1 on task 27
+Test: [3/3]	loss 0.613 (0.598)	Acc@1 80.752 (81.700)
+Test model 1 on task 28
+Test: [3/3]	loss 0.588 (0.584)	Acc@1 82.246 (82.280)
+Test model 1 on task 29
+Test: [3/3]	loss 0.603 (0.593)	Acc@1 80.973 (81.440)
+Test model 1 on task 30
+Test: [3/3]	loss 0.661 (0.664)	Acc@1 79.425 (79.140)
+############################################################ Avg acc: 89.11
+Task 31 Model 1:
+Train: [1][3750/3750]	loss 0.061 (0.070)	Acc@1 75.000 (68.833)
+Train: [2][3750/3750]	loss 0.059 (0.066)	Acc@1 87.500 (74.305)
+Train: [3][3750/3750]	loss 0.066 (0.065)	Acc@1 81.250 (75.365)
+Train: [4][3750/3750]	loss 0.070 (0.064)	Acc@1 68.750 (75.690)
+Train: [5][3750/3750]	loss 0.058 (0.064)	Acc@1 87.500 (75.872)
+Train: [6][3750/3750]	loss 0.072 (0.064)	Acc@1 62.500 (75.918)
+Train: [7][3750/3750]	loss 0.064 (0.064)	Acc@1 81.250 (76.025)
+Train: [8][3750/3750]	loss 0.050 (0.064)	Acc@1 100.000 (76.042)
+Train: [9][3750/3750]	loss 0.071 (0.064)	Acc@1 68.750 (76.130)
+Train: [10][3750/3750]	loss 0.062 (0.064)	Acc@1 87.500 (76.100)
+Test model 1 on task 1
+Test: [3/3]	loss 0.398 (0.424)	Acc@1 86.615 (86.280)
+Test model 1 on task 2
+Test: [3/3]	loss 0.356 (0.326)	Acc@1 87.998 (89.500)
+Test model 1 on task 3
+Test: [3/3]	loss 0.279 (0.281)	Acc@1 90.708 (90.750)
+Test model 1 on task 4
+Test: [3/3]	loss 0.223 (0.244)	Acc@1 92.644 (92.390)
+Test model 1 on task 5
+Test: [3/3]	loss 0.266 (0.238)	Acc@1 91.538 (92.160)
+Test model 1 on task 6
+Test: [3/3]	loss 0.227 (0.216)	Acc@1 93.142 (93.160)
+Test model 1 on task 7
+Test: [3/3]	loss 0.210 (0.230)	Acc@1 93.142 (92.730)
+Test model 1 on task 8
+Test: [3/3]	loss 0.223 (0.225)	Acc@1 93.473 (92.740)
+Test model 1 on task 9
+Test: [3/3]	loss 0.225 (0.223)	Acc@1 92.423 (92.730)
+Test model 1 on task 10
+Test: [3/3]	loss 0.218 (0.230)	Acc@1 93.529 (93.130)
+Test model 1 on task 11
+Test: [3/3]	loss 0.233 (0.237)	Acc@1 93.197 (92.770)
+Test model 1 on task 12
+Test: [3/3]	loss 0.241 (0.249)	Acc@1 92.644 (92.540)
+Test model 1 on task 13
+Test: [3/3]	loss 0.224 (0.244)	Acc@1 93.473 (92.750)
+Test model 1 on task 14
+Test: [3/3]	loss 0.260 (0.246)	Acc@1 92.146 (92.660)
+Test model 1 on task 15
+Test: [3/3]	loss 0.305 (0.271)	Acc@1 90.321 (91.770)
+Test model 1 on task 16
+Test: [3/3]	loss 0.295 (0.275)	Acc@1 91.704 (91.880)
+Test model 1 on task 17
+Test: [3/3]	loss 0.298 (0.307)	Acc@1 91.372 (90.840)
+Test model 1 on task 18
+Test: [3/3]	loss 0.310 (0.315)	Acc@1 90.431 (90.780)
+Test model 1 on task 19
+Test: [3/3]	loss 0.342 (0.351)	Acc@1 89.546 (89.290)
+Test model 1 on task 20
+Test: [3/3]	loss 0.350 (0.350)	Acc@1 88.993 (89.730)
+Test model 1 on task 21
+Test: [3/3]	loss 0.380 (0.382)	Acc@1 87.998 (88.190)
+Test model 1 on task 22
+Test: [3/3]	loss 0.413 (0.417)	Acc@1 87.002 (87.300)
+Test model 1 on task 23
+Test: [3/3]	loss 0.439 (0.455)	Acc@1 86.615 (86.120)
+Test model 1 on task 24
+Test: [3/3]	loss 0.499 (0.452)	Acc@1 83.296 (85.560)
+Test model 1 on task 25
+Test: [3/3]	loss 0.474 (0.473)	Acc@1 86.781 (86.040)
+Test model 1 on task 26
+Test: [3/3]	loss 0.517 (0.529)	Acc@1 85.011 (84.070)
+Test model 1 on task 27
+Test: [3/3]	loss 0.580 (0.603)	Acc@1 83.131 (81.570)
+Test model 1 on task 28
+Test: [3/3]	loss 0.593 (0.585)	Acc@1 81.914 (82.070)
+Test model 1 on task 29
+Test: [3/3]	loss 0.576 (0.594)	Acc@1 82.854 (81.510)
+Test model 1 on task 30
+Test: [3/3]	loss 0.662 (0.668)	Acc@1 79.867 (79.020)
+Test model 1 on task 31
+Test: [3/3]	loss 0.726 (0.726)	Acc@1 76.272 (77.150)
+############################################################ Avg acc: 88.68
+Task 32 Model 1:
+Train: [1][3750/3750]	loss 0.066 (0.070)	Acc@1 75.000 (68.840)
+Train: [2][3750/3750]	loss 0.064 (0.067)	Acc@1 75.000 (74.105)
+Train: [3][3750/3750]	loss 0.080 (0.066)	Acc@1 68.750 (74.560)
+Train: [4][3750/3750]	loss 0.054 (0.066)	Acc@1 81.250 (74.748)
+Train: [5][3750/3750]	loss 0.057 (0.066)	Acc@1 87.500 (74.967)
+Train: [6][3750/3750]	loss 0.065 (0.066)	Acc@1 75.000 (75.017)
+Train: [7][3750/3750]	loss 0.060 (0.066)	Acc@1 81.250 (75.042)
+Train: [8][3750/3750]	loss 0.061 (0.066)	Acc@1 75.000 (75.187)
+Train: [9][3750/3750]	loss 0.067 (0.066)	Acc@1 62.500 (75.077)
+Train: [10][3750/3750]	loss 0.057 (0.066)	Acc@1 93.750 (75.203)
+Test model 1 on task 1
+Test: [3/3]	loss 0.457 (0.425)	Acc@1 85.951 (86.290)
+Test model 1 on task 2
+Test: [3/3]	loss 0.314 (0.328)	Acc@1 90.542 (89.590)
+Test model 1 on task 3
+Test: [3/3]	loss 0.267 (0.280)	Acc@1 91.206 (90.800)
+Test model 1 on task 4
+Test: [3/3]	loss 0.261 (0.245)	Acc@1 92.146 (92.290)
+Test model 1 on task 5
+Test: [3/3]	loss 0.226 (0.238)	Acc@1 92.865 (92.130)
+Test model 1 on task 6
+Test: [3/3]	loss 0.233 (0.218)	Acc@1 92.810 (93.130)
+Test model 1 on task 7
+Test: [3/3]	loss 0.237 (0.231)	Acc@1 92.699 (92.560)
+Test model 1 on task 8
+Test: [3/3]	loss 0.220 (0.227)	Acc@1 93.142 (92.670)
+Test model 1 on task 9
+Test: [3/3]	loss 0.210 (0.224)	Acc@1 92.699 (92.690)
+Test model 1 on task 10
+Test: [3/3]	loss 0.201 (0.231)	Acc@1 94.082 (93.070)
+Test model 1 on task 11
+Test: [3/3]	loss 0.240 (0.239)	Acc@1 92.865 (92.720)
+Test model 1 on task 12
+Test: [3/3]	loss 0.246 (0.250)	Acc@1 92.976 (92.520)
+Test model 1 on task 13
+Test: [3/3]	loss 0.251 (0.244)	Acc@1 92.257 (92.640)
+Test model 1 on task 14
+Test: [3/3]	loss 0.251 (0.248)	Acc@1 92.699 (92.590)
+Test model 1 on task 15
+Test: [3/3]	loss 0.268 (0.273)	Acc@1 91.980 (91.750)
+Test model 1 on task 16
+Test: [3/3]	loss 0.270 (0.277)	Acc@1 92.699 (91.750)
+Test model 1 on task 17
+Test: [3/3]	loss 0.302 (0.310)	Acc@1 91.040 (90.780)
+Test model 1 on task 18
+Test: [3/3]	loss 0.339 (0.316)	Acc@1 90.100 (90.700)
+Test model 1 on task 19
+Test: [3/3]	loss 0.370 (0.351)	Acc@1 88.385 (89.170)
+Test model 1 on task 20
+Test: [3/3]	loss 0.352 (0.352)	Acc@1 89.104 (89.670)
+Test model 1 on task 21
+Test: [3/3]	loss 0.382 (0.385)	Acc@1 88.108 (88.200)
+Test model 1 on task 22
+Test: [3/3]	loss 0.441 (0.419)	Acc@1 85.564 (87.170)
+Test model 1 on task 23
+Test: [3/3]	loss 0.439 (0.458)	Acc@1 86.836 (85.990)
+Test model 1 on task 24
+Test: [3/3]	loss 0.452 (0.454)	Acc@1 86.338 (85.540)
+Test model 1 on task 25
+Test: [3/3]	loss 0.452 (0.476)	Acc@1 86.836 (85.930)
+Test model 1 on task 26
+Test: [3/3]	loss 0.524 (0.533)	Acc@1 84.292 (83.920)
+Test model 1 on task 27
+Test: [3/3]	loss 0.623 (0.607)	Acc@1 81.361 (81.350)
+Test model 1 on task 28
+Test: [3/3]	loss 0.592 (0.587)	Acc@1 81.748 (81.990)
+Test model 1 on task 29
+Test: [3/3]	loss 0.564 (0.596)	Acc@1 82.633 (81.390)
+Test model 1 on task 30
+Test: [3/3]	loss 0.668 (0.669)	Acc@1 79.148 (79.040)
+Test model 1 on task 31
+Test: [3/3]	loss 0.742 (0.726)	Acc@1 76.659 (77.070)
+Test model 1 on task 32
+Test: [3/3]	loss 0.736 (0.757)	Acc@1 77.489 (76.360)
+############################################################ Avg acc: 88.23
+Task 33 Model 1:
+Train: [1][3750/3750]	loss 0.077 (0.074)	Acc@1 68.750 (63.722)
+Train: [2][3750/3750]	loss 0.060 (0.072)	Acc@1 81.250 (68.293)
+Train: [3][3750/3750]	loss 0.058 (0.071)	Acc@1 81.250 (68.717)
+Train: [4][3750/3750]	loss 0.060 (0.071)	Acc@1 81.250 (68.802)
+Train: [5][3750/3750]	loss 0.078 (0.071)	Acc@1 50.000 (68.913)
+Train: [6][3750/3750]	loss 0.065 (0.071)	Acc@1 75.000 (68.918)
+Train: [7][3750/3750]	loss 0.072 (0.071)	Acc@1 62.500 (68.965)
+Train: [8][3750/3750]	loss 0.063 (0.071)	Acc@1 75.000 (69.048)
+Train: [9][3750/3750]	loss 0.063 (0.071)	Acc@1 75.000 (69.083)
+Train: [10][3750/3750]	loss 0.074 (0.071)	Acc@1 68.750 (69.048)
+Test model 1 on task 1
+Test: [3/3]	loss 0.379 (0.428)	Acc@1 87.389 (86.180)
+Test model 1 on task 2
+Test: [3/3]	loss 0.317 (0.330)	Acc@1 89.934 (89.520)
+Test model 1 on task 3
+Test: [3/3]	loss 0.265 (0.281)	Acc@1 90.929 (90.640)
+Test model 1 on task 4
+Test: [3/3]	loss 0.239 (0.246)	Acc@1 92.533 (92.300)
+Test model 1 on task 5
+Test: [3/3]	loss 0.234 (0.241)	Acc@1 92.146 (92.150)
+Test model 1 on task 6
+Test: [3/3]	loss 0.229 (0.220)	Acc@1 92.588 (93.090)
+Test model 1 on task 7
+Test: [3/3]	loss 0.280 (0.234)	Acc@1 90.763 (92.560)
+Test model 1 on task 8
+Test: [3/3]	loss 0.198 (0.230)	Acc@1 93.142 (92.540)
+Test model 1 on task 9
+Test: [3/3]	loss 0.222 (0.226)	Acc@1 93.197 (92.610)
+Test model 1 on task 10
+Test: [3/3]	loss 0.259 (0.234)	Acc@1 92.478 (92.960)
+Test model 1 on task 11
+Test: [3/3]	loss 0.233 (0.241)	Acc@1 92.312 (92.690)
+Test model 1 on task 12
+Test: [3/3]	loss 0.238 (0.251)	Acc@1 92.865 (92.450)
+Test model 1 on task 13
+Test: [3/3]	loss 0.261 (0.246)	Acc@1 91.759 (92.670)
+Test model 1 on task 14
+Test: [3/3]	loss 0.215 (0.250)	Acc@1 94.027 (92.520)
+Test model 1 on task 15
+Test: [3/3]	loss 0.296 (0.274)	Acc@1 90.597 (91.670)
+Test model 1 on task 16
+Test: [3/3]	loss 0.287 (0.278)	Acc@1 92.091 (91.620)
+Test model 1 on task 17
+Test: [3/3]	loss 0.319 (0.312)	Acc@1 90.819 (90.650)
+Test model 1 on task 18
+Test: [3/3]	loss 0.314 (0.317)	Acc@1 90.874 (90.470)
+Test model 1 on task 19
+Test: [3/3]	loss 0.340 (0.352)	Acc@1 89.491 (89.120)
+Test model 1 on task 20
+Test: [3/3]	loss 0.374 (0.355)	Acc@1 88.496 (89.600)
+Test model 1 on task 21
+Test: [3/3]	loss 0.390 (0.388)	Acc@1 87.555 (88.060)
+Test model 1 on task 22
+Test: [3/3]	loss 0.414 (0.422)	Acc@1 87.058 (87.200)
+Test model 1 on task 23
+Test: [3/3]	loss 0.450 (0.461)	Acc@1 86.007 (85.810)
+Test model 1 on task 24
+Test: [3/3]	loss 0.451 (0.457)	Acc@1 86.228 (85.400)
+Test model 1 on task 25
+Test: [3/3]	loss 0.488 (0.479)	Acc@1 84.624 (85.740)
+Test model 1 on task 26
+Test: [3/3]	loss 0.547 (0.534)	Acc@1 83.628 (83.820)
+Test model 1 on task 27
+Test: [3/3]	loss 0.636 (0.612)	Acc@1 79.978 (81.070)
+Test model 1 on task 28
+Test: [3/3]	loss 0.611 (0.587)	Acc@1 80.697 (82.060)
+Test model 1 on task 29
+Test: [3/3]	loss 0.590 (0.597)	Acc@1 81.803 (81.390)
+Test model 1 on task 30
+Test: [3/3]	loss 0.674 (0.670)	Acc@1 78.540 (78.970)
+Test model 1 on task 31
+Test: [3/3]	loss 0.718 (0.730)	Acc@1 77.765 (76.970)
+Test model 1 on task 32
+Test: [3/3]	loss 0.724 (0.760)	Acc@1 77.434 (76.150)
+Test model 1 on task 33
+Test: [3/3]	loss 0.901 (0.901)	Acc@1 70.133 (70.500)
+############################################################ Avg acc: 87.61
+Task 34 Model 1:
+Train: [1][3750/3750]	loss 0.073 (0.075)	Acc@1 62.500 (64.052)
+Train: [2][3750/3750]	loss 0.093 (0.073)	Acc@1 56.250 (68.688)
+Train: [3][3750/3750]	loss 0.075 (0.073)	Acc@1 68.750 (68.782)
+Train: [4][3750/3750]	loss 0.069 (0.073)	Acc@1 75.000 (69.020)
+Train: [5][3750/3750]	loss 0.071 (0.072)	Acc@1 62.500 (69.123)
+Train: [6][3750/3750]	loss 0.076 (0.072)	Acc@1 62.500 (69.410)
+Train: [7][3750/3750]	loss 0.078 (0.072)	Acc@1 56.250 (69.652)
+Train: [8][3750/3750]	loss 0.068 (0.072)	Acc@1 75.000 (70.230)
+Train: [9][3750/3750]	loss 0.071 (0.072)	Acc@1 75.000 (70.200)
+Train: [10][3750/3750]	loss 0.075 (0.072)	Acc@1 56.250 (70.332)
+Test model 1 on task 1
+Test: [3/3]	loss 0.457 (0.432)	Acc@1 86.062 (86.090)
+Test model 1 on task 2
+Test: [3/3]	loss 0.346 (0.330)	Acc@1 88.662 (89.430)
+Test model 1 on task 3
+Test: [3/3]	loss 0.299 (0.281)	Acc@1 90.597 (90.810)
+Test model 1 on task 4
+Test: [3/3]	loss 0.234 (0.249)	Acc@1 92.810 (92.040)
+Test model 1 on task 5
+Test: [3/3]	loss 0.239 (0.242)	Acc@1 91.704 (92.050)
+Test model 1 on task 6
+Test: [3/3]	loss 0.232 (0.223)	Acc@1 92.257 (92.930)
+Test model 1 on task 7
+Test: [3/3]	loss 0.225 (0.234)	Acc@1 92.478 (92.470)
+Test model 1 on task 8
+Test: [3/3]	loss 0.221 (0.231)	Acc@1 93.252 (92.480)
+Test model 1 on task 9
+Test: [3/3]	loss 0.241 (0.228)	Acc@1 92.146 (92.630)
+Test model 1 on task 10
+Test: [3/3]	loss 0.221 (0.235)	Acc@1 93.418 (93.000)
+Test model 1 on task 11
+Test: [3/3]	loss 0.241 (0.242)	Acc@1 92.810 (92.720)
+Test model 1 on task 12
+Test: [3/3]	loss 0.266 (0.253)	Acc@1 91.925 (92.450)
+Test model 1 on task 13
+Test: [3/3]	loss 0.248 (0.248)	Acc@1 92.257 (92.680)
+Test model 1 on task 14
+Test: [3/3]	loss 0.247 (0.252)	Acc@1 92.091 (92.410)
+Test model 1 on task 15
+Test: [3/3]	loss 0.293 (0.276)	Acc@1 91.538 (91.600)
+Test model 1 on task 16
+Test: [3/3]	loss 0.310 (0.281)	Acc@1 90.819 (91.500)
+Test model 1 on task 17
+Test: [3/3]	loss 0.304 (0.313)	Acc@1 90.985 (90.610)
+Test model 1 on task 18
+Test: [3/3]	loss 0.317 (0.318)	Acc@1 90.210 (90.450)
+Test model 1 on task 19
+Test: [3/3]	loss 0.377 (0.354)	Acc@1 88.717 (89.000)
+Test model 1 on task 20
+Test: [3/3]	loss 0.336 (0.358)	Acc@1 90.100 (89.480)
+Test model 1 on task 21
+Test: [3/3]	loss 0.377 (0.391)	Acc@1 87.942 (87.930)
+Test model 1 on task 22
+Test: [3/3]	loss 0.454 (0.425)	Acc@1 85.951 (86.950)
+Test model 1 on task 23
+Test: [3/3]	loss 0.485 (0.461)	Acc@1 85.730 (85.700)
+Test model 1 on task 24
+Test: [3/3]	loss 0.473 (0.462)	Acc@1 85.509 (85.160)
+Test model 1 on task 25
+Test: [3/3]	loss 0.457 (0.480)	Acc@1 86.228 (85.590)
+Test model 1 on task 26
+Test: [3/3]	loss 0.527 (0.536)	Acc@1 83.850 (83.790)
+Test model 1 on task 27
+Test: [3/3]	loss 0.591 (0.615)	Acc@1 81.195 (80.980)
+Test model 1 on task 28
+Test: [3/3]	loss 0.596 (0.590)	Acc@1 81.416 (81.880)
+Test model 1 on task 29
+Test: [3/3]	loss 0.618 (0.599)	Acc@1 80.752 (81.380)
+Test model 1 on task 30
+Test: [3/3]	loss 0.652 (0.673)	Acc@1 79.204 (78.870)
+Test model 1 on task 31
+Test: [3/3]	loss 0.693 (0.733)	Acc@1 78.097 (76.790)
+Test model 1 on task 32
+Test: [3/3]	loss 0.782 (0.763)	Acc@1 75.940 (76.120)
+Test model 1 on task 33
+Test: [3/3]	loss 0.887 (0.902)	Acc@1 70.686 (70.490)
+Test model 1 on task 34
+Test: [3/3]	loss 0.861 (0.863)	Acc@1 71.681 (71.890)
+############################################################ Avg acc: 87.07
+Task 35 Model 1:
+Train: [1][3750/3750]	loss 0.063 (0.072)	Acc@1 87.500 (63.860)
+Train: [2][3750/3750]	loss 0.073 (0.070)	Acc@1 68.750 (68.707)
+Train: [3][3750/3750]	loss 0.068 (0.069)	Acc@1 68.750 (69.438)
+Train: [4][3750/3750]	loss 0.065 (0.069)	Acc@1 68.750 (70.087)
+Train: [5][3750/3750]	loss 0.074 (0.069)	Acc@1 68.750 (70.175)
+Train: [6][3750/3750]	loss 0.064 (0.069)	Acc@1 81.250 (70.225)
+Train: [7][3750/3750]	loss 0.077 (0.069)	Acc@1 62.500 (70.340)
+Train: [8][3750/3750]	loss 0.076 (0.069)	Acc@1 56.250 (70.362)
+Train: [9][3750/3750]	loss 0.073 (0.069)	Acc@1 75.000 (70.455)
+Train: [10][3750/3750]	loss 0.072 (0.069)	Acc@1 75.000 (70.488)
+Test model 1 on task 1
+Test: [3/3]	loss 0.430 (0.431)	Acc@1 86.062 (86.100)
+Test model 1 on task 2
+Test: [3/3]	loss 0.305 (0.329)	Acc@1 90.265 (89.540)
+Test model 1 on task 3
+Test: [3/3]	loss 0.261 (0.280)	Acc@1 90.155 (90.750)
+Test model 1 on task 4
+Test: [3/3]	loss 0.252 (0.250)	Acc@1 91.869 (92.020)
+Test model 1 on task 5
+Test: [3/3]	loss 0.254 (0.244)	Acc@1 92.478 (92.040)
+Test model 1 on task 6
+Test: [3/3]	loss 0.228 (0.225)	Acc@1 92.644 (92.740)
+Test model 1 on task 7
+Test: [3/3]	loss 0.237 (0.235)	Acc@1 92.367 (92.520)
+Test model 1 on task 8
+Test: [3/3]	loss 0.233 (0.233)	Acc@1 92.091 (92.420)
+Test model 1 on task 9
+Test: [3/3]	loss 0.221 (0.231)	Acc@1 93.086 (92.600)
+Test model 1 on task 10
+Test: [3/3]	loss 0.218 (0.236)	Acc@1 93.584 (92.920)
+Test model 1 on task 11
+Test: [3/3]	loss 0.245 (0.242)	Acc@1 92.920 (92.630)
+Test model 1 on task 12
+Test: [3/3]	loss 0.270 (0.254)	Acc@1 91.869 (92.480)
+Test model 1 on task 13
+Test: [3/3]	loss 0.250 (0.249)	Acc@1 92.423 (92.680)
+Test model 1 on task 14
+Test: [3/3]	loss 0.250 (0.254)	Acc@1 92.976 (92.260)
+Test model 1 on task 15
+Test: [3/3]	loss 0.278 (0.277)	Acc@1 90.929 (91.460)
+Test model 1 on task 16
+Test: [3/3]	loss 0.298 (0.283)	Acc@1 90.155 (91.340)
+Test model 1 on task 17
+Test: [3/3]	loss 0.329 (0.319)	Acc@1 90.265 (90.440)
+Test model 1 on task 18
+Test: [3/3]	loss 0.324 (0.319)	Acc@1 90.376 (90.510)
+Test model 1 on task 19
+Test: [3/3]	loss 0.357 (0.355)	Acc@1 88.606 (88.950)
+Test model 1 on task 20
+Test: [3/3]	loss 0.369 (0.359)	Acc@1 89.768 (89.500)
+Test model 1 on task 21
+Test: [3/3]	loss 0.380 (0.393)	Acc@1 87.777 (87.930)
+Test model 1 on task 22
+Test: [3/3]	loss 0.470 (0.428)	Acc@1 85.343 (86.840)
+Test model 1 on task 23
+Test: [3/3]	loss 0.475 (0.462)	Acc@1 85.288 (85.880)
+Test model 1 on task 24
+Test: [3/3]	loss 0.472 (0.464)	Acc@1 85.675 (85.180)
+Test model 1 on task 25
+Test: [3/3]	loss 0.483 (0.481)	Acc@1 85.564 (85.650)
+Test model 1 on task 26
+Test: [3/3]	loss 0.532 (0.537)	Acc@1 83.186 (83.770)
+Test model 1 on task 27
+Test: [3/3]	loss 0.622 (0.617)	Acc@1 80.365 (80.820)
+Test model 1 on task 28
+Test: [3/3]	loss 0.556 (0.593)	Acc@1 83.296 (82.010)
+Test model 1 on task 29
+Test: [3/3]	loss 0.583 (0.600)	Acc@1 81.527 (81.280)
+Test model 1 on task 30
+Test: [3/3]	loss 0.696 (0.673)	Acc@1 78.208 (78.940)
+Test model 1 on task 31
+Test: [3/3]	loss 0.688 (0.733)	Acc@1 78.761 (76.760)
+Test model 1 on task 32
+Test: [3/3]	loss 0.745 (0.762)	Acc@1 76.051 (75.990)
+Test model 1 on task 33
+Test: [3/3]	loss 0.906 (0.903)	Acc@1 70.077 (70.370)
+Test model 1 on task 34
+Test: [3/3]	loss 0.898 (0.864)	Acc@1 71.515 (72.040)
+Test model 1 on task 35
+Test: [3/3]	loss 0.881 (0.890)	Acc@1 71.737 (71.670)
+############################################################ Avg acc: 86.60
+Task 36 Model 1:
+Train: [1][3750/3750]	loss 0.064 (0.077)	Acc@1 75.000 (59.800)
+Train: [2][3750/3750]	loss 0.071 (0.074)	Acc@1 81.250 (64.855)
+Train: [3][3750/3750]	loss 0.066 (0.073)	Acc@1 75.000 (65.252)
+Train: [4][3750/3750]	loss 0.066 (0.073)	Acc@1 75.000 (65.615)
+Train: [5][3750/3750]	loss 0.064 (0.073)	Acc@1 75.000 (65.642)
+Train: [6][3750/3750]	loss 0.080 (0.073)	Acc@1 43.750 (66.270)
+Train: [7][3750/3750]	loss 0.084 (0.073)	Acc@1 62.500 (66.252)
+Train: [8][3750/3750]	loss 0.064 (0.073)	Acc@1 81.250 (66.383)
+Train: [9][3750/3750]	loss 0.073 (0.073)	Acc@1 68.750 (66.568)
+Train: [10][3750/3750]	loss 0.067 (0.073)	Acc@1 68.750 (66.398)
+Test model 1 on task 1
+Test: [3/3]	loss 0.455 (0.429)	Acc@1 85.619 (86.140)
+Test model 1 on task 2
+Test: [3/3]	loss 0.333 (0.330)	Acc@1 89.325 (89.600)
+Test model 1 on task 3
+Test: [3/3]	loss 0.297 (0.282)	Acc@1 89.934 (90.670)
+Test model 1 on task 4
+Test: [3/3]	loss 0.228 (0.251)	Acc@1 92.312 (92.010)
+Test model 1 on task 5
+Test: [3/3]	loss 0.223 (0.244)	Acc@1 93.197 (91.930)
+Test model 1 on task 6
+Test: [3/3]	loss 0.235 (0.225)	Acc@1 92.257 (92.790)
+Test model 1 on task 7
+Test: [3/3]	loss 0.262 (0.236)	Acc@1 91.704 (92.580)
+Test model 1 on task 8
+Test: [3/3]	loss 0.243 (0.233)	Acc@1 91.261 (92.500)
+Test model 1 on task 9
+Test: [3/3]	loss 0.231 (0.234)	Acc@1 92.035 (92.530)
+Test model 1 on task 10
+Test: [3/3]	loss 0.212 (0.238)	Acc@1 93.584 (92.940)
+Test model 1 on task 11
+Test: [3/3]	loss 0.237 (0.244)	Acc@1 92.976 (92.600)
+Test model 1 on task 12
+Test: [3/3]	loss 0.215 (0.254)	Acc@1 94.027 (92.530)
+Test model 1 on task 13
+Test: [3/3]	loss 0.228 (0.250)	Acc@1 93.197 (92.690)
+Test model 1 on task 14
+Test: [3/3]	loss 0.243 (0.255)	Acc@1 92.810 (92.370)
+Test model 1 on task 15
+Test: [3/3]	loss 0.304 (0.279)	Acc@1 90.819 (91.530)
+Test model 1 on task 16
+Test: [3/3]	loss 0.284 (0.285)	Acc@1 91.040 (91.370)
+Test model 1 on task 17
+Test: [3/3]	loss 0.326 (0.320)	Acc@1 90.487 (90.400)
+Test model 1 on task 18
+Test: [3/3]	loss 0.291 (0.321)	Acc@1 91.427 (90.480)
+Test model 1 on task 19
+Test: [3/3]	loss 0.378 (0.358)	Acc@1 88.385 (88.770)
+Test model 1 on task 20
+Test: [3/3]	loss 0.346 (0.361)	Acc@1 90.265 (89.460)
+Test model 1 on task 21
+Test: [3/3]	loss 0.416 (0.394)	Acc@1 86.449 (87.720)
+Test model 1 on task 22
+Test: [3/3]	loss 0.411 (0.430)	Acc@1 88.385 (86.850)
+Test model 1 on task 23
+Test: [3/3]	loss 0.466 (0.464)	Acc@1 86.007 (85.830)
+Test model 1 on task 24
+Test: [3/3]	loss 0.468 (0.464)	Acc@1 85.066 (85.270)
+Test model 1 on task 25
+Test: [3/3]	loss 0.491 (0.485)	Acc@1 85.011 (85.490)
+Test model 1 on task 26
+Test: [3/3]	loss 0.576 (0.541)	Acc@1 82.246 (83.690)
+Test model 1 on task 27
+Test: [3/3]	loss 0.614 (0.619)	Acc@1 80.531 (80.590)
+Test model 1 on task 28
+Test: [3/3]	loss 0.595 (0.596)	Acc@1 81.527 (81.780)
+Test model 1 on task 29
+Test: [3/3]	loss 0.631 (0.601)	Acc@1 79.867 (81.290)
+Test model 1 on task 30
+Test: [3/3]	loss 0.675 (0.672)	Acc@1 78.097 (78.920)
+Test model 1 on task 31
+Test: [3/3]	loss 0.738 (0.734)	Acc@1 76.936 (76.830)
+Test model 1 on task 32
+Test: [3/3]	loss 0.713 (0.767)	Acc@1 77.434 (75.820)
+Test model 1 on task 33
+Test: [3/3]	loss 0.882 (0.905)	Acc@1 70.962 (70.290)
+Test model 1 on task 34
+Test: [3/3]	loss 0.880 (0.871)	Acc@1 71.184 (71.450)
+Test model 1 on task 35
+Test: [3/3]	loss 0.898 (0.886)	Acc@1 71.184 (71.870)
+Test model 1 on task 36
+Test: [3/3]	loss 0.950 (0.987)	Acc@1 69.912 (68.060)
+############################################################ Avg acc: 86.05
+Task 37 Model 1:
+Train: [1][3750/3750]	loss 0.069 (0.076)	Acc@1 75.000 (59.465)
+Train: [2][3750/3750]	loss 0.092 (0.075)	Acc@1 56.250 (63.233)
+Train: [3][3750/3750]	loss 0.075 (0.074)	Acc@1 50.000 (63.667)
+Train: [4][3750/3750]	loss 0.084 (0.074)	Acc@1 50.000 (63.823)
+Train: [5][3750/3750]	loss 0.092 (0.074)	Acc@1 25.000 (63.837)
+Train: [6][3750/3750]	loss 0.074 (0.074)	Acc@1 62.500 (64.007)
+Train: [7][3750/3750]	loss 0.077 (0.074)	Acc@1 75.000 (63.982)
+Train: [8][3750/3750]	loss 0.076 (0.074)	Acc@1 62.500 (64.360)
+Train: [9][3750/3750]	loss 0.079 (0.073)	Acc@1 43.750 (65.392)
+Train: [10][3750/3750]	loss 0.073 (0.073)	Acc@1 68.750 (65.612)
+Test model 1 on task 1
+Test: [3/3]	loss 0.441 (0.430)	Acc@1 85.066 (86.070)
+Test model 1 on task 2
+Test: [3/3]	loss 0.348 (0.331)	Acc@1 88.053 (89.500)
+Test model 1 on task 3
+Test: [3/3]	loss 0.279 (0.283)	Acc@1 90.376 (90.610)
+Test model 1 on task 4
+Test: [3/3]	loss 0.261 (0.251)	Acc@1 91.814 (92.070)
+Test model 1 on task 5
+Test: [3/3]	loss 0.247 (0.246)	Acc@1 91.980 (91.850)
+Test model 1 on task 6
+Test: [3/3]	loss 0.213 (0.226)	Acc@1 93.252 (92.850)
+Test model 1 on task 7
+Test: [3/3]	loss 0.221 (0.237)	Acc@1 93.750 (92.580)
+Test model 1 on task 8
+Test: [3/3]	loss 0.237 (0.234)	Acc@1 92.533 (92.460)
+Test model 1 on task 9
+Test: [3/3]	loss 0.250 (0.235)	Acc@1 92.146 (92.470)
+Test model 1 on task 10
+Test: [3/3]	loss 0.238 (0.240)	Acc@1 92.644 (92.860)
+Test model 1 on task 11
+Test: [3/3]	loss 0.248 (0.245)	Acc@1 92.754 (92.700)
+Test model 1 on task 12
+Test: [3/3]	loss 0.270 (0.256)	Acc@1 91.648 (92.430)
+Test model 1 on task 13
+Test: [3/3]	loss 0.268 (0.252)	Acc@1 92.312 (92.590)
+Test model 1 on task 14
+Test: [3/3]	loss 0.237 (0.256)	Acc@1 93.308 (92.390)
+Test model 1 on task 15
+Test: [3/3]	loss 0.238 (0.281)	Acc@1 93.031 (91.530)
+Test model 1 on task 16
+Test: [3/3]	loss 0.274 (0.286)	Acc@1 92.035 (91.380)
+Test model 1 on task 17
+Test: [3/3]	loss 0.326 (0.322)	Acc@1 90.376 (90.310)
+Test model 1 on task 18
+Test: [3/3]	loss 0.300 (0.321)	Acc@1 90.819 (90.410)
+Test model 1 on task 19
+Test: [3/3]	loss 0.368 (0.360)	Acc@1 88.883 (88.620)
+Test model 1 on task 20
+Test: [3/3]	loss 0.352 (0.365)	Acc@1 89.823 (89.230)
+Test model 1 on task 21
+Test: [3/3]	loss 0.417 (0.396)	Acc@1 87.334 (87.850)
+Test model 1 on task 22
+Test: [3/3]	loss 0.429 (0.430)	Acc@1 87.113 (86.700)
+Test model 1 on task 23
+Test: [3/3]	loss 0.458 (0.464)	Acc@1 86.283 (85.680)
+Test model 1 on task 24
+Test: [3/3]	loss 0.490 (0.466)	Acc@1 83.407 (85.260)
+Test model 1 on task 25
+Test: [3/3]	loss 0.486 (0.489)	Acc@1 85.232 (85.230)
+Test model 1 on task 26
+Test: [3/3]	loss 0.558 (0.539)	Acc@1 82.743 (83.620)
+Test model 1 on task 27
+Test: [3/3]	loss 0.635 (0.621)	Acc@1 80.531 (80.600)
+Test model 1 on task 28
+Test: [3/3]	loss 0.583 (0.597)	Acc@1 82.135 (81.830)
+Test model 1 on task 29
+Test: [3/3]	loss 0.598 (0.603)	Acc@1 81.416 (81.120)
+Test model 1 on task 30
+Test: [3/3]	loss 0.667 (0.673)	Acc@1 79.867 (78.810)
+Test model 1 on task 31
+Test: [3/3]	loss 0.739 (0.738)	Acc@1 75.277 (76.630)
+Test model 1 on task 32
+Test: [3/3]	loss 0.809 (0.766)	Acc@1 75.442 (76.000)
+Test model 1 on task 33
+Test: [3/3]	loss 0.905 (0.909)	Acc@1 69.912 (70.180)
+Test model 1 on task 34
+Test: [3/3]	loss 0.840 (0.872)	Acc@1 73.230 (71.400)
+Test model 1 on task 35
+Test: [3/3]	loss 0.861 (0.887)	Acc@1 72.290 (71.870)
+Test model 1 on task 36
+Test: [3/3]	loss 0.999 (0.986)	Acc@1 68.861 (68.100)
+Test model 1 on task 37
+Test: [3/3]	loss 1.043 (1.004)	Acc@1 65.763 (67.110)
+############################################################ Avg acc: 85.48
+Task 38 Model 1:
+Train: [1][3750/3750]	loss 0.078 (0.077)	Acc@1 50.000 (55.620)
+Train: [2][3750/3750]	loss 0.083 (0.075)	Acc@1 50.000 (59.757)
+Train: [3][3750/3750]	loss 0.072 (0.075)	Acc@1 75.000 (61.168)
+Train: [4][3750/3750]	loss 0.072 (0.075)	Acc@1 68.750 (61.722)
+Train: [5][3750/3750]	loss 0.076 (0.075)	Acc@1 50.000 (61.735)
+Train: [6][3750/3750]	loss 0.088 (0.075)	Acc@1 43.750 (61.690)
+Train: [7][3750/3750]	loss 0.086 (0.075)	Acc@1 50.000 (61.842)
+Train: [8][3750/3750]	loss 0.067 (0.075)	Acc@1 75.000 (61.692)
+Train: [9][3750/3750]	loss 0.071 (0.075)	Acc@1 81.250 (61.797)
+Train: [10][3750/3750]	loss 0.076 (0.075)	Acc@1 62.500 (61.898)
+Test model 1 on task 1
+Test: [3/3]	loss 0.434 (0.433)	Acc@1 86.449 (86.030)
+Test model 1 on task 2
+Test: [3/3]	loss 0.338 (0.330)	Acc@1 88.606 (89.520)
+Test model 1 on task 3
+Test: [3/3]	loss 0.284 (0.285)	Acc@1 90.819 (90.580)
+Test model 1 on task 4
+Test: [3/3]	loss 0.266 (0.250)	Acc@1 91.427 (92.120)
+Test model 1 on task 5
+Test: [3/3]	loss 0.247 (0.244)	Acc@1 91.095 (91.990)
+Test model 1 on task 6
+Test: [3/3]	loss 0.222 (0.228)	Acc@1 92.588 (92.660)
+Test model 1 on task 7
+Test: [3/3]	loss 0.205 (0.239)	Acc@1 94.248 (92.490)
+Test model 1 on task 8
+Test: [3/3]	loss 0.247 (0.234)	Acc@1 91.980 (92.460)
+Test model 1 on task 9
+Test: [3/3]	loss 0.237 (0.235)	Acc@1 92.865 (92.500)
+Test model 1 on task 10
+Test: [3/3]	loss 0.235 (0.242)	Acc@1 92.976 (92.730)
+Test model 1 on task 11
+Test: [3/3]	loss 0.243 (0.246)	Acc@1 92.920 (92.670)
+Test model 1 on task 12
+Test: [3/3]	loss 0.233 (0.256)	Acc@1 93.363 (92.370)
+Test model 1 on task 13
+Test: [3/3]	loss 0.248 (0.252)	Acc@1 92.810 (92.530)
+Test model 1 on task 14
+Test: [3/3]	loss 0.224 (0.258)	Acc@1 93.308 (92.220)
+Test model 1 on task 15
+Test: [3/3]	loss 0.245 (0.282)	Acc@1 92.754 (91.240)
+Test model 1 on task 16
+Test: [3/3]	loss 0.298 (0.288)	Acc@1 90.985 (91.260)
+Test model 1 on task 17
+Test: [3/3]	loss 0.327 (0.323)	Acc@1 89.934 (90.340)
+Test model 1 on task 18
+Test: [3/3]	loss 0.317 (0.324)	Acc@1 90.155 (90.320)
+Test model 1 on task 19
+Test: [3/3]	loss 0.357 (0.361)	Acc@1 88.053 (88.660)
+Test model 1 on task 20
+Test: [3/3]	loss 0.375 (0.368)	Acc@1 88.827 (89.140)
+Test model 1 on task 21
+Test: [3/3]	loss 0.388 (0.398)	Acc@1 87.389 (87.750)
+Test model 1 on task 22
+Test: [3/3]	loss 0.420 (0.432)	Acc@1 86.836 (86.690)
+Test model 1 on task 23
+Test: [3/3]	loss 0.463 (0.465)	Acc@1 85.896 (85.720)
+Test model 1 on task 24
+Test: [3/3]	loss 0.462 (0.469)	Acc@1 85.730 (85.150)
+Test model 1 on task 25
+Test: [3/3]	loss 0.504 (0.492)	Acc@1 84.956 (85.190)
+Test model 1 on task 26
+Test: [3/3]	loss 0.532 (0.542)	Acc@1 84.181 (83.610)
+Test model 1 on task 27
+Test: [3/3]	loss 0.624 (0.624)	Acc@1 80.033 (80.450)
+Test model 1 on task 28
+Test: [3/3]	loss 0.665 (0.598)	Acc@1 78.319 (81.960)
+Test model 1 on task 29
+Test: [3/3]	loss 0.602 (0.605)	Acc@1 81.471 (80.930)
+Test model 1 on task 30
+Test: [3/3]	loss 0.666 (0.672)	Acc@1 79.204 (78.750)
+Test model 1 on task 31
+Test: [3/3]	loss 0.721 (0.737)	Acc@1 77.046 (76.540)
+Test model 1 on task 32
+Test: [3/3]	loss 0.761 (0.766)	Acc@1 75.996 (76.040)
+Test model 1 on task 33
+Test: [3/3]	loss 0.912 (0.909)	Acc@1 70.188 (70.170)
+Test model 1 on task 34
+Test: [3/3]	loss 0.882 (0.874)	Acc@1 71.239 (71.510)
+Test model 1 on task 35
+Test: [3/3]	loss 0.890 (0.887)	Acc@1 71.847 (71.840)
+Test model 1 on task 36
+Test: [3/3]	loss 0.943 (0.986)	Acc@1 69.358 (68.160)
+Test model 1 on task 37
+Test: [3/3]	loss 0.972 (1.002)	Acc@1 68.473 (67.080)
+Test model 1 on task 38
+Test: [3/3]	loss 1.129 (1.124)	Acc@1 62.445 (62.360)
+############################################################ Avg acc: 84.83
+Task 39 Model 1:
+Train: [1][3750/3750]	loss 0.080 (0.077)	Acc@1 56.250 (56.388)
+Train: [2][3750/3750]	loss 0.065 (0.074)	Acc@1 75.000 (62.682)
+Train: [3][3750/3750]	loss 0.076 (0.074)	Acc@1 56.250 (63.257)
+Train: [4][3750/3750]	loss 0.076 (0.074)	Acc@1 62.500 (63.423)
+Train: [5][3750/3750]	loss 0.079 (0.074)	Acc@1 62.500 (63.360)
+Train: [6][3750/3750]	loss 0.087 (0.074)	Acc@1 50.000 (63.408)
+Train: [7][3750/3750]	loss 0.077 (0.074)	Acc@1 62.500 (63.333)
+Train: [8][3750/3750]	loss 0.063 (0.074)	Acc@1 87.500 (63.342)
+Train: [9][3750/3750]	loss 0.064 (0.074)	Acc@1 75.000 (63.498)
+Train: [10][3750/3750]	loss 0.080 (0.074)	Acc@1 56.250 (63.383)
+Test model 1 on task 1
+Test: [3/3]	loss 0.454 (0.434)	Acc@1 85.896 (86.050)
+Test model 1 on task 2
+Test: [3/3]	loss 0.353 (0.332)	Acc@1 89.270 (89.610)
+Test model 1 on task 3
+Test: [3/3]	loss 0.276 (0.288)	Acc@1 91.427 (90.460)
+Test model 1 on task 4
+Test: [3/3]	loss 0.238 (0.250)	Acc@1 92.810 (92.130)
+Test model 1 on task 5
+Test: [3/3]	loss 0.266 (0.246)	Acc@1 90.597 (91.940)
+Test model 1 on task 6
+Test: [3/3]	loss 0.209 (0.230)	Acc@1 93.529 (92.680)
+Test model 1 on task 7
+Test: [3/3]	loss 0.223 (0.241)	Acc@1 92.976 (92.390)
+Test model 1 on task 8
+Test: [3/3]	loss 0.237 (0.236)	Acc@1 92.201 (92.340)
+Test model 1 on task 9
+Test: [3/3]	loss 0.237 (0.236)	Acc@1 91.925 (92.420)
+Test model 1 on task 10
+Test: [3/3]	loss 0.261 (0.243)	Acc@1 92.367 (92.720)
+Test model 1 on task 11
+Test: [3/3]	loss 0.243 (0.248)	Acc@1 91.814 (92.570)
+Test model 1 on task 12
+Test: [3/3]	loss 0.238 (0.257)	Acc@1 92.976 (92.390)
+Test model 1 on task 13
+Test: [3/3]	loss 0.259 (0.253)	Acc@1 92.588 (92.500)
+Test model 1 on task 14
+Test: [3/3]	loss 0.274 (0.259)	Acc@1 91.814 (92.180)
+Test model 1 on task 15
+Test: [3/3]	loss 0.266 (0.283)	Acc@1 91.482 (91.340)
+Test model 1 on task 16
+Test: [3/3]	loss 0.288 (0.288)	Acc@1 91.316 (91.350)
+Test model 1 on task 17
+Test: [3/3]	loss 0.321 (0.325)	Acc@1 89.823 (90.310)
+Test model 1 on task 18
+Test: [3/3]	loss 0.335 (0.326)	Acc@1 89.657 (90.300)
+Test model 1 on task 19
+Test: [3/3]	loss 0.351 (0.362)	Acc@1 88.662 (88.730)
+Test model 1 on task 20
+Test: [3/3]	loss 0.327 (0.369)	Acc@1 89.878 (89.200)
+Test model 1 on task 21
+Test: [3/3]	loss 0.377 (0.398)	Acc@1 88.330 (87.780)
+Test model 1 on task 22
+Test: [3/3]	loss 0.411 (0.432)	Acc@1 87.500 (86.690)
+Test model 1 on task 23
+Test: [3/3]	loss 0.497 (0.466)	Acc@1 85.454 (85.660)
+Test model 1 on task 24
+Test: [3/3]	loss 0.465 (0.469)	Acc@1 85.177 (85.150)
+Test model 1 on task 25
+Test: [3/3]	loss 0.508 (0.492)	Acc@1 84.403 (85.230)
+Test model 1 on task 26
+Test: [3/3]	loss 0.525 (0.543)	Acc@1 84.513 (83.650)
+Test model 1 on task 27
+Test: [3/3]	loss 0.653 (0.626)	Acc@1 78.761 (80.330)
+Test model 1 on task 28
+Test: [3/3]	loss 0.626 (0.596)	Acc@1 80.918 (81.910)
+Test model 1 on task 29
+Test: [3/3]	loss 0.604 (0.605)	Acc@1 80.088 (81.160)
+Test model 1 on task 30
+Test: [3/3]	loss 0.653 (0.674)	Acc@1 79.038 (78.660)
+Test model 1 on task 31
+Test: [3/3]	loss 0.725 (0.741)	Acc@1 76.659 (76.450)
+Test model 1 on task 32
+Test: [3/3]	loss 0.745 (0.770)	Acc@1 77.378 (75.850)
+Test model 1 on task 33
+Test: [3/3]	loss 0.923 (0.906)	Acc@1 70.631 (70.260)
+Test model 1 on task 34
+Test: [3/3]	loss 0.893 (0.879)	Acc@1 71.128 (71.320)
+Test model 1 on task 35
+Test: [3/3]	loss 0.859 (0.890)	Acc@1 72.732 (71.820)
+Test model 1 on task 36
+Test: [3/3]	loss 0.977 (0.990)	Acc@1 68.142 (68.030)
+Test model 1 on task 37
+Test: [3/3]	loss 0.976 (1.000)	Acc@1 68.086 (67.130)
+Test model 1 on task 38
+Test: [3/3]	loss 1.122 (1.123)	Acc@1 63.219 (62.330)
+Test model 1 on task 39
+Test: [3/3]	loss 1.054 (1.076)	Acc@1 64.768 (64.700)
+############################################################ Avg acc: 84.30
+Task 40 Model 1:
+Train: [1][3750/3750]	loss 0.082 (0.080)	Acc@1 56.250 (50.950)
+Train: [2][3750/3750]	loss 0.081 (0.079)	Acc@1 56.250 (55.515)
+Train: [3][3750/3750]	loss 0.090 (0.079)	Acc@1 56.250 (55.628)
+Train: [4][3750/3750]	loss 0.076 (0.078)	Acc@1 56.250 (55.777)
+Train: [5][3750/3750]	loss 0.073 (0.078)	Acc@1 62.500 (55.788)
+Train: [6][3750/3750]	loss 0.089 (0.078)	Acc@1 50.000 (55.885)
+Train: [7][3750/3750]	loss 0.088 (0.078)	Acc@1 43.750 (55.952)
+Train: [8][3750/3750]	loss 0.082 (0.078)	Acc@1 56.250 (55.825)
+Train: [9][3750/3750]	loss 0.079 (0.078)	Acc@1 50.000 (55.887)
+Train: [10][3750/3750]	loss 0.081 (0.078)	Acc@1 50.000 (55.952)
+Test model 1 on task 1
+Test: [3/3]	loss 0.417 (0.430)	Acc@1 86.283 (86.170)
+Test model 1 on task 2
+Test: [3/3]	loss 0.309 (0.334)	Acc@1 89.823 (89.430)
+Test model 1 on task 3
+Test: [3/3]	loss 0.323 (0.287)	Acc@1 88.993 (90.450)
+Test model 1 on task 4
+Test: [3/3]	loss 0.244 (0.251)	Acc@1 92.810 (92.130)
+Test model 1 on task 5
+Test: [3/3]	loss 0.246 (0.248)	Acc@1 91.316 (91.800)
+Test model 1 on task 6
+Test: [3/3]	loss 0.218 (0.231)	Acc@1 93.529 (92.590)
+Test model 1 on task 7
+Test: [3/3]	loss 0.244 (0.241)	Acc@1 92.533 (92.330)
+Test model 1 on task 8
+Test: [3/3]	loss 0.262 (0.235)	Acc@1 91.427 (92.440)
+Test model 1 on task 9
+Test: [3/3]	loss 0.234 (0.236)	Acc@1 92.478 (92.450)
+Test model 1 on task 10
+Test: [3/3]	loss 0.219 (0.244)	Acc@1 93.584 (92.780)
+Test model 1 on task 11
+Test: [3/3]	loss 0.275 (0.250)	Acc@1 91.261 (92.320)
+Test model 1 on task 12
+Test: [3/3]	loss 0.272 (0.258)	Acc@1 92.533 (92.300)
+Test model 1 on task 13
+Test: [3/3]	loss 0.253 (0.254)	Acc@1 92.810 (92.480)
+Test model 1 on task 14
+Test: [3/3]	loss 0.270 (0.260)	Acc@1 92.257 (92.140)
+Test model 1 on task 15
+Test: [3/3]	loss 0.279 (0.283)	Acc@1 91.925 (91.450)
+Test model 1 on task 16
+Test: [3/3]	loss 0.266 (0.290)	Acc@1 92.146 (91.160)
+Test model 1 on task 17
+Test: [3/3]	loss 0.310 (0.327)	Acc@1 90.929 (90.210)
+Test model 1 on task 18
+Test: [3/3]	loss 0.358 (0.328)	Acc@1 88.551 (90.290)
+Test model 1 on task 19
+Test: [3/3]	loss 0.366 (0.365)	Acc@1 88.993 (88.690)
+Test model 1 on task 20
+Test: [3/3]	loss 0.357 (0.372)	Acc@1 90.155 (89.090)
+Test model 1 on task 21
+Test: [3/3]	loss 0.413 (0.400)	Acc@1 87.666 (87.700)
+Test model 1 on task 22
+Test: [3/3]	loss 0.412 (0.435)	Acc@1 87.887 (86.690)
+Test model 1 on task 23
+Test: [3/3]	loss 0.451 (0.468)	Acc@1 86.670 (85.680)
+Test model 1 on task 24
+Test: [3/3]	loss 0.495 (0.472)	Acc@1 83.296 (85.050)
+Test model 1 on task 25
+Test: [3/3]	loss 0.499 (0.493)	Acc@1 84.956 (85.200)
+Test model 1 on task 26
+Test: [3/3]	loss 0.544 (0.542)	Acc@1 83.628 (83.690)
+Test model 1 on task 27
+Test: [3/3]	loss 0.618 (0.628)	Acc@1 80.697 (80.240)
+Test model 1 on task 28
+Test: [3/3]	loss 0.607 (0.600)	Acc@1 81.637 (81.760)
+Test model 1 on task 29
+Test: [3/3]	loss 0.608 (0.604)	Acc@1 80.697 (81.000)
+Test model 1 on task 30
+Test: [3/3]	loss 0.694 (0.675)	Acc@1 78.540 (78.530)
+Test model 1 on task 31
+Test: [3/3]	loss 0.736 (0.742)	Acc@1 77.655 (76.390)
+Test model 1 on task 32
+Test: [3/3]	loss 0.767 (0.770)	Acc@1 76.162 (75.920)
+Test model 1 on task 33
+Test: [3/3]	loss 0.900 (0.903)	Acc@1 69.746 (70.240)
+Test model 1 on task 34
+Test: [3/3]	loss 0.922 (0.881)	Acc@1 69.358 (71.340)
+Test model 1 on task 35
+Test: [3/3]	loss 0.914 (0.888)	Acc@1 71.018 (71.670)
+Test model 1 on task 36
+Test: [3/3]	loss 0.951 (0.988)	Acc@1 69.635 (68.070)
+Test model 1 on task 37
+Test: [3/3]	loss 1.019 (1.000)	Acc@1 66.372 (67.170)
+Test model 1 on task 38
+Test: [3/3]	loss 1.150 (1.124)	Acc@1 62.279 (62.220)
+Test model 1 on task 39
+Test: [3/3]	loss 1.109 (1.076)	Acc@1 63.662 (64.740)
+Test model 1 on task 40
+Test: [3/3]	loss 1.267 (1.278)	Acc@1 55.918 (56.280)
+############################################################ Avg acc: 83.56
+Task 41 Model 1:
+Train: [1][3750/3750]	loss 0.089 (0.082)	Acc@1 37.500 (52.228)
+Train: [2][3750/3750]	loss 0.078 (0.081)	Acc@1 50.000 (55.230)
+Train: [3][3750/3750]	loss 0.081 (0.081)	Acc@1 75.000 (55.475)
+Train: [4][3750/3750]	loss 0.069 (0.081)	Acc@1 81.250 (55.437)
+Train: [5][3750/3750]	loss 0.075 (0.081)	Acc@1 62.500 (55.522)
+Train: [6][3750/3750]	loss 0.063 (0.081)	Acc@1 81.250 (55.412)
+Train: [7][3750/3750]	loss 0.099 (0.081)	Acc@1 37.500 (55.468)
+Train: [8][3750/3750]	loss 0.075 (0.081)	Acc@1 62.500 (55.402)
+Train: [9][3750/3750]	loss 0.074 (0.081)	Acc@1 62.500 (55.428)
+Train: [10][3750/3750]	loss 0.079 (0.081)	Acc@1 62.500 (55.402)
+Test model 1 on task 1
+Test: [3/3]	loss 0.394 (0.429)	Acc@1 87.279 (86.220)
+Test model 1 on task 2
+Test: [3/3]	loss 0.326 (0.332)	Acc@1 89.768 (89.530)
+Test model 1 on task 3
+Test: [3/3]	loss 0.311 (0.288)	Acc@1 90.376 (90.410)
+Test model 1 on task 4
+Test: [3/3]	loss 0.244 (0.251)	Acc@1 92.257 (92.100)
+Test model 1 on task 5
+Test: [3/3]	loss 0.258 (0.248)	Acc@1 91.538 (91.880)
+Test model 1 on task 6
+Test: [3/3]	loss 0.244 (0.231)	Acc@1 92.533 (92.620)
+Test model 1 on task 7
+Test: [3/3]	loss 0.227 (0.243)	Acc@1 93.308 (92.360)
+Test model 1 on task 8
+Test: [3/3]	loss 0.247 (0.235)	Acc@1 92.091 (92.460)
+Test model 1 on task 9
+Test: [3/3]	loss 0.232 (0.237)	Acc@1 93.584 (92.540)
+Test model 1 on task 10
+Test: [3/3]	loss 0.262 (0.244)	Acc@1 92.367 (92.680)
+Test model 1 on task 11
+Test: [3/3]	loss 0.234 (0.251)	Acc@1 93.639 (92.270)
+Test model 1 on task 12
+Test: [3/3]	loss 0.282 (0.260)	Acc@1 91.648 (92.290)
+Test model 1 on task 13
+Test: [3/3]	loss 0.243 (0.254)	Acc@1 92.754 (92.550)
+Test model 1 on task 14
+Test: [3/3]	loss 0.269 (0.261)	Acc@1 92.201 (92.180)
+Test model 1 on task 15
+Test: [3/3]	loss 0.299 (0.285)	Acc@1 91.095 (91.310)
+Test model 1 on task 16
+Test: [3/3]	loss 0.287 (0.292)	Acc@1 91.593 (91.090)
+Test model 1 on task 17
+Test: [3/3]	loss 0.351 (0.328)	Acc@1 89.270 (90.210)
+Test model 1 on task 18
+Test: [3/3]	loss 0.338 (0.329)	Acc@1 89.215 (90.160)
+Test model 1 on task 19
+Test: [3/3]	loss 0.393 (0.366)	Acc@1 88.108 (88.510)
+Test model 1 on task 20
+Test: [3/3]	loss 0.374 (0.373)	Acc@1 89.159 (89.000)
+Test model 1 on task 21
+Test: [3/3]	loss 0.411 (0.401)	Acc@1 86.504 (87.630)
+Test model 1 on task 22
+Test: [3/3]	loss 0.430 (0.436)	Acc@1 86.947 (86.620)
+Test model 1 on task 23
+Test: [3/3]	loss 0.484 (0.470)	Acc@1 84.735 (85.550)
+Test model 1 on task 24
+Test: [3/3]	loss 0.469 (0.472)	Acc@1 84.569 (85.030)
+Test model 1 on task 25
+Test: [3/3]	loss 0.478 (0.494)	Acc@1 85.564 (85.020)
+Test model 1 on task 26
+Test: [3/3]	loss 0.531 (0.543)	Acc@1 84.071 (83.620)
+Test model 1 on task 27
+Test: [3/3]	loss 0.597 (0.630)	Acc@1 82.135 (80.270)
+Test model 1 on task 28
+Test: [3/3]	loss 0.613 (0.601)	Acc@1 80.642 (81.700)
+Test model 1 on task 29
+Test: [3/3]	loss 0.579 (0.605)	Acc@1 81.582 (80.950)
+Test model 1 on task 30
+Test: [3/3]	loss 0.695 (0.677)	Acc@1 78.153 (78.550)
+Test model 1 on task 31
+Test: [3/3]	loss 0.751 (0.743)	Acc@1 75.830 (76.420)
+Test model 1 on task 32
+Test: [3/3]	loss 0.768 (0.773)	Acc@1 74.834 (75.820)
+Test model 1 on task 33
+Test: [3/3]	loss 0.901 (0.903)	Acc@1 69.801 (70.040)
+Test model 1 on task 34
+Test: [3/3]	loss 0.909 (0.881)	Acc@1 70.465 (71.330)
+Test model 1 on task 35
+Test: [3/3]	loss 0.875 (0.889)	Acc@1 73.285 (71.900)
+Test model 1 on task 36
+Test: [3/3]	loss 0.989 (0.989)	Acc@1 69.137 (68.220)
+Test model 1 on task 37
+Test: [3/3]	loss 1.014 (1.004)	Acc@1 66.427 (67.030)
+Test model 1 on task 38
+Test: [3/3]	loss 1.089 (1.121)	Acc@1 64.712 (62.320)
+Test model 1 on task 39
+Test: [3/3]	loss 1.054 (1.080)	Acc@1 65.100 (64.740)
+Test model 1 on task 40
+Test: [3/3]	loss 1.289 (1.274)	Acc@1 56.416 (56.610)
+Test model 1 on task 41
+Test: [3/3]	loss 1.248 (1.262)	Acc@1 57.024 (57.710)
+############################################################ Avg acc: 82.91
+Task 42 Model 1:
+Train: [1][3750/3750]	loss 0.078 (0.081)	Acc@1 37.500 (49.848)
+Train: [2][3750/3750]	loss 0.082 (0.080)	Acc@1 56.250 (53.172)
+Train: [3][3750/3750]	loss 0.077 (0.080)	Acc@1 56.250 (53.508)
+Train: [4][3750/3750]	loss 0.096 (0.080)	Acc@1 25.000 (53.752)
+Train: [5][3750/3750]	loss 0.076 (0.080)	Acc@1 68.750 (54.268)
+Train: [6][3750/3750]	loss 0.079 (0.080)	Acc@1 50.000 (54.642)
+Train: [7][3750/3750]	loss 0.081 (0.080)	Acc@1 62.500 (54.500)
+Train: [8][3750/3750]	loss 0.066 (0.080)	Acc@1 81.250 (54.765)
+Train: [9][3750/3750]	loss 0.095 (0.080)	Acc@1 56.250 (54.637)
+Train: [10][3750/3750]	loss 0.081 (0.080)	Acc@1 43.750 (54.725)
+Test model 1 on task 1
+Test: [3/3]	loss 0.437 (0.430)	Acc@1 86.615 (86.160)
+Test model 1 on task 2
+Test: [3/3]	loss 0.331 (0.334)	Acc@1 89.712 (89.420)
+Test model 1 on task 3
+Test: [3/3]	loss 0.278 (0.288)	Acc@1 90.597 (90.410)
+Test model 1 on task 4
+Test: [3/3]	loss 0.260 (0.252)	Acc@1 91.648 (92.010)
+Test model 1 on task 5
+Test: [3/3]	loss 0.231 (0.248)	Acc@1 92.035 (91.830)
+Test model 1 on task 6
+Test: [3/3]	loss 0.215 (0.232)	Acc@1 93.086 (92.620)
+Test model 1 on task 7
+Test: [3/3]	loss 0.256 (0.244)	Acc@1 92.312 (92.260)
+Test model 1 on task 8
+Test: [3/3]	loss 0.242 (0.235)	Acc@1 91.648 (92.380)
+Test model 1 on task 9
+Test: [3/3]	loss 0.237 (0.237)	Acc@1 92.201 (92.400)
+Test model 1 on task 10
+Test: [3/3]	loss 0.271 (0.245)	Acc@1 91.980 (92.660)
+Test model 1 on task 11
+Test: [3/3]	loss 0.259 (0.252)	Acc@1 91.814 (92.280)
+Test model 1 on task 12
+Test: [3/3]	loss 0.254 (0.261)	Acc@1 92.257 (92.350)
+Test model 1 on task 13
+Test: [3/3]	loss 0.286 (0.255)	Acc@1 91.261 (92.440)
+Test model 1 on task 14
+Test: [3/3]	loss 0.253 (0.263)	Acc@1 92.423 (92.130)
+Test model 1 on task 15
+Test: [3/3]	loss 0.277 (0.285)	Acc@1 91.372 (91.350)
+Test model 1 on task 16
+Test: [3/3]	loss 0.300 (0.293)	Acc@1 91.095 (90.950)
+Test model 1 on task 17
+Test: [3/3]	loss 0.347 (0.329)	Acc@1 89.159 (90.190)
+Test model 1 on task 18
+Test: [3/3]	loss 0.341 (0.330)	Acc@1 89.436 (90.060)
+Test model 1 on task 19
+Test: [3/3]	loss 0.369 (0.367)	Acc@1 87.666 (88.370)
+Test model 1 on task 20
+Test: [3/3]	loss 0.369 (0.376)	Acc@1 89.546 (89.000)
+Test model 1 on task 21
+Test: [3/3]	loss 0.405 (0.402)	Acc@1 87.168 (87.630)
+Test model 1 on task 22
+Test: [3/3]	loss 0.465 (0.438)	Acc@1 85.398 (86.510)
+Test model 1 on task 23
+Test: [3/3]	loss 0.474 (0.471)	Acc@1 85.841 (85.540)
+Test model 1 on task 24
+Test: [3/3]	loss 0.467 (0.474)	Acc@1 85.454 (84.980)
+Test model 1 on task 25
+Test: [3/3]	loss 0.513 (0.498)	Acc@1 84.679 (84.940)
+Test model 1 on task 26
+Test: [3/3]	loss 0.546 (0.544)	Acc@1 83.794 (83.540)
+Test model 1 on task 27
+Test: [3/3]	loss 0.678 (0.632)	Acc@1 78.927 (80.150)
+Test model 1 on task 28
+Test: [3/3]	loss 0.586 (0.602)	Acc@1 82.301 (81.730)
+Test model 1 on task 29
+Test: [3/3]	loss 0.576 (0.607)	Acc@1 81.527 (80.890)
+Test model 1 on task 30
+Test: [3/3]	loss 0.686 (0.679)	Acc@1 79.093 (78.370)
+Test model 1 on task 31
+Test: [3/3]	loss 0.742 (0.744)	Acc@1 75.442 (76.320)
+Test model 1 on task 32
+Test: [3/3]	loss 0.791 (0.775)	Acc@1 75.719 (75.710)
+Test model 1 on task 33
+Test: [3/3]	loss 0.914 (0.904)	Acc@1 69.690 (70.070)
+Test model 1 on task 34
+Test: [3/3]	loss 0.887 (0.877)	Acc@1 70.243 (71.420)
+Test model 1 on task 35
+Test: [3/3]	loss 0.860 (0.892)	Acc@1 73.396 (71.770)
+Test model 1 on task 36
+Test: [3/3]	loss 0.992 (0.991)	Acc@1 67.699 (68.130)
+Test model 1 on task 37
+Test: [3/3]	loss 0.986 (1.006)	Acc@1 66.372 (66.900)
+Test model 1 on task 38
+Test: [3/3]	loss 1.081 (1.121)	Acc@1 63.551 (62.270)
+Test model 1 on task 39
+Test: [3/3]	loss 1.100 (1.080)	Acc@1 64.546 (64.480)
+Test model 1 on task 40
+Test: [3/3]	loss 1.252 (1.273)	Acc@1 56.139 (56.640)
+Test model 1 on task 41
+Test: [3/3]	loss 1.226 (1.259)	Acc@1 59.403 (57.930)
+Test model 1 on task 42
+Test: [3/3]	loss 1.301 (1.301)	Acc@1 56.914 (56.100)
+############################################################ Avg acc: 82.22
+Task 43 Model 1:
+Train: [1][3750/3750]	loss 0.079 (0.082)	Acc@1 50.000 (46.943)
+Train: [2][3750/3750]	loss 0.078 (0.081)	Acc@1 50.000 (50.045)
+Train: [3][3750/3750]	loss 0.077 (0.081)	Acc@1 56.250 (50.095)
+Train: [4][3750/3750]	loss 0.086 (0.081)	Acc@1 43.750 (50.398)
+Train: [5][3750/3750]	loss 0.079 (0.081)	Acc@1 56.250 (50.738)
+Train: [6][3750/3750]	loss 0.082 (0.081)	Acc@1 50.000 (50.663)
+Train: [7][3750/3750]	loss 0.075 (0.081)	Acc@1 56.250 (50.672)
+Train: [8][3750/3750]	loss 0.072 (0.081)	Acc@1 62.500 (50.780)
+Train: [9][3750/3750]	loss 0.102 (0.081)	Acc@1 18.750 (50.670)
+Train: [10][3750/3750]	loss 0.088 (0.081)	Acc@1 56.250 (50.705)
+Test model 1 on task 1
+Test: [3/3]	loss 0.419 (0.431)	Acc@1 85.896 (86.220)
+Test model 1 on task 2
+Test: [3/3]	loss 0.371 (0.334)	Acc@1 88.772 (89.520)
+Test model 1 on task 3
+Test: [3/3]	loss 0.285 (0.289)	Acc@1 89.934 (90.360)
+Test model 1 on task 4
+Test: [3/3]	loss 0.255 (0.253)	Acc@1 92.367 (92.090)
+Test model 1 on task 5
+Test: [3/3]	loss 0.239 (0.249)	Acc@1 92.091 (91.790)
+Test model 1 on task 6
+Test: [3/3]	loss 0.224 (0.233)	Acc@1 93.031 (92.600)
+Test model 1 on task 7
+Test: [3/3]	loss 0.254 (0.245)	Acc@1 91.925 (92.250)
+Test model 1 on task 8
+Test: [3/3]	loss 0.242 (0.238)	Acc@1 92.035 (92.320)
+Test model 1 on task 9
+Test: [3/3]	loss 0.246 (0.238)	Acc@1 92.423 (92.400)
+Test model 1 on task 10
+Test: [3/3]	loss 0.231 (0.247)	Acc@1 93.363 (92.680)
+Test model 1 on task 11
+Test: [3/3]	loss 0.270 (0.253)	Acc@1 91.704 (92.260)
+Test model 1 on task 12
+Test: [3/3]	loss 0.259 (0.263)	Acc@1 92.533 (92.280)
+Test model 1 on task 13
+Test: [3/3]	loss 0.260 (0.256)	Acc@1 92.091 (92.460)
+Test model 1 on task 14
+Test: [3/3]	loss 0.243 (0.264)	Acc@1 92.920 (92.090)
+Test model 1 on task 15
+Test: [3/3]	loss 0.275 (0.286)	Acc@1 91.814 (91.380)
+Test model 1 on task 16
+Test: [3/3]	loss 0.315 (0.294)	Acc@1 90.487 (91.020)
+Test model 1 on task 17
+Test: [3/3]	loss 0.325 (0.330)	Acc@1 90.874 (90.140)
+Test model 1 on task 18
+Test: [3/3]	loss 0.313 (0.331)	Acc@1 90.929 (90.100)
+Test model 1 on task 19
+Test: [3/3]	loss 0.359 (0.367)	Acc@1 89.712 (88.380)
+Test model 1 on task 20
+Test: [3/3]	loss 0.352 (0.376)	Acc@1 89.934 (89.050)
+Test model 1 on task 21
+Test: [3/3]	loss 0.398 (0.403)	Acc@1 87.721 (87.650)
+Test model 1 on task 22
+Test: [3/3]	loss 0.414 (0.440)	Acc@1 87.002 (86.570)
+Test model 1 on task 23
+Test: [3/3]	loss 0.451 (0.473)	Acc@1 85.785 (85.360)
+Test model 1 on task 24
+Test: [3/3]	loss 0.480 (0.475)	Acc@1 84.403 (85.020)
+Test model 1 on task 25
+Test: [3/3]	loss 0.486 (0.501)	Acc@1 85.288 (84.850)
+Test model 1 on task 26
+Test: [3/3]	loss 0.541 (0.545)	Acc@1 85.122 (83.750)
+Test model 1 on task 27
+Test: [3/3]	loss 0.633 (0.634)	Acc@1 79.591 (80.250)
+Test model 1 on task 28
+Test: [3/3]	loss 0.574 (0.603)	Acc@1 83.352 (81.690)
+Test model 1 on task 29
+Test: [3/3]	loss 0.586 (0.607)	Acc@1 82.246 (80.980)
+Test model 1 on task 30
+Test: [3/3]	loss 0.675 (0.677)	Acc@1 78.263 (78.390)
+Test model 1 on task 31
+Test: [3/3]	loss 0.727 (0.746)	Acc@1 76.770 (76.430)
+Test model 1 on task 32
+Test: [3/3]	loss 0.771 (0.774)	Acc@1 75.830 (75.630)
+Test model 1 on task 33
+Test: [3/3]	loss 0.939 (0.904)	Acc@1 69.580 (70.230)
+Test model 1 on task 34
+Test: [3/3]	loss 0.867 (0.879)	Acc@1 70.962 (71.340)
+Test model 1 on task 35
+Test: [3/3]	loss 0.900 (0.895)	Acc@1 70.299 (71.620)
+Test model 1 on task 36
+Test: [3/3]	loss 0.994 (0.991)	Acc@1 68.308 (67.960)
+Test model 1 on task 37
+Test: [3/3]	loss 0.996 (1.007)	Acc@1 66.925 (66.730)
+Test model 1 on task 38
+Test: [3/3]	loss 1.171 (1.121)	Acc@1 59.458 (62.140)
+Test model 1 on task 39
+Test: [3/3]	loss 1.088 (1.083)	Acc@1 63.662 (64.390)
+Test model 1 on task 40
+Test: [3/3]	loss 1.254 (1.271)	Acc@1 56.582 (56.670)
+Test model 1 on task 41
+Test: [3/3]	loss 1.268 (1.258)	Acc@1 58.075 (57.980)
+Test model 1 on task 42
+Test: [3/3]	loss 1.254 (1.297)	Acc@1 57.412 (56.350)
+Test model 1 on task 43
+Test: [3/3]	loss 1.480 (1.431)	Acc@1 51.715 (52.790)
+############################################################ Avg acc: 81.54
+Task 44 Model 1:
+Train: [1][3750/3750]	loss 0.094 (0.087)	Acc@1 37.500 (39.970)
+Train: [2][3750/3750]	loss 0.096 (0.086)	Acc@1 25.000 (42.900)
+Train: [3][3750/3750]	loss 0.089 (0.086)	Acc@1 37.500 (43.233)
+Train: [4][3750/3750]	loss 0.083 (0.086)	Acc@1 43.750 (43.533)
+Train: [5][3750/3750]	loss 0.077 (0.086)	Acc@1 56.250 (43.575)
+Train: [6][3750/3750]	loss 0.082 (0.086)	Acc@1 62.500 (43.632)
+Train: [7][3750/3750]	loss 0.084 (0.086)	Acc@1 37.500 (43.623)
+Train: [8][3750/3750]	loss 0.082 (0.086)	Acc@1 50.000 (43.685)
+Train: [9][3750/3750]	loss 0.087 (0.086)	Acc@1 37.500 (43.497)
+Train: [10][3750/3750]	loss 0.084 (0.086)	Acc@1 56.250 (43.573)
+Test model 1 on task 1
+Test: [3/3]	loss 0.446 (0.430)	Acc@1 86.283 (86.230)
+Test model 1 on task 2
+Test: [3/3]	loss 0.346 (0.335)	Acc@1 89.491 (89.450)
+Test model 1 on task 3
+Test: [3/3]	loss 0.329 (0.290)	Acc@1 89.381 (90.410)
+Test model 1 on task 4
+Test: [3/3]	loss 0.249 (0.254)	Acc@1 93.031 (92.050)
+Test model 1 on task 5
+Test: [3/3]	loss 0.243 (0.250)	Acc@1 92.035 (91.700)
+Test model 1 on task 6
+Test: [3/3]	loss 0.245 (0.234)	Acc@1 92.423 (92.540)
+Test model 1 on task 7
+Test: [3/3]	loss 0.240 (0.246)	Acc@1 92.367 (92.220)
+Test model 1 on task 8
+Test: [3/3]	loss 0.223 (0.238)	Acc@1 92.865 (92.330)
+Test model 1 on task 9
+Test: [3/3]	loss 0.227 (0.240)	Acc@1 91.980 (92.320)
+Test model 1 on task 10
+Test: [3/3]	loss 0.268 (0.248)	Acc@1 91.372 (92.600)
+Test model 1 on task 11
+Test: [3/3]	loss 0.264 (0.254)	Acc@1 91.925 (92.280)
+Test model 1 on task 12
+Test: [3/3]	loss 0.256 (0.264)	Acc@1 92.423 (92.170)
+Test model 1 on task 13
+Test: [3/3]	loss 0.264 (0.257)	Acc@1 91.814 (92.290)
+Test model 1 on task 14
+Test: [3/3]	loss 0.271 (0.265)	Acc@1 91.869 (92.060)
+Test model 1 on task 15
+Test: [3/3]	loss 0.297 (0.287)	Acc@1 90.874 (91.360)
+Test model 1 on task 16
+Test: [3/3]	loss 0.283 (0.294)	Acc@1 91.593 (91.080)
+Test model 1 on task 17
+Test: [3/3]	loss 0.323 (0.332)	Acc@1 91.040 (90.090)
+Test model 1 on task 18
+Test: [3/3]	loss 0.340 (0.332)	Acc@1 89.491 (90.100)
+Test model 1 on task 19
+Test: [3/3]	loss 0.367 (0.369)	Acc@1 87.942 (88.320)
+Test model 1 on task 20
+Test: [3/3]	loss 0.338 (0.378)	Acc@1 89.823 (88.910)
+Test model 1 on task 21
+Test: [3/3]	loss 0.395 (0.405)	Acc@1 87.666 (87.580)
+Test model 1 on task 22
+Test: [3/3]	loss 0.441 (0.440)	Acc@1 87.777 (86.490)
+Test model 1 on task 23
+Test: [3/3]	loss 0.477 (0.475)	Acc@1 85.619 (85.310)
+Test model 1 on task 24
+Test: [3/3]	loss 0.469 (0.476)	Acc@1 85.066 (84.940)
+Test model 1 on task 25
+Test: [3/3]	loss 0.506 (0.502)	Acc@1 84.900 (84.820)
+Test model 1 on task 26
+Test: [3/3]	loss 0.530 (0.544)	Acc@1 83.850 (83.610)
+Test model 1 on task 27
+Test: [3/3]	loss 0.599 (0.635)	Acc@1 81.858 (80.150)
+Test model 1 on task 28
+Test: [3/3]	loss 0.595 (0.606)	Acc@1 81.858 (81.540)
+Test model 1 on task 29
+Test: [3/3]	loss 0.618 (0.606)	Acc@1 80.310 (80.990)
+Test model 1 on task 30
+Test: [3/3]	loss 0.647 (0.677)	Acc@1 79.978 (78.390)
+Test model 1 on task 31
+Test: [3/3]	loss 0.755 (0.748)	Acc@1 75.830 (76.350)
+Test model 1 on task 32
+Test: [3/3]	loss 0.794 (0.775)	Acc@1 74.613 (75.640)
+Test model 1 on task 33
+Test: [3/3]	loss 0.937 (0.905)	Acc@1 69.967 (70.370)
+Test model 1 on task 34
+Test: [3/3]	loss 0.891 (0.881)	Acc@1 71.018 (71.180)
+Test model 1 on task 35
+Test: [3/3]	loss 0.900 (0.896)	Acc@1 71.018 (71.690)
+Test model 1 on task 36
+Test: [3/3]	loss 1.000 (0.989)	Acc@1 66.869 (68.090)
+Test model 1 on task 37
+Test: [3/3]	loss 1.032 (1.006)	Acc@1 66.980 (66.730)
+Test model 1 on task 38
+Test: [3/3]	loss 1.122 (1.124)	Acc@1 61.504 (62.330)
+Test model 1 on task 39
+Test: [3/3]	loss 1.119 (1.080)	Acc@1 63.330 (64.590)
+Test model 1 on task 40
+Test: [3/3]	loss 1.254 (1.272)	Acc@1 57.301 (56.310)
+Test model 1 on task 41
+Test: [3/3]	loss 1.284 (1.259)	Acc@1 55.973 (57.820)
+Test model 1 on task 42
+Test: [3/3]	loss 1.333 (1.294)	Acc@1 54.757 (56.560)
+Test model 1 on task 43
+Test: [3/3]	loss 1.411 (1.432)	Acc@1 53.540 (52.690)
+Test model 1 on task 44
+Test: [3/3]	loss 1.580 (1.589)	Acc@1 45.409 (44.380)
+############################################################ Avg acc: 80.66
+Task 45 Model 1:
+Train: [1][3750/3750]	loss 0.083 (0.084)	Acc@1 37.500 (46.892)
+Train: [2][3750/3750]	loss 0.087 (0.083)	Acc@1 43.750 (49.420)
+Train: [3][3750/3750]	loss 0.081 (0.083)	Acc@1 50.000 (49.760)
+Train: [4][3750/3750]	loss 0.087 (0.083)	Acc@1 50.000 (49.868)
+Train: [5][3750/3750]	loss 0.085 (0.083)	Acc@1 43.750 (49.745)
+Train: [6][3750/3750]	loss 0.078 (0.083)	Acc@1 56.250 (49.828)
+Train: [7][3750/3750]	loss 0.091 (0.083)	Acc@1 43.750 (49.852)
+Train: [8][3750/3750]	loss 0.100 (0.083)	Acc@1 25.000 (49.738)
+Train: [9][3750/3750]	loss 0.081 (0.083)	Acc@1 50.000 (49.850)
+Train: [10][3750/3750]	loss 0.083 (0.083)	Acc@1 50.000 (49.893)
+Test model 1 on task 1
+Test: [3/3]	loss 0.438 (0.425)	Acc@1 85.454 (86.270)
+Test model 1 on task 2
+Test: [3/3]	loss 0.313 (0.336)	Acc@1 90.155 (89.330)
+Test model 1 on task 3
+Test: [3/3]	loss 0.295 (0.290)	Acc@1 90.155 (90.250)
+Test model 1 on task 4
+Test: [3/3]	loss 0.247 (0.253)	Acc@1 92.644 (92.090)
+Test model 1 on task 5
+Test: [3/3]	loss 0.252 (0.250)	Acc@1 91.648 (91.760)
+Test model 1 on task 6
+Test: [3/3]	loss 0.223 (0.235)	Acc@1 93.197 (92.480)
+Test model 1 on task 7
+Test: [3/3]	loss 0.228 (0.246)	Acc@1 93.086 (92.200)
+Test model 1 on task 8
+Test: [3/3]	loss 0.277 (0.240)	Acc@1 91.427 (92.290)
+Test model 1 on task 9
+Test: [3/3]	loss 0.254 (0.240)	Acc@1 92.423 (92.270)
+Test model 1 on task 10
+Test: [3/3]	loss 0.271 (0.250)	Acc@1 91.980 (92.500)
+Test model 1 on task 11
+Test: [3/3]	loss 0.238 (0.255)	Acc@1 92.976 (92.250)
+Test model 1 on task 12
+Test: [3/3]	loss 0.264 (0.265)	Acc@1 91.814 (92.060)
+Test model 1 on task 13
+Test: [3/3]	loss 0.249 (0.258)	Acc@1 92.588 (92.380)
+Test model 1 on task 14
+Test: [3/3]	loss 0.261 (0.266)	Acc@1 92.865 (92.070)
+Test model 1 on task 15
+Test: [3/3]	loss 0.292 (0.287)	Acc@1 91.482 (91.440)
+Test model 1 on task 16
+Test: [3/3]	loss 0.303 (0.295)	Acc@1 90.376 (91.000)
+Test model 1 on task 17
+Test: [3/3]	loss 0.334 (0.332)	Acc@1 89.823 (90.040)
+Test model 1 on task 18
+Test: [3/3]	loss 0.341 (0.333)	Acc@1 90.044 (90.020)
+Test model 1 on task 19
+Test: [3/3]	loss 0.396 (0.370)	Acc@1 87.721 (88.280)
+Test model 1 on task 20
+Test: [3/3]	loss 0.375 (0.378)	Acc@1 89.159 (88.830)
+Test model 1 on task 21
+Test: [3/3]	loss 0.387 (0.407)	Acc@1 87.887 (87.590)
+Test model 1 on task 22
+Test: [3/3]	loss 0.434 (0.441)	Acc@1 86.781 (86.410)
+Test model 1 on task 23
+Test: [3/3]	loss 0.454 (0.477)	Acc@1 85.951 (85.290)
+Test model 1 on task 24
+Test: [3/3]	loss 0.499 (0.477)	Acc@1 84.237 (84.790)
+Test model 1 on task 25
+Test: [3/3]	loss 0.533 (0.503)	Acc@1 83.352 (84.800)
+Test model 1 on task 26
+Test: [3/3]	loss 0.581 (0.546)	Acc@1 81.803 (83.510)
+Test model 1 on task 27
+Test: [3/3]	loss 0.660 (0.638)	Acc@1 79.646 (80.140)
+Test model 1 on task 28
+Test: [3/3]	loss 0.614 (0.607)	Acc@1 80.476 (81.540)
+Test model 1 on task 29
+Test: [3/3]	loss 0.628 (0.607)	Acc@1 80.420 (80.910)
+Test model 1 on task 30
+Test: [3/3]	loss 0.671 (0.677)	Acc@1 78.097 (78.500)
+Test model 1 on task 31
+Test: [3/3]	loss 0.732 (0.749)	Acc@1 77.046 (76.290)
+Test model 1 on task 32
+Test: [3/3]	loss 0.761 (0.776)	Acc@1 76.162 (75.490)
+Test model 1 on task 33
+Test: [3/3]	loss 0.920 (0.906)	Acc@1 70.409 (70.230)
+Test model 1 on task 34
+Test: [3/3]	loss 0.849 (0.882)	Acc@1 72.069 (71.180)
+Test model 1 on task 35
+Test: [3/3]	loss 0.844 (0.898)	Acc@1 74.004 (71.640)
+Test model 1 on task 36
+Test: [3/3]	loss 0.999 (0.987)	Acc@1 67.091 (68.200)
+Test model 1 on task 37
+Test: [3/3]	loss 1.010 (1.009)	Acc@1 65.929 (66.580)
+Test model 1 on task 38
+Test: [3/3]	loss 1.137 (1.126)	Acc@1 61.836 (62.150)
+Test model 1 on task 39
+Test: [3/3]	loss 1.102 (1.076)	Acc@1 63.551 (64.770)
+Test model 1 on task 40
+Test: [3/3]	loss 1.248 (1.270)	Acc@1 56.803 (56.520)
+Test model 1 on task 41
+Test: [3/3]	loss 1.249 (1.262)	Acc@1 57.965 (57.770)
+Test model 1 on task 42
+Test: [3/3]	loss 1.302 (1.294)	Acc@1 56.692 (56.550)
+Test model 1 on task 43
+Test: [3/3]	loss 1.374 (1.430)	Acc@1 55.365 (52.730)
+Test model 1 on task 44
+Test: [3/3]	loss 1.634 (1.584)	Acc@1 42.312 (44.560)
+Test model 1 on task 45
+Test: [3/3]	loss 1.471 (1.462)	Acc@1 50.885 (51.160)
+############################################################ Avg acc: 79.98
+Task 46 Model 1:
+Train: [1][3750/3750]	loss 0.073 (0.082)	Acc@1 50.000 (42.832)
+Train: [2][3750/3750]	loss 0.085 (0.081)	Acc@1 31.250 (45.540)
+Train: [3][3750/3750]	loss 0.084 (0.081)	Acc@1 50.000 (45.568)
+Train: [4][3750/3750]	loss 0.086 (0.081)	Acc@1 37.500 (45.568)
+Train: [5][3750/3750]	loss 0.073 (0.081)	Acc@1 62.500 (45.588)
+Train: [6][3750/3750]	loss 0.068 (0.081)	Acc@1 68.750 (45.535)
+Train: [7][3750/3750]	loss 0.086 (0.081)	Acc@1 31.250 (45.610)
+Train: [8][3750/3750]	loss 0.071 (0.081)	Acc@1 56.250 (45.613)
+Train: [9][3750/3750]	loss 0.079 (0.081)	Acc@1 31.250 (45.723)
+Train: [10][3750/3750]	loss 0.073 (0.081)	Acc@1 68.750 (45.600)
+Test model 1 on task 1
+Test: [3/3]	loss 0.418 (0.426)	Acc@1 86.062 (86.290)
+Test model 1 on task 2
+Test: [3/3]	loss 0.344 (0.337)	Acc@1 88.662 (89.330)
+Test model 1 on task 3
+Test: [3/3]	loss 0.296 (0.290)	Acc@1 89.657 (90.280)
+Test model 1 on task 4
+Test: [3/3]	loss 0.237 (0.253)	Acc@1 92.423 (92.120)
+Test model 1 on task 5
+Test: [3/3]	loss 0.265 (0.252)	Acc@1 91.095 (91.600)
+Test model 1 on task 6
+Test: [3/3]	loss 0.230 (0.235)	Acc@1 92.920 (92.400)
+Test model 1 on task 7
+Test: [3/3]	loss 0.264 (0.246)	Acc@1 91.316 (92.150)
+Test model 1 on task 8
+Test: [3/3]	loss 0.225 (0.240)	Acc@1 93.473 (92.320)
+Test model 1 on task 9
+Test: [3/3]	loss 0.257 (0.240)	Acc@1 91.593 (92.320)
+Test model 1 on task 10
+Test: [3/3]	loss 0.269 (0.249)	Acc@1 91.980 (92.510)
+Test model 1 on task 11
+Test: [3/3]	loss 0.259 (0.255)	Acc@1 92.312 (92.280)
+Test model 1 on task 12
+Test: [3/3]	loss 0.269 (0.266)	Acc@1 91.648 (91.990)
+Test model 1 on task 13
+Test: [3/3]	loss 0.231 (0.258)	Acc@1 92.976 (92.340)
+Test model 1 on task 14
+Test: [3/3]	loss 0.246 (0.266)	Acc@1 92.146 (92.050)
+Test model 1 on task 15
+Test: [3/3]	loss 0.291 (0.289)	Acc@1 90.653 (91.380)
+Test model 1 on task 16
+Test: [3/3]	loss 0.288 (0.296)	Acc@1 90.985 (90.870)
+Test model 1 on task 17
+Test: [3/3]	loss 0.325 (0.333)	Acc@1 91.206 (90.080)
+Test model 1 on task 18
+Test: [3/3]	loss 0.312 (0.334)	Acc@1 90.819 (90.040)
+Test model 1 on task 19
+Test: [3/3]	loss 0.349 (0.371)	Acc@1 89.491 (88.320)
+Test model 1 on task 20
+Test: [3/3]	loss 0.380 (0.378)	Acc@1 89.159 (88.910)
+Test model 1 on task 21
+Test: [3/3]	loss 0.397 (0.407)	Acc@1 87.445 (87.610)
+Test model 1 on task 22
+Test: [3/3]	loss 0.460 (0.443)	Acc@1 85.343 (86.360)
+Test model 1 on task 23
+Test: [3/3]	loss 0.436 (0.477)	Acc@1 86.892 (85.340)
+Test model 1 on task 24
+Test: [3/3]	loss 0.462 (0.478)	Acc@1 85.730 (84.820)
+Test model 1 on task 25
+Test: [3/3]	loss 0.522 (0.508)	Acc@1 84.126 (84.600)
+Test model 1 on task 26
+Test: [3/3]	loss 0.534 (0.546)	Acc@1 84.292 (83.520)
+Test model 1 on task 27
+Test: [3/3]	loss 0.621 (0.639)	Acc@1 81.029 (80.100)
+Test model 1 on task 28
+Test: [3/3]	loss 0.601 (0.607)	Acc@1 81.803 (81.470)
+Test model 1 on task 29
+Test: [3/3]	loss 0.609 (0.607)	Acc@1 81.029 (81.010)
+Test model 1 on task 30
+Test: [3/3]	loss 0.693 (0.677)	Acc@1 77.876 (78.470)
+Test model 1 on task 31
+Test: [3/3]	loss 0.767 (0.751)	Acc@1 75.387 (76.180)
+Test model 1 on task 32
+Test: [3/3]	loss 0.778 (0.776)	Acc@1 74.889 (75.450)
+Test model 1 on task 33
+Test: [3/3]	loss 0.917 (0.908)	Acc@1 69.856 (70.170)
+Test model 1 on task 34
+Test: [3/3]	loss 0.864 (0.881)	Acc@1 72.622 (71.140)
+Test model 1 on task 35
+Test: [3/3]	loss 0.880 (0.898)	Acc@1 72.235 (71.750)
+Test model 1 on task 36
+Test: [3/3]	loss 0.978 (0.990)	Acc@1 68.418 (68.090)
+Test model 1 on task 37
+Test: [3/3]	loss 1.036 (1.007)	Acc@1 66.980 (66.780)
+Test model 1 on task 38
+Test: [3/3]	loss 1.110 (1.125)	Acc@1 62.666 (62.400)
+Test model 1 on task 39
+Test: [3/3]	loss 1.088 (1.078)	Acc@1 64.381 (64.610)
+Test model 1 on task 40
+Test: [3/3]	loss 1.257 (1.271)	Acc@1 56.361 (56.290)
+Test model 1 on task 41
+Test: [3/3]	loss 1.242 (1.261)	Acc@1 57.965 (57.790)
+Test model 1 on task 42
+Test: [3/3]	loss 1.307 (1.294)	Acc@1 58.020 (56.570)
+Test model 1 on task 43
+Test: [3/3]	loss 1.422 (1.434)	Acc@1 52.931 (52.540)
+Test model 1 on task 44
+Test: [3/3]	loss 1.621 (1.584)	Acc@1 43.473 (44.550)
+Test model 1 on task 45
+Test: [3/3]	loss 1.476 (1.460)	Acc@1 50.774 (51.200)
+Test model 1 on task 46
+Test: [3/3]	loss 1.595 (1.586)	Acc@1 45.631 (45.540)
+############################################################ Avg acc: 79.22
+Task 47 Model 1:
+Train: [1][3750/3750]	loss 0.082 (0.086)	Acc@1 62.500 (39.022)
+Train: [2][3750/3750]	loss 0.080 (0.086)	Acc@1 50.000 (40.575)
+Train: [3][3750/3750]	loss 0.087 (0.086)	Acc@1 25.000 (40.712)
+Train: [4][3750/3750]	loss 0.093 (0.086)	Acc@1 37.500 (40.760)
+Train: [5][3750/3750]	loss 0.096 (0.086)	Acc@1 25.000 (40.778)
+Train: [6][3750/3750]	loss 0.081 (0.086)	Acc@1 37.500 (40.767)
+Train: [7][3750/3750]	loss 0.086 (0.086)	Acc@1 31.250 (40.810)
+Train: [8][3750/3750]	loss 0.092 (0.086)	Acc@1 25.000 (40.673)
+Train: [9][3750/3750]	loss 0.086 (0.086)	Acc@1 50.000 (40.745)
+Train: [10][3750/3750]	loss 0.082 (0.086)	Acc@1 25.000 (40.693)
+Test model 1 on task 1
+Test: [3/3]	loss 0.447 (0.429)	Acc@1 87.058 (86.210)
+Test model 1 on task 2
+Test: [3/3]	loss 0.378 (0.338)	Acc@1 88.219 (89.270)
+Test model 1 on task 3
+Test: [3/3]	loss 0.258 (0.290)	Acc@1 91.869 (90.300)
+Test model 1 on task 4
+Test: [3/3]	loss 0.258 (0.253)	Acc@1 91.814 (92.010)
+Test model 1 on task 5
+Test: [3/3]	loss 0.280 (0.253)	Acc@1 90.929 (91.590)
+Test model 1 on task 6
+Test: [3/3]	loss 0.252 (0.235)	Acc@1 91.759 (92.490)
+Test model 1 on task 7
+Test: [3/3]	loss 0.244 (0.247)	Acc@1 92.201 (92.190)
+Test model 1 on task 8
+Test: [3/3]	loss 0.228 (0.242)	Acc@1 92.810 (92.250)
+Test model 1 on task 9
+Test: [3/3]	loss 0.218 (0.242)	Acc@1 93.252 (92.260)
+Test model 1 on task 10
+Test: [3/3]	loss 0.250 (0.249)	Acc@1 92.810 (92.630)
+Test model 1 on task 11
+Test: [3/3]	loss 0.244 (0.256)	Acc@1 93.418 (92.190)
+Test model 1 on task 12
+Test: [3/3]	loss 0.260 (0.267)	Acc@1 92.367 (91.980)
+Test model 1 on task 13
+Test: [3/3]	loss 0.254 (0.259)	Acc@1 92.976 (92.270)
+Test model 1 on task 14
+Test: [3/3]	loss 0.279 (0.267)	Acc@1 90.708 (92.020)
+Test model 1 on task 15
+Test: [3/3]	loss 0.282 (0.289)	Acc@1 91.593 (91.340)
+Test model 1 on task 16
+Test: [3/3]	loss 0.306 (0.298)	Acc@1 90.431 (90.860)
+Test model 1 on task 17
+Test: [3/3]	loss 0.333 (0.335)	Acc@1 90.155 (89.920)
+Test model 1 on task 18
+Test: [3/3]	loss 0.334 (0.336)	Acc@1 90.044 (89.970)
+Test model 1 on task 19
+Test: [3/3]	loss 0.387 (0.372)	Acc@1 87.721 (88.300)
+Test model 1 on task 20
+Test: [3/3]	loss 0.367 (0.380)	Acc@1 89.436 (89.000)
+Test model 1 on task 21
+Test: [3/3]	loss 0.411 (0.408)	Acc@1 86.560 (87.610)
+Test model 1 on task 22
+Test: [3/3]	loss 0.457 (0.444)	Acc@1 85.675 (86.300)
+Test model 1 on task 23
+Test: [3/3]	loss 0.472 (0.478)	Acc@1 85.951 (85.240)
+Test model 1 on task 24
+Test: [3/3]	loss 0.514 (0.479)	Acc@1 82.799 (84.870)
+Test model 1 on task 25
+Test: [3/3]	loss 0.512 (0.509)	Acc@1 84.237 (84.590)
+Test model 1 on task 26
+Test: [3/3]	loss 0.538 (0.546)	Acc@1 83.850 (83.530)
+Test model 1 on task 27
+Test: [3/3]	loss 0.623 (0.639)	Acc@1 79.923 (80.040)
+Test model 1 on task 28
+Test: [3/3]	loss 0.642 (0.608)	Acc@1 80.088 (81.460)
+Test model 1 on task 29
+Test: [3/3]	loss 0.592 (0.608)	Acc@1 81.527 (80.930)
+Test model 1 on task 30
+Test: [3/3]	loss 0.688 (0.677)	Acc@1 78.706 (78.520)
+Test model 1 on task 31
+Test: [3/3]	loss 0.748 (0.752)	Acc@1 76.217 (76.220)
+Test model 1 on task 32
+Test: [3/3]	loss 0.760 (0.778)	Acc@1 76.272 (75.380)
+Test model 1 on task 33
+Test: [3/3]	loss 0.952 (0.911)	Acc@1 68.086 (69.950)
+Test model 1 on task 34
+Test: [3/3]	loss 0.894 (0.882)	Acc@1 71.626 (71.130)
+Test model 1 on task 35
+Test: [3/3]	loss 0.861 (0.899)	Acc@1 72.788 (71.810)
+Test model 1 on task 36
+Test: [3/3]	loss 0.996 (0.992)	Acc@1 68.418 (67.870)
+Test model 1 on task 37
+Test: [3/3]	loss 1.034 (1.010)	Acc@1 64.657 (66.710)
+Test model 1 on task 38
+Test: [3/3]	loss 1.107 (1.125)	Acc@1 63.717 (62.410)
+Test model 1 on task 39
+Test: [3/3]	loss 1.109 (1.078)	Acc@1 62.721 (64.470)
+Test model 1 on task 40
+Test: [3/3]	loss 1.265 (1.270)	Acc@1 56.471 (56.300)
+Test model 1 on task 41
+Test: [3/3]	loss 1.291 (1.261)	Acc@1 55.863 (57.760)
+Test model 1 on task 42
+Test: [3/3]	loss 1.262 (1.293)	Acc@1 58.020 (56.580)
+Test model 1 on task 43
+Test: [3/3]	loss 1.451 (1.430)	Acc@1 52.710 (52.710)
+Test model 1 on task 44
+Test: [3/3]	loss 1.585 (1.587)	Acc@1 44.524 (44.470)
+Test model 1 on task 45
+Test: [3/3]	loss 1.451 (1.457)	Acc@1 52.489 (51.460)
+Test model 1 on task 46
+Test: [3/3]	loss 1.588 (1.588)	Acc@1 44.690 (45.550)
+Test model 1 on task 47
+Test: [3/3]	loss 1.756 (1.755)	Acc@1 42.201 (41.240)
+############################################################ Avg acc: 78.39
+Task 48 Model 1:
+Train: [1][3750/3750]	loss 0.085 (0.089)	Acc@1 50.000 (36.132)
+Train: [2][3750/3750]	loss 0.085 (0.089)	Acc@1 50.000 (38.837)
+Train: [3][3750/3750]	loss 0.087 (0.089)	Acc@1 43.750 (38.877)
+Train: [4][3750/3750]	loss 0.090 (0.089)	Acc@1 31.250 (38.822)
+Train: [5][3750/3750]	loss 0.089 (0.089)	Acc@1 43.750 (38.815)
+Train: [6][3750/3750]	loss 0.087 (0.089)	Acc@1 37.500 (38.785)
+Train: [7][3750/3750]	loss 0.088 (0.089)	Acc@1 37.500 (38.805)
+Train: [8][3750/3750]	loss 0.091 (0.089)	Acc@1 25.000 (39.005)
+Train: [9][3750/3750]	loss 0.086 (0.089)	Acc@1 31.250 (38.840)
+Train: [10][3750/3750]	loss 0.081 (0.089)	Acc@1 37.500 (38.935)
+Test model 1 on task 1
+Test: [3/3]	loss 0.377 (0.429)	Acc@1 87.887 (86.190)
+Test model 1 on task 2
+Test: [3/3]	loss 0.350 (0.340)	Acc@1 89.325 (89.140)
+Test model 1 on task 3
+Test: [3/3]	loss 0.307 (0.290)	Acc@1 89.657 (90.220)
+Test model 1 on task 4
+Test: [3/3]	loss 0.263 (0.254)	Acc@1 91.593 (91.960)
+Test model 1 on task 5
+Test: [3/3]	loss 0.248 (0.253)	Acc@1 91.261 (91.560)
+Test model 1 on task 6
+Test: [3/3]	loss 0.243 (0.236)	Acc@1 92.312 (92.520)
+Test model 1 on task 7
+Test: [3/3]	loss 0.254 (0.249)	Acc@1 91.648 (92.160)
+Test model 1 on task 8
+Test: [3/3]	loss 0.246 (0.243)	Acc@1 92.312 (92.210)
+Test model 1 on task 9
+Test: [3/3]	loss 0.246 (0.241)	Acc@1 92.201 (92.360)
+Test model 1 on task 10
+Test: [3/3]	loss 0.242 (0.251)	Acc@1 92.699 (92.540)
+Test model 1 on task 11
+Test: [3/3]	loss 0.235 (0.256)	Acc@1 93.142 (92.180)
+Test model 1 on task 12
+Test: [3/3]	loss 0.265 (0.268)	Acc@1 91.593 (91.940)
+Test model 1 on task 13
+Test: [3/3]	loss 0.264 (0.260)	Acc@1 92.699 (92.230)
+Test model 1 on task 14
+Test: [3/3]	loss 0.263 (0.268)	Acc@1 91.980 (91.970)
+Test model 1 on task 15
+Test: [3/3]	loss 0.290 (0.290)	Acc@1 91.206 (91.260)
+Test model 1 on task 16
+Test: [3/3]	loss 0.295 (0.298)	Acc@1 90.819 (90.820)
+Test model 1 on task 17
+Test: [3/3]	loss 0.332 (0.336)	Acc@1 89.657 (89.920)
+Test model 1 on task 18
+Test: [3/3]	loss 0.351 (0.336)	Acc@1 89.436 (89.970)
+Test model 1 on task 19
+Test: [3/3]	loss 0.369 (0.372)	Acc@1 88.883 (88.280)
+Test model 1 on task 20
+Test: [3/3]	loss 0.369 (0.381)	Acc@1 89.381 (88.910)
+Test model 1 on task 21
+Test: [3/3]	loss 0.425 (0.408)	Acc@1 87.002 (87.540)
+Test model 1 on task 22
+Test: [3/3]	loss 0.445 (0.444)	Acc@1 86.283 (86.230)
+Test model 1 on task 23
+Test: [3/3]	loss 0.473 (0.478)	Acc@1 85.122 (85.240)
+Test model 1 on task 24
+Test: [3/3]	loss 0.490 (0.480)	Acc@1 83.960 (84.800)
+Test model 1 on task 25
+Test: [3/3]	loss 0.481 (0.509)	Acc@1 86.007 (84.630)
+Test model 1 on task 26
+Test: [3/3]	loss 0.515 (0.546)	Acc@1 84.237 (83.620)
+Test model 1 on task 27
+Test: [3/3]	loss 0.612 (0.640)	Acc@1 80.973 (80.090)
+Test model 1 on task 28
+Test: [3/3]	loss 0.627 (0.609)	Acc@1 80.918 (81.360)
+Test model 1 on task 29
+Test: [3/3]	loss 0.617 (0.608)	Acc@1 80.365 (80.850)
+Test model 1 on task 30
+Test: [3/3]	loss 0.649 (0.679)	Acc@1 79.867 (78.530)
+Test model 1 on task 31
+Test: [3/3]	loss 0.753 (0.752)	Acc@1 76.493 (76.140)
+Test model 1 on task 32
+Test: [3/3]	loss 0.745 (0.778)	Acc@1 76.438 (75.300)
+Test model 1 on task 33
+Test: [3/3]	loss 0.946 (0.910)	Acc@1 68.639 (69.940)
+Test model 1 on task 34
+Test: [3/3]	loss 0.906 (0.883)	Acc@1 71.018 (70.930)
+Test model 1 on task 35
+Test: [3/3]	loss 0.870 (0.898)	Acc@1 72.954 (71.750)
+Test model 1 on task 36
+Test: [3/3]	loss 0.956 (0.992)	Acc@1 69.192 (67.940)
+Test model 1 on task 37
+Test: [3/3]	loss 0.989 (1.007)	Acc@1 67.810 (66.760)
+Test model 1 on task 38
+Test: [3/3]	loss 1.142 (1.125)	Acc@1 61.283 (62.400)
+Test model 1 on task 39
+Test: [3/3]	loss 1.100 (1.080)	Acc@1 64.104 (64.350)
+Test model 1 on task 40
+Test: [3/3]	loss 1.270 (1.271)	Acc@1 56.692 (56.360)
+Test model 1 on task 41
+Test: [3/3]	loss 1.258 (1.262)	Acc@1 57.356 (57.730)
+Test model 1 on task 42
+Test: [3/3]	loss 1.303 (1.292)	Acc@1 55.144 (56.670)
+Test model 1 on task 43
+Test: [3/3]	loss 1.412 (1.428)	Acc@1 53.319 (52.890)
+Test model 1 on task 44
+Test: [3/3]	loss 1.596 (1.587)	Acc@1 45.077 (44.380)
+Test model 1 on task 45
+Test: [3/3]	loss 1.439 (1.456)	Acc@1 52.046 (51.520)
+Test model 1 on task 46
+Test: [3/3]	loss 1.575 (1.588)	Acc@1 45.852 (45.510)
+Test model 1 on task 47
+Test: [3/3]	loss 1.732 (1.753)	Acc@1 41.040 (41.210)
+Test model 1 on task 48
+Test: [3/3]	loss 1.805 (1.830)	Acc@1 39.270 (39.770)
+############################################################ Avg acc: 77.56
+Task 49 Model 1:
+Train: [1][3750/3750]	loss 0.097 (0.089)	Acc@1 31.250 (37.562)
+Train: [2][3750/3750]	loss 0.082 (0.089)	Acc@1 50.000 (39.140)
+Train: [3][3750/3750]	loss 0.089 (0.089)	Acc@1 31.250 (39.197)
+Train: [4][3750/3750]	loss 0.094 (0.089)	Acc@1 31.250 (39.047)
+Train: [5][3750/3750]	loss 0.096 (0.089)	Acc@1 37.500 (39.190)
+Train: [6][3750/3750]	loss 0.091 (0.089)	Acc@1 31.250 (39.122)
+Train: [7][3750/3750]	loss 0.082 (0.089)	Acc@1 37.500 (39.130)
+Train: [8][3750/3750]	loss 0.080 (0.089)	Acc@1 50.000 (39.078)
+Train: [9][3750/3750]	loss 0.089 (0.089)	Acc@1 37.500 (39.123)
+Train: [10][3750/3750]	loss 0.098 (0.089)	Acc@1 18.750 (39.113)
+Test model 1 on task 1
+Test: [3/3]	loss 0.435 (0.430)	Acc@1 84.735 (86.070)
+Test model 1 on task 2
+Test: [3/3]	loss 0.337 (0.340)	Acc@1 89.546 (89.170)
+Test model 1 on task 3
+Test: [3/3]	loss 0.287 (0.289)	Acc@1 90.819 (90.260)
+Test model 1 on task 4
+Test: [3/3]	loss 0.247 (0.254)	Acc@1 91.759 (92.000)
+Test model 1 on task 5
+Test: [3/3]	loss 0.237 (0.255)	Acc@1 92.312 (91.550)
+Test model 1 on task 6
+Test: [3/3]	loss 0.240 (0.237)	Acc@1 91.814 (92.450)
+Test model 1 on task 7
+Test: [3/3]	loss 0.272 (0.250)	Acc@1 91.206 (92.100)
+Test model 1 on task 8
+Test: [3/3]	loss 0.252 (0.243)	Acc@1 91.648 (92.170)
+Test model 1 on task 9
+Test: [3/3]	loss 0.277 (0.241)	Acc@1 91.150 (92.310)
+Test model 1 on task 10
+Test: [3/3]	loss 0.214 (0.250)	Acc@1 93.418 (92.590)
+Test model 1 on task 11
+Test: [3/3]	loss 0.259 (0.258)	Acc@1 91.648 (92.230)
+Test model 1 on task 12
+Test: [3/3]	loss 0.254 (0.267)	Acc@1 92.091 (91.910)
+Test model 1 on task 13
+Test: [3/3]	loss 0.247 (0.261)	Acc@1 92.423 (92.170)
+Test model 1 on task 14
+Test: [3/3]	loss 0.251 (0.269)	Acc@1 92.312 (91.960)
+Test model 1 on task 15
+Test: [3/3]	loss 0.288 (0.291)	Acc@1 91.372 (91.220)
+Test model 1 on task 16
+Test: [3/3]	loss 0.288 (0.299)	Acc@1 91.040 (90.800)
+Test model 1 on task 17
+Test: [3/3]	loss 0.342 (0.337)	Acc@1 89.878 (89.830)
+Test model 1 on task 18
+Test: [3/3]	loss 0.338 (0.337)	Acc@1 89.436 (89.980)
+Test model 1 on task 19
+Test: [3/3]	loss 0.364 (0.373)	Acc@1 88.938 (88.270)
+Test model 1 on task 20
+Test: [3/3]	loss 0.396 (0.382)	Acc@1 88.274 (88.870)
+Test model 1 on task 21
+Test: [3/3]	loss 0.438 (0.409)	Acc@1 86.947 (87.660)
+Test model 1 on task 22
+Test: [3/3]	loss 0.432 (0.445)	Acc@1 86.615 (86.140)
+Test model 1 on task 23
+Test: [3/3]	loss 0.480 (0.480)	Acc@1 86.007 (85.170)
+Test model 1 on task 24
+Test: [3/3]	loss 0.484 (0.481)	Acc@1 84.735 (84.760)
+Test model 1 on task 25
+Test: [3/3]	loss 0.513 (0.510)	Acc@1 85.122 (84.550)
+Test model 1 on task 26
+Test: [3/3]	loss 0.538 (0.547)	Acc@1 84.015 (83.540)
+Test model 1 on task 27
+Test: [3/3]	loss 0.632 (0.639)	Acc@1 79.314 (80.080)
+Test model 1 on task 28
+Test: [3/3]	loss 0.607 (0.611)	Acc@1 80.642 (81.260)
+Test model 1 on task 29
+Test: [3/3]	loss 0.562 (0.609)	Acc@1 83.186 (80.980)
+Test model 1 on task 30
+Test: [3/3]	loss 0.676 (0.681)	Acc@1 78.208 (78.390)
+Test model 1 on task 31
+Test: [3/3]	loss 0.745 (0.752)	Acc@1 77.046 (76.160)
+Test model 1 on task 32
+Test: [3/3]	loss 0.801 (0.781)	Acc@1 74.281 (75.360)
+Test model 1 on task 33
+Test: [3/3]	loss 0.896 (0.910)	Acc@1 68.750 (69.900)
+Test model 1 on task 34
+Test: [3/3]	loss 0.857 (0.884)	Acc@1 71.847 (70.970)
+Test model 1 on task 35
+Test: [3/3]	loss 0.918 (0.900)	Acc@1 71.903 (71.700)
+Test model 1 on task 36
+Test: [3/3]	loss 0.979 (0.994)	Acc@1 68.473 (67.690)
+Test model 1 on task 37
+Test: [3/3]	loss 1.034 (1.008)	Acc@1 65.819 (66.770)
+Test model 1 on task 38
+Test: [3/3]	loss 1.126 (1.123)	Acc@1 61.781 (62.450)
+Test model 1 on task 39
+Test: [3/3]	loss 1.088 (1.082)	Acc@1 64.768 (64.330)
+Test model 1 on task 40
+Test: [3/3]	loss 1.265 (1.272)	Acc@1 54.812 (56.170)
+Test model 1 on task 41
+Test: [3/3]	loss 1.279 (1.262)	Acc@1 56.692 (57.900)
+Test model 1 on task 42
+Test: [3/3]	loss 1.270 (1.290)	Acc@1 58.241 (56.750)
+Test model 1 on task 43
+Test: [3/3]	loss 1.466 (1.423)	Acc@1 50.608 (52.900)
+Test model 1 on task 44
+Test: [3/3]	loss 1.578 (1.587)	Acc@1 44.358 (44.480)
+Test model 1 on task 45
+Test: [3/3]	loss 1.428 (1.456)	Acc@1 52.544 (51.390)
+Test model 1 on task 46
+Test: [3/3]	loss 1.561 (1.586)	Acc@1 47.124 (45.490)
+Test model 1 on task 47
+Test: [3/3]	loss 1.744 (1.754)	Acc@1 41.206 (41.370)
+Test model 1 on task 48
+Test: [3/3]	loss 1.818 (1.830)	Acc@1 40.708 (39.730)
+Test model 1 on task 49
+Test: [3/3]	loss 1.825 (1.795)	Acc@1 38.108 (40.030)
+############################################################ Avg acc: 76.78
+Task 50 Model 1:
+Train: [1][3750/3750]	loss 0.092 (0.088)	Acc@1 31.250 (31.983)
+Train: [2][3750/3750]	loss 0.090 (0.087)	Acc@1 31.250 (33.610)
+Train: [3][3750/3750]	loss 0.086 (0.087)	Acc@1 37.500 (33.582)
+Train: [4][3750/3750]	loss 0.084 (0.087)	Acc@1 31.250 (33.578)
+Train: [5][3750/3750]	loss 0.096 (0.087)	Acc@1 31.250 (33.677)
+Train: [6][3750/3750]	loss 0.093 (0.087)	Acc@1 18.750 (33.612)
+Train: [7][3750/3750]	loss 0.080 (0.087)	Acc@1 50.000 (33.647)
+Train: [8][3750/3750]	loss 0.088 (0.087)	Acc@1 25.000 (33.667)
+Train: [9][3750/3750]	loss 0.079 (0.087)	Acc@1 62.500 (33.597)
+Train: [10][3750/3750]	loss 0.088 (0.087)	Acc@1 31.250 (33.613)
+Test model 1 on task 1
+Test: [3/3]	loss 0.355 (0.431)	Acc@1 87.555 (86.040)
+Test model 1 on task 2
+Test: [3/3]	loss 0.355 (0.340)	Acc@1 88.883 (89.170)
+Test model 1 on task 3
+Test: [3/3]	loss 0.299 (0.291)	Acc@1 89.712 (90.180)
+Test model 1 on task 4
+Test: [3/3]	loss 0.262 (0.254)	Acc@1 91.482 (92.040)
+Test model 1 on task 5
+Test: [3/3]	loss 0.287 (0.255)	Acc@1 90.653 (91.520)
+Test model 1 on task 6
+Test: [3/3]	loss 0.217 (0.237)	Acc@1 93.584 (92.440)
+Test model 1 on task 7
+Test: [3/3]	loss 0.257 (0.251)	Acc@1 91.538 (92.080)
+Test model 1 on task 8
+Test: [3/3]	loss 0.250 (0.243)	Acc@1 92.367 (92.190)
+Test model 1 on task 9
+Test: [3/3]	loss 0.246 (0.242)	Acc@1 91.814 (92.270)
+Test model 1 on task 10
+Test: [3/3]	loss 0.266 (0.251)	Acc@1 92.312 (92.670)
+Test model 1 on task 11
+Test: [3/3]	loss 0.236 (0.259)	Acc@1 93.142 (92.180)
+Test model 1 on task 12
+Test: [3/3]	loss 0.254 (0.267)	Acc@1 92.699 (92.020)
+Test model 1 on task 13
+Test: [3/3]	loss 0.254 (0.261)	Acc@1 92.588 (92.080)
+Test model 1 on task 14
+Test: [3/3]	loss 0.294 (0.270)	Acc@1 90.929 (91.910)
+Test model 1 on task 15
+Test: [3/3]	loss 0.290 (0.291)	Acc@1 91.814 (91.180)
+Test model 1 on task 16
+Test: [3/3]	loss 0.318 (0.300)	Acc@1 90.044 (90.740)
+Test model 1 on task 17
+Test: [3/3]	loss 0.301 (0.339)	Acc@1 90.487 (89.730)
+Test model 1 on task 18
+Test: [3/3]	loss 0.327 (0.338)	Acc@1 90.376 (89.970)
+Test model 1 on task 19
+Test: [3/3]	loss 0.369 (0.374)	Acc@1 87.998 (88.210)
+Test model 1 on task 20
+Test: [3/3]	loss 0.378 (0.383)	Acc@1 88.883 (88.840)
+Test model 1 on task 21
+Test: [3/3]	loss 0.421 (0.410)	Acc@1 87.389 (87.590)
+Test model 1 on task 22
+Test: [3/3]	loss 0.447 (0.446)	Acc@1 86.394 (86.180)
+Test model 1 on task 23
+Test: [3/3]	loss 0.498 (0.482)	Acc@1 83.684 (84.920)
+Test model 1 on task 24
+Test: [3/3]	loss 0.465 (0.483)	Acc@1 86.007 (84.730)
+Test model 1 on task 25
+Test: [3/3]	loss 0.499 (0.511)	Acc@1 84.790 (84.550)
+Test model 1 on task 26
+Test: [3/3]	loss 0.523 (0.547)	Acc@1 83.850 (83.410)
+Test model 1 on task 27
+Test: [3/3]	loss 0.612 (0.639)	Acc@1 80.863 (80.110)
+Test model 1 on task 28
+Test: [3/3]	loss 0.630 (0.612)	Acc@1 82.412 (81.210)
+Test model 1 on task 29
+Test: [3/3]	loss 0.594 (0.609)	Acc@1 81.692 (80.790)
+Test model 1 on task 30
+Test: [3/3]	loss 0.704 (0.682)	Acc@1 77.655 (78.380)
+Test model 1 on task 31
+Test: [3/3]	loss 0.769 (0.752)	Acc@1 74.668 (76.010)
+Test model 1 on task 32
+Test: [3/3]	loss 0.799 (0.783)	Acc@1 74.723 (75.210)
+Test model 1 on task 33
+Test: [3/3]	loss 0.912 (0.908)	Acc@1 69.414 (69.900)
+Test model 1 on task 34
+Test: [3/3]	loss 0.870 (0.885)	Acc@1 71.073 (70.970)
+Test model 1 on task 35
+Test: [3/3]	loss 0.906 (0.901)	Acc@1 71.847 (71.710)
+Test model 1 on task 36
+Test: [3/3]	loss 1.007 (0.994)	Acc@1 67.035 (67.750)
+Test model 1 on task 37
+Test: [3/3]	loss 1.024 (1.011)	Acc@1 65.321 (66.680)
+Test model 1 on task 38
+Test: [3/3]	loss 1.110 (1.125)	Acc@1 62.887 (62.380)
+Test model 1 on task 39
+Test: [3/3]	loss 1.078 (1.081)	Acc@1 64.159 (64.400)
+Test model 1 on task 40
+Test: [3/3]	loss 1.261 (1.270)	Acc@1 57.024 (56.330)
+Test model 1 on task 41
+Test: [3/3]	loss 1.250 (1.263)	Acc@1 58.241 (57.840)
+Test model 1 on task 42
+Test: [3/3]	loss 1.282 (1.290)	Acc@1 57.799 (56.730)
+Test model 1 on task 43
+Test: [3/3]	loss 1.464 (1.423)	Acc@1 51.162 (52.890)
+Test model 1 on task 44
+Test: [3/3]	loss 1.561 (1.585)	Acc@1 45.243 (44.490)
+Test model 1 on task 45
+Test: [3/3]	loss 1.452 (1.454)	Acc@1 51.659 (51.430)
+Test model 1 on task 46
+Test: [3/3]	loss 1.589 (1.584)	Acc@1 45.077 (45.660)
+Test model 1 on task 47
+Test: [3/3]	loss 1.776 (1.749)	Acc@1 40.597 (41.500)
+Test model 1 on task 48
+Test: [3/3]	loss 1.842 (1.829)	Acc@1 38.551 (39.750)
+Test model 1 on task 49
+Test: [3/3]	loss 1.789 (1.794)	Acc@1 39.934 (40.020)
+Test model 1 on task 50
+Test: [3/3]	loss 1.851 (1.939)	Acc@1 37.334 (34.550)
+############################################################ Avg acc: 75.91
