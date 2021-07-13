@@ -1,4 +1,5 @@
 import os
+import pickle
 import random
 
 import numpy as np
@@ -172,6 +173,9 @@ def get_datasets(dataset_name="pMNIST", task_number=10,
             np.random.permutation(28 * 28) for
             _ in range(task_number)
         ]
+
+        with open('perms/perms.pkl', 'wb') as output:
+            pickle.dump(permutations, output, pickle.HIGHEST_PROTOCOL)
 
         train_datasets = [
             _get_dataset_MNIST(p, True, root) for p in permutations

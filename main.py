@@ -1,4 +1,5 @@
 import os
+import pickle
 from copy import deepcopy
 
 import numpy as np
@@ -268,10 +269,12 @@ def main():
     lmbd = 10**4
     seed = 1234
 
-    loss_space_vis = True
+    loss_space_vis = False
     max_dis = 1
     steps = 10 + 1
     loss_vis_mod = 10
+
+    save_data = True
 
     set_seed(seed)
     train_datasets, test_datasets = get_datasets(task_number=tasks_nb,
@@ -326,6 +329,21 @@ def main():
 
     if loss_space_vis:
         visualize_loss_space(test_datasets, all_models, kfacs, max_dis, steps, lmbd, loss_vis_mod)
+
+    if  save_data:
+        for i in range(len(kfacs)):
+            kfac = kfacs[i][-1]
+            with open('kfacs/{:d}_weights.pkl'.format(i), 'wb') as output:
+                pickle.dump(kfac.weights, output, pickle.HIGHEST_PROTOCOL)
+            with open('kfacs/{:d}_maa.pkl'.format(i), 'wb') as output:
+                pickle.dump(kfac.m_aa, output, pickle.HIGHEST_PROTOCOL)
+            with open('kfacs/{:d}_mgg.pkl'.format(i), 'wb') as output:
+                pickle.dump(kfac.m_gg, output, pickle.HIGHEST_PROTOCOL)
+        
+        for model_name, model in all_models.items():
+            torch.save(model.state_dict(), 'models/{:s}.pt'.format(model_name))
+
+    
 
 
 if __name__=='__main__':
