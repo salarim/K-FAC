@@ -161,7 +161,7 @@ def _get_dataset_MNIST(permutation, get_train=True, root='./data'):
 
 
 def get_datasets(dataset_name="pMNIST", task_number=10,
-                 batch_size_train=64, batch_size_test=100, include_prev=False):
+                 batch_size_train=64, batch_size_test=100, include_prev=False, permutations=None):
     
     if dataset_name == "pMNIST":
         
@@ -169,13 +169,14 @@ def get_datasets(dataset_name="pMNIST", task_number=10,
         if not os.path.exists(root):
             os.mkdir(root)
 
-        permutations = [
-            np.random.permutation(28 * 28) for
-            _ in range(task_number)
-        ]
+        if permutations is None:
+            permutations = [
+                np.random.permutation(28 * 28) for
+                _ in range(task_number)
+            ]
 
-        with open('perms/perms.pkl', 'wb') as output:
-            pickle.dump(permutations, output, pickle.HIGHEST_PROTOCOL)
+            with open('perms/perms.pkl', 'wb') as output:
+                pickle.dump(permutations, output, pickle.HIGHEST_PROTOCOL)
 
         train_datasets = [
             _get_dataset_MNIST(p, True, root) for p in permutations

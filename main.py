@@ -10,7 +10,6 @@ import torch.optim as optim
 from utils import set_seed
 from utils import Net, train,  validate, get_datasets
 from utils import ComputeCovA, ComputeCovG
-from loss_space import visualize_loss_space
 
 
 class KFAC:
@@ -269,11 +268,6 @@ def main():
     lmbd = 10**4
     seed = 1234
 
-    loss_space_vis = False
-    max_dis = 1
-    steps = 10 + 1
-    loss_vis_mod = 10
-
     save_data = True
 
     set_seed(seed)
@@ -326,9 +320,6 @@ def main():
         # kfacs[-1][-1].visualize_attr('images/', task_id, 'aa')
 
         print('#'*60, 'Avg acc: {:.2f}'.format(np.sum(val_accs[task_id][:task_id+1])/(task_id+1)))
-
-    if loss_space_vis:
-        visualize_loss_space(test_datasets, all_models, kfacs, max_dis, steps, lmbd, loss_vis_mod)
 
     if  save_data:
         for i in range(len(kfacs)):
