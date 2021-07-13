@@ -1,6 +1,7 @@
 import os
 import pickle
 import random
+import matplotlib.pyplot as plt
 
 import numpy as np
 import torch
@@ -60,6 +61,29 @@ def accuracy(output, target, topk=(1,)):
             correct_k = correct[:k].contiguous().view(-1).float().sum(0, keepdim=True)
             res.append(correct_k.mul_(100.0 / batch_size))
         return res
+
+
+def get_incorrect_indexes(output, target):
+    with torch.no_grad():
+        _, pred = output.topk(1, 1, True, True)
+        pred = pred.t()
+        incorrect = pred.ne(target.view(1, -1).expand_as(pred))
+
+        return incorrect.nonzero(as_tuple=True)[1]
+
+
+def visualize_incorrect_samples(dataset, model):
+    with torch.no_grad():
+        index = 0
+        for idx, (images, targets) in enumerate(dataset):
+            images, targets = images.cuda(), targets.cuda() 
+            output = model(images)
+            incorrect_images = images[get_incorrect_indexes(output, targets)]
+            for i in range(incorrect_images.shape[0]):
+                plt.imshow( incorrect_images[i].permute(1, 2, 0).cpu(), cmap='gray')
+                plt.savefig('incorrect-outputs/{:d}'.format(index))
+                index += 1
+                plt.close()
 
 
 def get_min_max_grad(model):
