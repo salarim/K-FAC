@@ -164,8 +164,8 @@ def visualize_loss_space(datasets, models_dict, kfacs, max_dis, steps, lmbd, los
     loss_vis_kfac.visualize()
 
 
-def load_files(tasks_nb):
-    with open('perms/perms.pkl', 'rb') as input:
+def load_files(tasks_nb, seed):
+    with open('perms/{:d}.pkl'.format(seed), 'rb') as input:
         perms = pickle.load(input)
     train_datasets, test_datasets = get_datasets(task_number=tasks_nb,
                                                 batch_size_train=128,
@@ -207,7 +207,7 @@ if __name__ == '__main__':
 
     set_seed(seed)
 
-    train_datasets, test_datasets, kfacs, all_models = load_files(tasks_nb)
+    train_datasets, test_datasets, kfacs, all_models = load_files(tasks_nb, seed)
 
     visualize_loss_space(test_datasets, all_models, kfacs, max_dis, steps, lmbd, loss_vis_mod)
 

@@ -185,7 +185,7 @@ def _get_dataset_MNIST(permutation, get_train=True, root='./data'):
 
 
 def get_datasets(dataset_name="pMNIST", task_number=10,
-                 batch_size_train=64, batch_size_test=100, include_prev=False, permutations=None):
+                 batch_size_train=64, batch_size_test=100, include_prev=False, permutations=None, seed=1234):
     
     if dataset_name == "pMNIST":
         
@@ -199,7 +199,7 @@ def get_datasets(dataset_name="pMNIST", task_number=10,
                 _ in range(task_number)
             ]
 
-            with open('perms/perms.pkl', 'wb') as output:
+            with open('perms/{:d}.pkl'.format(seed), 'wb') as output:
                 pickle.dump(permutations, output, pickle.HIGHEST_PROTOCOL)
 
         train_datasets = [

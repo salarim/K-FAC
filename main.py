@@ -268,13 +268,14 @@ def main():
     lmbd = 10**4
     seed = 1234
 
-    save_data = True
+    save_models = False
 
     set_seed(seed)
     train_datasets, test_datasets = get_datasets(task_number=tasks_nb,
                                                   batch_size_train=128,
                                                   batch_size_test=4096,
-                                                  include_prev=multi_task_dataset)
+                                                  include_prev=multi_task_dataset,
+                                                  seed=seed)
     
     all_models = {}
     models = [Net().cuda() for i in range(models_nb_per_task)]
@@ -321,7 +322,7 @@ def main():
 
         print('#'*60, 'Avg acc: {:.2f}'.format(np.sum(val_accs[task_id][:task_id+1])/(task_id+1)))
 
-    if  save_data:
+    if save_models:
         for i in range(len(kfacs)):
             kfac = kfacs[i][-1]
             with open('kfacs/{:d}_weights.pkl'.format(i), 'wb') as output:
