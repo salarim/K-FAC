@@ -31,8 +31,8 @@ def get_models_config():
                     'acc_true_e_1_tnb_50_mnb_1/acc_true_e_1_tnb_50_mnb_1_lmbd_1e2.txt',
                     'acc_true_e_1_tnb_50_mnb_5/acc_true_e_1_tnb_50_mnb_5_lmbd_1e2.txt',
                     'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1_ewc.txt',
-                    'finetune.txt',
-                    'multi-task.txt']
+                    'finetune_e_1.txt',
+                    'multitask_e_1.txt']
     input_files = ['outputs/'+x for x in input_files]
 
     legends = ['1 model per task',
@@ -89,15 +89,14 @@ def plot_avg_test_acc(filename, test_accs_dict):
     legends = []
     for legend, test_accs in test_accs_dict.items():
         task_nb, model_nb, _ = test_accs.shape
-        test_accs = test_accs.mean(axis=1)
 
         avg_test_accs = np.zeros(task_nb)
+        std_test_accs = np.zeros(task_nb)
         for i in range(task_nb):
-            for j in range(i+1):
-                avg_test_accs[i] += test_accs[i,j]
-            avg_test_accs[i] /= (i+1)
+            avg_test_accs[i] = np.mean(test_accs[i,:,0:i+1])
+            std_test_accs[i] = np.mean(np.std(test_accs[i,:,0:i+1], axis=0))
 
-        plt.plot(range(1,task_nb+1), avg_test_accs)
+        plt.errorbar(range(1,task_nb+1), avg_test_accs, yerr=std_test_accs, fmt='-')
         legends.append(legend)
 
     plt.legend(legends)
@@ -161,7 +160,7 @@ def plot_fwt(filename, test_accs_dict, initial_accs):
     plt.close()
 
 
-def plot_test_acc(filename, test_accs):
+def plot_per_task_acc(filename, test_accs):
     legends = []
     task_nb, _, _ = test_accs.shape
     test_accs = test_accs.mean(axis=1)
@@ -185,8 +184,8 @@ def main():
     prefixes = ['lambda_', 'models_']
     config_func = [get_lmbd_config, get_models_config]
 
-    prefix = prefixes[0]
-    input_files, legends, model_nbs = config_func[0]()
+    prefix = prefixes[1]
+    input_files, legends, model_nbs = config_func[1]()
     task_nb = 50
     ###############################################################################################
 
@@ -204,7 +203,7 @@ def main():
 
     plot_fwt(prefix + 'fwt', test_accs_dict, initial_accs)
 
-    # plot_test_acc('acc_per_task_' + 'acc_false_e_1_tnb_50_mnb_1_lmbd_1e4', test_accs_dict['1e4'])
+    # plot_per_task_acc('acc_per_task_' + 'acc_false_e_1_tnb_50_mnb_1_lmbd_1e4', test_accs_dict['1e4'])
 
 if __name__ == '__main__':
     main()
