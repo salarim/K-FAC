@@ -102,8 +102,8 @@ def plot_avg_test_acc(filename, test_accs_dict):
     plt.legend(legends)
 
     plt.ylim(0,100)
-    plt.xlabel("# Task")
-    plt.ylabel("Test Accuracy")
+    plt.xlabel("Number of observed tasks")
+    plt.ylabel("Average test accuracy (%)")
     # plt.title("Average test accuracy of a kfac-approximate continual learner")
     plt.savefig(filename)
     plt.close()
@@ -127,8 +127,8 @@ def plot_bwt(filename, test_accs_dict):
     plt.legend(legends)
 
     # plt.ylim(0,100)
-    plt.xlabel("# Task")
-    plt.ylabel("Backward Transfer")
+    plt.xlabel("Number of observed tasks")
+    plt.ylabel("Average test accuracy (%)")
     # plt.title("Backward transfer of a kfac-approximate continual learner")
     plt.savefig(filename)
     plt.close()
@@ -153,8 +153,8 @@ def plot_fwt(filename, test_accs_dict, initial_accs):
     plt.legend(legends)
 
     # plt.ylim(0,100)
-    plt.xlabel("# Task")
-    plt.ylabel("Forward Transfer")
+    plt.xlabel("Number of observed tasks")
+    plt.ylabel("Average test accuracy (%)")
     # plt.title("Forward transfer of a kfac-approximate continual learner")
     plt.savefig(filename)
     plt.close()
@@ -173,8 +173,8 @@ def plot_per_task_acc(filename, test_accs):
     plt.legend(legends)
 
     plt.ylim(0,100)
-    plt.xlabel("Training Task")
-    plt.ylabel("Test Accuracy")
+    plt.xlabel("Number of observed tasks")
+    plt.ylabel("Average test accuracy (%)")
     # plt.title("Average test accuracy of a kfac-approximate continual learner")
     plt.savefig(filename)
     plt.close()
