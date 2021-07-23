@@ -258,7 +258,7 @@ def create_loss_function(kfacs, model, accumulate_last_kfac, lmbd, use_kfac):
 
 
 def main():
-    EPOCHS = 1
+    EPOCHS = 10
     tasks_nb = 50
     models_nb_per_task = 1
     multi_task_dataset = False
@@ -267,11 +267,13 @@ def main():
     ewc = False
     lmbd = 10**4
     seed = 1234
+    dataset_name = 'pMNIST'
 
     save_models = False
 
     set_seed(seed)
-    train_datasets, test_datasets = get_datasets(task_number=tasks_nb,
+    train_datasets, test_datasets = get_datasets(dataset_name=dataset_name,
+                                                  task_number=tasks_nb,
                                                   batch_size_train=128,
                                                   batch_size_test=4096,
                                                   include_prev=multi_task_dataset,

@@ -176,7 +176,7 @@ def set_seed(seed):
     os.environ['PYTHONHASHSEED'] = str(seed)
 
 
-def _get_dataset_MNIST(permutation, get_train=True, root='./data'):
+def _get_dataset_permuted_MNIST(permutation, get_train=True, root='./data'):
     trans_perm = transforms.Compose([transforms.ToTensor(),
               transforms.Lambda(lambda x: x.view(-1)[permutation].view(1, 28, 28))])
     
@@ -184,52 +184,68 @@ def _get_dataset_MNIST(permutation, get_train=True, root='./data'):
     return dataset
 
 
-def get_datasets(dataset_name="pMNIST", task_number=10,
-                 batch_size_train=64, batch_size_test=100, include_prev=False, permutations=None, seed=1234):
-    
-    if dataset_name == "pMNIST":
-        
-        root = './data'
-        if not os.path.exists(root):
-            os.mkdir(root)
+def _get_dataset_rotated_MNIST(degree, get_train=True, root='./data'):
+    trans_perm = transforms.Compose([transforms.ToTensor(),
+                                    transforms.RandomRotation(degrees=(degree,degree))])
 
-        if permutations is None:
-            permutations = [
+    dataset = datasets.MNIST(root=root, train=get_train, transform=trans_perm, download=True)
+    return dataset
+
+
+def get_datasets(dataset_name="pMNIST", task_number=10,
+                 batch_size_train=64, batch_size_test=100, include_prev=False, saved_data=None, seed=1234):
+    
+    root = './data'
+    if not os.path.exists(root):
+        os.mkdir(root)
+        
+    if dataset_name == "pMNIST":
+        _get_dataset = _get_dataset_permuted_MNIST
+        if saved_data is None:
+            saved_data = [
                 np.random.permutation(28 * 28) for
                 _ in range(task_number)
             ]
 
-            with open('perms/{:d}.pkl'.format(seed), 'wb') as output:
-                pickle.dump(permutations, output, pickle.HIGHEST_PROTOCOL)
+            with open('perms/{:s}-{:d}.pkl'.format(dataset_name, seed), 'wb') as output:
+                pickle.dump(saved_data, output, pickle.HIGHEST_PROTOCOL)
+    elif dataset_name == "rMNIST":
+        _get_dataset = _get_dataset_rotated_MNIST
+        if saved_data is None:
+            degs = np.linspace(0, 360, task_number+1)
+            saved_data = [x + np.random.rand() * (y-x) for x,y in zip(degs, degs[1:])]
 
-        train_datasets = [
-            _get_dataset_MNIST(p, True, root) for p in permutations
-        ]
-        test_datasets = [
-            _get_dataset_MNIST(p, False, root) for p in permutations
-        ]
+            with open('perms/{:s}-{:d}.pkl'.format(dataset_name, seed), 'wb') as output:
+                pickle.dump(saved_data, output, pickle.HIGHEST_PROTOCOL)
 
-        if include_prev:
-            new_train_datasets = []
-            new_test_datasets = []
+    train_datasets = [
+        _get_dataset(p, True, root) for p in saved_data
+    ]
+    test_datasets = [
+        _get_dataset(p, False, root) for p in saved_data
+    ]
 
-            for i in range(len(train_datasets)):
-                new_train_datasets.append(torch.utils.data.ConcatDataset(train_datasets[:i+1]))
-                new_test_datasets.append(torch.utils.data.ConcatDataset(test_datasets[:i+1]))
+    if include_prev:
+        new_train_datasets = []
+        new_test_datasets = []
 
-            train_datasets = new_train_datasets
-            test_datasets = new_test_datasets
-        
-        train_loaders, test_loaders = [], []
-        for train_dataset in train_datasets:
-            loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size_train, shuffle=True,
-                                         num_workers=4, pin_memory=True)
-            train_loaders.append(loader)
+        for i in range(len(train_datasets)):
+            new_train_datasets.append(torch.utils.data.ConcatDataset(train_datasets[:i+1]))
+            new_test_datasets.append(torch.utils.data.ConcatDataset(test_datasets[:i+1]))
 
-        for test_dataset in test_datasets:
-            loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size_test, shuffle=True,
-                                         num_workers=4, pin_memory=True)
-            test_loaders.append(loader)
+        train_datasets = new_train_datasets
+        test_datasets = new_test_datasets
+    
+    train_loaders, test_loaders = [], []
+    for train_dataset in train_datasets:
+        loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size_train, shuffle=True,
+                                        num_workers=4, pin_memory=True)
+        train_loaders.append(loader)
+
+    for test_dataset in test_datasets:
+        loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size_test, shuffle=True,
+                                        num_workers=4, pin_memory=True)
+        test_loaders.append(loader)
             
     return train_loaders, test_loaders
 
