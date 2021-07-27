@@ -3,15 +3,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def get_lmbd_config():
-    input_files = ['acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e2.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e3.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e4.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_4e4.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_5e4.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_tid*1e2.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_tid*1e3.txt']
-    input_files = ['outputs/'+x for x in input_files]
+def get_lmbd_config(epoch):
+    input_files = ['acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1e2.txt',
+                    'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1e3.txt',
+                    'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1e4.txt',
+                    'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_4e4.txt',
+                    'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_5e4.txt',
+                    'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_tid*1e2.txt',
+                    'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_tid*1e3.txt']
+    input_files = ['outputs/'+x.format(epoch,epoch) for x in input_files]
 
     legends = ['1e2',
                 '1e3',
@@ -25,15 +25,15 @@ def get_lmbd_config():
     return input_files, legends, model_nbs
 
 
-def get_models_config():
-    input_files = ['acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1e4.txt',
-                    'acc_false_e_1_tnb_50_mnb_5/acc_false_e_1_tnb_50_mnb_5_lmbd_1e4.txt',
-                    'acc_true_e_1_tnb_50_mnb_1/acc_true_e_1_tnb_50_mnb_1_lmbd_1e2.txt',
-                    'acc_true_e_1_tnb_50_mnb_5/acc_true_e_1_tnb_50_mnb_5_lmbd_1e2.txt',
-                    'acc_false_e_1_tnb_50_mnb_1/acc_false_e_1_tnb_50_mnb_1_lmbd_1_ewc.txt',
-                    'finetune_e_1.txt',
-                    'multitask_e_1.txt']
-    input_files = ['outputs/'+x for x in input_files]
+def get_models_config(epoch):
+    input_files = ['acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1e4.txt',
+                    'acc_false_e_{}_tnb_50_mnb_5/acc_false_e_{}_tnb_50_mnb_5_lmbd_1e4.txt',
+                    'acc_true_e_{}_tnb_50_mnb_1/acc_true_e_{}_tnb_50_mnb_1_lmbd_1e2.txt',
+                    'acc_true_e_{}_tnb_50_mnb_5/acc_true_e_{}_tnb_50_mnb_5_lmbd_1e2.txt',
+                    'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1_ewc.txt',
+                    'finetune_e_{}.txt',
+                    'multitask_e_{}.txt']
+    input_files = ['outputs/'+x.format(epoch,epoch) for x in input_files]
 
     legends = ['1 model per task',
                 '5 models per task',
@@ -181,11 +181,12 @@ def plot_per_task_acc(filename, test_accs):
 
 
 def main():
+    epoch = 1
     prefixes = ['lambda_', 'models_']
     config_func = [get_lmbd_config, get_models_config]
 
     prefix = prefixes[1]
-    input_files, legends, model_nbs = config_func[1]()
+    input_files, legends, model_nbs = config_func[1](epoch)
     task_nb = 50
     ###############################################################################################
 
@@ -196,14 +197,14 @@ def main():
         train_accs, test_accs = read_file(input_file, task_nb, model_nbs[i])
         test_accs_dict[legends[i]] = test_accs
 
-    plot_avg_test_acc(prefix + 'avg_acc',
+    plot_avg_test_acc(prefix + 'avg_acc_e{}'.format(epoch),
                      test_accs_dict)
 
-    plot_bwt(prefix + 'bwt', test_accs_dict)
+    plot_bwt(prefix + 'bwt_e{}'.format(epoch), test_accs_dict)
 
-    plot_fwt(prefix + 'fwt', test_accs_dict, initial_accs)
+    plot_fwt(prefix + 'fwt_e{}'.format(epoch), test_accs_dict, initial_accs)
 
-    # plot_per_task_acc('acc_per_task_' + 'acc_false_e_1_tnb_50_mnb_1_lmbd_1e4', test_accs_dict['1e4'])
+    # plot_per_task_acc('acc_per_task_e{}_lmbd_1e4'.format(epoch), test_accs_dict['1e4'])
 
 if __name__ == '__main__':
     main()
