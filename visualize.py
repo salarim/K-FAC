@@ -189,7 +189,7 @@ def main():
     task_nb = 50
     ###############################################################################################
 
-    initial_accs = read_file('outputs/initialization_test_accuracy.txt', task_nb, 1)[1][task_nb-1]
+    initial_accs = read_file('outputs/' + dataset + '/initialization_test_accuracy.txt', task_nb, 1)[1][task_nb-1]
 
     test_accs_dict = {}
     for i, input_file in enumerate(input_files):
