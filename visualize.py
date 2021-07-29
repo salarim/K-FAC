@@ -3,29 +3,27 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def get_lmbd_config(epoch):
+def get_lmbd_config(dataset, epoch):
     input_files = ['acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1e2.txt',
                     'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1e3.txt',
                     'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1e4.txt',
-                    'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_4e4.txt',
-                    'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_5e4.txt',
+                    'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1e5.txt',
                     'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_tid*1e2.txt',
                     'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_tid*1e3.txt']
-    input_files = ['outputs/'+x.format(epoch,epoch) for x in input_files]
+    input_files = ['outputs/' + dataset + '/' + x.format(epoch,epoch) for x in input_files]
 
     legends = ['1e2',
                 '1e3',
                 '1e4',
-                '4e4',
-                '5e4',
+                '1e5',
                 'task_id*1e2',
                 'task_id*1e3']
-    model_nbs = [1]*7
+    model_nbs = [1]*6
 
     return input_files, legends, model_nbs
 
 
-def get_models_config(epoch):
+def get_models_config(dataset, epoch):
     input_files = ['acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1e4.txt',
                     'acc_false_e_{}_tnb_50_mnb_5/acc_false_e_{}_tnb_50_mnb_5_lmbd_1e4.txt',
                     'acc_true_e_{}_tnb_50_mnb_1/acc_true_e_{}_tnb_50_mnb_1_lmbd_1e2.txt',
@@ -33,7 +31,7 @@ def get_models_config(epoch):
                     'acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1_ewc.txt',
                     'finetune_e_{}.txt',
                     'multitask_e_{}.txt']
-    input_files = ['outputs/'+x.format(epoch,epoch) for x in input_files]
+    input_files = ['outputs/' + dataset + '/' + x.format(epoch,epoch) for x in input_files]
 
     legends = ['1 model per task',
                 '5 models per task',
@@ -182,11 +180,12 @@ def plot_per_task_acc(filename, test_accs):
 
 def main():
     epoch = 1
+    dataset = 'pmnist'
     prefixes = ['lambda_', 'models_']
     config_func = [get_lmbd_config, get_models_config]
 
     prefix = prefixes[1]
-    input_files, legends, model_nbs = config_func[1](epoch)
+    input_files, legends, model_nbs = config_func[1](dataset, epoch)
     task_nb = 50
     ###############################################################################################
 
