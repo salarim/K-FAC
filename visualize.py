@@ -33,10 +33,10 @@ def get_models_config(dataset, epoch):
                     'multitask_e_{}.txt']
     input_files = ['outputs/' + dataset + '/' + x.format(epoch,epoch) for x in input_files]
 
-    legends = ['1 model per task',
-                '5 models per task',
-                '1 model for all previous tasks',
-                '5 models for all previous tasks',
+    legends = ['1 approximation per task',
+                '5 approximations per task',
+                '1 approximation for all previous tasks',
+                '5 approximations for all previous tasks',
                 'EWC',
                 'Finetune',
                 'Multi-task']
@@ -51,22 +51,42 @@ def get_models_config(dataset, epoch):
     return input_files, legends, model_nbs
 
 
+def get_training_loss_config(dataset, epoch):
+    input_files = ['acc_false_e_{}_tnb_50_mnb_1/acc_false_e_{}_tnb_50_mnb_1_lmbd_1e4.txt',
+                    'finetune_e_{}.txt',
+                    'multitask_e_{}.txt']
+    input_files = ['outputs/' + dataset + '/' + x.format(epoch,epoch) for x in input_files]
+
+    legends = ['1 approximation per task',
+                'Finetune',
+                'Multi-task']
+    model_nbs = [1,
+                 1,
+                 1]
+    
+    return input_files, legends, model_nbs
+
+
 def read_file(filename, task_nb, model_nb):
     train_accs = np.zeros((task_nb, model_nb))
     test_accs = 10.0 * np.ones((task_nb, model_nb, task_nb))
+    train_loss = [[] for _ in range(task_nb)]
 
     model_id, task_id, test_task_id = -1, -1, -1
+    epoch = -1
     with open(filename, 'r') as f:
         for i, line in enumerate(f):
             m = re.match(r"^Task (\d+) Model (\d+):$", line)
             if m:
                 task_id = int(m.groups()[0]) - 1
                 model_id = int(m.groups()[1]) - 1
+                epoch = 0
                 continue
 
-            m = re.match(r"^Train: .+\(([0-9]+[.]?[0-9]+)\)$", line)
+            m = re.match(r"^Train: \[(\d+)\].+\(([0-9]+[.]?[0-9]+)\)$", line)
             if m:
-                train_accs[task_id][model_id] = float(m.groups()[0])
+                epoch = int(m.groups()[0])
+                train_accs[task_id][model_id] = float(m.groups()[1])
                 continue
 
             m = re.match(r"^Test model \d+ on task (\d+)$", line)
@@ -80,7 +100,14 @@ def read_file(filename, task_nb, model_nb):
                 test_accs[task_id][model_id][test_task_id] = acc
                 continue
 
-    return train_accs, test_accs
+            m = re.match(r"^(\d+) \[((?:'[0-9]+[.]?[0-9]+',? ?)+)\]$", line)
+            if m:
+                iteration = int(m.groups()[0])
+                train_losses = [float(x.strip()[1:-1]) for x in m.groups()[1].split(',')]
+                train_loss[task_id].append(train_losses[-1])
+                continue
+
+    return train_accs, test_accs, train_loss
   
 
 def plot_avg_test_acc(filename, test_accs_dict):
@@ -178,32 +205,53 @@ def plot_per_task_acc(filename, test_accs):
     plt.close()
 
 
-def main():
-    epoch = 1
-    dataset = 'pmnist'
-    prefixes = ['lambda_', 'models_']
-    config_func = [get_lmbd_config, get_models_config]
+def plot_train_loss(filename, train_loss_dict, task_id):
+    legends = []
+    for legend, train_loss in train_loss_dict.items():
+        train_loss = train_loss[task_id][:470]
 
-    prefix = prefixes[1]
-    input_files, legends, model_nbs = config_func[1](dataset, epoch)
+        plt.errorbar(range(0,10*len(train_loss), 10), train_loss, yerr=0, fmt='-')
+        legends.append(legend)
+
+    plt.legend(legends)
+
+    plt.ylim(0,1.0)
+    plt.xlabel("Number of iteration")
+    plt.ylabel("Training loss")
+    plt.savefig(filename)
+    plt.close()
+
+
+def main():
+    epoch = 10
+    dataset = 'pmnist'
+    prefixes = ['lambda_', 'models_', 'trainloss_']
+    config_func = [get_lmbd_config, get_models_config, get_training_loss_config]
+
+    prefix = dataset + '_' + prefixes[2]
+    input_files, legends, model_nbs = config_func[2](dataset, epoch)
     task_nb = 50
     ###############################################################################################
 
-    initial_accs = read_file('outputs/' + dataset + '/initialization_test_accuracy.txt', task_nb, 1)[1][task_nb-1]
+    # initial_accs = read_file('outputs/' + dataset + '/initialization_test_accuracy.txt', task_nb, 1)[1][task_nb-1]
 
     test_accs_dict = {}
+    train_loss_dict = {}
     for i, input_file in enumerate(input_files):
-        train_accs, test_accs = read_file(input_file, task_nb, model_nbs[i])
+        train_accs, test_accs, train_loss = read_file(input_file, task_nb, model_nbs[i])
         test_accs_dict[legends[i]] = test_accs
+        train_loss_dict[legends[i]] = train_loss
 
-    plot_avg_test_acc(prefix + 'avg_acc_e{}'.format(epoch),
-                     test_accs_dict)
+    # plot_avg_test_acc(prefix + 'avg_acc_e{}'.format(epoch),
+    #                  test_accs_dict)
 
-    plot_bwt(prefix + 'bwt_e{}'.format(epoch), test_accs_dict)
+    # plot_bwt(prefix + 'bwt_e{}'.format(epoch), test_accs_dict)
 
-    plot_fwt(prefix + 'fwt_e{}'.format(epoch), test_accs_dict, initial_accs)
+    # plot_fwt(prefix + 'fwt_e{}'.format(epoch), test_accs_dict, initial_accs)
 
     # plot_per_task_acc('acc_per_task_e{}_lmbd_1e4'.format(epoch), test_accs_dict['1e4'])
+
+    plot_train_loss('train_loss', train_loss_dict, 1)
 
 if __name__ == '__main__':
     main()
