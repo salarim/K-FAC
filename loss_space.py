@@ -6,8 +6,7 @@ import matplotlib.pyplot as plt
 import torch
 import torch.optim as optim
 
-from utils import set_seed, Net
-from utils import Net, train, validate, get_datasets
+from utils import set_seed, Net, train, validate, get_datasets
 
 from main import KFAC
 
