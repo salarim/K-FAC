@@ -6,8 +6,7 @@ import matplotlib.pyplot as plt
 import torch
 import torch.optim as optim
 
-from utils import set_seed, Net
-from utils import Net, train, validate, get_datasets
+from utils import set_seed, Net, train, validate, get_datasets
 
 from main import KFAC
 
@@ -42,7 +41,7 @@ class LossVisualizer:
             for name, weight in self.weights.items():
                 rand_dir = torch.randn(weight.shape).to(weight.device)
                 if len(weight.shape) == 1:
-                    rand_norm = weight.unsqueeze(dim=1)
+                    rand_norm = rand_dir.abs().unsqueeze(dim=1)
                 if len(weight.shape) == 2:
                     rand_norm = torch.norm(rand_dir, dim=1).unsqueeze(dim=1)
 
