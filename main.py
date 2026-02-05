@@ -220,7 +220,7 @@ class KFAC:
         return dis
 
 def create_loss_function(kfacs, model, accumulate_last_kfac, lmbd, use_kfac):
-    cross_entorpy = torch.nn.CrossEntropyLoss()
+    cross_entropy = torch.nn.CrossEntropyLoss()
 
     def get_loss(outputs, targets, task_id):
         loss_lst = []
@@ -248,7 +248,7 @@ def create_loss_function(kfacs, model, accumulate_last_kfac, lmbd, use_kfac):
                 loss_lst.append(task_kfac_loss)
                 loss += task_kfac_loss
 
-        last_loss = cross_entorpy(outputs, targets)
+        last_loss = cross_entropy(outputs, targets)
         loss_lst.append(last_loss)
         loss += last_loss
 
